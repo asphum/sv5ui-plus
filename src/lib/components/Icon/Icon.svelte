@@ -34,7 +34,7 @@
                 : undefined
     )
 
-    const rotateValue = $derived(rotate ? rotate / 90 : undefined)
+    const rotateValue = $derived(typeof rotate === 'number' && rotate ? rotate / 90 : undefined)
 
     const iconClass = $derived(
         twMerge(

@@ -9,19 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- add Tree with multi-select, checkbox propagation, keyboard navigation, and an imperative API
-- add SidebarTrigger and expand Sidebar with responsive drawer, collapse modes, persisted state, and an imperative API
-- add generated default icon bundles so built-in icons render during SSR and offline
+- _None yet._
 
 ### Changed
 
-- replace Lightbox with the media viewer from sv5ui 2.5.0, including zoom, swipe, thumbnails, captions, slideshow, video, and iframe support
-- replace NavigationMenu with the sv5ui 2.5.0 mega-menu, vertical disclosure, collapsed rail, responsive drawer, and active-route implementation
-- replace the default loading icon with `lucide:loader-circle`
+- _None yet._
 
 ### Fixed
 
-- prevent built-in icons from popping in after hydration
+- _None yet._
+
+## [3.3.0] - 2026-08-08
+
+### Added
+
+- refactor Lightbox to support diverse media types, imperative API, and enhanced gallery controls
+
+### Changed
+
+- update project dependencies and refactor component type definitions across the library and documentation.
+- update component APIs, improve test selectors, and expose oninput for PasswordInput
 
 ## [3.2.9] - 2026-08-02
 
@@ -684,7 +691,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tailwind CSS 4 + Tailwind Variants integration
 - bits-ui and Vaul Svelte headless primitives
 
-[Unreleased]: https://github.com/asphum/svelora/compare/v3.2.9...HEAD
+[Unreleased]: https://github.com/asphum/svelora/compare/v3.3.0...HEAD
+[3.3.0]: https://github.com/asphum/svelora/compare/v3.2.9...v3.3.0
 [3.2.9]: https://github.com/asphum/svelora/compare/v3.2.8...v3.2.9
 [3.2.8]: https://github.com/asphum/svelora/compare/v3.2.7...v3.2.8
 [3.2.7]: https://github.com/asphum/svelora/compare/v3.2.6...v3.2.7

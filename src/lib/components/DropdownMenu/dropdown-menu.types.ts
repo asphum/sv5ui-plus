@@ -29,7 +29,7 @@ interface DropdownMenuItemBase {
 
     /**
      * Icon displayed before the label (leading position).
-     * Supports any Iconify icon name (e.g., 'lucide:home', 'mdi:account').
+     * Supports any Iconify icon name (e.g., 'icon-[lucide--home]', 'mdi:account').
      */
     icon?: string
 
@@ -260,13 +260,13 @@ export interface DropdownMenuProps extends RootProps, ContentProps {
 
     /**
      * Icon displayed when a checkbox item is checked.
-     * @default 'lucide:check'
+     * @default 'icon-[lucide--check]'
      */
     checkedIcon?: string
 
     /**
      * Icon displayed for submenu indicators.
-     * @default 'lucide:chevron-right'
+     * @default 'icon-[lucide--chevron-right]'
      */
     submenuIcon?: string
 

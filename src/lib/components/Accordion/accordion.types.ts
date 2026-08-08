@@ -15,7 +15,7 @@ import type { AccordionSlots } from './accordion.variants.js'
  * const item: AccordionItem = {
  *   label: 'Section Title',
  *   content: 'Section content goes here',
- *   icon: 'lucide:settings',
+ *   icon: 'icon-[lucide--settings]',
  *   value: 'section-1'
  * }
  * ```
@@ -28,7 +28,7 @@ export interface AccordionItem {
 
     /**
      * Icon displayed before the label (leading position).
-     * Supports any Iconify icon name (e.g., 'lucide:home', 'mdi:account').
+     * Supports any Iconify icon name (e.g., 'icon-[lucide--home]', 'mdi:account').
      */
     icon?: string
 
@@ -139,7 +139,7 @@ export interface AccordionProps
      * Default icon displayed on the trailing side of all triggers.
      * Typically used for expand/collapse indicators.
      * Can be overridden per-item via `item.trailingIcon`.
-     * @default 'lucide:chevron-down'
+     * @default 'icon-[lucide--chevron-down]'
      */
     trailingIcon?: string
 
@@ -245,7 +245,7 @@ export interface AccordionProps
      * @example
      * ```svelte
      * {#snippet trailing({ open })}
-     *   <Icon name={open ? 'lucide:minus' : 'lucide:plus'} />
+     *   <Icon name={open ? 'icon-[lucide--minus]' : 'icon-[lucide--plus]'} />
      * {/snippet}
      * ```
      */

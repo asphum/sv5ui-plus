@@ -20,7 +20,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 </script>
 
 <Tooltip text="Search" kbds={['meta', 'k']}>
- <Button icon="lucide:search" variant="outline">Search</Button>
+ <Button icon="icon-[lucide--search]" variant="outline">Search</Button>
 </Tooltip>`,
     Controlled: `<script lang="ts">
  import { Tooltip, Button } from 'svelora';

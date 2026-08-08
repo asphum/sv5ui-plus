@@ -79,7 +79,7 @@
                                 disabled={item.disabled}
                             >
                                 <Icon 
-                                    name="lucide:chevron-right" 
+                                    name="icon-[lucide--chevron-right]" 
                                     class={twMerge(styles.chevron(), isExpanded && 'rotate-90')} 
                                 />
                             </button>

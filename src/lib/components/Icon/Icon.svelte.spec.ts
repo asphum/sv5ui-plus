@@ -25,6 +25,29 @@ describe('Icon', async () => {
             const svg = await getSvg(container)
             await expect.element(svg).toHaveClass(/shrink-0/)
         })
+
+        it('should render Tailwind icon syntax as a CSS-only span', async () => {
+            const { container } = await render(Icon, { name: 'icon-[lucide--armchair]' })
+            const span = container.querySelector('span')
+
+            expect(span).toBeTruthy()
+            expect(span?.className).toContain('icon-[lucide--armchair]')
+            expect(span?.className).toContain('size-6')
+            expect(span?.getAttribute('aria-hidden')).toBe('true')
+            expect(container.querySelector('svg')).toBeNull()
+        })
+
+        it('should let Tailwind size classes override the default span size', async () => {
+            const { container } = await render(Icon, {
+                name: 'icon-[lucide--armchair]',
+                class: 'size-8 text-primary'
+            })
+            const span = container.querySelector('span')
+
+            expect(span?.className).toContain('size-8')
+            expect(span?.className).not.toContain('size-6')
+            expect(span?.className).toContain('text-primary')
+        })
     })
 
     // ==================== SIZE ====================

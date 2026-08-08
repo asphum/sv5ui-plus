@@ -43,7 +43,7 @@
             variant="ghost" 
             color="surface" 
             size="sm" 
-            icon="lucide:x" 
+            icon="icon-[lucide--x]" 
             onclick={onClear} 
             class="h-8 w-8 !p-0 rounded-full"
             aria-label="Clear selection"

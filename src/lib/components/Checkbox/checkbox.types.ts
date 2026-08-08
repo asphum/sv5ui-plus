@@ -80,7 +80,7 @@ export type CheckboxProps = Pick<
 
         /**
          * Icon displayed when in indeterminate state.
-         * @default 'lucide:minus'
+         * @default 'icon-[lucide--minus]'
          */
         indeterminateIcon?: string
 

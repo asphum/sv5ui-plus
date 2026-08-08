@@ -236,13 +236,13 @@ export interface CarouselProps<T = unknown> {
 
     /**
      * Icon for the "previous slide" arrow.
-     * @default 'lucide:chevron-left' (or 'lucide:chevron-up' when vertical)
+     * @default 'icon-[lucide--chevron-left]' (or 'icon-[lucide--chevron-up]' when vertical)
      */
     prevIcon?: string
 
     /**
      * Icon for the "next slide" arrow.
-     * @default 'lucide:chevron-right' (or 'lucide:chevron-down' when vertical)
+     * @default 'icon-[lucide--chevron-right]' (or 'icon-[lucide--chevron-down]' when vertical)
      */
     nextIcon?: string
 

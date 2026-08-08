@@ -34,7 +34,7 @@
         maxValue,
         validate,
         onInvalid,
-        icon = 'lucide:clock',
+        icon = 'icon-[lucide--clock]',
         color = config.defaultVariants.color ?? 'primary',
         size,
         variant = config.defaultVariants.variant ?? 'outline',

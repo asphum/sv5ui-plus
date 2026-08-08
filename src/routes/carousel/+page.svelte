@@ -38,20 +38,20 @@
     }))
 
     const features = [
-        { icon: 'lucide:zap', label: 'Tree-shakable plugins', desc: 'Only ship what you use.' },
-        { icon: 'lucide:hand', label: 'Touch & mouse drag', desc: 'Native-feeling gestures.' },
-        { icon: 'lucide:repeat', label: 'Looping & autoplay', desc: 'With pause-on-hover.' },
+        { icon: 'icon-[lucide--zap]', label: 'Tree-shakable plugins', desc: 'Only ship what you use.' },
+        { icon: 'icon-[lucide--hand]', label: 'Touch & mouse drag', desc: 'Native-feeling gestures.' },
+        { icon: 'icon-[lucide--repeat]', label: 'Looping & autoplay', desc: 'With pause-on-hover.' },
         {
-            icon: 'lucide:layout-grid',
+            icon: 'icon-[lucide--layout-grid]',
             label: 'Multi-slide & responsive',
             desc: 'Breakpoint overrides.'
         },
         {
-            icon: 'lucide:arrow-down-up',
+            icon: 'icon-[lucide--arrow-down-up]',
             label: 'Horizontal & vertical',
             desc: 'Same API, both axes.'
         },
-        { icon: 'lucide:sparkles', label: 'Fade & class plugins', desc: 'Custom transitions.' }
+        { icon: 'icon-[lucide--sparkles]', label: 'Fade & class plugins', desc: 'Custom transitions.' }
     ]
 
     let controlledIndex = $state(0)
@@ -180,7 +180,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    leadingIcon={autoplayPlaying ? 'lucide:pause' : 'lucide:play'}
+                    leadingIcon={autoplayPlaying ? 'icon-[lucide--pause]' : 'icon-[lucide--play]'}
                     onclick={toggleAutoplay}
                 >
                     {autoplayPlaying ? 'Pause' : 'Play'}
@@ -188,7 +188,7 @@
                 <Badge
                     color={autoplayPlaying ? 'success' : 'surface'}
                     variant="soft"
-                    leadingIcon={autoplayPlaying ? 'lucide:circle-dot' : 'lucide:circle'}
+                    leadingIcon={autoplayPlaying ? 'icon-[lucide--circle-dot]' : 'icon-[lucide--circle]'}
                 >
                     {autoplayPlaying ? 'Playing · 2.5s' : 'Paused'}
                 </Badge>
@@ -323,7 +323,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    leadingIcon="lucide:chevrons-left"
+                    leadingIcon="icon-[lucide--chevrons-left]"
                     onclick={() => (controlledIndex = 0)}
                 >
                     First
@@ -331,7 +331,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    leadingIcon="lucide:chevron-left"
+                    leadingIcon="icon-[lucide--chevron-left]"
                     onclick={() => controlledApi?.goToPrev()}
                 >
                     Prev
@@ -353,7 +353,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    trailingIcon="lucide:chevron-right"
+                    trailingIcon="icon-[lucide--chevron-right]"
                     onclick={() => controlledApi?.goToNext()}
                 >
                     Next
@@ -361,7 +361,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    trailingIcon="lucide:chevrons-right"
+                    trailingIcon="icon-[lucide--chevrons-right]"
                     onclick={() => (controlledIndex = fruits.length - 1)}
                 >
                     Last
@@ -406,7 +406,7 @@
                         aria-label="Previous"
                         onclick={scroll}
                     >
-                        <Icon name="lucide:arrow-left" class="size-5" />
+                        <Icon name="icon-[lucide--arrow-left]" class="size-5" />
                     </button>
                 {/snippet}
                 {#snippet nextSlot({ canScroll, scroll })}
@@ -417,7 +417,7 @@
                         aria-label="Next"
                         onclick={scroll}
                     >
-                        <Icon name="lucide:arrow-right" class="size-5" />
+                        <Icon name="icon-[lucide--arrow-right]" class="size-5" />
                     </button>
                 {/snippet}
                 {#snippet dot({ index, selected, select })}

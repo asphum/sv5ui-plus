@@ -92,7 +92,7 @@
     class={classes.root}
 >
     <div class={classes.inputWrapper}>
-        <Icon name={icon ?? icons.search ?? 'lucide:search'} class={classes.inputIcon} />
+        <Icon name={icon ?? icons.search ?? 'icon-[lucide--search]'} class={classes.inputIcon} />
         <Command.Input bind:value={search} {placeholder} class={classes.input} />
     </div>
 

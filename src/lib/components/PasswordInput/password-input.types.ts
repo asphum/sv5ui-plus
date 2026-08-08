@@ -45,10 +45,10 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
      * default filled bar. When set, four icons are rendered side-by-side and
      * coloured by strength level.
      *
-     * @example 'lucide:star'    // ★ ★ ☆ ☆
-     * @example 'lucide:shield'  // shields
+     * @example 'icon-[lucide--star]'    // ★ ★ ☆ ☆
+     * @example 'icon-[lucide--shield]'  // shields
      * @example 'ph:lock-fill'   // locks
-     * @example 'lucide:circle'  // circles
+     * @example 'icon-[lucide--circle]'  // circles
      */
     segmentIcon?: string
 
@@ -66,14 +66,14 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
     /**
      * Icon to display when the password is hidden (eye-off state).
      * Supports any valid Iconify icon name.
-     * @default 'lucide:eye-off'
+     * @default 'icon-[lucide--eye-off]'
      */
     hideIcon?: string
 
     /**
      * Icon to display when the password is visible (eye state).
      * Supports any valid Iconify icon name.
-     * @default 'lucide:eye'
+     * @default 'icon-[lucide--eye]'
      */
     showIcon?: string
 

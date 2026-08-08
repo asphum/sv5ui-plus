@@ -113,7 +113,7 @@
                     <Popover bind:open={datePickerOpen}>
                         <Button variant="outline" color="surface" class="w-56 justify-start">
                             <span class="flex items-center gap-2">
-                                <Icon name="lucide:calendar" class="size-4" />
+                                <Icon name="icon-[lucide--calendar]" class="size-4" />
                                 <span
                                     class={datePickerValue
                                         ? 'text-on-surface'
@@ -139,7 +139,7 @@
                     <Popover bind:open={rangeDatePickerOpen}>
                         <Button variant="outline" color="surface" class="w-72 justify-start">
                             <span class="flex items-center gap-2">
-                                <Icon name="lucide:calendar" class="size-4" />
+                                <Icon name="icon-[lucide--calendar]" class="size-4" />
                                 <span
                                     class={rangeDatePickerValue?.start
                                         ? 'text-on-surface'

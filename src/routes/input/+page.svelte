@@ -53,7 +53,7 @@
         <div class="max-w-sm space-y-3">
             <Input
                 bind:value={bindValue}
-                leadingIcon="lucide:pencil"
+                leadingIcon="icon-[lucide--pencil]"
                 placeholder="Type something..."
             />
             <p class="text-sm text-on-surface-variant">
@@ -154,15 +154,15 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <Input leadingIcon="lucide:search" placeholder="Search..." />
+                <Input leadingIcon="icon-[lucide--search]" placeholder="Search..." />
             </div>
             <div class="w-64">
-                <Input trailingIcon="lucide:eye" placeholder="Password" type="password" />
+                <Input trailingIcon="icon-[lucide--eye]" placeholder="Password" type="password" />
             </div>
             <div class="w-64">
                 <Input
-                    leadingIcon="lucide:mail"
-                    trailingIcon="lucide:check"
+                    leadingIcon="icon-[lucide--mail]"
+                    trailingIcon="icon-[lucide--check]"
                     placeholder="Email"
                     type="email"
                 />
@@ -186,10 +186,10 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <Input icon="lucide:user" placeholder="Leading icon" />
+                <Input icon="icon-[lucide--user]" placeholder="Leading icon" />
             </div>
             <div class="w-64">
-                <Input icon="lucide:user" trailing placeholder="Trailing icon" />
+                <Input icon="icon-[lucide--user]" trailing placeholder="Trailing icon" />
             </div>
         </div>
     </section>
@@ -302,7 +302,7 @@
                 description="We'll use this to send you notifications."
                 required
             >
-                <Input leadingIcon="lucide:mail" placeholder="Enter your email" type="email" />
+                <Input leadingIcon="icon-[lucide--mail]" placeholder="Enter your email" type="email" />
             </FormField>
 
             <FormField
@@ -311,7 +311,7 @@
                 error="Password is too short."
             >
                 <Input
-                    trailingIcon="lucide:eye"
+                    trailingIcon="icon-[lucide--eye]"
                     placeholder="Enter your password"
                     type="password"
                 />
@@ -371,8 +371,8 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Search bar</p>
                 <div class="max-w-md">
                     <FieldGroup>
-                        <Input leadingIcon="lucide:search" placeholder="Search products..." />
-                        <Input placeholder="Location" leadingIcon="lucide:map-pin" />
+                        <Input leadingIcon="icon-[lucide--search]" placeholder="Search products..." />
+                        <Input placeholder="Location" leadingIcon="icon-[lucide--map-pin]" />
                     </FieldGroup>
                 </div>
             </div>
@@ -384,7 +384,7 @@
                 >
                     <FormField label="Email" required>
                         <Input
-                            leadingIcon="lucide:mail"
+                            leadingIcon="icon-[lucide--mail]"
                             placeholder="john@example.com"
                             type="email"
                         />
@@ -392,7 +392,7 @@
 
                     <FormField label="Password" required help="Must be at least 8 characters.">
                         <Input
-                            leadingIcon="lucide:lock"
+                            leadingIcon="icon-[lucide--lock]"
                             placeholder="Enter your password"
                             type="password"
                         />
@@ -406,7 +406,7 @@
                     class="max-w-sm space-y-4 rounded-lg border border-outline-variant bg-surface-container-low p-4"
                 >
                     <FormField label="Username" error="Username is already taken.">
-                        <Input value="admin" color="error" leadingIcon="lucide:user" />
+                        <Input value="admin" color="error" leadingIcon="icon-[lucide--user]" />
                     </FormField>
 
                     <FormField label="Email" help="Looks good!">
@@ -414,7 +414,7 @@
                             type="email"
                             value="valid@example.com"
                             color="success"
-                            leadingIcon="lucide:mail"
+                            leadingIcon="icon-[lucide--mail]"
                         />
                     </FormField>
                 </div>

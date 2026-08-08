@@ -76,7 +76,7 @@
                 bind:this={box2}
                 class="flex min-h-24 max-w-full min-w-44 resize-x items-center justify-center gap-2 overflow-auto rounded-lg border-2 border-dashed border-outline-variant bg-surface p-4"
             >
-                <Icon name="lucide:scaling" size="16" class="text-on-surface-variant" />
+                <Icon name="icon-[lucide--scaling]" size="16" class="text-on-surface-variant" />
                 <Badge label="breakpoint: {breakpoint}" color={breakpointColor} variant="soft" />
             </div>
         </div>

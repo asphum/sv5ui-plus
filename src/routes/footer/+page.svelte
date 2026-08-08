@@ -43,7 +43,7 @@
                     label: 'GitHub',
                     href: 'https://github.com/asphum/svelora',
                     target: '_blank',
-                    icon: 'lucide:github'
+                    icon: 'icon-[lucide--github]'
                 },
                 {
                     label: 'Discussions',
@@ -62,9 +62,9 @@
     ]
 
     const socials = [
-        { icon: 'lucide:github', label: 'GitHub' },
-        { icon: 'lucide:twitter', label: 'X' },
-        { icon: 'lucide:youtube', label: 'YouTube' }
+        { icon: 'icon-[lucide--github]', label: 'GitHub' },
+        { icon: 'icon-[lucide--twitter]', label: 'X' },
+        { icon: 'icon-[lucide--youtube]', label: 'YouTube' }
     ]
 </script>
 
@@ -88,7 +88,7 @@
             <div class="flex h-28 items-center justify-center text-sm text-on-surface-variant/50">
                 Page content
             </div>
-            <Separator icon="lucide:sparkles" type="dashed" />
+            <Separator icon="icon-[lucide--sparkles]" type="dashed" />
             <Footer class="border-t-0">
                 {#snippet top()}
                     <FooterColumns {columns} aria-label="Footer navigation">
@@ -167,7 +167,7 @@
                         size="sm"
                         variant="ghost"
                         color="secondary"
-                        icon="lucide:github"
+                        icon="icon-[lucide--github]"
                         aria-label="GitHub"
                     />
                     <ThemeModeButton size="sm" />

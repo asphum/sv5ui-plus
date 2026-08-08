@@ -34,7 +34,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <ErrorPage
                 class="min-h-0 py-12"
-                icon="lucide:triangle-alert"
+                icon="icon-[lucide--triangle-alert]"
                 error={{
                     statusCode: 500,
                     statusMessage: 'Internal server error',

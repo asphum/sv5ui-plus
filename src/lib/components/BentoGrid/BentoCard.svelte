@@ -50,7 +50,7 @@
                 <Button {href} variant="ghost" size="sm" class="pl-0 hover:bg-transparent">
                     {cta}
                     {#snippet trailingSlot()}
-                        <Icon name="lucide:arrow-right" class="w-4 h-4 ml-1" />
+                        <Icon name="icon-[lucide--arrow-right]" class="w-4 h-4 ml-1" />
                     {/snippet}
                 </Button>
             {/if}

@@ -23,7 +23,7 @@ export type StepperItemState = 'pending' | 'active' | 'completed'
  *   value: 'shipping',
  *   title: 'Shipping',
  *   description: 'Where to deliver',
- *   icon: 'lucide:truck'
+ *   icon: 'icon-[lucide--truck]'
  * }
  * ```
  */

@@ -184,31 +184,31 @@ export interface PaginationProps
 
     /**
      * Icon for the "first page" button.
-     * @default 'lucide:chevrons-left'
+     * @default 'icon-[lucide--chevrons-left]'
      */
     firstIcon?: string
 
     /**
      * Icon for the "previous page" button.
-     * @default 'lucide:chevron-left'
+     * @default 'icon-[lucide--chevron-left]'
      */
     prevIcon?: string
 
     /**
      * Icon for the "next page" button.
-     * @default 'lucide:chevron-right'
+     * @default 'icon-[lucide--chevron-right]'
      */
     nextIcon?: string
 
     /**
      * Icon for the "last page" button.
-     * @default 'lucide:chevrons-right'
+     * @default 'icon-[lucide--chevrons-right]'
      */
     lastIcon?: string
 
     /**
      * Icon displayed in the ellipsis placeholder.
-     * @default 'lucide:ellipsis'
+     * @default 'icon-[lucide--ellipsis]'
      */
     ellipsisIcon?: string
 

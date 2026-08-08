@@ -9,15 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- _None yet._
+- add Tree with multi-select, checkbox propagation, keyboard navigation, and an imperative API
+- add SidebarTrigger and expand Sidebar with responsive drawer, collapse modes, persisted state, and an imperative API
+- add generated default icon bundles so built-in icons render during SSR and offline
 
 ### Changed
 
-- _None yet._
+- replace Lightbox with the media viewer from sv5ui 2.5.0, including zoom, swipe, thumbnails, captions, slideshow, video, and iframe support
+- replace NavigationMenu with the sv5ui 2.5.0 mega-menu, vertical disclosure, collapsed rail, responsive drawer, and active-route implementation
+- replace the default loading icon with `lucide:loader-circle`
 
 ### Fixed
 
-- _None yet._
+- prevent built-in icons from popping in after hydration
 
 ## [3.2.9] - 2026-08-02
 

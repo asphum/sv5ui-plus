@@ -26,28 +26,28 @@
     const orderItems: TimelineItem[] = [
         {
             value: 1,
-            icon: 'lucide:shopping-cart',
+            icon: 'icon-[lucide--shopping-cart]',
             title: 'Order Placed',
             description: 'Your order has been confirmed',
             date: 'Dec 20'
         },
         {
             value: 2,
-            icon: 'lucide:package',
+            icon: 'icon-[lucide--package]',
             title: 'Processing',
             description: 'Preparing your items',
             date: 'Dec 21'
         },
         {
             value: 3,
-            icon: 'lucide:truck',
+            icon: 'icon-[lucide--truck]',
             title: 'Shipped',
             description: 'On the way to you',
             date: 'Dec 22'
         },
         {
             value: 4,
-            icon: 'lucide:home',
+            icon: 'icon-[lucide--home]',
             title: 'Delivered',
             description: 'Package delivered',
             date: 'Dec 24'
@@ -57,10 +57,10 @@
     // Checkout stepper
     let checkoutStep = $state(2)
     const checkoutItems: TimelineItem[] = [
-        { value: 1, icon: 'lucide:shopping-bag', title: 'Cart' },
-        { value: 2, icon: 'lucide:map-pin', title: 'Address' },
-        { value: 3, icon: 'lucide:credit-card', title: 'Payment' },
-        { value: 4, icon: 'lucide:check', title: 'Confirm' }
+        { value: 1, icon: 'icon-[lucide--shopping-bag]', title: 'Cart' },
+        { value: 2, icon: 'icon-[lucide--map-pin]', title: 'Address' },
+        { value: 3, icon: 'icon-[lucide--credit-card]', title: 'Payment' },
+        { value: 4, icon: 'icon-[lucide--check]', title: 'Confirm' }
     ]
 
     // Activity feed
@@ -95,7 +95,7 @@
     const perItemUiItems: TimelineItem[] = [
         {
             value: 1,
-            icon: 'lucide:star',
+            icon: 'icon-[lucide--star]',
             title: 'Highlighted Step',
             date: 'Special',
             ui: {
@@ -105,13 +105,13 @@
         },
         {
             value: 2,
-            icon: 'lucide:zap',
+            icon: 'icon-[lucide--zap]',
             title: 'Normal Step',
             date: 'Default'
         },
         {
             value: 3,
-            icon: 'lucide:heart',
+            icon: 'icon-[lucide--heart]',
             title: 'Custom Separator',
             date: 'Styled',
             ui: { separator: 'bg-gradient-to-b from-error to-primary' }
@@ -171,11 +171,11 @@
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Timeline
                         items={[
-                            { value: 1, icon: 'lucide:file-plus', title: 'Created', date: 'Dec 1' },
-                            { value: 2, icon: 'lucide:edit', title: 'Edited', date: 'Dec 5' },
+                            { value: 1, icon: 'icon-[lucide--file-plus]', title: 'Created', date: 'Dec 1' },
+                            { value: 2, icon: 'icon-[lucide--edit]', title: 'Edited', date: 'Dec 5' },
                             {
                                 value: 3,
-                                icon: 'lucide:check-circle',
+                                icon: 'icon-[lucide--check-circle]',
                                 title: 'Approved',
                                 date: 'Dec 8'
                             }
@@ -255,8 +255,8 @@
                         <span class="text-xs font-medium text-on-surface-variant">{size}</span>
                         <Timeline
                             items={[
-                                { value: 1, icon: 'lucide:check' },
-                                { value: 2, icon: 'lucide:circle' }
+                                { value: 1, icon: 'icon-[lucide--check]' },
+                                { value: 2, icon: 'icon-[lucide--circle]' }
                             ]}
                             value={1}
                             {size}
@@ -351,19 +351,19 @@
                         items={[
                             {
                                 value: 'v1',
-                                icon: 'lucide:package',
+                                icon: 'icon-[lucide--package]',
                                 title: 'v1.0.0',
                                 date: 'Jan 2024'
                             },
                             {
                                 value: 'v2',
-                                icon: 'lucide:sparkles',
+                                icon: 'icon-[lucide--sparkles]',
                                 title: 'v2.0.0',
                                 date: 'Jun 2024'
                             },
                             {
                                 value: 'v3',
-                                icon: 'lucide:rocket',
+                                icon: 'icon-[lucide--rocket]',
                                 title: 'v3.0.0',
                                 date: 'Coming Soon'
                             }
@@ -411,9 +411,9 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <Timeline
                 items={[
-                    { value: 1, icon: 'lucide:star', title: 'Custom Ring', date: 'Styled' },
-                    { value: 2, icon: 'lucide:zap', title: 'Gradient Line', date: 'Colorful' },
-                    { value: 3, icon: 'lucide:heart', title: 'Bold Title', date: 'Italic' }
+                    { value: 1, icon: 'icon-[lucide--star]', title: 'Custom Ring', date: 'Styled' },
+                    { value: 2, icon: 'icon-[lucide--zap]', title: 'Gradient Line', date: 'Colorful' },
+                    { value: 3, icon: 'icon-[lucide--heart]', title: 'Bold Title', date: 'Italic' }
                 ]}
                 value={2}
                 ui={{

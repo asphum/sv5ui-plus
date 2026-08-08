@@ -138,15 +138,15 @@
         </p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
             <div class="flex flex-col items-center gap-2">
-                <ThemeModeButton lightIcon="lucide:sun-medium" darkIcon="lucide:moon-star" />
+                <ThemeModeButton lightIcon="icon-[lucide--sun-medium]" darkIcon="icon-[lucide--moon-star]" />
                 <span class="text-xs text-on-surface-variant">sun-medium / moon-star</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <ThemeModeButton lightIcon="lucide:sun-dim" darkIcon="lucide:cloud-moon" />
+                <ThemeModeButton lightIcon="icon-[lucide--sun-dim]" darkIcon="icon-[lucide--cloud-moon]" />
                 <span class="text-xs text-on-surface-variant">sun-dim / cloud-moon</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <ThemeModeButton lightIcon="lucide:sunrise" darkIcon="lucide:sunset" />
+                <ThemeModeButton lightIcon="icon-[lucide--sunrise]" darkIcon="icon-[lucide--sunset]" />
                 <span class="text-xs text-on-surface-variant">sunrise / sunset</span>
             </div>
         </div>

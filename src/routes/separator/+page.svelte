@@ -107,9 +107,9 @@
                     </a>
 </h2>
         <div class="space-y-4 rounded-lg bg-surface-container-high p-4">
-            <Separator icon="lucide:star" color="warning" size="sm" />
-            <Separator icon="lucide:heart" color="error" size="md" />
-            <Separator icon="lucide:zap" color="primary" size="lg" />
+            <Separator icon="icon-[lucide--star]" color="warning" size="sm" />
+            <Separator icon="icon-[lucide--heart]" color="error" size="md" />
+            <Separator icon="icon-[lucide--zap]" color="primary" size="lg" />
         </div>
     </section>
 
@@ -185,7 +185,7 @@
             <span>Item 1</span>
             <Separator orientation="vertical" color="primary" label="OR" size="sm" />
             <span>Item 2</span>
-            <Separator orientation="vertical" color="secondary" icon="lucide:plus" size="sm" />
+            <Separator orientation="vertical" color="secondary" icon="icon-[lucide--plus]" size="sm" />
             <span>Item 3</span>
         </div>
     </section>
@@ -317,7 +317,7 @@
                 ui={{ label: 'font-bold uppercase tracking-wider text-xs' }}
             />
             <Separator
-                icon="lucide:sparkles"
+                icon="icon-[lucide--sparkles]"
                 color="warning"
                 size="md"
                 ui={{ icon: 'animate-pulse' }}

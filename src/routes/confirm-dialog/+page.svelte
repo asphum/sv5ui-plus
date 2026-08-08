@@ -272,7 +272,7 @@ if (ok) notify.success('Deleted')`
                 color="error"
                 variant="soft"
                 label="Delete"
-                leadingIcon="lucide:trash-2"
+                leadingIcon="icon-[lucide--trash-2]"
                 onclick={testDelete}
             />
         </div>
@@ -307,14 +307,14 @@ if (ok) notify.success('Deleted')`
                 color="success"
                 variant="soft"
                 label="Success alert"
-                leadingIcon="lucide:check"
+                leadingIcon="icon-[lucide--check]"
                 onclick={testSuccessAlert}
             />
             <Button
                 color="warning"
                 variant="soft"
                 label="Warning choice"
-                leadingIcon="lucide:shield-alert"
+                leadingIcon="icon-[lucide--shield-alert]"
                 onclick={testWarningChoice}
             />
         </div>

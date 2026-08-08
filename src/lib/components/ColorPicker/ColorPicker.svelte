@@ -65,7 +65,7 @@
                 <span class="truncate flex-1 text-left text-on-surface">
                     {value || placeholder}
                 </span>
-                <Icon name="lucide:chevron-down" class="text-on-surface-variant w-4 h-4" />
+                <Icon name="icon-[lucide--chevron-down]" class="text-on-surface-variant w-4 h-4" />
             </div>
         {/snippet}
 

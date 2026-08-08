@@ -65,7 +65,7 @@ export interface CommandItemSlotProps {
  *   placeholder="Search..."
  *   groups={[
  *     { id: 'actions', label: 'Actions', items: [
- *       { value: 'new-file', label: 'New File', icon: 'lucide:file-plus' }
+ *       { value: 'new-file', label: 'New File', icon: 'icon-[lucide--file-plus]' }
  *     ]}
  *   ]}
  * />

@@ -76,7 +76,7 @@
                             class="inline-flex shrink-0 cursor-grab rounded-md p-1 text-on-surface-variant hover:bg-surface-container-high active:cursor-grabbing"
                             aria-label="Drag to reorder"
                         >
-                            <Icon name="lucide:grip-vertical" size="16" />
+                            <Icon name="icon-[lucide--grip-vertical]" size="16" />
                         </button>
                     {/if}
                     {@render children({ item, index, dragging })}

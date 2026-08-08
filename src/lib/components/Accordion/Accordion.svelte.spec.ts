@@ -182,7 +182,7 @@ describe('Accordion', () => {
             await vi.waitFor(() => {
                 const triggers = getTriggers()
                 triggers.forEach((trigger) => {
-                    const icon = trigger.querySelector('svg')
+                    const icon = trigger.querySelector('svg, span[class*="icon-["]')
                     expect(icon).not.toBeNull()
                 })
             })
@@ -204,7 +204,7 @@ describe('Accordion', () => {
             render(Accordion, { type: 'single', items: itemsWithIcon })
             await vi.waitFor(() => {
                 const triggers = getTriggers()
-                const icons = triggers[0].querySelectorAll('svg')
+                const icons = triggers[0].querySelectorAll('svg, span[class*="icon-["]')
                 expect(icons.length).toBeGreaterThanOrEqual(2)
             })
         })

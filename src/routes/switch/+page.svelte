@@ -135,20 +135,20 @@
         </p>
         <div class="flex flex-col gap-4">
             <Switch
-                checkedIcon="lucide:check"
-                uncheckedIcon="lucide:x"
+                checkedIcon="icon-[lucide--check]"
+                uncheckedIcon="icon-[lucide--x]"
                 label="With check / x icons"
             />
             <Switch
-                checkedIcon="lucide:sun"
-                uncheckedIcon="lucide:moon"
+                checkedIcon="icon-[lucide--sun]"
+                uncheckedIcon="icon-[lucide--moon]"
                 label="Theme toggle"
                 description="Switch between light and dark mode."
             />
-            <Switch checkedIcon="lucide:volume-2" uncheckedIcon="lucide:volume-x" label="Sound" />
+            <Switch checkedIcon="icon-[lucide--volume-2]" uncheckedIcon="icon-[lucide--volume-x]" label="Sound" />
             <Switch
-                checkedIcon="lucide:wifi"
-                uncheckedIcon="lucide:wifi-off"
+                checkedIcon="icon-[lucide--wifi]"
+                uncheckedIcon="icon-[lucide--wifi-off]"
                 label="Wi-Fi"
                 color="success"
             />
@@ -328,23 +328,23 @@
                 >
                     <Switch
                         checked={true}
-                        checkedIcon="lucide:eye"
-                        uncheckedIcon="lucide:eye-off"
+                        checkedIcon="icon-[lucide--eye]"
+                        uncheckedIcon="icon-[lucide--eye-off]"
                         label="Profile visibility"
                         description="Make your profile public."
                         color="secondary"
                     />
                     <Switch
-                        checkedIcon="lucide:share-2"
-                        uncheckedIcon="lucide:share-2"
+                        checkedIcon="icon-[lucide--share-2]"
+                        uncheckedIcon="icon-[lucide--share-2]"
                         label="Data sharing"
                         description="Share usage data to improve the product."
                         color="secondary"
                     />
                     <Switch
                         checked={true}
-                        checkedIcon="lucide:shield-check"
-                        uncheckedIcon="lucide:shield-off"
+                        checkedIcon="icon-[lucide--shield-check]"
+                        uncheckedIcon="icon-[lucide--shield-off]"
                         label="Two-factor auth"
                         description="Add an extra layer of security."
                         color="success"

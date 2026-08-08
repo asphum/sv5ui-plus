@@ -6,24 +6,24 @@
         {
             id: '1',
             label: 'src',
-            icon: 'lucide:folder',
+            icon: 'icon-[lucide--folder]',
             children: [
                 {
                     id: '1-1',
                     label: 'lib',
-                    icon: 'lucide:folder',
+                    icon: 'icon-[lucide--folder]',
                     children: [
-                        { id: '1-1-1', label: 'index.ts', icon: 'lucide:file-code' },
-                        { id: '1-1-2', label: 'utils.ts', icon: 'lucide:file-code' }
+                        { id: '1-1-1', label: 'index.ts', icon: 'icon-[lucide--file-code]' },
+                        { id: '1-1-2', label: 'utils.ts', icon: 'icon-[lucide--file-code]' }
                     ]
                 },
                 {
                     id: '1-2',
                     label: 'routes',
-                    icon: 'lucide:folder',
+                    icon: 'icon-[lucide--folder]',
                     children: [
-                        { id: '1-2-1', label: '+page.svelte', icon: 'lucide:file' },
-                        { id: '1-2-2', label: '+layout.svelte', icon: 'lucide:file' }
+                        { id: '1-2-1', label: '+page.svelte', icon: 'icon-[lucide--file]' },
+                        { id: '1-2-2', label: '+layout.svelte', icon: 'icon-[lucide--file]' }
                     ]
                 }
             ]
@@ -31,7 +31,7 @@
         {
             id: '2',
             label: 'package.json',
-            icon: 'lucide:file-json'
+            icon: 'icon-[lucide--file-json]'
         }
     ]
 </script>

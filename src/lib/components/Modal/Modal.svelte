@@ -161,7 +161,7 @@
                                     {:else}
                                         <Button
                                             {...props}
-                                            leadingIcon={closeProps.icon ?? 'lucide:x'}
+                                            leadingIcon={closeProps.icon ?? 'icon-[lucide--x]'}
                                             color={closeProps.color ?? 'surface'}
                                             variant={closeProps.variant ?? 'ghost'}
                                             size={closeProps.size ?? 'sm'}

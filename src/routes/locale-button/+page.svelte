@@ -683,7 +683,7 @@ const locales: LocaleButtonLocale[] = [
                     {:else if currentLocale?.code === 'en'}
                         <Icon name="circle-flags:uk" size="32" />
                     {:else}
-                        <Icon name="lucide:globe" size="24" />
+                        <Icon name="icon-[lucide--globe]" size="24" />
                     {/if}
                 {/snippet}
 

@@ -73,13 +73,13 @@ type BaseCalendarProps = {
      * for this calendar when wrapped in `<FormField>`.
      */
     name?: string
-    /** @default 'lucide:chevron-left' */
+    /** @default 'icon-[lucide--chevron-left]' */
     prevMonthIcon?: string
-    /** @default 'lucide:chevron-right' */
+    /** @default 'icon-[lucide--chevron-right]' */
     nextMonthIcon?: string
-    /** @default 'lucide:chevrons-left' */
+    /** @default 'icon-[lucide--chevrons-left]' */
     prevYearIcon?: string
-    /** @default 'lucide:chevrons-right' */
+    /** @default 'icon-[lucide--chevrons-right]' */
     nextYearIcon?: string
     /** @default true */
     monthControls?: boolean

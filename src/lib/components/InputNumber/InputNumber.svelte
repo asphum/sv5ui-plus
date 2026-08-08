@@ -312,10 +312,10 @@
 
     const isVertical = $derived(orientation === 'vertical')
     const resolvedIncrementIcon = $derived(
-        incrementIcon ?? (isVertical ? 'lucide:chevron-up' : 'lucide:plus')
+        incrementIcon ?? (isVertical ? 'icon-[lucide--chevron-up]' : 'icon-[lucide--plus]')
     )
     const resolvedDecrementIcon = $derived(
-        decrementIcon ?? (isVertical ? 'lucide:chevron-down' : 'lucide:minus')
+        decrementIcon ?? (isVertical ? 'icon-[lucide--chevron-down]' : 'icon-[lucide--minus]')
     )
 
     const inputSlotFns = $derived(

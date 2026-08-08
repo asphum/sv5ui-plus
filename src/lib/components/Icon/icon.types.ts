@@ -49,11 +49,12 @@ export interface IconProps
             | 'onfocus'
             | 'onblur'
         > {
-    /** Custom data attributes are forwarded to the rendered `<svg>`. */
+    /** Custom data attributes are forwarded to the rendered `<svg>` or `<span>`. */
     [key: `data-${string}`]: string | number | boolean | null | undefined
     /**
-     * Icon name in Iconify format: "collection:icon-name"
-     * @example "lucide:home", "mdi:account", "heroicons:star"
+     * Icon name in Iconify format or Iconify Tailwind 4 class syntax.
+     * Tailwind syntax renders a CSS-only `<span>` and does not request the Iconify API.
+     * @example "lucide:home", "mdi:account", "icon-[lucide--armchair]"
      * @see https://icon-sets.iconify.design/
      */
     name: string
@@ -95,7 +96,8 @@ export interface IconProps
     rotate?: 0 | 90 | 180 | 270
 
     /**
-     * Additional CSS classes for the icon.
+     * Additional CSS classes for the icon. Classes such as `size-6` can size
+     * Tailwind-format icons without an inline width or height.
      * Merged with `shrink-0` via tailwind-merge, so conflicting utilities are resolved correctly.
      */
     class?: ClassNameValue

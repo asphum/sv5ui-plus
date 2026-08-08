@@ -30,7 +30,7 @@
                 </p>
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Empty
-                        icon="lucide:inbox"
+                        icon="icon-[lucide--inbox]"
                         title="No messages"
                         description="You don't have any messages yet."
                     />
@@ -39,7 +39,7 @@
             <div class="space-y-2">
                 <p class="text-sm font-medium text-on-surface-variant">Title only</p>
                 <div class="rounded-lg bg-surface-container-high p-4">
-                    <Empty icon="lucide:file-x" title="No files found" />
+                    <Empty icon="icon-[lucide--file-x]" title="No files found" />
                 </div>
             </div>
             <div class="space-y-2">
@@ -70,7 +70,7 @@
                     <div class="rounded-lg bg-surface-container-high p-4">
                         <Empty
                             {variant}
-                            icon="lucide:inbox"
+                            icon="icon-[lucide--inbox]"
                             title="No items"
                             description="Nothing to display here."
                             size="sm"
@@ -125,7 +125,7 @@
                     <div class="flex-1">
                         <Empty
                             {size}
-                            icon="lucide:inbox"
+                            icon="icon-[lucide--inbox]"
                             title="Empty state"
                             description="This is the {size} size."
                         />
@@ -148,10 +148,10 @@
                 <p class="text-sm font-medium text-on-surface-variant">Single action</p>
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Empty
-                        icon="lucide:inbox"
+                        icon="icon-[lucide--inbox]"
                         title="No messages"
                         description="Start a conversation with your team."
-                        actions={[{ label: 'New Message', leadingIcon: 'lucide:plus' }]}
+                        actions={[{ label: 'New Message', leadingIcon: 'icon-[lucide--plus]' }]}
                     />
                 </div>
             </div>
@@ -159,7 +159,7 @@
                 <p class="text-sm font-medium text-on-surface-variant">Multiple actions</p>
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Empty
-                        icon="lucide:shopping-cart"
+                        icon="icon-[lucide--shopping-cart]"
                         title="Cart is empty"
                         description="Add some items to get started."
                         actions={[
@@ -235,7 +235,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <Empty
                 variant="subtle"
-                icon="lucide:help-circle"
+                icon="icon-[lucide--help-circle]"
                 title="Need help?"
                 description="Check our documentation or contact support."
             >
@@ -261,7 +261,7 @@
         <div class="grid gap-4 lg:grid-cols-2">
             <div class="rounded-lg bg-surface-container-high p-4">
                 <Empty
-                    icon="lucide:star"
+                    icon="icon-[lucide--star]"
                     title="Custom Styles"
                     description="With ui slot overrides."
                     actions={[{ label: 'Action' }]}
@@ -274,7 +274,7 @@
             </div>
             <div class="rounded-lg bg-surface-container-high p-4">
                 <Empty
-                    icon="lucide:heart"
+                    icon="icon-[lucide--heart]"
                     title="Custom Root"
                     description="Dashed border styling."
                     ui={{
@@ -301,7 +301,7 @@
             <p class="text-sm font-medium">Empty Inbox</p>
             <Empty
                 variant="soft"
-                icon="lucide:mail"
+                icon="icon-[lucide--mail]"
                 title="Inbox Zero!"
                 description="You've read all your messages. Great job staying on top of things!"
             />
@@ -312,11 +312,11 @@
             <p class="text-sm font-medium">No Search Results</p>
             <Empty
                 variant="outline"
-                icon="lucide:search-x"
+                icon="icon-[lucide--search-x]"
                 title="No results found"
                 description="We couldn't find anything matching your search. Try different keywords."
                 actions={[
-                    { label: 'Clear Search', leadingIcon: 'lucide:x' },
+                    { label: 'Clear Search', leadingIcon: 'icon-[lucide--x]' },
                     { label: 'Browse All', variant: 'outline' }
                 ]}
             />
@@ -327,10 +327,10 @@
             <p class="text-sm font-medium">Network Error</p>
             <Empty
                 variant="subtle"
-                icon="lucide:wifi-off"
+                icon="icon-[lucide--wifi-off]"
                 title="Connection lost"
                 description="Unable to load data. Please check your internet connection and try again."
-                actions={[{ label: 'Retry', leadingIcon: 'lucide:refresh-cw' }]}
+                actions={[{ label: 'Retry', leadingIcon: 'icon-[lucide--refresh-cw]' }]}
             />
         </div>
 
@@ -339,11 +339,11 @@
             <p class="text-sm font-medium">All Tasks Done</p>
             <Empty
                 variant="soft"
-                icon="lucide:check-circle-2"
+                icon="icon-[lucide--check-circle-2]"
                 title="All tasks completed!"
                 description="You've finished everything on your list. Time to relax or add new tasks."
                 actions={[
-                    { label: 'Add Task', leadingIcon: 'lucide:plus' },
+                    { label: 'Add Task', leadingIcon: 'icon-[lucide--plus]' },
                     { label: 'View Archive', variant: 'ghost' }
                 ]}
             />
@@ -354,10 +354,10 @@
             <p class="text-sm font-medium">Empty Shopping Cart</p>
             <Empty
                 variant="naked"
-                icon="lucide:shopping-cart"
+                icon="icon-[lucide--shopping-cart]"
                 title="Your cart is empty"
                 description="Looks like you haven't added anything yet."
-                actions={[{ label: 'Start Shopping', leadingIcon: 'lucide:shopping-bag' }]}
+                actions={[{ label: 'Start Shopping', leadingIcon: 'icon-[lucide--shopping-bag]' }]}
             />
         </div>
 
@@ -366,11 +366,11 @@
             <p class="text-sm font-medium">No Files Uploaded</p>
             <Empty
                 variant="soft"
-                icon="lucide:file-x"
+                icon="icon-[lucide--file-x]"
                 title="No files uploaded"
                 description="Upload your first file to get started with your project."
                 actions={[
-                    { label: 'Upload File', leadingIcon: 'lucide:upload' },
+                    { label: 'Upload File', leadingIcon: 'icon-[lucide--upload]' },
                     { label: 'Import from URL', variant: 'ghost' }
                 ]}
             />

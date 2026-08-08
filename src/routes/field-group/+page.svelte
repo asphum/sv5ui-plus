@@ -135,17 +135,17 @@
         </p>
         <div class="flex flex-wrap items-center gap-6">
             <FieldGroup>
-                <Button icon="lucide:align-left" variant="outline" color="surface" />
-                <Button icon="lucide:align-center" variant="outline" color="surface" />
-                <Button icon="lucide:align-right" variant="outline" color="surface" />
-                <Button icon="lucide:align-justify" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--align-left]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--align-center]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--align-right]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--align-justify]" variant="outline" color="surface" />
             </FieldGroup>
 
             <FieldGroup>
-                <Button icon="lucide:bold" variant="outline" color="surface" />
-                <Button icon="lucide:italic" variant="outline" color="surface" />
-                <Button icon="lucide:underline" variant="outline" color="surface" />
-                <Button icon="lucide:strikethrough" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--bold]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--italic]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--underline]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--strikethrough]" variant="outline" color="surface" />
             </FieldGroup>
         </div>
     </section>
@@ -160,15 +160,15 @@
 </h2>
         <div class="flex flex-wrap items-start gap-6">
             <FieldGroup orientation="vertical">
-                <Button icon="lucide:zoom-in" variant="outline" color="surface" />
-                <Button icon="lucide:zoom-out" variant="outline" color="surface" />
-                <Button icon="lucide:rotate-cw" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--zoom-in]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--zoom-out]" variant="outline" color="surface" />
+                <Button icon="icon-[lucide--rotate-cw]" variant="outline" color="surface" />
             </FieldGroup>
 
             <FieldGroup orientation="vertical">
-                <Button leadingIcon="lucide:home" label="Home" variant="soft" />
-                <Button leadingIcon="lucide:settings" label="Settings" variant="soft" />
-                <Button leadingIcon="lucide:user" label="Profile" variant="soft" />
+                <Button leadingIcon="icon-[lucide--home]" label="Home" variant="soft" />
+                <Button leadingIcon="icon-[lucide--settings]" label="Settings" variant="soft" />
+                <Button leadingIcon="icon-[lucide--user]" label="Profile" variant="soft" />
             </FieldGroup>
         </div>
     </section>
@@ -191,7 +191,7 @@
         </p>
         <div class="flex flex-wrap items-start gap-6">
             <FieldGroup>
-                <Input leadingIcon="lucide:search" placeholder="Search..." />
+                <Input leadingIcon="icon-[lucide--search]" placeholder="Search..." />
                 <Button label="Search" />
             </FieldGroup>
 
@@ -221,8 +221,8 @@
 
             <div class="w-72">
                 <FieldGroup orientation="vertical">
-                    <Input leadingIcon="lucide:user" placeholder="Username" />
-                    <Input leadingIcon="lucide:lock" placeholder="Password" type="password" />
+                    <Input leadingIcon="icon-[lucide--user]" placeholder="Username" />
+                    <Input leadingIcon="icon-[lucide--lock]" placeholder="Password" type="password" />
                     <Button label="Sign in" block />
                 </FieldGroup>
             </div>
@@ -247,7 +247,7 @@
                 <div class="flex flex-col items-center gap-2">
                     <FieldGroup {size}>
                         <Input placeholder="Search..." />
-                        <Button icon="lucide:search" />
+                        <Button icon="icon-[lucide--search]" />
                     </FieldGroup>
                     <span class="text-xs text-on-surface-variant">{size}</span>
                 </div>
@@ -271,10 +271,10 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Text editor toolbar</p>
                 <div class="flex flex-wrap items-center gap-3">
                     <FieldGroup>
-                        <Button icon="lucide:bold" variant="outline" color="surface" size="sm" />
-                        <Button icon="lucide:italic" variant="outline" color="surface" size="sm" />
+                        <Button icon="icon-[lucide--bold]" variant="outline" color="surface" size="sm" />
+                        <Button icon="icon-[lucide--italic]" variant="outline" color="surface" size="sm" />
                         <Button
-                            icon="lucide:underline"
+                            icon="icon-[lucide--underline]"
                             variant="outline"
                             color="surface"
                             size="sm"
@@ -282,28 +282,28 @@
                     </FieldGroup>
                     <FieldGroup>
                         <Button
-                            icon="lucide:align-left"
+                            icon="icon-[lucide--align-left]"
                             variant="outline"
                             color="surface"
                             size="sm"
                         />
                         <Button
-                            icon="lucide:align-center"
+                            icon="icon-[lucide--align-center]"
                             variant="outline"
                             color="surface"
                             size="sm"
                         />
                         <Button
-                            icon="lucide:align-right"
+                            icon="icon-[lucide--align-right]"
                             variant="outline"
                             color="surface"
                             size="sm"
                         />
                     </FieldGroup>
                     <FieldGroup>
-                        <Button icon="lucide:list" variant="outline" color="surface" size="sm" />
+                        <Button icon="icon-[lucide--list]" variant="outline" color="surface" size="sm" />
                         <Button
-                            icon="lucide:list-ordered"
+                            icon="icon-[lucide--list-ordered]"
                             variant="outline"
                             color="surface"
                             size="sm"
@@ -316,8 +316,8 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Login form</p>
                 <div class="w-80">
                     <FieldGroup orientation="vertical">
-                        <Input leadingIcon="lucide:mail" placeholder="Email" type="email" />
-                        <Input leadingIcon="lucide:lock" placeholder="Password" type="password" />
+                        <Input leadingIcon="icon-[lucide--mail]" placeholder="Email" type="email" />
+                        <Input leadingIcon="icon-[lucide--lock]" placeholder="Password" type="password" />
                         <Button label="Sign in" variant="solid" color="primary" block />
                     </FieldGroup>
                 </div>
@@ -327,8 +327,8 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Search with filter</p>
                 <FieldGroup>
                     <Button label="All" variant="outline" color="surface" />
-                    <Input leadingIcon="lucide:search" placeholder="Search products..." />
-                    <Button icon="lucide:sliders-horizontal" variant="outline" color="surface" />
+                    <Input leadingIcon="icon-[lucide--search]" placeholder="Search products..." />
+                    <Button icon="icon-[lucide--sliders-horizontal]" variant="outline" color="surface" />
                 </FieldGroup>
             </div>
         </div>

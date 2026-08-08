@@ -24,7 +24,7 @@
 <ThemeModeButton />
 <ThemeModeButton size="sm" variant="outline" />
 <ThemeModeButton size="lg" variant="soft" color="primary" />
-<ThemeModeButton lightIcon="lucide:sun-medium" darkIcon="lucide:moon-star" />`
+<ThemeModeButton lightIcon="icon-[lucide--sun-medium]" darkIcon="icon-[lucide--moon-star]" />`
 
     const programmaticCode = `<script lang="ts">
  import { mode, setMode, toggleMode } from 'mode-watcher';
@@ -108,7 +108,7 @@
             <ThemeModeButton />
             <ThemeModeButton size="sm" variant="outline" />
             <ThemeModeButton size="lg" variant="soft" color="primary" />
-            <ThemeModeButton lightIcon="lucide:sun-medium" darkIcon="lucide:moon-star" />
+            <ThemeModeButton lightIcon="icon-[lucide--sun-medium]" darkIcon="icon-[lucide--moon-star]" />
         </div>
         <Card class="border border-outline-variant/70">
             <pre class="overflow-x-auto text-sm"><code>{toggleCode}</code></pre>

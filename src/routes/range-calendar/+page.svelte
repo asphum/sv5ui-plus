@@ -22,7 +22,7 @@
             <div
                 class="flex size-16 items-center justify-center rounded-full bg-primary-container text-on-primary-container"
             >
-                <Icon name="lucide:calendar-range" size="32" />
+                <Icon name="icon-[lucide--calendar-range]" size="32" />
             </div>
             <h3 class="text-lg font-semibold">RangeCalendar</h3>
             <p class="max-w-md text-sm text-on-surface-variant">
@@ -30,7 +30,7 @@
                     class="rounded bg-surface-container px-1">bits-ui</code
                 >, styled with the same color tokens and theming as the rest of Svelora.
             </p>
-            <Button label="View Calendar" variant="outline" leadingIcon="lucide:arrow-right" href="/calendar" />
+            <Button label="View Calendar" variant="outline" leadingIcon="icon-[lucide--arrow-right]" href="/calendar" />
         </div>
     </Card>
 </div>

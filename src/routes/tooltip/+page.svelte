@@ -26,7 +26,7 @@
             </Tooltip>
 
             <Tooltip text="Tooltip for icon button">
-                <Button icon="lucide:settings" square variant="ghost" />
+                <Button icon="icon-[lucide--settings]" square variant="ghost" />
             </Tooltip>
 
             <Tooltip text="Information tooltip">
@@ -140,19 +140,19 @@
         </p>
         <div class="flex flex-wrap gap-4 rounded-lg bg-surface-container-high p-4">
             <Tooltip text="Search" kbds={['meta', 'k']}>
-                <Button icon="lucide:search" variant="outline">Search</Button>
+                <Button icon="icon-[lucide--search]" variant="outline">Search</Button>
             </Tooltip>
 
             <Tooltip text="Save changes" kbds={['meta', 's']}>
-                <Button icon="lucide:save" variant="soft">Save</Button>
+                <Button icon="icon-[lucide--save]" variant="soft">Save</Button>
             </Tooltip>
 
             <Tooltip text="Undo action" kbds={['meta', 'z']}>
-                <Button icon="lucide:undo" variant="ghost">Undo</Button>
+                <Button icon="icon-[lucide--undo]" variant="ghost">Undo</Button>
             </Tooltip>
 
             <Tooltip text="Open command palette" kbds={['meta', 'shift', 'p']}>
-                <Button icon="lucide:terminal" variant="outline">Command</Button>
+                <Button icon="icon-[lucide--terminal]" variant="outline">Command</Button>
             </Tooltip>
         </div>
     </section>
@@ -260,10 +260,10 @@
         </p>
         <div class="flex flex-wrap gap-4 rounded-lg bg-surface-container-high p-4">
             <Tooltip>
-                <Button variant="soft" icon="lucide:user">User Info</Button>
+                <Button variant="soft" icon="icon-[lucide--user]">User Info</Button>
                 {#snippet content()}
                     <div class="flex items-center gap-2">
-                        <Icon name="lucide:user-circle" size="16" />
+                        <Icon name="icon-[lucide--user-circle]" size="16" />
                         <span>John Doe</span>
                         <Badge label="Admin" size="xs" color="success" />
                     </div>
@@ -271,7 +271,7 @@
             </Tooltip>
 
             <Tooltip arrow>
-                <Button variant="soft" icon="lucide:info">Details</Button>
+                <Button variant="soft" icon="icon-[lucide--info]">Details</Button>
                 {#snippet content()}
                     <div class="flex flex-col gap-1">
                         <span class="font-medium">Server Status</span>
@@ -281,7 +281,7 @@
             </Tooltip>
 
             <Tooltip>
-                <Button icon="lucide:palette" variant="outline">Colors</Button>
+                <Button icon="icon-[lucide--palette]" variant="outline">Colors</Button>
                 {#snippet content()}
                     <div class="flex gap-1">
                         <span class="size-4 rounded-full bg-red-500"></span>
@@ -395,27 +395,27 @@
                 <p class="text-sm font-medium">Editor Toolbar</p>
                 <div class="flex items-center gap-1 rounded-lg bg-surface-container-high p-2">
                     <Tooltip text="Bold" kbds={['meta', 'b']}>
-                        <Button icon="lucide:bold" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--bold]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <Tooltip text="Italic" kbds={['meta', 'i']}>
-                        <Button icon="lucide:italic" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--italic]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <Tooltip text="Underline" kbds={['meta', 'u']}>
-                        <Button icon="lucide:underline" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--underline]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <div class="mx-1 h-6 w-px bg-outline-variant"></div>
                     <Tooltip text="Align Left">
-                        <Button icon="lucide:align-left" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--align-left]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <Tooltip text="Align Center">
-                        <Button icon="lucide:align-center" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--align-center]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <Tooltip text="Align Right">
-                        <Button icon="lucide:align-right" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--align-right]" square variant="ghost" size="sm" />
                     </Tooltip>
                     <div class="mx-1 h-6 w-px bg-outline-variant"></div>
                     <Tooltip text="Insert Link" kbds={['meta', 'k']}>
-                        <Button icon="lucide:link" square variant="ghost" size="sm" />
+                        <Button icon="icon-[lucide--link]" square variant="ghost" size="sm" />
                     </Tooltip>
                 </div>
             </div>
@@ -425,16 +425,16 @@
                 <p class="text-sm font-medium">Social Actions</p>
                 <div class="flex items-center gap-2 rounded-lg bg-surface-container-high p-4">
                     <Tooltip text="Like this post">
-                        <Button icon="lucide:heart" variant="ghost" size="sm">128</Button>
+                        <Button icon="icon-[lucide--heart]" variant="ghost" size="sm">128</Button>
                     </Tooltip>
                     <Tooltip text="Leave a comment">
-                        <Button icon="lucide:message-circle" variant="ghost" size="sm">24</Button>
+                        <Button icon="icon-[lucide--message-circle]" variant="ghost" size="sm">24</Button>
                     </Tooltip>
                     <Tooltip text="Share this post">
-                        <Button icon="lucide:share-2" variant="ghost" size="sm">Share</Button>
+                        <Button icon="icon-[lucide--share-2]" variant="ghost" size="sm">Share</Button>
                     </Tooltip>
                     <Tooltip text="Save to bookmarks">
-                        <Button icon="lucide:bookmark" variant="ghost" size="sm" square />
+                        <Button icon="icon-[lucide--bookmark]" variant="ghost" size="sm" square />
                     </Tooltip>
                 </div>
             </div>

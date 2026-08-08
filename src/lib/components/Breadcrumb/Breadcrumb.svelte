@@ -9,7 +9,7 @@ import Link from '../Link/Link.svelte';
 import { breadcrumbDefaults, breadcrumbVariants } from './breadcrumb.variants.js';
 
 const config = getComponentConfig('breadcrumb', breadcrumbDefaults);
-let { ref = $bindable(null), as = 'nav', items, separatorIcon = 'lucide:chevron-right', class: className, ui, item: itemSnippet, separator: separatorSnippet, ...restProps }: Props = $props();
+let { ref = $bindable(null), as = 'nav', items, separatorIcon = 'icon-[lucide--chevron-right]', class: className, ui, item: itemSnippet, separator: separatorSnippet, ...restProps }: Props = $props();
 const variantSlots = $derived(breadcrumbVariants(config.defaultVariants));
 const classes = $derived({
     root: variantSlots.root({ class: [config.slots.root, className, ui?.root] }),

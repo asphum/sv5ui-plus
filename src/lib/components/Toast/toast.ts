@@ -23,7 +23,7 @@ type SveloraToastOptions = Omit<ToastOptions, 'icon' | 'className'> & {
 
     /**
      * Iconify icon name to display in the toast.
-     * @example toast('Launched!', { icon: 'lucide:rocket' })
+     * @example toast('Launched!', { icon: 'icon-[lucide--rocket]' })
      */
     icon?: string | ToastOptions['icon']
 

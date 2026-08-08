@@ -61,7 +61,7 @@
                 role="img"
                 aria-label={slide.alt}
             >
-                <Icon name="lucide:image-off" class="size-12" aria-hidden="true" />
+                <Icon name="icon-[lucide--image-off]" class="size-12" aria-hidden="true" />
                 <span class="text-sm">{slide.alt}</span>
             </div>
         {:else}

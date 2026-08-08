@@ -67,7 +67,7 @@
                         With Icon
                     </a>
 </h2>
-        <Banner icon="lucide:megaphone" title="New features available — check the changelog!" />
+        <Banner icon="icon-[lucide--megaphone]" title="New features available — check the changelog!" />
     </section>
 
     <!-- Colors -->
@@ -81,7 +81,7 @@
         <p class="text-sm text-on-surface-variant">All 8 design-token colors are supported.</p>
         <div class="space-y-2">
             {#each colors as color (color)}
-                <Banner {color} icon="lucide:info" title={`Color: ${color}`} />
+                <Banner {color} icon="icon-[lucide--info]" title={`Color: ${color}`} />
             {/each}
         </div>
     </section>
@@ -113,19 +113,19 @@
         <div class="space-y-3">
             <Banner
                 color="primary"
-                icon="lucide:sparkles"
+                icon="icon-[lucide--sparkles]"
                 title="Update available — new features in v1.8.0!"
                 actions={[
                     { label: 'Learn more', variant: 'outline' },
-                    { label: 'Update now', trailingIcon: 'lucide:arrow-right' }
+                    { label: 'Update now', trailingIcon: 'icon-[lucide--arrow-right]' }
                 ]}
             />
             <Banner
                 color="warning"
-                icon="lucide:cookie"
+                icon="icon-[lucide--cookie]"
                 title="We use cookies to improve your experience."
                 actions={[
-                    { label: 'Accept', leadingIcon: 'lucide:check', variant: 'outline' },
+                    { label: 'Accept', leadingIcon: 'icon-[lucide--check]', variant: 'outline' },
                     { label: 'Reject', variant: 'outline' }
                 ]}
             />
@@ -148,7 +148,7 @@
         <Banner
             bind:open={dismissibleOpen}
             color="info"
-            icon="lucide:bell"
+            icon="icon-[lucide--bell]"
             title="Tap the × to dismiss for this session"
             close
             onClose={() => onCloseFired++}
@@ -187,7 +187,7 @@
             bind:open={persistedOpen}
             id="demo-persisted"
             color="success"
-            icon="lucide:save"
+            icon="icon-[lucide--save]"
             title="Dismiss me, reload the page — I won't come back until you reset."
             close
         />
@@ -195,7 +195,7 @@
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:rotate-ccw"
+                leadingIcon="icon-[lucide--rotate-ccw]"
                 label="Reset dismissal"
                 onclick={resetPersistedBanner}
             />
@@ -218,7 +218,7 @@
         </p>
         <Banner
             color="primary"
-            icon="lucide:rocket"
+            icon="icon-[lucide--rocket]"
             title="Read the v1.7.0 release notes →"
             to="https://github.com/asphum/svelora/blob/main/CHANGELOG.md"
             target="_blank"
@@ -256,7 +256,7 @@
                     <span
                         class="flex size-6 items-center justify-center rounded-full bg-info-container"
                     >
-                        <Icon name="lucide:sparkles" class="size-4 text-info" />
+                        <Icon name="icon-[lucide--sparkles]" class="size-4 text-info" />
                     </span>
                 {/snippet}
                 {#snippet titleSlot()}
@@ -266,7 +266,7 @@
                 {/snippet}
             </Banner>
 
-            <Banner color="warning" icon="lucide:wrench" title="Custom actions">
+            <Banner color="warning" icon="icon-[lucide--wrench]" title="Custom actions">
                 {#snippet actionsSlot()}
                     <div class="ms-2 flex items-center gap-2">
                         <Badge size="xs" color="warning" variant="solid" label="BETA" />
@@ -293,7 +293,7 @@
         </p>
         <Banner
             color="surface"
-            icon="lucide:settings"
+            icon="icon-[lucide--settings]"
             title="Taller container + rounded corners"
             ui={{ container: 'min-h-14', root: 'rounded-lg' }}
         />

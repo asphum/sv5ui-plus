@@ -28,7 +28,7 @@
                 <Button
                     {...props}
                     variant="subtle"
-                    trailingIcon={open ? 'lucide:chevron-up' : 'lucide:chevron-down'}
+                    trailingIcon={open ? 'icon-[lucide--chevron-up]' : 'icon-[lucide--chevron-down]'}
                 >
                     {open ? 'Hide' : 'Show'} content
                 </Button>
@@ -56,7 +56,7 @@
                 <Button
                     {...props}
                     variant="outline"
-                    trailingIcon={open ? 'lucide:minus' : 'lucide:plus'}
+                    trailingIcon={open ? 'icon-[lucide--minus]' : 'icon-[lucide--plus]'}
                 >
                     Toggle section
                 </Button>
@@ -94,7 +94,7 @@
                     {...props}
                     variant="soft"
                     color="primary"
-                    trailingIcon={open ? 'lucide:chevron-up' : 'lucide:chevron-down'}
+                    trailingIcon={open ? 'icon-[lucide--chevron-up]' : 'icon-[lucide--chevron-down]'}
                 >
                     Controlled collapsible
                 </Button>
@@ -130,7 +130,7 @@
                     {...props}
                     variant="outline"
                     color="secondary"
-                    trailingIcon={open ? 'lucide:eye-off' : 'lucide:eye'}
+                    trailingIcon={open ? 'icon-[lucide--eye-off]' : 'icon-[lucide--eye]'}
                 >
                     {open ? 'Collapse' : 'Expand'} (check console)
                 </Button>
@@ -159,7 +159,7 @@
 </h2>
         <Collapsible disabled>
             {#snippet trigger({ props })}
-                <Button {...props} variant="outline" disabled trailingIcon="lucide:chevron-down">
+                <Button {...props} variant="outline" disabled trailingIcon="icon-[lucide--chevron-down]">
                     Cannot toggle (disabled)
                 </Button>
             {/snippet}
@@ -187,10 +187,10 @@
                     {...props}
                     class="flex cursor-pointer items-center gap-2 rounded-lg border border-outline-variant px-4 py-3 transition-colors hover:bg-surface-container"
                 >
-                    <Icon name="lucide:settings" class="size-5" />
+                    <Icon name="icon-[lucide--settings]" class="size-5" />
                     <span class="flex-1 text-sm font-medium">Advanced Settings</span>
                     <Icon
-                        name="lucide:chevron-down"
+                        name="icon-[lucide--chevron-down]"
                         class="size-4 transition-transform duration-200 {open ? 'rotate-180' : ''}"
                     />
                 </div>
@@ -235,7 +235,7 @@
                     {...props}
                     variant="ghost"
                     size="sm"
-                    trailingIcon={open ? 'lucide:chevron-up' : 'lucide:chevron-down'}
+                    trailingIcon={open ? 'icon-[lucide--chevron-up]' : 'icon-[lucide--chevron-down]'}
                 >
                     Styled with ui prop
                 </Button>
@@ -269,7 +269,7 @@
                         >
                             <span class="text-sm font-medium">{title}</span>
                             <Icon
-                                name="lucide:chevron-down"
+                                name="icon-[lucide--chevron-down]"
                                 class="size-4 transition-transform duration-200 {open
                                     ? 'rotate-180'
                                     : ''}"

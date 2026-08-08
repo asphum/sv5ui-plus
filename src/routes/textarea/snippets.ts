@@ -17,6 +17,6 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 </script>
 
 <FormField label="Description" required>
- <Textarea leadingIcon="lucide:file-text" placeholder="Describe the issue..." />
+ <Textarea leadingIcon="icon-[lucide--file-text]" placeholder="Describe the issue..." />
 </FormField>`
 }

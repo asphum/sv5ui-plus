@@ -214,19 +214,19 @@
         return [
             {
                 label: 'View profile',
-                icon: 'lucide:user',
+                icon: 'icon-[lucide--user]',
                 onSelect: () => alert(`View ${row.name}`)
             },
             {
                 label: 'Send email',
-                icon: 'lucide:mail',
+                icon: 'icon-[lucide--mail]',
                 onSelect: () => alert(`Email ${row.email}`)
             },
             { type: 'separator' },
-            { label: 'Edit', icon: 'lucide:pencil', onSelect: () => alert(`Edit ${row.name}`) },
+            { label: 'Edit', icon: 'icon-[lucide--pencil]', onSelect: () => alert(`Edit ${row.name}`) },
             {
                 label: 'Delete',
-                icon: 'lucide:trash-2',
+                icon: 'icon-[lucide--trash-2]',
                 color: 'error',
                 onSelect: () => alert(`Delete ${row.name}`)
             }
@@ -461,7 +461,7 @@
         <Input
             placeholder="Search users..."
             bind:value={globalFilter}
-            leadingIcon="lucide:search"
+            leadingIcon="icon-[lucide--search]"
             variant="outline"
             class="max-w-sm"
         />
@@ -496,7 +496,7 @@
                     variant="ghost"
                     color="surface"
                     size="xs"
-                    icon="lucide:x"
+                    icon="icon-[lucide--x]"
                     onclick={() => (columnFilterValues = {})}
                     aria-label="Clear all column filters"
                 />
@@ -521,7 +521,7 @@
         <Input
             placeholder="Search across all columns…"
             bind:value={fullFeatSearch}
-            leadingIcon="lucide:search"
+            leadingIcon="icon-[lucide--search]"
             variant="outline"
             class="max-w-sm"
         />
@@ -816,10 +816,10 @@
         </div>
         {#if bulkSelectedRows.length > 0}
             <TableBulkActionBar count={bulkSelectedRows.length} onClear={() => (bulkSelectedRows = [])}>
-                <Button color="error" size="sm" icon="lucide:trash-2" onclick={() => alert(`Deleted ${bulkSelectedRows.length} users`)}>
+                <Button color="error" size="sm" icon="icon-[lucide--trash-2]" onclick={() => alert(`Deleted ${bulkSelectedRows.length} users`)}>
                     Delete
                 </Button>
-                <Button variant="outline" color="surface" size="sm" icon="lucide:download" onclick={() => alert(`Exported CSV for ${bulkSelectedRows.length} users`)}>
+                <Button variant="outline" color="surface" size="sm" icon="icon-[lucide--download]" onclick={() => alert(`Exported CSV for ${bulkSelectedRows.length} users`)}>
                     Export
                 </Button>
             </TableBulkActionBar>
@@ -969,7 +969,7 @@
             <div
                 class="flex items-center gap-3 rounded-xl border border-outline-variant/30 bg-surface-container p-3"
             >
-                <Icon name="lucide:mouse-pointer" class="size-4 text-on-surface-variant" />
+                <Icon name="icon-[lucide--mouse-pointer]" class="size-4 text-on-surface-variant" />
                 <span class="text-sm text-on-surface">
                     Right-clicked: <strong>{contextUser.user.name}</strong>
                     at ({contextUser.x}, {contextUser.y})
@@ -996,7 +996,7 @@
                         colspan={4}
                         class="border-b border-primary/10 bg-primary/5 px-4 py-2 text-xs font-medium text-primary"
                     >
-                        <Icon name="lucide:info" class="-mt-0.5 mr-1 inline-block size-3.5" />
+                        <Icon name="icon-[lucide--info]" class="-mt-0.5 mr-1 inline-block size-3.5" />
                         Prices updated March 2026. All items in stock.
                     </td>
                 </tr>
@@ -1008,7 +1008,7 @@
                         class="border-t border-outline-variant/30 bg-surface-container-lowest px-4 py-2 text-xs text-on-surface-variant"
                     >
                         <Icon
-                            name="lucide:arrow-right"
+                            name="icon-[lucide--arrow-right]"
                             class="-mt-0.5 mr-1 inline-block size-3.5"
                         />
                         Showing {products.length} of {products.length} products
@@ -1111,7 +1111,7 @@
         >
             {#snippet loadingSlot()}
                 <div class="flex items-center justify-center gap-2">
-                    <Icon name="lucide:loader-circle" class="size-5 animate-spin text-primary" />
+                    <Icon name="icon-[lucide--loader-circle]" class="size-5 animate-spin text-primary" />
                     <span class="text-sm text-on-surface-variant">Loading data...</span>
                 </div>
             {/snippet}
@@ -1178,7 +1178,7 @@
                 <Table data={[]} columns={richColumns}>
                     {#snippet emptySlot()}
                         <div class="flex flex-col items-center gap-2">
-                            <Icon name="lucide:inbox" class="size-8 text-on-surface-variant/40" />
+                            <Icon name="icon-[lucide--inbox]" class="size-8 text-on-surface-variant/40" />
                             <p class="text-sm text-on-surface-variant">No users found</p>
                         </div>
                     {/snippet}
@@ -1278,14 +1278,14 @@
                 <div class="flex items-center gap-1.5">
                     <Icon
                         name={column.key === 'name'
-                            ? 'lucide:user'
+                            ? 'icon-[lucide--user]'
                             : column.key === 'email'
-                              ? 'lucide:mail'
+                              ? 'icon-[lucide--mail]'
                               : column.key === 'role'
-                                ? 'lucide:shield'
+                                ? 'icon-[lucide--shield]'
                                 : column.key === 'status'
-                                  ? 'lucide:activity'
-                                  : 'lucide:hash'}
+                                  ? 'icon-[lucide--activity]'
+                                  : 'icon-[lucide--hash]'}
                         class="size-3.5 text-primary"
                     />
                     <span>{column.label ?? column.key}</span>
@@ -1400,7 +1400,7 @@
                 <div
                     class="not-sr-only border-b border-outline-variant/30 px-4 py-3 text-left text-sm font-medium text-on-surface-variant"
                 >
-                    <Icon name="lucide:table-2" class="-mt-0.5 mr-1.5 inline-block size-4" />
+                    <Icon name="icon-[lucide--table-2]" class="-mt-0.5 mr-1.5 inline-block size-4" />
                     Product inventory — March 2026
                 </div>
             {/snippet}
@@ -1455,7 +1455,7 @@
             variant="ghost"
             color="surface"
             size="xs"
-            icon="lucide:ellipsis"
+            icon="icon-[lucide--ellipsis]"
             aria-label="Row actions"
         />
     </DropdownMenu>
@@ -1468,7 +1468,7 @@
         variant="ghost"
         color="surface"
         size="xs"
-        icon="lucide:chevron-right"
+        icon="icon-[lucide--chevron-right]"
         class="transition-transform duration-200 {isExpanded ? 'rotate-90' : ''}"
         aria-label={isExpanded ? 'Collapse row' : 'Expand row'}
         aria-expanded={isExpanded}
@@ -1491,7 +1491,7 @@
             variant="ghost"
             color="surface"
             size="xs"
-            icon="lucide:chevron-right"
+            icon="icon-[lucide--chevron-right]"
             class="transition-transform duration-200 {isExpanded ? 'rotate-90' : ''}"
             aria-label={isExpanded ? 'Collapse' : 'Expand'}
             aria-expanded={isExpanded}
@@ -1508,7 +1508,7 @@
 
 {#snippet deptNameCell(props: TableCellSlotProps<Department>)}
     <div class="flex items-center gap-2">
-        <Icon name="lucide:building-2" class="size-4 text-on-surface-variant" />
+        <Icon name="icon-[lucide--building-2]" class="size-4 text-on-surface-variant" />
         <span class="font-medium">{props.row.name}</span>
         {#if props.row.children}
             <Badge
@@ -1543,7 +1543,7 @@
         variant="ghost"
         color={isPinned ? 'primary' : 'surface'}
         size="xs"
-        icon={isPinned ? 'lucide:pin-off' : 'lucide:pin'}
+        icon={isPinned ? 'icon-[lucide--pin-off]' : 'icon-[lucide--pin]'}
         aria-label={isPinned ? 'Unpin row' : 'Pin row'}
         onclick={() => {
             if (isPinned) {
@@ -1561,7 +1561,7 @@
         variant="ghost"
         color={isPinned ? 'primary' : 'surface'}
         size="xs"
-        icon={isPinned ? 'lucide:pin-off' : 'lucide:pin'}
+        icon={isPinned ? 'icon-[lucide--pin-off]' : 'icon-[lucide--pin]'}
         aria-label={isPinned ? 'Unpin row' : 'Pin row'}
         onclick={() => {
             if (isPinned) {

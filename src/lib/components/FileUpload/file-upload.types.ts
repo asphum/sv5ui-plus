@@ -100,7 +100,7 @@ export type FileUploadProps = Omit<HTMLAttributes<HTMLElement>, 'class' | 'child
 
     /**
      * Icon displayed in the upload area.
-     * @default 'lucide:upload'
+     * @default 'icon-[lucide--upload]'
      */
     icon?: string
 
@@ -147,7 +147,7 @@ export type FileUploadProps = Omit<HTMLAttributes<HTMLElement>, 'class' | 'child
 
     /**
      * Custom drag handle icon.
-     * @default Uses `icons.dragHandle` from config ('lucide:grip-vertical')
+     * @default Uses `icons.dragHandle` from config ('icon-[lucide--grip-vertical]')
      */
     dragHandleIcon?: string
 
@@ -199,7 +199,7 @@ export type FileUploadProps = Omit<HTMLAttributes<HTMLElement>, 'class' | 'child
 
     /**
      * Icon displayed for non-image files.
-     * @default 'lucide:file'
+     * @default 'icon-[lucide--file]'
      */
     fileIcon?: string
 

@@ -200,7 +200,7 @@ const classes = $derived.by(() => {
                                 {#if item.icon}
                                     <Icon name={item.icon} />
                                 {:else if state === 'completed'}
-                                    <Icon name="lucide:check" />
+                                    <Icon name="icon-[lucide--check]" />
                                 {:else}
                                     {number}
                                 {/if}

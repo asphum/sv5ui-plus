@@ -34,7 +34,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'paragraph',
             label: 'Text',
             description: 'Plain paragraph',
-            icon: 'lucide:pilcrow',
+            icon: 'icon-[lucide--pilcrow]',
             keywords: ['p', 'text', 'paragraph'],
             run: ({ editor }) => editor.chain().focus().setParagraph().run()
         },
@@ -42,7 +42,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'h1',
             label: 'Heading 1',
             description: 'Large section heading',
-            icon: 'lucide:heading-1',
+            icon: 'icon-[lucide--heading-1]',
             keywords: ['h1', 'header', 'title'],
             run: ({ editor }) => editor.chain().focus().toggleHeading({ level: 1 }).run()
         },
@@ -50,7 +50,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'h2',
             label: 'Heading 2',
             description: 'Medium section heading',
-            icon: 'lucide:heading-2',
+            icon: 'icon-[lucide--heading-2]',
             keywords: ['h2', 'subtitle'],
             run: ({ editor }) => editor.chain().focus().toggleHeading({ level: 2 }).run()
         },
@@ -58,7 +58,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'h3',
             label: 'Heading 3',
             description: 'Small section heading',
-            icon: 'lucide:heading-3',
+            icon: 'icon-[lucide--heading-3]',
             keywords: ['h3'],
             run: ({ editor }) => editor.chain().focus().toggleHeading({ level: 3 }).run()
         },
@@ -66,7 +66,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'bulletList',
             label: 'Bullet list',
             description: 'Unordered list',
-            icon: 'lucide:list',
+            icon: 'icon-[lucide--list]',
             keywords: ['ul', 'bullet', 'list'],
             run: ({ editor }) => editor.chain().focus().toggleBulletList().run()
         },
@@ -74,7 +74,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'orderedList',
             label: 'Numbered list',
             description: 'Ordered list',
-            icon: 'lucide:list-ordered',
+            icon: 'icon-[lucide--list-ordered]',
             keywords: ['ol', 'numbered', 'ordered'],
             run: ({ editor }) => editor.chain().focus().toggleOrderedList().run()
         },
@@ -82,7 +82,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'blockquote',
             label: 'Quote',
             description: 'Highlight a passage',
-            icon: 'lucide:quote',
+            icon: 'icon-[lucide--quote]',
             keywords: ['quote', 'blockquote'],
             run: ({ editor }) => editor.chain().focus().toggleBlockquote().run()
         },
@@ -90,7 +90,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'codeBlock',
             label: 'Code block',
             description: 'Fenced code with syntax highlighting',
-            icon: 'lucide:square-code',
+            icon: 'icon-[lucide--square-code]',
             keywords: ['code', 'pre', 'fence'],
             run: ({ editor }) => editor.chain().focus().toggleCodeBlock().run()
         },
@@ -98,7 +98,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'horizontalRule',
             label: 'Divider',
             description: 'Horizontal rule',
-            icon: 'lucide:minus',
+            icon: 'icon-[lucide--minus]',
             keywords: ['hr', 'divider', 'rule', 'separator'],
             run: ({ editor }) => editor.chain().focus().setHorizontalRule().run()
         }
@@ -111,7 +111,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'image',
             label: 'Image',
             description: 'Insert an image from URL',
-            icon: 'lucide:image',
+            icon: 'icon-[lucide--image]',
             keywords: ['image', 'picture', 'photo'],
             run: async ({ editor }) => {
                 const url = await promptUrl({
@@ -130,7 +130,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'table',
             label: 'Table',
             description: 'Insert a 3×3 table',
-            icon: 'lucide:table',
+            icon: 'icon-[lucide--table]',
             keywords: ['table', 'grid'],
             run: ({ editor }) => {
                 editor.chain().focus().insertTable({ rows: 3, cols: 3, withHeaderRow: true }).run()
@@ -143,7 +143,7 @@ export function buildDefaultSlashCommands(ctx: SlashCommandsContext = {}): Slash
             id: 'youtube',
             label: 'YouTube',
             description: 'Embed a YouTube video',
-            icon: 'lucide:youtube',
+            icon: 'icon-[lucide--youtube]',
             keywords: ['youtube', 'video', 'embed'],
             run: async ({ editor }) => {
                 const url = await promptUrl({

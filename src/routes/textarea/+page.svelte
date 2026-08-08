@@ -53,7 +53,7 @@
         <div class="max-w-sm space-y-3">
             <Textarea
                 bind:value={bindValue}
-                leadingIcon="lucide:pencil"
+                leadingIcon="icon-[lucide--pencil]"
                 placeholder="Type something..."
             />
             <p class="text-sm text-on-surface-variant">
@@ -207,15 +207,15 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <Textarea leadingIcon="lucide:message-square" placeholder="Comment..." rows={2} />
+                <Textarea leadingIcon="icon-[lucide--message-square]" placeholder="Comment..." rows={2} />
             </div>
             <div class="w-64">
-                <Textarea trailingIcon="lucide:send" placeholder="Message..." rows={2} />
+                <Textarea trailingIcon="icon-[lucide--send]" placeholder="Message..." rows={2} />
             </div>
             <div class="w-64">
                 <Textarea
-                    leadingIcon="lucide:file-text"
-                    trailingIcon="lucide:check"
+                    leadingIcon="icon-[lucide--file-text]"
+                    trailingIcon="icon-[lucide--check]"
                     placeholder="Description..."
                     rows={2}
                 />
@@ -239,10 +239,10 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <Textarea icon="lucide:pencil" placeholder="Leading icon" rows={2} />
+                <Textarea icon="icon-[lucide--pencil]" placeholder="Leading icon" rows={2} />
             </div>
             <div class="w-64">
-                <Textarea icon="lucide:pencil" trailing placeholder="Trailing icon" rows={2} />
+                <Textarea icon="icon-[lucide--pencil]" trailing placeholder="Trailing icon" rows={2} />
             </div>
         </div>
     </section>
@@ -334,7 +334,7 @@
                 description="Provide a detailed description of the issue."
                 required
             >
-                <Textarea leadingIcon="lucide:file-text" placeholder="Describe the issue..." />
+                <Textarea leadingIcon="icon-[lucide--file-text]" placeholder="Describe the issue..." />
             </FormField>
 
             <FormField
@@ -404,8 +404,8 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Chat message input</p>
                 <div class="max-w-md">
                     <Textarea
-                        leadingIcon="lucide:message-square"
-                        trailingIcon="lucide:send"
+                        leadingIcon="icon-[lucide--message-square]"
+                        trailingIcon="icon-[lucide--send]"
                         placeholder="Type a message..."
                         autoresize
                         maxrows={5}

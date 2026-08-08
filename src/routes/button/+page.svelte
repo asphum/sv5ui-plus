@@ -255,8 +255,8 @@
         <div
             class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4"
         >
-            <Button icon="lucide:rocket" label="Launch" />
-            <Button icon="lucide:arrow-right" trailing label="Next" />
+            <Button icon="icon-[lucide--rocket]" label="Launch" />
+            <Button icon="icon-[lucide--arrow-right]" trailing label="Next" />
         </div>
     </section>
 
@@ -286,18 +286,18 @@
         <div
             class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4"
         >
-            <Button leadingIcon="lucide:plus" label="Add Item" />
+            <Button leadingIcon="icon-[lucide--plus]" label="Add Item" />
             <Button
                 variant="outline"
                 color="secondary"
-                trailingIcon="lucide:arrow-right"
+                trailingIcon="icon-[lucide--arrow-right]"
                 label="Next"
             />
             <Button
                 variant="soft"
                 color="success"
-                leadingIcon="lucide:check"
-                trailingIcon="lucide:chevron-down"
+                leadingIcon="icon-[lucide--check]"
+                trailingIcon="icon-[lucide--chevron-down]"
                 label="Confirm"
             />
         </div>
@@ -332,23 +332,23 @@
             class="flex flex-wrap items-end gap-3 rounded-lg bg-surface-container-high p-4"
         >
             {#each sizes as size (size)}
-                <Button {size} icon="lucide:plus" square />
+                <Button {size} icon="icon-[lucide--plus]" square />
             {/each}
             <span class="mx-2 text-on-surface-variant">|</span>
             <Button
                 variant="outline"
                 color="secondary"
-                icon="lucide:settings"
+                icon="icon-[lucide--settings]"
                 square
             />
-            <Button variant="soft" color="success" icon="lucide:check" square />
+            <Button variant="soft" color="success" icon="icon-[lucide--check]" square />
             <Button
                 variant="subtle"
                 color="warning"
-                icon="lucide:alert-triangle"
+                icon="icon-[lucide--alert-triangle]"
                 square
             />
-            <Button variant="ghost" color="error" icon="lucide:x" square />
+            <Button variant="ghost" color="error" icon="icon-[lucide--x]" square />
         </div>
     </section>
 
@@ -382,23 +382,23 @@
             class="flex flex-wrap items-end gap-3 rounded-lg bg-surface-container-high p-4"
         >
             {#each sizes as size (size)}
-                <Button {size} icon="lucide:plus" circle />
+                <Button {size} icon="icon-[lucide--plus]" circle />
             {/each}
             <span class="mx-2 text-on-surface-variant">|</span>
             <Button
                 variant="outline"
                 color="secondary"
-                icon="lucide:settings"
+                icon="icon-[lucide--settings]"
                 circle
             />
-            <Button variant="soft" color="success" icon="lucide:check" circle />
+            <Button variant="soft" color="success" icon="icon-[lucide--check]" circle />
             <Button
                 variant="subtle"
                 color="warning"
-                icon="lucide:alert-triangle"
+                icon="icon-[lucide--alert-triangle]"
                 circle
             />
-            <Button variant="ghost" color="error" icon="lucide:x" circle />
+            <Button variant="ghost" color="error" icon="icon-[lucide--x]" circle />
         </div>
     </section>
 
@@ -450,7 +450,7 @@
                 color="secondary"
                 avatar={{ src: "https://i.pravatar.cc/150?img=5", alt: "User" }}
                 label="Profile"
-                trailingIcon="lucide:chevron-down"
+                trailingIcon="icon-[lucide--chevron-down]"
             />
         </div>
 
@@ -512,7 +512,7 @@
                 variant="soft"
                 color="success"
                 loading
-                icon="lucide:loader-circle"
+                icon="icon-[lucide--loader-circle]"
                 square
             />
             <Button
@@ -555,7 +555,7 @@
             <Button
                 loadingAuto
                 label="Save (2s)"
-                leadingIcon="lucide:save"
+                leadingIcon="icon-[lucide--save]"
                 onclick={() => new Promise((r) => setTimeout(r, 2000))}
             />
             <Button
@@ -570,7 +570,7 @@
                 color="error"
                 loadingAuto
                 label="Delete (1s)"
-                leadingIcon="lucide:trash-2"
+                leadingIcon="icon-[lucide--trash-2]"
                 onclick={() => new Promise((r) => setTimeout(r, 1000))}
             />
         </div>
@@ -629,8 +629,8 @@
                 variant="outline"
                 color="secondary"
                 block
-                leadingIcon="lucide:mail"
-                trailingIcon="lucide:arrow-right"
+                leadingIcon="icon-[lucide--mail]"
+                trailingIcon="icon-[lucide--arrow-right]"
                 label="Send Email"
             />
         </div>
@@ -676,14 +676,14 @@
                 color="secondary"
                 href="https://svelte.dev"
                 label="External Link"
-                trailingIcon="lucide:external-link"
+                trailingIcon="icon-[lucide--external-link]"
             />
             <Button
                 variant="soft"
                 color="info"
                 href="/button"
                 label="Current Page"
-                leadingIcon="lucide:link"
+                leadingIcon="icon-[lucide--link]"
             />
             <Button
                 variant="ghost"
@@ -954,13 +954,13 @@
                 activeColor="primary"
                 activeVariant="solid"
                 label="Dashboard"
-                leadingIcon="lucide:home"
+                leadingIcon="icon-[lucide--home]"
             />
             <Button
                 variant="ghost"
                 color="secondary"
                 label="Settings"
-                leadingIcon="lucide:settings"
+                leadingIcon="icon-[lucide--settings]"
             />
             <Button
                 variant="ghost"
@@ -969,13 +969,13 @@
                 activeColor="error"
                 activeVariant="soft"
                 label="Alerts"
-                leadingIcon="lucide:bell"
+                leadingIcon="icon-[lucide--bell]"
             />
             <Button
                 variant="ghost"
                 color="secondary"
                 label="Profile"
-                leadingIcon="lucide:user"
+                leadingIcon="icon-[lucide--user]"
             />
         </div>
     </section>
@@ -1004,7 +1004,7 @@
             class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4"
         >
             <Button>
-                <Icon name="lucide:sparkles" size="16" />
+                <Icon name="icon-[lucide--sparkles]" size="16" />
                 <span>Custom Content</span>
             </Button>
             <Button variant="outline" color="tertiary">
@@ -1069,7 +1069,7 @@
             <Button
                 variant="ghost"
                 color="secondary"
-                leadingIcon="lucide:bell"
+                leadingIcon="icon-[lucide--bell]"
                 trailingSlot={badgeSlot}
                 label="Notifications"
             />
@@ -1083,7 +1083,7 @@
             <Button
                 variant="outline"
                 color="secondary"
-                leadingIcon="lucide:search"
+                leadingIcon="icon-[lucide--search]"
                 trailingSlot={kbdSlot}
                 label="Search"
             />
@@ -1189,7 +1189,7 @@
             <Button
                 variant="outline"
                 color="secondary"
-                leadingIcon="lucide:settings"
+                leadingIcon="icon-[lucide--settings]"
                 label="Hover Rotate"
                 ui={{
                     leadingIcon:
@@ -1200,21 +1200,21 @@
             <Button
                 variant="soft"
                 color="success"
-                leadingIcon="lucide:bell"
+                leadingIcon="icon-[lucide--bell]"
                 label="Bouncing"
                 ui={{ leadingIcon: "animate-bounce" }}
             />
             <Button
                 variant="outline"
                 color="secondary"
-                leadingIcon="lucide:heart"
+                leadingIcon="icon-[lucide--heart]"
                 label="Colored Icon"
                 ui={{ leadingIcon: "text-error" }}
             />
             <Button
                 variant="solid"
                 color="info"
-                trailingIcon="lucide:arrow-right"
+                trailingIcon="icon-[lucide--arrow-right]"
                 label="Hover Slide"
                 ui={{
                     trailingIcon:
@@ -1246,13 +1246,13 @@
                 Action bar
             </p>
             <div class="flex items-center gap-2">
-                <Button leadingIcon="lucide:save" label="Save" />
+                <Button leadingIcon="icon-[lucide--save]" label="Save" />
                 <Button variant="outline" color="secondary" label="Cancel" />
                 <div class="flex-1"></div>
                 <Button
                     variant="ghost"
                     color="error"
-                    leadingIcon="lucide:trash-2"
+                    leadingIcon="icon-[lucide--trash-2]"
                     label="Delete"
                 />
             </div>
@@ -1272,21 +1272,21 @@
                     activeVariant="soft"
                     href="/button"
                     label="Dashboard"
-                    leadingIcon="lucide:home"
+                    leadingIcon="icon-[lucide--home]"
                 />
                 <Button
                     variant="ghost"
                     color="secondary"
                     href="/link"
                     label="Links"
-                    leadingIcon="lucide:link"
+                    leadingIcon="icon-[lucide--link]"
                 />
                 <Button
                     variant="ghost"
                     color="secondary"
                     href="/settings"
                     label="Settings"
-                    leadingIcon="lucide:settings"
+                    leadingIcon="icon-[lucide--settings]"
                 />
             </div>
         </div>
@@ -1326,7 +1326,7 @@
                 <Button
                     variant="ghost"
                     color="secondary"
-                    icon="lucide:chevron-left"
+                    icon="icon-[lucide--chevron-left]"
                     square
                 />
                 <Button variant="ghost" color="secondary" label="1" />
@@ -1337,7 +1337,7 @@
                 <Button
                     variant="ghost"
                     color="secondary"
-                    icon="lucide:chevron-right"
+                    icon="icon-[lucide--chevron-right]"
                     square
                 />
             </div>

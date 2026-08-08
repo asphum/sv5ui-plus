@@ -268,15 +268,15 @@
         </p>
         <div class="flex flex-wrap items-center gap-6 rounded-lg bg-surface-container-high p-4">
             <Link href="https://svelte.dev">
-                <Icon name="lucide:external-link" size="14" class="mr-1" />
+                <Icon name="icon-[lucide--external-link]" size="14" class="mr-1" />
                 Svelte (auto)
             </Link>
             <Link href="https://tailwindcss.com">
-                <Icon name="lucide:external-link" size="14" class="mr-1" />
+                <Icon name="icon-[lucide--external-link]" size="14" class="mr-1" />
                 Tailwind CSS (auto)
             </Link>
             <Link href="/api/docs" external>
-                <Icon name="lucide:external-link" size="14" class="mr-1" />
+                <Icon name="icon-[lucide--external-link]" size="14" class="mr-1" />
                 API Docs (forced)
             </Link>
         </div>
@@ -447,7 +447,7 @@
                     inactiveClass="text-on-surface-variant hover:bg-surface-container-highest"
                     class="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors"
                 >
-                    <Icon name="lucide:layout-dashboard" size="16" />
+                    <Icon name="icon-[lucide--layout-dashboard]" size="16" />
                     Dashboard
                 </Link>
                 <Link
@@ -457,7 +457,7 @@
                     inactiveClass="text-on-surface-variant hover:bg-surface-container-highest"
                     class="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors"
                 >
-                    <Icon name="lucide:settings" size="16" />
+                    <Icon name="icon-[lucide--settings]" size="16" />
                     Settings
                 </Link>
                 <Link
@@ -467,7 +467,7 @@
                     inactiveClass="text-on-surface-variant hover:bg-surface-container-highest"
                     class="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors"
                 >
-                    <Icon name="lucide:user" size="16" />
+                    <Icon name="icon-[lucide--user]" size="16" />
                     Profile
                 </Link>
             </div>
@@ -478,9 +478,9 @@
             <p class="text-xs font-medium text-on-surface-variant uppercase">Breadcrumb</p>
             <nav class="flex items-center gap-1 text-sm">
                 <Link href="/">Home</Link>
-                <Icon name="lucide:chevron-right" size="14" class="text-on-surface-variant/50" />
+                <Icon name="icon-[lucide--chevron-right]" size="14" class="text-on-surface-variant/50" />
                 <Link href="/link">Components</Link>
-                <Icon name="lucide:chevron-right" size="14" class="text-on-surface-variant/50" />
+                <Icon name="icon-[lucide--chevron-right]" size="14" class="text-on-surface-variant/50" />
                 <span class="text-on-surface">Link</span>
             </nav>
         </div>
@@ -490,12 +490,12 @@
             <p class="text-xs font-medium text-on-surface-variant uppercase">Footer links</p>
             <div class="flex items-center gap-4 text-sm">
                 <Link href="https://github.com">
-                    <Icon name="lucide:github" size="14" class="mr-1" />
+                    <Icon name="icon-[lucide--github]" size="14" class="mr-1" />
                     GitHub
                 </Link>
                 <span class="text-outline-variant">|</span>
                 <Link href="https://svelte.dev">
-                    <Icon name="lucide:external-link" size="14" class="mr-1" />
+                    <Icon name="icon-[lucide--external-link]" size="14" class="mr-1" />
                     Svelte
                 </Link>
                 <span class="text-outline-variant">|</span>

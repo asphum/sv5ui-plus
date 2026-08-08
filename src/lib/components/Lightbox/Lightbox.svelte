@@ -68,14 +68,14 @@
         next: icons?.next ?? baseIcons.chevronRight,
         close: icons?.close ?? baseIcons.close,
         zoomIn: icons?.zoomIn ?? baseIcons.zoomIn,
-        zoomOut: icons?.zoomOut ?? 'lucide:zoom-out',
-        zoomReset: icons?.zoomReset ?? 'lucide:maximize',
-        rotate: icons?.rotate ?? 'lucide:rotate-cw',
-        play: icons?.play ?? 'lucide:play',
-        pause: icons?.pause ?? 'lucide:pause',
-        fullscreenEnter: icons?.fullscreenEnter ?? 'lucide:expand',
-        fullscreenExit: icons?.fullscreenExit ?? 'lucide:shrink',
-        download: icons?.download ?? 'lucide:download'
+        zoomOut: icons?.zoomOut ?? 'icon-[lucide--zoom-out]',
+        zoomReset: icons?.zoomReset ?? 'icon-[lucide--maximize]',
+        rotate: icons?.rotate ?? 'icon-[lucide--rotate-cw]',
+        play: icons?.play ?? 'icon-[lucide--play]',
+        pause: icons?.pause ?? 'icon-[lucide--pause]',
+        fullscreenEnter: icons?.fullscreenEnter ?? 'icon-[lucide--expand]',
+        fullscreenExit: icons?.fullscreenExit ?? 'icon-[lucide--shrink]',
+        download: icons?.download ?? 'icon-[lucide--download]'
     })
 
     const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
@@ -118,11 +118,11 @@
     }
 
     function fallbackIcon(slide: LightboxSlideItem, hadSource: boolean): string {
-        if (hadSource) return 'lucide:image-off'
+        if (hadSource) return 'icon-[lucide--image-off]'
         const type = slide.type ?? 'image'
-        if (type === 'video') return 'lucide:circle-play'
-        if (type === 'iframe') return 'lucide:play'
-        return 'lucide:image-off'
+        if (type === 'video') return 'icon-[lucide--circle-play]'
+        if (type === 'iframe') return 'icon-[lucide--play]'
+        return 'icon-[lucide--image-off]'
     }
 
     const slideshowDelay = $derived(

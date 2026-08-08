@@ -15,15 +15,15 @@
     const items: NavigationMenuItem[][] = [
         [
             { label: 'General', type: 'label' },
-            { label: 'Dashboard', icon: 'lucide:layout-dashboard', href: '/sidebar' },
-            { label: 'Inbox', icon: 'lucide:inbox', href: '/inbox', badge: 12 },
-            { label: 'Projects', icon: 'lucide:folder', href: '/projects' }
+            { label: 'Dashboard', icon: 'icon-[lucide--layout-dashboard]', href: '/sidebar' },
+            { label: 'Inbox', icon: 'icon-[lucide--inbox]', href: '/inbox', badge: 12 },
+            { label: 'Projects', icon: 'icon-[lucide--folder]', href: '/projects' }
         ],
         [
             { label: 'Workspace', type: 'label' },
             {
                 label: 'Settings',
-                icon: 'lucide:settings',
+                icon: 'icon-[lucide--settings]',
                 defaultOpen: true,
                 children: [
                     { label: 'Profile', href: '/settings/profile' },
@@ -33,13 +33,13 @@
             },
             {
                 label: 'Resources',
-                icon: 'lucide:book-open',
+                icon: 'icon-[lucide--book-open]',
                 children: [
                     { label: 'Documentation', href: '/docs' },
                     { label: 'Changelog', href: '/changelog' }
                 ]
             },
-            { label: 'Support', icon: 'lucide:life-buoy', href: '/support' }
+            { label: 'Support', icon: 'icon-[lucide--life-buoy]', href: '/support' }
         ]
     ]
 
@@ -73,9 +73,9 @@
 
     const projectItems: NavigationMenuItem[] = [
         { label: 'Projects', type: 'label' },
-        { label: 'Website', icon: 'lucide:globe', href: '/p/website' },
-        { label: 'Mobile App', icon: 'lucide:smartphone', href: '/p/mobile' },
-        { label: 'Design System', icon: 'lucide:palette', href: '/p/design' }
+        { label: 'Website', icon: 'icon-[lucide--globe]', href: '/p/website' },
+        { label: 'Mobile App', icon: 'icon-[lucide--smartphone]', href: '/p/mobile' },
+        { label: 'Design System', icon: 'icon-[lucide--palette]', href: '/p/design' }
     ]
 
     let variant = $state<NonNullable<SidebarProps['variant']>>('sidebar')
@@ -90,10 +90,10 @@
     let appApi = $state<SidebarApi>()
 
     const stats = [
-        { label: 'Revenue', value: '$48.2k', delta: '+12.5%', icon: 'lucide:dollar-sign' },
-        { label: 'Users', value: '2,340', delta: '+3.1%', icon: 'lucide:users' },
-        { label: 'Orders', value: '1,204', delta: '-1.8%', icon: 'lucide:shopping-cart' },
-        { label: 'Churn', value: '0.8%', delta: '-0.2%', icon: 'lucide:trending-down' }
+        { label: 'Revenue', value: '$48.2k', delta: '+12.5%', icon: 'icon-[lucide--dollar-sign]' },
+        { label: 'Users', value: '2,340', delta: '+3.1%', icon: 'icon-[lucide--users]' },
+        { label: 'Orders', value: '1,204', delta: '-1.8%', icon: 'icon-[lucide--shopping-cart]' },
+        { label: 'Churn', value: '0.8%', delta: '-0.2%', icon: 'icon-[lucide--trending-down]' }
     ]
 
     function cycle<T>(list: T[], current: T): T {
@@ -142,7 +142,7 @@
 {/snippet}
 
 {#snippet rowActions()}
-    <Button size="xs" variant="ghost" color="secondary" icon="lucide:ellipsis" />
+    <Button size="xs" variant="ghost" color="secondary" icon="icon-[lucide--ellipsis]" />
 {/snippet}
 
 <div class="space-y-10">
@@ -190,8 +190,8 @@
                         </div>
                     {/snippet}
                     {#snippet right()}
-                        <Button size="sm" variant="ghost" color="secondary" icon="lucide:search" />
-                        <Button size="sm" variant="ghost" color="secondary" icon="lucide:bell" />
+                        <Button size="sm" variant="ghost" color="secondary" icon="icon-[lucide--search]" />
+                        <Button size="sm" variant="ghost" color="secondary" icon="icon-[lucide--bell]" />
                         <Avatar src="https://i.pravatar.cc/64?img=12" alt="User" size="xs" />
                     {/snippet}
                 </Header>
@@ -280,7 +280,7 @@
                         <span class="text-sm text-on-surface-variant">© 2026 SV5UI</span>
                     {/snippet}
                     {#snippet right()}
-                        <Button size="sm" variant="ghost" color="secondary" icon="lucide:github" />
+                        <Button size="sm" variant="ghost" color="secondary" icon="icon-[lucide--github]" />
                     {/snippet}
                     <div class="flex items-center gap-4 text-sm text-on-surface-variant">
                         <Link href="/getting-started" class="hover:text-on-surface">Docs</Link>
@@ -300,7 +300,7 @@
                 variant="soft"
                 color="secondary"
                 label={`Variant: ${variant}`}
-                icon="lucide:layout-template"
+                icon="icon-[lucide--layout-template]"
                 onclick={() => (variant = cycle(variants, variant))}
             />
             <Button
@@ -308,7 +308,7 @@
                 variant="soft"
                 color="secondary"
                 label={`Side: ${side}`}
-                icon="lucide:flip-horizontal"
+                icon="icon-[lucide--flip-horizontal]"
                 onclick={() => (side = side === 'left' ? 'right' : 'left')}
             />
             <Button
@@ -316,7 +316,7 @@
                 variant="soft"
                 color="secondary"
                 label={`Collapsible: ${collapsible}`}
-                icon="lucide:columns-2"
+                icon="icon-[lucide--columns-2]"
                 onclick={() => (collapsible = collapsible === 'icon' ? 'offcanvas' : 'icon')}
             />
             <Button
@@ -324,7 +324,7 @@
                 variant="soft"
                 color="secondary"
                 label={collapsed ? 'Expand' : 'Collapse'}
-                icon={collapsed ? 'lucide:panel-left-open' : 'lucide:panel-left-close'}
+                icon={collapsed ? 'icon-[lucide--panel-left-open]' : 'icon-[lucide--panel-left-close]'}
                 onclick={() => (collapsed = !collapsed)}
             />
         </div>
@@ -428,7 +428,7 @@
                 class="static! h-auto!"
             >
                 {#snippet actions()}
-                    <Button size="sm" variant="ghost" color="secondary" icon="lucide:search" />
+                    <Button size="sm" variant="ghost" color="secondary" icon="icon-[lucide--search]" />
                 {/snippet}
             </Sidebar>
             {@render stage(
@@ -562,7 +562,7 @@
             <SidebarTrigger
                 bind:open
                 breakpoint="xl"
-                icon="lucide:menu"
+                icon="icon-[lucide--menu]"
                 label="Open menu"
                 color="primary"
                 variant="solid"
@@ -572,7 +572,7 @@
                 variant="soft"
                 color="secondary"
                 label={`Mode: ${mode}`}
-                icon="lucide:panels-top-left"
+                icon="icon-[lucide--panels-top-left]"
                 onclick={() => (mode = cycle(modes, mode))}
             />
             <Button
@@ -580,7 +580,7 @@
                 variant="soft"
                 color="secondary"
                 label={`Side: ${mobileSide}`}
-                icon="lucide:flip-horizontal"
+                icon="icon-[lucide--flip-horizontal]"
                 onclick={() => (mobileSide = mobileSide === 'left' ? 'right' : 'left')}
             />
         </div>

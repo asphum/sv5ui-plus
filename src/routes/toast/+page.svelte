@@ -327,7 +327,7 @@
             <Card class="space-y-4 p-4">
                 <div class="flex items-center gap-3 border-b border-outline-variant/30 pb-4">
                     <div class="rounded-lg bg-primary/10 p-2">
-                        <Icon name="lucide:bell" size="24" class="text-primary" />
+                        <Icon name="icon-[lucide--bell]" size="24" class="text-primary" />
                     </div>
                     <h2 class="text-xl font-bold">Toast</h2>
                 </div>
@@ -338,7 +338,7 @@
                             color="success"
                             variant="soft"
                             size="sm"
-                            leadingIcon="lucide:check-circle"
+                            leadingIcon="icon-[lucide--check-circle]"
                             label="Success"
                             onclick={showNotifySuccess}
                         />
@@ -346,7 +346,7 @@
                             color="error"
                             variant="soft"
                             size="sm"
-                            leadingIcon="lucide:x-circle"
+                            leadingIcon="icon-[lucide--x-circle]"
                             label="Error"
                             onclick={showNotifyError}
                         />
@@ -354,7 +354,7 @@
                             color="warning"
                             variant="soft"
                             size="sm"
-                            leadingIcon="lucide:triangle-alert"
+                            leadingIcon="icon-[lucide--triangle-alert]"
                             label="Warning"
                             onclick={showNotifyWarning}
                         />
@@ -362,7 +362,7 @@
                             color="info"
                             variant="soft"
                             size="sm"
-                            leadingIcon="lucide:info"
+                            leadingIcon="icon-[lucide--info]"
                             label="Info"
                             onclick={showNotifyInfo}
                         />
@@ -374,28 +374,28 @@
                         <Button
                             variant="outline"
                             size="sm"
-                            leadingIcon="lucide:loader-circle"
+                            leadingIcon="icon-[lucide--loader-circle]"
                             label="Promise"
                             onclick={testNotifyPromise}
                         />
                         <Button
                             variant="outline"
                             size="sm"
-                            leadingIcon="lucide:message-square"
+                            leadingIcon="icon-[lucide--message-square]"
                             label="Default"
                             onclick={showNotifyDefault}
                         />
                         <Button
                             variant="outline"
                             size="sm"
-                            leadingIcon="lucide:loader"
+                            leadingIcon="icon-[lucide--loader]"
                             label="Loading"
                             onclick={showNotifyLoading}
                         />
                         <Button
                             variant="outline"
                             size="sm"
-                            leadingIcon="lucide:refresh-cw"
+                            leadingIcon="icon-[lucide--refresh-cw]"
                             label="Processing"
                             onclick={showNotifyProcessing}
                         />
@@ -406,7 +406,7 @@
             <Card class="space-y-4 p-4">
                 <div class="flex items-center gap-3 border-b border-outline-variant/30 pb-4">
                     <div class="rounded-lg bg-secondary/10 p-2">
-                        <Icon name="lucide:messages-square" size="24" class="text-secondary" />
+                        <Icon name="icon-[lucide--messages-square]" size="24" class="text-secondary" />
                     </div>
                     <h2 class="text-xl font-bold">Dialog</h2>
                 </div>
@@ -422,7 +422,7 @@
                         color="secondary"
                         variant="soft"
                         size="sm"
-                        leadingIcon="lucide:circle-help"
+                        leadingIcon="icon-[lucide--circle-help]"
                         label="Confirm"
                         onclick={testConfirm}
                     />
@@ -430,7 +430,7 @@
                         color="error"
                         variant="soft"
                         size="sm"
-                        leadingIcon="lucide:trash-2"
+                        leadingIcon="icon-[lucide--trash-2]"
                         label="Delete"
                         onclick={testDelete}
                     />
@@ -438,7 +438,7 @@
                         color="success"
                         variant="soft"
                         size="sm"
-                        leadingIcon="lucide:check"
+                        leadingIcon="icon-[lucide--check]"
                         label="Success alert"
                         onclick={testSuccessAlert}
                     />
@@ -446,7 +446,7 @@
                         color="warning"
                         variant="soft"
                         size="sm"
-                        leadingIcon="lucide:shield-alert"
+                        leadingIcon="icon-[lucide--shield-alert]"
                         label="Warning choice"
                         onclick={testWarningConfirm}
                     />
@@ -458,14 +458,14 @@
             <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
                 <div class="flex items-center gap-3">
                     <div class="rounded-lg bg-tertiary/10 p-2">
-                        <Icon name="lucide:sparkles" size="24" class="text-tertiary" />
+                        <Icon name="icon-[lucide--sparkles]" size="24" class="text-tertiary" />
                     </div>
                     <h2 class="text-2xl font-bold">Animated Icons</h2>
                 </div>
                 <Button
                     variant="ghost"
                     size="sm"
-                    leadingIcon="lucide:refresh-cw"
+                    leadingIcon="icon-[lucide--refresh-cw]"
                     label="Replay all"
                     onclick={replayAnimations}
                 />
@@ -492,7 +492,7 @@
         <div
             class="flex items-start gap-3 rounded-xl border border-info/20 bg-info/10 p-4 text-info"
         >
-            <Icon name="lucide:info" size="24" class="mt-0.5 shrink-0" />
+            <Icon name="icon-[lucide--info]" size="24" class="mt-0.5 shrink-0" />
             <div class="space-y-1">
                 <p class="font-bold">Pro tip</p>
                 <p class="text-sm text-on-surface-variant">
@@ -944,8 +944,8 @@
                     variant="outline"
                     onclick={() =>
                         toast("Rocket launched!", {
-                            description: 'icon: "lucide:rocket"',
-                            icon: "lucide:rocket",
+                            description: 'icon: "icon-[lucide--rocket]"',
+                            icon: "icon-[lucide--rocket]",
                         })}
                 >
                     Rocket
@@ -954,8 +954,8 @@
                     variant="outline"
                     onclick={() =>
                         toast.success("Git push complete", {
-                            description: 'icon: "lucide:git-branch"',
-                            icon: "lucide:git-branch",
+                            description: 'icon: "icon-[lucide--git-branch]"',
+                            icon: "icon-[lucide--git-branch]",
                         })}
                 >
                     Git Branch
@@ -964,8 +964,8 @@
                     variant="outline"
                     onclick={() =>
                         toast.warning("Battery low", {
-                            description: 'icon: "lucide:battery-low"',
-                            icon: "lucide:battery-low",
+                            description: 'icon: "icon-[lucide--battery-low]"',
+                            icon: "icon-[lucide--battery-low]",
                         })}
                 >
                     Battery
@@ -974,8 +974,8 @@
                     variant="outline"
                     onclick={() =>
                         toast.error("Server offline", {
-                            description: 'icon: "lucide:server-off"',
-                            icon: "lucide:server-off",
+                            description: 'icon: "icon-[lucide--server-off]"',
+                            icon: "icon-[lucide--server-off]",
                         })}
                 >
                     Server
@@ -1063,7 +1063,7 @@
                 onclick={() =>
                     toast.success("Team joined!", {
                         description: "You are now a member of the Design team.",
-                        avatar: { icon: "lucide:users" },
+                        avatar: { icon: "icon-[lucide--users]" },
                     })}
             >
                 Icon Fallback

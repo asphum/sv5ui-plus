@@ -236,8 +236,8 @@
                 <div class="space-y-1">
                     <p class="text-sm font-medium text-on-surface-variant">Custom icons</p>
                     <InputNumber
-                        incrementIcon="lucide:chevron-right"
-                        decrementIcon="lucide:chevron-left"
+                        incrementIcon="icon-[lucide--chevron-right]"
+                        decrementIcon="icon-[lucide--chevron-left]"
                         value={42}
                     />
                 </div>

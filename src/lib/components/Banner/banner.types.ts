@@ -21,7 +21,7 @@ import type { BannerSlots, BannerVariantProps } from './banner.variants.js'
  * ```svelte
  * <Banner
  *   id="announce-2026-q2"
- *   icon="lucide:megaphone"
+ *   icon="icon-[lucide--megaphone]"
  *   title="New features available — check the changelog!"
  *   color="primary"
  *   close
@@ -95,7 +95,7 @@ export interface BannerProps extends Omit<HTMLAttributes<HTMLElement>, 'class' |
 
     /**
      * Override the close button icon.
-     * @default 'lucide:x' (from global icons config)
+     * @default 'icon-[lucide--x]' (from global icons config)
      */
     closeIcon?: string
 
@@ -111,7 +111,7 @@ export interface BannerProps extends Omit<HTMLAttributes<HTMLElement>, 'class' |
      *   title="Update available"
      *   actions={[
      *     { label: 'Learn more', variant: 'outline' },
-     *     { label: 'Update now', trailingIcon: 'lucide:arrow-right' }
+     *     { label: 'Update now', trailingIcon: 'icon-[lucide--arrow-right]' }
      *   ]}
      * />
      * ```

@@ -107,7 +107,7 @@
                 value={searchQuery}
                 oninput={handleSearch}
                 placeholder="Search something..."
-                leadingIcon="lucide:search"
+                leadingIcon="icon-[lucide--search]"
             />
             <div class="flex flex-wrap items-center gap-3">
                 <Badge
@@ -178,7 +178,7 @@
                 value={apiQuery}
                 oninput={handleApiSearch}
                 placeholder="Search users..."
-                leadingIcon="lucide:users"
+                leadingIcon="icon-[lucide--users]"
                 loading={apiLoading}
             />
 
@@ -188,7 +188,7 @@
                         <div
                             class="flex items-center gap-3 rounded-md bg-surface-container px-3 py-2"
                         >
-                            <Icon name="lucide:user" size="16" class="text-on-surface-variant" />
+                            <Icon name="icon-[lucide--user]" size="16" class="text-on-surface-variant" />
                             <span class="text-sm">{user.name}</span>
                         </div>
                     {/each}

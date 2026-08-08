@@ -12,16 +12,16 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  let value = $state('');
 </script>
 
-<Input bind:value leadingIcon="lucide:pencil" placeholder="Type something..." />
+<Input bind:value leadingIcon="icon-[lucide--pencil]" placeholder="Type something..." />
 <p>Value: {value || '(empty)'}</p>
 <p>Length: {value.length}</p>`,
     Icons: `<script lang="ts">
  import { Input } from 'svelora';
 </script>
 
-<Input leadingIcon="lucide:search" placeholder="Search..." />
-<Input trailingIcon="lucide:eye" placeholder="Password" type="password" />
-<Input leadingIcon="lucide:mail" trailingIcon="lucide:check" placeholder="Email" type="email" />`,
+<Input leadingIcon="icon-[lucide--search]" placeholder="Search..." />
+<Input trailingIcon="icon-[lucide--eye]" placeholder="Password" type="password" />
+<Input leadingIcon="icon-[lucide--mail]" trailingIcon="icon-[lucide--check]" placeholder="Email" type="email" />`,
     'FormField Integration': `<script lang="ts">
  import { Input, FormField } from 'svelora';
 </script>
@@ -31,7 +31,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  description="We will use this to send you notifications."
  required
 >
- <Input leadingIcon="lucide:mail" placeholder="Enter your email" type="email" />
+ <Input leadingIcon="icon-[lucide--mail]" placeholder="Enter your email" type="email" />
 </FormField>
 
 <FormField
@@ -39,7 +39,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  help="Must be at least 8 characters."
  error="Password is too short."
 >
- <Input trailingIcon="lucide:eye" placeholder="Enter your password" type="password" />
+ <Input trailingIcon="icon-[lucide--eye]" placeholder="Enter your password" type="password" />
 </FormField>`,
     'FieldGroup Integration': `<script lang="ts">
  import { Input, FieldGroup } from 'svelora';
@@ -61,15 +61,15 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 </script>
 
 <FieldGroup>
- <Input leadingIcon="lucide:search" placeholder="Search products..." />
- <Input leadingIcon="lucide:map-pin" placeholder="Location" />
+ <Input leadingIcon="icon-[lucide--search]" placeholder="Search products..." />
+ <Input leadingIcon="icon-[lucide--map-pin]" placeholder="Location" />
 </FieldGroup>
 
 <FormField label="Email" required>
- <Input leadingIcon="lucide:mail" placeholder="john@example.com" type="email" />
+ <Input leadingIcon="icon-[lucide--mail]" placeholder="john@example.com" type="email" />
 </FormField>
 
 <FormField label="Password" required help="Must be at least 8 characters.">
- <Input leadingIcon="lucide:lock" placeholder="Enter your password" type="password" />
+ <Input leadingIcon="icon-[lucide--lock]" placeholder="Enter your password" type="password" />
 </FormField>`
 }

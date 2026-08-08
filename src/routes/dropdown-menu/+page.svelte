@@ -22,29 +22,29 @@
     const notificationItems: DropdownMenuItem[] = [
         { type: 'label', label: 'Notifications' },
         { type: 'separator' },
-        { label: 'Svelora v3.0.11 is out!', icon: 'lucide:rocket' },
-        { label: 'New component: BentoGrid', icon: 'lucide:layout-grid' },
-        { label: 'System maintenance scheduled', icon: 'lucide:wrench' },
+        { label: 'Svelora v3.0.11 is out!', icon: 'icon-[lucide--rocket]' },
+        { label: 'New component: BentoGrid', icon: 'icon-[lucide--layout-grid]' },
+        { label: 'System maintenance scheduled', icon: 'icon-[lucide--wrench]' },
         { type: 'separator' },
-        { label: 'Mark all as read', icon: 'lucide:check-check' }
+        { label: 'Mark all as read', icon: 'icon-[lucide--check-check]' }
     ]
 
     const basicItems: DropdownMenuItem[] = [
-        { label: 'New File', icon: 'lucide:file-plus', kbds: ['meta', 'n'] },
-        { label: 'New Window', icon: 'lucide:window', kbds: ['meta', 'shift', 'n'] },
+        { label: 'New File', icon: 'icon-[lucide--file-plus]', kbds: ['meta', 'n'] },
+        { label: 'New Window', icon: 'icon-[lucide--app-window]', kbds: ['meta', 'shift', 'n'] },
         { type: 'separator' },
-        { label: 'Open File...', icon: 'lucide:folder-open', kbds: ['meta', 'o'] },
-        { label: 'Save', icon: 'lucide:save', kbds: ['meta', 's'] },
+        { label: 'Open File...', icon: 'icon-[lucide--folder-open]', kbds: ['meta', 'o'] },
+        { label: 'Save', icon: 'icon-[lucide--save]', kbds: ['meta', 's'] },
         { type: 'separator' },
-        { label: 'Exit', icon: 'lucide:log-out' }
+        { label: 'Exit', icon: 'icon-[lucide--log-out]' }
     ]
 
     const coloredItems: DropdownMenuItem[] = [
-        { label: 'Edit', icon: 'lucide:pencil' },
-        { label: 'Duplicate', icon: 'lucide:copy' },
+        { label: 'Edit', icon: 'icon-[lucide--pencil]' },
+        { label: 'Duplicate', icon: 'icon-[lucide--copy]' },
         { type: 'separator' },
-        { label: 'Archive', icon: 'lucide:archive', color: 'warning' },
-        { label: 'Delete', icon: 'lucide:trash-2', color: 'error' }
+        { label: 'Archive', icon: 'icon-[lucide--archive]', color: 'warning' },
+        { label: 'Delete', icon: 'icon-[lucide--trash-2]', color: 'error' }
     ]
 
     const checkboxItems: DropdownMenuItem[] = $derived([
@@ -87,20 +87,20 @@
     const closeOnSelectItems: DropdownMenuItem[] = $derived([
         {
             label: 'Click me (stays open)',
-            icon: 'lucide:hand-metal',
+            icon: 'icon-[lucide--hand-metal]',
             closeOnSelect: false,
             onSelect: () => clickCount++
         },
         {
             label: 'Me too (stays open)',
-            icon: 'lucide:hand-metal',
+            icon: 'icon-[lucide--hand-metal]',
             closeOnSelect: false,
             onSelect: () => clickCount++
         },
         { type: 'separator' },
         {
             label: 'Click me (closes menu)',
-            icon: 'lucide:log-out',
+            icon: 'icon-[lucide--log-out]',
             onSelect: () => clickCount++
         }
     ])
@@ -131,14 +131,14 @@
     ])
 
     const submenuItems: DropdownMenuItem[] = [
-        { label: 'Back', icon: 'lucide:arrow-left', kbds: ['meta', '['] },
-        { label: 'Forward', icon: 'lucide:arrow-right', kbds: ['meta', ']'], disabled: true },
-        { label: 'Reload', icon: 'lucide:refresh-cw', kbds: ['meta', 'r'] },
+        { label: 'Back', icon: 'icon-[lucide--arrow-left]', kbds: ['meta', '['] },
+        { label: 'Forward', icon: 'icon-[lucide--arrow-right]', kbds: ['meta', ']'], disabled: true },
+        { label: 'Reload', icon: 'icon-[lucide--refresh-cw]', kbds: ['meta', 'r'] },
         { type: 'separator' },
         {
             type: 'sub',
             label: 'More Tools',
-            icon: 'lucide:wrench',
+            icon: 'icon-[lucide--wrench]',
             items: [
                 { label: 'Save Page As...', kbds: ['meta', 's'] },
                 { label: 'Create Shortcut...' },
@@ -151,29 +151,29 @@
 
     const profileItems: DropdownMenuItem[] = [
         { type: 'label', label: 'My Account' },
-        { label: 'Profile', icon: 'lucide:user', kbds: ['meta', 'p'] },
-        { label: 'Billing', icon: 'lucide:credit-card', kbds: ['meta', 'b'] },
-        { label: 'Settings', icon: 'lucide:settings', kbds: ['meta', ','] },
+        { label: 'Profile', icon: 'icon-[lucide--user]', kbds: ['meta', 'p'] },
+        { label: 'Billing', icon: 'icon-[lucide--credit-card]', kbds: ['meta', 'b'] },
+        { label: 'Settings', icon: 'icon-[lucide--settings]', kbds: ['meta', ','] },
         { type: 'separator' },
-        { label: 'Team', icon: 'lucide:users' },
+        { label: 'Team', icon: 'icon-[lucide--users]' },
         {
             type: 'sub',
             label: 'Invite users',
-            icon: 'lucide:user-plus',
+            icon: 'icon-[lucide--user-plus]',
             items: [
-                { label: 'Email', icon: 'lucide:mail' },
-                { label: 'Message', icon: 'lucide:message-square' },
+                { label: 'Email', icon: 'icon-[lucide--mail]' },
+                { label: 'Message', icon: 'icon-[lucide--message-square]' },
                 { type: 'separator' },
-                { label: 'More...', icon: 'lucide:plus-circle' }
+                { label: 'More...', icon: 'icon-[lucide--plus-circle]' }
             ]
         },
-        { label: 'New Team', icon: 'lucide:plus', kbds: ['meta', 't'] },
+        { label: 'New Team', icon: 'icon-[lucide--plus]', kbds: ['meta', 't'] },
         { type: 'separator' },
-        { label: 'GitHub', icon: 'lucide:github' },
-        { label: 'Support', icon: 'lucide:life-buoy' },
-        { label: 'API', icon: 'lucide:cloud', disabled: true },
+        { label: 'GitHub', icon: 'icon-[lucide--github]' },
+        { label: 'Support', icon: 'icon-[lucide--life-buoy]' },
+        { label: 'API', icon: 'icon-[lucide--cloud]', disabled: true },
         { type: 'separator' },
-        { label: 'Log out', icon: 'lucide:log-out', kbds: ['meta', 'shift', 'q'] }
+        { label: 'Log out', icon: 'icon-[lucide--log-out]', kbds: ['meta', 'shift', 'q'] }
     ]
 </script>
 
@@ -267,7 +267,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={coloredItems}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:more-horizontal"
+                    <Button {...props} variant="outline" icon="icon-[lucide--more-horizontal]"
                         >Actions</Button
                     >
                 {/snippet}
@@ -287,7 +287,7 @@
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={checkboxItems}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:layout">View</Button>
+                    <Button {...props} variant="outline" icon="icon-[lucide--layout]">View</Button>
                 {/snippet}
             </DropdownMenu>
             <div class="text-sm text-on-surface-variant">
@@ -310,7 +310,7 @@
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={radioItems} {radioGroups}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:sun-moon">Theme</Button>
+                    <Button {...props} variant="outline" icon="icon-[lucide--sun-moon]">Theme</Button>
                 {/snippet}
             </DropdownMenu>
             <div class="text-sm text-on-surface-variant">
@@ -330,7 +330,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={submenuItems}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:menu">Navigate</Button>
+                    <Button {...props} variant="outline" icon="icon-[lucide--menu]">Navigate</Button>
                 {/snippet}
             </DropdownMenu>
         </div>
@@ -354,14 +354,14 @@
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={closeOnSelectItems}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:mouse-pointer-click"
+                    <Button {...props} variant="outline" icon="icon-[lucide--mouse-pointer-click]"
                         >Actions</Button
                     >
                 {/snippet}
             </DropdownMenu>
             <DropdownMenu items={checkboxCloseOnSelectItems}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:check-square"
+                    <Button {...props} variant="outline" icon="icon-[lucide--check-square]"
                         >Multi-Select</Button
                     >
                 {/snippet}
@@ -429,7 +429,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <DropdownMenu items={basicItems.slice(0, 4)}>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:user-circle">Account</Button>
+                    <Button {...props} variant="outline" icon="icon-[lucide--user-circle]">Account</Button>
                 {/snippet}
                 {#snippet header()}
                     <div class="px-3 py-2">
@@ -445,7 +445,7 @@
                             variant="ghost"
                             size="sm"
                             class="w-full justify-start"
-                            icon="lucide:log-out"
+                            icon="icon-[lucide--log-out]"
                             color="error"
                             onclick={close}
                         >
@@ -473,7 +473,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <DropdownMenu>
                 {#snippet children({ props })}
-                    <Button {...props} variant="outline" icon="lucide:palette">Colors</Button>
+                    <Button {...props} variant="outline" icon="icon-[lucide--palette]">Colors</Button>
                 {/snippet}
                 {#snippet content({ close })}
                     <div class="p-4">
@@ -557,7 +557,7 @@
                 >
                     <DropdownMenu items={profileItems}>
                         {#snippet children({ props })}
-                            <Button {...props} icon="lucide:chevron-down" trailing>
+                            <Button {...props} icon="icon-[lucide--chevron-down]" trailing>
                                 <span class="flex items-center gap-2">
                                     <span
                                         class="flex size-6 items-center justify-center rounded-full bg-primary text-xs text-on-primary"
@@ -583,7 +583,7 @@
                             <Button
                                 {...props}
                                 variant="outline"
-                                icon="lucide:more-vertical"
+                                icon="icon-[lucide--more-vertical]"
                                 square
                                 aria-label="More options"
                             />
@@ -607,7 +607,7 @@
                                 class="relative"
                                 aria-label="Notifications"
                             >
-                                <Icon name="lucide:bell" size="20" />
+                                <Icon name="icon-[lucide--bell]" size="20" />
                                 <Badge 
                                     size="sm" 
                                     color="error"

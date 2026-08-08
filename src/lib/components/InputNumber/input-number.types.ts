@@ -83,14 +83,14 @@ export type InputNumberProps = Omit<
     /**
      * Icon for the increment button.
      * Supports any valid Iconify icon name.
-     * @default 'lucide:plus' ('lucide:chevron-up' when vertical)
+     * @default 'icon-[lucide--plus]' ('icon-[lucide--chevron-up]' when vertical)
      */
     incrementIcon?: string
 
     /**
      * Icon for the decrement button.
      * Supports any valid Iconify icon name.
-     * @default 'lucide:minus' ('lucide:chevron-down' when vertical)
+     * @default 'icon-[lucide--minus]' ('icon-[lucide--chevron-down]' when vertical)
      */
     decrementIcon?: string
 

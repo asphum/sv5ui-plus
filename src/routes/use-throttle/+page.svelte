@@ -99,7 +99,7 @@
             onmousemove={handleMove}
             class="flex h-40 items-center justify-center rounded-lg border border-dashed border-outline bg-surface-container-low text-on-surface-variant"
         >
-            <Icon name="lucide:move" size="20" />
+            <Icon name="icon-[lucide--move]" size="20" />
             <span class="ml-2">Move here</span>
         </div>
 
@@ -133,7 +133,7 @@
             <ul class="mt-4 space-y-1 text-sm text-on-surface-variant">
                 {#each log as entry (entry.id)}
                     <li class="flex items-center gap-2">
-                        <Icon name="lucide:check" size="14" class="text-success" />
+                        <Icon name="icon-[lucide--check]" size="14" class="text-success" />
                         {entry.text}
                     </li>
                 {/each}

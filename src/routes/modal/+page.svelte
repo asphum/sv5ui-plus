@@ -342,7 +342,7 @@
                         <div
                             class="flex size-10 items-center justify-center rounded-full bg-primary text-on-primary"
                         >
-                            <Icon name="lucide:settings" size="20" />
+                            <Icon name="icon-[lucide--settings]" size="20" />
                         </div>
                         <div>
                             <h3 class="font-semibold text-on-surface">Custom Header</h3>
@@ -405,7 +405,7 @@
                         <div
                             class="flex size-16 items-center justify-center rounded-full bg-success/10"
                         >
-                            <Icon name="lucide:check-circle" size="32" class="text-success" />
+                            <Icon name="icon-[lucide--check-circle]" size="32" class="text-success" />
                         </div>
                         <h3 class="text-xl font-semibold text-on-surface">Payment Successful</h3>
                         <p class="text-center text-on-surface-variant">
@@ -561,7 +561,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:trash-2"
+                            leadingIcon="icon-[lucide--trash-2]"
                             label="Delete Item"
                             color="error"
                             class="w-full"
@@ -572,7 +572,7 @@
                             <div
                                 class="flex size-14 items-center justify-center rounded-full bg-error/10"
                             >
-                                <Icon name="lucide:alert-triangle" size="28" class="text-error" />
+                                <Icon name="icon-[lucide--alert-triangle]" size="28" class="text-error" />
                             </div>
                             <h3 class="text-lg font-semibold text-on-surface">Delete this item?</h3>
                             <p class="text-sm text-on-surface-variant">
@@ -610,7 +610,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:plus"
+                            leadingIcon="icon-[lucide--plus]"
                             label="New Project"
                             class="w-full"
                         />
@@ -674,7 +674,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:clock"
+                            leadingIcon="icon-[lucide--clock]"
                             label="Session Alert"
                             class="w-full"
                         />
@@ -704,7 +704,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:image"
+                            leadingIcon="icon-[lucide--image]"
                             label="View Image"
                             class="w-full"
                         />

@@ -127,8 +127,8 @@
             to swap the star for any Iconify icon.
         </p>
         <div class="flex flex-wrap items-center gap-6">
-            <Rating icon="lucide:heart" color="error" value={3} />
-            <Rating icon="lucide:thumbs-up" color="info" value={2} max={3} />
+            <Rating icon="icon-[lucide--heart]" color="error" value={3} />
+            <Rating icon="icon-[lucide--thumbs-up]" color="info" value={2} max={3} />
         </div>
     </section>
 
@@ -157,7 +157,7 @@
                 >
             </div>
             <div class="flex items-center gap-3">
-                <Rating icon="lucide:circle" activeIcon="lucide:circle-check" value={3} />
+                <Rating icon="icon-[lucide--circle]" activeIcon="icon-[lucide--circle-check]" value={3} />
                 <span class="text-sm text-on-surface-variant">activeIcon</span>
             </div>
         </div>

@@ -42,9 +42,9 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <Breadcrumb
                 items={[
-                    { label: 'Home', href: '/', icon: 'lucide:home' },
-                    { label: 'Settings', href: '/settings', icon: 'lucide:settings' },
-                    { label: 'Profile', icon: 'lucide:user' }
+                    { label: 'Home', href: '/', icon: 'icon-[lucide--home]' },
+                    { label: 'Settings', href: '/settings', icon: 'icon-[lucide--settings]' },
+                    { label: 'Profile', icon: 'icon-[lucide--user]' }
                 ]}
             />
         </div>
@@ -65,7 +65,7 @@
             > prop.
         </p>
         <div class="grid gap-4 sm:grid-cols-2">
-            {#each [{ icon: 'lucide:chevron-right', name: 'Chevron (default)' }, { icon: 'lucide:slash', name: 'Slash' }, { icon: 'lucide:arrow-right', name: 'Arrow' }, { icon: 'lucide:dot', name: 'Dot' }] as sep (sep.icon)}
+            {#each [{ icon: 'icon-[lucide--chevron-right]', name: 'Chevron (default)' }, { icon: 'icon-[lucide--slash]', name: 'Slash' }, { icon: 'icon-[lucide--arrow-right]', name: 'Arrow' }, { icon: 'icon-[lucide--dot]', name: 'Dot' }] as sep (sep.icon)}
                 <div class="space-y-1 rounded-lg bg-surface-container-high p-4">
                     <p class="text-xs font-medium text-on-surface-variant">{sep.name}</p>
                     <Breadcrumb
@@ -145,9 +145,9 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <Breadcrumb
                 items={[
-                    { label: 'Home', href: '/', icon: 'lucide:home' },
-                    { label: 'Projects', href: '/projects', icon: 'lucide:folder' },
-                    { label: 'svelora', icon: 'lucide:package' }
+                    { label: 'Home', href: '/', icon: 'icon-[lucide--home]' },
+                    { label: 'Projects', href: '/projects', icon: 'icon-[lucide--folder]' },
+                    { label: 'svelora', icon: 'icon-[lucide--package]' }
                 ]}
             >
                 {#snippet item({ item: crumb, active })}
@@ -260,10 +260,10 @@
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Breadcrumb
                         items={[
-                            { label: 'Root', href: '/', icon: 'lucide:hard-drive' },
-                            { label: 'Users', href: '/users', icon: 'lucide:users' },
-                            { label: 'Documents', href: '/documents', icon: 'lucide:folder' },
-                            { label: 'README.md', icon: 'lucide:file-text' }
+                            { label: 'Root', href: '/', icon: 'icon-[lucide--hard-drive]' },
+                            { label: 'Users', href: '/users', icon: 'icon-[lucide--users]' },
+                            { label: 'Documents', href: '/documents', icon: 'icon-[lucide--folder]' },
+                            { label: 'README.md', icon: 'icon-[lucide--file-text]' }
                         ]}
                     />
                 </div>
@@ -291,9 +291,9 @@
                     <Breadcrumb
                         ui={{ root: 'bg-surface-container rounded-lg px-4 py-2.5' }}
                         items={[
-                            { label: 'Admin', href: '/admin', icon: 'lucide:shield' },
-                            { label: 'Users', href: '/admin/users', icon: 'lucide:users' },
-                            { label: 'Permissions', icon: 'lucide:lock' }
+                            { label: 'Admin', href: '/admin', icon: 'icon-[lucide--shield]' },
+                            { label: 'Users', href: '/admin/users', icon: 'icon-[lucide--users]' },
+                            { label: 'Permissions', icon: 'icon-[lucide--lock]' }
                         ]}
                     />
                 </div>
@@ -304,9 +304,9 @@
                 <p class="text-sm font-medium">Documentation</p>
                 <div class="rounded-lg bg-surface-container-high p-4">
                     <Breadcrumb
-                        separatorIcon="lucide:slash"
+                        separatorIcon="icon-[lucide--slash]"
                         items={[
-                            { label: 'Docs', href: '/docs', icon: 'lucide:book-open' },
+                            { label: 'Docs', href: '/docs', icon: 'icon-[lucide--book-open]' },
                             { label: 'Components', href: '/docs/components' },
                             { label: 'Breadcrumb' }
                         ]}

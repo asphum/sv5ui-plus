@@ -142,7 +142,7 @@ export interface DateRangePickerProps {
     timeInput?: boolean
     /**
      * Icon shown next to the popover time fields.
-     * @default 'lucide:clock'
+     * @default 'icon-[lucide--clock]'
      */
     timeIcon?: string
     /** @default false */
@@ -166,22 +166,22 @@ export interface DateRangePickerProps {
     monthControls?: boolean
     /** @default true */
     yearControls?: boolean
-    /** @default 'lucide:chevron-left' */
+    /** @default 'icon-[lucide--chevron-left]' */
     prevMonthIcon?: string
-    /** @default 'lucide:chevron-right' */
+    /** @default 'icon-[lucide--chevron-right]' */
     nextMonthIcon?: string
-    /** @default 'lucide:chevrons-left' */
+    /** @default 'icon-[lucide--chevrons-left]' */
     prevYearIcon?: string
-    /** @default 'lucide:chevrons-right' */
+    /** @default 'icon-[lucide--chevrons-right]' */
     nextYearIcon?: string
     /**
      * Icon shown in the popover trigger button.
-     * @default 'lucide:calendar'
+     * @default 'icon-[lucide--calendar]'
      */
     icon?: string
     /**
      * Icon rendered between the start and end inputs.
-     * @default 'lucide:minus'
+     * @default 'icon-[lucide--minus]'
      */
     separatorIcon?: string
     /** @default 'bottom' */

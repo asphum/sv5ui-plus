@@ -103,25 +103,25 @@
         <div class="space-y-3 rounded-lg bg-surface-container-high p-4">
             <Alert
                 color="info"
-                icon="lucide:info"
+                icon="icon-[lucide--info]"
                 title="Information"
                 description="This alert includes an icon for visual emphasis."
             />
             <Alert
                 color="success"
-                icon="lucide:check-circle"
+                icon="icon-[lucide--check-circle]"
                 title="Success"
                 description="Your changes have been saved."
             />
             <Alert
                 color="warning"
-                icon="lucide:alert-triangle"
+                icon="icon-[lucide--alert-triangle]"
                 title="Warning"
                 description="Your session will expire in 5 minutes."
             />
             <Alert
                 color="error"
-                icon="lucide:x-circle"
+                icon="icon-[lucide--x-circle]"
                 title="Error"
                 description="Failed to connect to server."
             />
@@ -161,14 +161,14 @@
 </h2>
         <div class="space-y-3 rounded-lg bg-surface-container-high p-4">
             <Alert
-                icon="lucide:bell"
+                icon="icon-[lucide--bell]"
                 title="Notification"
                 description="You have 3 new messages."
                 close
             />
             <Alert
                 color="warning"
-                icon="lucide:alert-triangle"
+                icon="icon-[lucide--alert-triangle]"
                 title="Dismissible Warning"
                 description="This alert can be dismissed."
                 close
@@ -186,14 +186,14 @@
 </h2>
         <div class="space-y-3 rounded-lg bg-surface-container-high p-4">
             <Alert
-                icon="lucide:download"
+                icon="icon-[lucide--download]"
                 title="Update Available"
                 description="A new version of the app is ready to install."
                 actions={[{ label: 'Update Now' }, { label: 'Later', variant: 'ghost' }]}
             />
             <Alert
                 color="error"
-                icon="lucide:trash-2"
+                icon="icon-[lucide--trash-2]"
                 title="Delete Item?"
                 description="This action cannot be undone."
                 actions={[
@@ -215,7 +215,7 @@
         <div class="grid gap-3 rounded-lg bg-surface-container-high p-4 md:grid-cols-2">
             <Alert
                 orientation="vertical"
-                icon="lucide:cloud-upload"
+                icon="icon-[lucide--cloud-upload]"
                 title="Upload Complete"
                 description="Your files have been uploaded successfully."
                 actions={[{ label: 'View Files' }]}
@@ -223,7 +223,7 @@
             <Alert
                 orientation="vertical"
                 color="warning"
-                icon="lucide:shield-alert"
+                icon="icon-[lucide--shield-alert]"
                 title="Security Alert"
                 description="Unusual login activity detected on your account."
                 actions={[{ label: 'Review Activity' }, { label: 'Ignore', variant: 'ghost' }]}
@@ -285,7 +285,7 @@
         <div class="space-y-3 rounded-lg bg-surface-container-high p-4">
             <Alert
                 variant="subtle"
-                icon="lucide:cookie"
+                icon="icon-[lucide--cookie]"
                 title="We use cookies"
                 description="This website uses cookies to ensure you get the best experience."
                 actions={[{ label: 'Accept All' }, { label: 'Customize', variant: 'outline' }]}
@@ -293,7 +293,7 @@
             <Alert
                 color="warning"
                 variant="soft"
-                icon="lucide:clock"
+                icon="icon-[lucide--clock]"
                 title="Trial Ending Soon"
                 description="Your free trial expires in 3 days. Upgrade now to keep your data."
                 actions={[{ label: 'Upgrade', color: 'warning' }]}
@@ -302,7 +302,7 @@
             <Alert
                 color="success"
                 variant="soft"
-                icon="lucide:check-circle"
+                icon="icon-[lucide--check-circle]"
                 title="Payment Successful"
                 description="Thank you for your purchase! A confirmation email has been sent."
                 close
@@ -310,11 +310,11 @@
             <Alert
                 color="error"
                 variant="outline"
-                icon="lucide:wifi-off"
+                icon="icon-[lucide--wifi-off]"
                 title="Connection Lost"
                 description="Unable to connect to the server. Please check your internet connection."
                 actions={[
-                    { label: 'Retry', leadingIcon: 'lucide:refresh-cw' },
+                    { label: 'Retry', leadingIcon: 'icon-[lucide--refresh-cw]' },
                     { label: 'Work Offline', variant: 'ghost' }
                 ]}
             />

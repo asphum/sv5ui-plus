@@ -58,7 +58,7 @@ export interface MentionItem {
  *   id: 'h1',
  *   label: 'Heading 1',
  *   description: 'Big section heading',
- *   icon: 'lucide:heading-1',
+ *   icon: 'icon-[lucide--heading-1]',
  *   keywords: ['h1', 'header', 'title'],
  *   run: ({ editor }) => editor.chain().focus().toggleHeading({ level: 1 }).run()
  * }

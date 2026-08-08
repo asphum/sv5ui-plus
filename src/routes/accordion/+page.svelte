@@ -25,19 +25,19 @@
     const iconItems: AccordionItem[] = [
         {
             label: 'Account Settings',
-            icon: 'lucide:user',
+            icon: 'icon-[lucide--user]',
             content:
                 'Manage your profile information, email preferences, and account security settings.'
         },
         {
             label: 'Notifications',
-            icon: 'lucide:bell',
+            icon: 'icon-[lucide--bell]',
             content:
                 'Configure push notifications, email alerts, and in-app notification preferences.'
         },
         {
             label: 'Privacy & Security',
-            icon: 'lucide:shield',
+            icon: 'icon-[lucide--shield]',
             content:
                 'Control your privacy settings, two-factor authentication, and data sharing preferences.'
         }
@@ -56,12 +56,12 @@
 
     // --- Custom trailing icons ---
     const trailingItems: AccordionItem[] = [
-        { label: 'Add Item', content: 'Click to add a new item.', trailingIcon: 'lucide:plus' },
-        { label: 'Edit Item', content: 'Click to edit this item.', trailingIcon: 'lucide:pencil' },
+        { label: 'Add Item', content: 'Click to add a new item.', trailingIcon: 'icon-[lucide--plus]' },
+        { label: 'Edit Item', content: 'Click to edit this item.', trailingIcon: 'icon-[lucide--pencil]' },
         {
             label: 'Delete Item',
             content: 'Click to delete this item.',
-            trailingIcon: 'lucide:trash-2'
+            trailingIcon: 'icon-[lucide--trash-2]'
         }
     ]
 
@@ -217,7 +217,7 @@
         <div class="grid gap-4 md:grid-cols-2">
             <div class="rounded-lg bg-surface-container-high p-4">
                 <p class="mb-3 text-sm font-medium">Global trailing icon</p>
-                <Accordion type="single" items={basicItems} trailingIcon="lucide:plus" />
+                <Accordion type="single" items={basicItems} trailingIcon="icon-[lucide--plus]" />
             </div>
             <div class="rounded-lg bg-surface-container-high p-4">
                 <p class="mb-3 text-sm font-medium">Per-item trailing icons</p>
@@ -507,7 +507,7 @@
                                 ? 'bg-primary text-on-primary'
                                 : 'bg-surface-container-highest'}"
                         >
-                            <Icon name={open ? 'lucide:check' : 'lucide:star'} size="16" />
+                            <Icon name={open ? 'icon-[lucide--check]' : 'icon-[lucide--star]'} size="16" />
                         </div>
                     {/snippet}
                 </Accordion>
@@ -524,7 +524,7 @@
                                 <Badge size="xs" variant="soft" color="primary" label="Popular" />
                             {/if}
                             {#if open}
-                                <Icon name="lucide:eye" size="14" class="text-on-surface-variant" />
+                                <Icon name="icon-[lucide--eye]" size="14" class="text-on-surface-variant" />
                             {/if}
                         </span>
                     {/snippet}
@@ -546,7 +546,7 @@
                                 />
                             {/if}
                             <Icon
-                                name={open ? 'lucide:minus' : 'lucide:plus'}
+                                name={open ? 'icon-[lucide--minus]' : 'icon-[lucide--plus]'}
                                 size="18"
                                 class="transition-transform"
                             />
@@ -562,7 +562,7 @@
                     {#snippet body({ item })}
                         <div class="flex items-start gap-3">
                             <Icon
-                                name="lucide:info"
+                                name="icon-[lucide--info]"
                                 size="18"
                                 class="mt-0.5 shrink-0 text-primary"
                             />
@@ -591,7 +591,7 @@
                             <div
                                 class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary"
                             >
-                                <Icon name="lucide:package" size="20" />
+                                <Icon name="icon-[lucide--package]" size="20" />
                             </div>
                             <div class="flex-1">
                                 <p class="font-medium">{item.label}</p>
@@ -687,7 +687,7 @@
         <div class="rounded-lg bg-surface-container-high p-4">
             <div class="mb-4 flex items-center gap-3">
                 <div class="flex size-10 items-center justify-center rounded-full bg-primary/10">
-                    <Icon name="lucide:help-circle" size="20" class="text-primary" />
+                    <Icon name="icon-[lucide--help-circle]" size="20" class="text-primary" />
                 </div>
                 <div>
                     <h3 class="font-semibold text-on-surface">Frequently Asked Questions</h3>
@@ -721,25 +721,25 @@
                 items={[
                     {
                         label: 'General Settings',
-                        icon: 'lucide:settings-2',
+                        icon: 'icon-[lucide--settings-2]',
                         content: 'Configure language, timezone, and display preferences.',
                         value: 'general'
                     },
                     {
                         label: 'Notification Preferences',
-                        icon: 'lucide:bell-ring',
+                        icon: 'icon-[lucide--bell-ring]',
                         content: 'Manage email, push, and SMS notification settings.',
                         value: 'notifications'
                     },
                     {
                         label: 'Security & Privacy',
-                        icon: 'lucide:lock',
+                        icon: 'icon-[lucide--lock]',
                         content: 'Set up two-factor authentication and manage privacy controls.',
                         value: 'security'
                     },
                     {
                         label: 'Billing & Subscription',
-                        icon: 'lucide:credit-card',
+                        icon: 'icon-[lucide--credit-card]',
                         content: 'View invoices, update payment methods, and manage your plan.',
                         value: 'billing'
                     }
@@ -769,25 +769,25 @@
                 items={[
                     {
                         label: 'Dashboard',
-                        icon: 'lucide:layout-dashboard',
+                        icon: 'icon-[lucide--layout-dashboard]',
                         content: '',
                         value: 'dashboard'
                     },
                     {
                         label: 'Products',
-                        icon: 'lucide:package',
+                        icon: 'icon-[lucide--package]',
                         content: '',
                         value: 'products'
                     },
                     {
                         label: 'Analytics',
-                        icon: 'lucide:bar-chart-3',
+                        icon: 'icon-[lucide--bar-chart-3]',
                         content: '',
                         value: 'analytics'
                     }
                 ]}
                 value={['products']}
-                trailingIcon="lucide:chevron-right"
+                trailingIcon="icon-[lucide--chevron-right]"
                 ui={{
                     root: 'space-y-1',
                     item: 'border-none',
@@ -871,7 +871,7 @@
                             ? 'bg-primary text-on-primary'
                             : 'bg-surface-container-highest'}"
                     >
-                        <Icon name={open ? 'lucide:minus' : 'lucide:plus'} size="14" />
+                        <Icon name={open ? 'icon-[lucide--minus]' : 'icon-[lucide--plus]'} size="14" />
                     </div>
                 {/snippet}
                 {#snippet trailing()}
@@ -928,10 +928,10 @@
             <Accordion
                 type="single"
                 items={[
-                    { label: 'User Profile', icon: 'lucide:user', value: 'profile' },
-                    { label: 'Statistics', icon: 'lucide:bar-chart-2', value: 'stats' },
-                    { label: 'Recent Activity', icon: 'lucide:activity', value: 'activity' },
-                    { label: 'Quick Actions', icon: 'lucide:zap', value: 'actions' }
+                    { label: 'User Profile', icon: 'icon-[lucide--user]', value: 'profile' },
+                    { label: 'Statistics', icon: 'icon-[lucide--bar-chart-2]', value: 'stats' },
+                    { label: 'Recent Activity', icon: 'icon-[lucide--activity]', value: 'activity' },
+                    { label: 'Quick Actions', icon: 'icon-[lucide--zap]', value: 'actions' }
                 ]}
                 ui={{
                     item: 'border-outline-variant/30',
@@ -945,7 +945,7 @@
                             <div
                                 class="flex size-16 items-center justify-center rounded-full bg-primary/10"
                             >
-                                <Icon name="lucide:user" size="32" class="text-primary" />
+                                <Icon name="icon-[lucide--user]" size="32" class="text-primary" />
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-semibold">John Doe</h4>
@@ -968,7 +968,7 @@
                             <Button
                                 size="sm"
                                 variant="outline"
-                                leadingIcon="lucide:pencil"
+                                leadingIcon="icon-[lucide--pencil]"
                                 label="Edit"
                             />
                         </div>
@@ -991,7 +991,7 @@
                     {:else if item.value === 'activity'}
                         <!-- Activity Timeline UI -->
                         <div class="space-y-3">
-                            {#each [{ time: '2 min ago', text: 'Updated profile picture', icon: 'lucide:image', color: 'text-primary' }, { time: '1 hour ago', text: 'Completed task #123', icon: 'lucide:check-circle', color: 'text-success' }, { time: '3 hours ago', text: 'Added new comment', icon: 'lucide:message-circle', color: 'text-info' }] as activity (activity.text)}
+                            {#each [{ time: '2 min ago', text: 'Updated profile picture', icon: 'icon-[lucide--image]', color: 'text-primary' }, { time: '1 hour ago', text: 'Completed task #123', icon: 'icon-[lucide--check-circle]', color: 'text-success' }, { time: '3 hours ago', text: 'Added new comment', icon: 'icon-[lucide--message-circle]', color: 'text-info' }] as activity (activity.text)}
                                 <div class="flex items-center gap-3">
                                     <div
                                         class="flex size-8 shrink-0 items-center justify-center rounded-full bg-surface-container"
@@ -1016,25 +1016,25 @@
                         <div class="grid grid-cols-2 gap-2">
                             <Button
                                 variant="outline"
-                                leadingIcon="lucide:plus"
+                                leadingIcon="icon-[lucide--plus]"
                                 label="New Item"
                                 class="justify-start"
                             />
                             <Button
                                 variant="outline"
-                                leadingIcon="lucide:upload"
+                                leadingIcon="icon-[lucide--upload]"
                                 label="Upload"
                                 class="justify-start"
                             />
                             <Button
                                 variant="outline"
-                                leadingIcon="lucide:download"
+                                leadingIcon="icon-[lucide--download]"
                                 label="Export"
                                 class="justify-start"
                             />
                             <Button
                                 variant="outline"
-                                leadingIcon="lucide:share-2"
+                                leadingIcon="icon-[lucide--share-2]"
                                 label="Share"
                                 class="justify-start"
                             />
@@ -1061,9 +1061,9 @@
             <Accordion
                 type="multiple"
                 items={[
-                    { label: 'Contact Form', icon: 'lucide:mail', value: 'form' },
-                    { label: 'Image Gallery', icon: 'lucide:image', value: 'gallery' },
-                    { label: 'Code Example', icon: 'lucide:code', value: 'code' }
+                    { label: 'Contact Form', icon: 'icon-[lucide--mail]', value: 'form' },
+                    { label: 'Image Gallery', icon: 'icon-[lucide--image]', value: 'gallery' },
+                    { label: 'Code Example', icon: 'icon-[lucide--code]', value: 'code' }
                 ]}
                 value={['form']}
                 ui={{
@@ -1105,7 +1105,7 @@
                             <Button
                                 variant="solid"
                                 label="Send Message"
-                                leadingIcon="lucide:send"
+                                leadingIcon="icon-[lucide--send]"
                             />
                         </div>
                     {:else if item.value === 'gallery'}
@@ -1116,7 +1116,7 @@
                                     class="flex aspect-square items-center justify-center rounded-lg bg-linear-to-br from-primary/20 to-secondary/20"
                                 >
                                     <Icon
-                                        name="lucide:image"
+                                        name="icon-[lucide--image]"
                                         size="24"
                                         class="text-on-surface-variant/50"
                                     />
@@ -1137,7 +1137,7 @@
                                 <Button
                                     size="xs"
                                     variant="ghost"
-                                    leadingIcon="lucide:copy"
+                                    leadingIcon="icon-[lucide--copy]"
                                     label="Copy"
                                 />
                             </div>

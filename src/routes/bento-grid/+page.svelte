@@ -27,28 +27,28 @@
                 <BentoCard 
                     class="md:col-span-2 md:row-span-2" 
                     name="Analytics" 
-                    icon="lucide:line-chart"
+                    icon="icon-[lucide--line-chart]"
                     description="Dive deep into your traffic data."
                     href="#"
                     cta="View dashboard"
                 >
                     {#snippet background()}
                         <div class="absolute right-0 top-0 opacity-10 blur-xl">
-                            <Icon name="lucide:bar-chart-3" size="200" />
+                            <Icon name="icon-[lucide--bar-chart-3]" size="200" />
                         </div>
                     {/snippet}
                 </BentoCard>
 
                 <BentoCard 
                     name="Notifications" 
-                    icon="lucide:bell"
+                    icon="icon-[lucide--bell]"
                     description="Manage your alert settings."
                     href="#"
                 />
 
                 <BentoCard 
                     name="Security" 
-                    icon="lucide:shield-check"
+                    icon="icon-[lucide--shield-check]"
                     description="Keep your account safe."
                     href="#"
                 />
@@ -56,7 +56,7 @@
                 <BentoCard 
                     class="md:col-span-3"
                     name="Integrations" 
-                    icon="lucide:blocks"
+                    icon="icon-[lucide--blocks]"
                     description="Connect with your favorite tools seamlessly."
                     href="#"
                     cta="Browse tools"

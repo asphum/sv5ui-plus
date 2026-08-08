@@ -46,7 +46,7 @@ export type AvatarProps = Omit<Avatar.RootProps, 'children'> & {
 
     /**
      * Iconify icon name to display as fallback when no image or text is available.
-     * @example 'lucide:user', 'mdi:account'
+     * @example 'icon-[lucide--user]', 'mdi:account'
      */
     icon?: string
 

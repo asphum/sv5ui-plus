@@ -454,7 +454,7 @@
                         <div
                             class="flex size-10 items-center justify-center rounded-full bg-primary text-on-primary"
                         >
-                            <Icon name="lucide:settings" size="20" />
+                            <Icon name="icon-[lucide--settings]" size="20" />
                         </div>
                         <div>
                             <h3 class="font-semibold text-on-surface">Custom Header</h3>
@@ -488,7 +488,7 @@
                 {/snippet}
                 {#snippet titleSlot()}
                     <span class="flex items-center gap-2">
-                        <Icon name="lucide:sparkles" size="16" class="text-warning" />
+                        <Icon name="icon-[lucide--sparkles]" size="16" class="text-warning" />
                         Rich Title with Icon
                     </span>
                 {/snippet}
@@ -560,7 +560,7 @@
                         <div
                             class="flex size-16 items-center justify-center rounded-full bg-success/10"
                         >
-                            <Icon name="lucide:check-circle" size="32" class="text-success" />
+                            <Icon name="icon-[lucide--check-circle]" size="32" class="text-success" />
                         </div>
                         <h3 class="text-xl font-semibold text-on-surface">Action Complete</h3>
                         <p class="text-center text-on-surface-variant">
@@ -797,7 +797,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:sliders-horizontal"
+                            leadingIcon="icon-[lucide--sliders-horizontal]"
                             label="Filters"
                             class="w-full"
                         />
@@ -851,7 +851,7 @@
                                                 class="flex items-center gap-1 text-sm text-on-surface-variant"
                                             >
                                                 {stars}+ <Icon
-                                                    name="lucide:star"
+                                                    name="icon-[lucide--star]"
                                                     size="14"
                                                     class="text-warning"
                                                 />
@@ -891,7 +891,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:settings"
+                            leadingIcon="icon-[lucide--settings]"
                             label="Settings"
                             class="w-full"
                         />
@@ -974,7 +974,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:shopping-cart"
+                            leadingIcon="icon-[lucide--shopping-cart]"
                             label="Cart (3)"
                             class="w-full"
                         />
@@ -1043,14 +1043,14 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:bell"
+                            leadingIcon="icon-[lucide--bell]"
                             label="Notifications"
                             class="w-full"
                         />
                     {/snippet}
                     {#snippet body()}
                         <div class="space-y-3">
-                            {#each [{ icon: 'lucide:package', title: 'Order shipped', desc: 'Your order #1234 has been shipped', time: '2m ago', color: 'text-info' }, { icon: 'lucide:user-plus', title: 'New follower', desc: 'John Doe started following you', time: '1h ago', color: 'text-primary' }, { icon: 'lucide:message-circle', title: 'New comment', desc: 'Sarah commented on your post', time: '3h ago', color: 'text-success' }, { icon: 'lucide:heart', title: 'Post liked', desc: 'Your post received 100 likes', time: '5h ago', color: 'text-error' }, { icon: 'lucide:calendar', title: 'Event reminder', desc: 'Team meeting in 30 minutes', time: '1d ago', color: 'text-warning' }] as notif (notif.title)}
+                            {#each [{ icon: 'icon-[lucide--package]', title: 'Order shipped', desc: 'Your order #1234 has been shipped', time: '2m ago', color: 'text-info' }, { icon: 'icon-[lucide--user-plus]', title: 'New follower', desc: 'John Doe started following you', time: '1h ago', color: 'text-primary' }, { icon: 'icon-[lucide--message-circle]', title: 'New comment', desc: 'Sarah commented on your post', time: '3h ago', color: 'text-success' }, { icon: 'icon-[lucide--heart]', title: 'Post liked', desc: 'Your post received 100 likes', time: '5h ago', color: 'text-error' }, { icon: 'icon-[lucide--calendar]', title: 'Event reminder', desc: 'Team meeting in 30 minutes', time: '1d ago', color: 'text-warning' }] as notif (notif.title)}
                                 <div class="flex gap-3 rounded-lg bg-surface-container p-3">
                                     <div
                                         class={`flex size-10 shrink-0 items-center justify-center rounded-full bg-surface-container-highest ${notif.color}`}

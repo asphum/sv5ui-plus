@@ -81,10 +81,10 @@
             </p>
         </div>
         <div class="flex items-center gap-2">
-            <Button variant="outline" href="/tour" leadingIcon="lucide:arrow-left">
+            <Button variant="outline" href="/tour" leadingIcon="icon-[lucide--arrow-left]">
                 Single-page
             </Button>
-            <Button color="primary" leadingIcon="lucide:route" onclick={() => tour.start()}>
+            <Button color="primary" leadingIcon="icon-[lucide--route]" onclick={() => tour.start()}>
                 Start tour
             </Button>
         </div>
@@ -93,13 +93,13 @@
     <div class="flex gap-4 rounded-lg bg-surface-container-high p-4">
         <nav class="flex w-40 shrink-0 flex-col gap-1">
             <a href={HOME} class={linkClass(HOME)}>
-                <Icon name="lucide:house" /> Home
+                <Icon name="icon-[lucide--house]" /> Home
             </a>
             <a id="m-nav-settings" href={SETTINGS} class={linkClass(SETTINGS)}>
-                <Icon name="lucide:settings" /> Settings
+                <Icon name="icon-[lucide--settings]" /> Settings
             </a>
             <a href={PROFILE} class={linkClass(PROFILE)}>
-                <Icon name="lucide:user" /> Profile
+                <Icon name="icon-[lucide--user]" /> Profile
             </a>
         </nav>
 

@@ -8,102 +8,102 @@
             title: 'General',
             count: 7,
             items: [
-                { name: 'Button', href: '/button', icon: 'lucide:mouse-pointer-click' },
-                { name: 'FieldGroup', href: '/field-group', icon: 'lucide:group' },
-                { name: 'Icon', href: '/icon', icon: 'lucide:shapes' },
-                { name: 'Link', href: '/link', icon: 'lucide:link' },
-                { name: 'LocaleButton', href: '/locale-button', icon: 'lucide:languages' },
-                { name: 'Kbd', href: '/kbd', icon: 'lucide:keyboard' },
-                { name: 'ThemeModeButton', href: '/theme-mode-button', icon: 'lucide:sun-moon' }
+                { name: 'Button', href: '/button', icon: 'icon-[lucide--mouse-pointer-click]' },
+                { name: 'FieldGroup', href: '/field-group', icon: 'icon-[lucide--group]' },
+                { name: 'Icon', href: '/icon', icon: 'icon-[lucide--shapes]' },
+                { name: 'Link', href: '/link', icon: 'icon-[lucide--link]' },
+                { name: 'LocaleButton', href: '/locale-button', icon: 'icon-[lucide--languages]' },
+                { name: 'Kbd', href: '/kbd', icon: 'icon-[lucide--keyboard]' },
+                { name: 'ThemeModeButton', href: '/theme-mode-button', icon: 'icon-[lucide--sun-moon]' }
             ]
         },
         {
             title: 'Layout',
             count: 3,
             items: [
-                { name: 'Card', href: '/card', icon: 'lucide:square' },
-                { name: 'Container', href: '/container', icon: 'lucide:box' },
-                { name: 'Separator', href: '/separator', icon: 'lucide:minus' }
+                { name: 'Card', href: '/card', icon: 'icon-[lucide--square]' },
+                { name: 'Container', href: '/container', icon: 'icon-[lucide--box]' },
+                { name: 'Separator', href: '/separator', icon: 'icon-[lucide--minus]' }
             ]
         },
         {
             title: 'Data Display',
             count: 11,
             items: [
-                { name: 'Accordion', href: '/accordion', icon: 'lucide:chevrons-down-up' },
-                { name: 'Avatar', href: '/avatar', icon: 'lucide:circle-user' },
-                { name: 'AvatarGroup', href: '/avatar-group', icon: 'lucide:users' },
-                { name: 'Badge', href: '/badge', icon: 'lucide:tag' },
-                { name: 'Carousel', href: '/carousel', icon: 'lucide:gallery-horizontal' },
-                { name: 'Chip', href: '/chip', icon: 'lucide:circle-dot' },
-                { name: 'Empty', href: '/empty', icon: 'lucide:inbox' },
-                { name: 'Skeleton', href: '/skeleton', icon: 'lucide:loader-circle' },
-                { name: 'Timeline', href: '/timeline', icon: 'lucide:git-commit-horizontal' },
-                { name: 'User', href: '/user', icon: 'lucide:user' },
-                { name: 'Table', href: '/table', icon: 'lucide:table' }
+                { name: 'Accordion', href: '/accordion', icon: 'icon-[lucide--chevrons-down-up]' },
+                { name: 'Avatar', href: '/avatar', icon: 'icon-[lucide--circle-user]' },
+                { name: 'AvatarGroup', href: '/avatar-group', icon: 'icon-[lucide--users]' },
+                { name: 'Badge', href: '/badge', icon: 'icon-[lucide--tag]' },
+                { name: 'Carousel', href: '/carousel', icon: 'icon-[lucide--gallery-horizontal]' },
+                { name: 'Chip', href: '/chip', icon: 'icon-[lucide--circle-dot]' },
+                { name: 'Empty', href: '/empty', icon: 'icon-[lucide--inbox]' },
+                { name: 'Skeleton', href: '/skeleton', icon: 'icon-[lucide--loader-circle]' },
+                { name: 'Timeline', href: '/timeline', icon: 'icon-[lucide--git-commit-horizontal]' },
+                { name: 'User', href: '/user', icon: 'icon-[lucide--user]' },
+                { name: 'Table', href: '/table', icon: 'icon-[lucide--table]' }
             ]
         },
         {
             title: 'Forms',
             count: 14,
             items: [
-                { name: 'Checkbox', href: '/checkbox', icon: 'lucide:check-square' },
-                { name: 'CheckboxGroup', href: '/checkbox-group', icon: 'lucide:list-checks' },
-                { name: 'Editor', href: '/editor', icon: 'lucide:pen-line' },
-                { name: 'Input', href: '/input', icon: 'lucide:text-cursor-input' },
-                { name: 'RadioGroup', href: '/radio-group', icon: 'lucide:circle-dot' },
-                { name: 'Select', href: '/select', icon: 'lucide:chevron-down-square' },
-                { name: 'SelectMenu', href: '/select-menu', icon: 'lucide:square-chevron-down' },
-                { name: 'Slider', href: '/slider', icon: 'lucide:sliders-horizontal' },
-                { name: 'Switch', href: '/switch', icon: 'lucide:toggle-left' },
-                { name: 'Textarea', href: '/textarea', icon: 'lucide:textarea' },
-                { name: 'FileUpload', href: '/file-upload', icon: 'lucide:upload' },
-                { name: 'PinInput', href: '/pin-input', icon: 'lucide:hash' },
-                { name: 'FormField', href: '/form-field', icon: 'lucide:form-input' },
-                { name: 'Form', href: '/form', icon: 'lucide:scroll-text' }
+                { name: 'Checkbox', href: '/checkbox', icon: 'icon-[lucide--check-square]' },
+                { name: 'CheckboxGroup', href: '/checkbox-group', icon: 'icon-[lucide--list-checks]' },
+                { name: 'Editor', href: '/editor', icon: 'icon-[lucide--pen-line]' },
+                { name: 'Input', href: '/input', icon: 'icon-[lucide--text-cursor-input]' },
+                { name: 'RadioGroup', href: '/radio-group', icon: 'icon-[lucide--circle-dot]' },
+                { name: 'Select', href: '/select', icon: 'icon-[lucide--chevron-down-square]' },
+                { name: 'SelectMenu', href: '/select-menu', icon: 'icon-[lucide--square-chevron-down]' },
+                { name: 'Slider', href: '/slider', icon: 'icon-[lucide--sliders-horizontal]' },
+                { name: 'Switch', href: '/switch', icon: 'icon-[lucide--toggle-left]' },
+                { name: 'Textarea', href: '/textarea', icon: 'icon-[lucide--text-cursor-input]' },
+                { name: 'FileUpload', href: '/file-upload', icon: 'icon-[lucide--upload]' },
+                { name: 'PinInput', href: '/pin-input', icon: 'icon-[lucide--hash]' },
+                { name: 'FormField', href: '/form-field', icon: 'icon-[lucide--form-input]' },
+                { name: 'Form', href: '/form', icon: 'icon-[lucide--scroll-text]' }
             ]
         },
         {
             title: 'Feedback',
             count: 4,
             items: [
-                { name: 'Alert', href: '/alert', icon: 'lucide:bell' },
-                { name: 'Banner', href: '/banner', icon: 'lucide:megaphone' },
-                { name: 'Progress', href: '/progress', icon: 'lucide:loader' },
-                { name: 'Toast', href: '/toast', icon: 'lucide:message-square-warning' }
+                { name: 'Alert', href: '/alert', icon: 'icon-[lucide--bell]' },
+                { name: 'Banner', href: '/banner', icon: 'icon-[lucide--megaphone]' },
+                { name: 'Progress', href: '/progress', icon: 'icon-[lucide--loader]' },
+                { name: 'Toast', href: '/toast', icon: 'icon-[lucide--message-square-warning]' }
             ]
         },
         {
             title: 'Navigation',
             count: 4,
             items: [
-                { name: 'Breadcrumb', href: '/breadcrumb', icon: 'lucide:chevron-right' },
-                { name: 'Pagination', href: '/pagination', icon: 'lucide:ellipsis' },
-                { name: 'Stepper', href: '/stepper', icon: 'lucide:list-ordered' },
-                { name: 'Tabs', href: '/tabs', icon: 'lucide:folder' }
+                { name: 'Breadcrumb', href: '/breadcrumb', icon: 'icon-[lucide--chevron-right]' },
+                { name: 'Pagination', href: '/pagination', icon: 'icon-[lucide--ellipsis]' },
+                { name: 'Stepper', href: '/stepper', icon: 'icon-[lucide--list-ordered]' },
+                { name: 'Tabs', href: '/tabs', icon: 'icon-[lucide--folder]' }
             ]
         },
         {
             title: 'Overlay',
             count: 9,
             items: [
-                { name: 'Collapsible', href: '/collapsible', icon: 'lucide:chevrons-up-down' },
-                { name: 'Command', href: '/command', icon: 'lucide:square-terminal' },
-                { name: 'ContextMenu', href: '/context-menu', icon: 'lucide:mouse-pointer-square' },
-                { name: 'Modal', href: '/modal', icon: 'lucide:square-stack' },
-                { name: 'Drawer', href: '/drawer', icon: 'lucide:panel-bottom' },
-                { name: 'DropdownMenu', href: '/dropdown-menu', icon: 'lucide:menu' },
-                { name: 'Popover', href: '/popover', icon: 'lucide:messages-square' },
-                { name: 'Slideover', href: '/slideover', icon: 'lucide:panel-right' },
-                { name: 'Tooltip', href: '/tooltip', icon: 'lucide:message-square' }
+                { name: 'Collapsible', href: '/collapsible', icon: 'icon-[lucide--chevrons-up-down]' },
+                { name: 'Command', href: '/command', icon: 'icon-[lucide--square-terminal]' },
+                { name: 'ContextMenu', href: '/context-menu', icon: 'icon-[lucide--mouse-pointer-square]' },
+                { name: 'Modal', href: '/modal', icon: 'icon-[lucide--square-stack]' },
+                { name: 'Drawer', href: '/drawer', icon: 'icon-[lucide--panel-bottom]' },
+                { name: 'DropdownMenu', href: '/dropdown-menu', icon: 'icon-[lucide--menu]' },
+                { name: 'Popover', href: '/popover', icon: 'icon-[lucide--messages-square]' },
+                { name: 'Slideover', href: '/slideover', icon: 'icon-[lucide--panel-right]' },
+                { name: 'Tooltip', href: '/tooltip', icon: 'icon-[lucide--message-square]' }
             ]
         },
         {
             title: 'Date & Time',
             count: 2,
             items: [
-                { name: 'Calendar', href: '/calendar', icon: 'lucide:calendar' },
-                { name: 'RangeCalendar', href: '/range-calendar', icon: 'lucide:calendar-range' }
+                { name: 'Calendar', href: '/calendar', icon: 'icon-[lucide--calendar]' },
+                { name: 'RangeCalendar', href: '/range-calendar', icon: 'icon-[lucide--calendar-range]' }
             ]
         }
     ]

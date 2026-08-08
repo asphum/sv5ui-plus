@@ -23,11 +23,11 @@
     ]
 
     const iconItems: StepperItem[] = [
-        { value: 'cart', title: 'Cart', icon: 'lucide:shopping-cart' },
-        { value: 'address', title: 'Address', icon: 'lucide:map-pin' },
-        { value: 'shipping', title: 'Shipping', icon: 'lucide:truck' },
-        { value: 'payment', title: 'Payment', icon: 'lucide:credit-card' },
-        { value: 'done', title: 'Done', icon: 'lucide:check' }
+        { value: 'cart', title: 'Cart', icon: 'icon-[lucide--shopping-cart]' },
+        { value: 'address', title: 'Address', icon: 'icon-[lucide--map-pin]' },
+        { value: 'shipping', title: 'Shipping', icon: 'icon-[lucide--truck]' },
+        { value: 'payment', title: 'Payment', icon: 'icon-[lucide--credit-card]' },
+        { value: 'done', title: 'Done', icon: 'icon-[lucide--check]' }
     ]
 
     const compactItems: StepperItem[] = [
@@ -84,19 +84,19 @@
             value: 'account',
             title: 'Account',
             description: 'Who is ordering',
-            icon: 'lucide:user'
+            icon: 'icon-[lucide--user]'
         },
         {
             value: 'shipping',
             title: 'Shipping',
             description: 'Where to deliver',
-            icon: 'lucide:map-pin'
+            icon: 'icon-[lucide--map-pin]'
         },
         {
             value: 'review',
             title: 'Review',
             description: 'Confirm and submit',
-            icon: 'lucide:clipboard-check'
+            icon: 'icon-[lucide--clipboard-check]'
         }
     ]
 
@@ -399,7 +399,7 @@
                     <div
                         class="flex items-start gap-3 rounded-lg border border-outline-variant bg-surface-container p-4"
                     >
-                        <Icon name="lucide:info" size="18" class="mt-0.5 shrink-0 text-primary" />
+                        <Icon name="icon-[lucide--info]" size="18" class="mt-0.5 shrink-0 text-primary" />
                         <div>
                             <p class="text-sm font-medium">{item.title}</p>
                             <p class="text-sm text-on-surface-variant">
@@ -413,7 +413,7 @@
                 <Button
                     variant="outline"
                     size="sm"
-                    leadingIcon="lucide:chevron-left"
+                    leadingIcon="icon-[lucide--chevron-left]"
                     label="Back"
                     disabled={!api?.hasPrev}
                     onclick={() => api?.prev()}
@@ -421,7 +421,7 @@
                 <Button
                     color="primary"
                     size="sm"
-                    trailingIcon="lucide:chevron-right"
+                    trailingIcon="icon-[lucide--chevron-right]"
                     label={api?.hasNext ? 'Next' : 'Done'}
                     disabled={!api?.hasNext}
                     onclick={() => api?.next()}
@@ -523,7 +523,7 @@
                             aria-hidden="true"
                         >
                             {#if state === 'completed'}
-                                <Icon name="lucide:check" size="16" />
+                                <Icon name="icon-[lucide--check]" size="16" />
                             {:else}
                                 {number}
                             {/if}
@@ -558,7 +558,7 @@
                             <div
                                 class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
                             >
-                                <Icon name="lucide:sparkles" size="20" />
+                                <Icon name="icon-[lucide--sparkles]" size="20" />
                             </div>
                             <div>
                                 <p class="text-sm font-semibold">
@@ -766,7 +766,7 @@
                             <Button
                                 variant="outline"
                                 size="sm"
-                                leadingIcon="lucide:chevron-left"
+                                leadingIcon="icon-[lucide--chevron-left]"
                                 label="Back"
                                 disabled={!wizardApi?.hasPrev}
                                 onclick={() => wizardApi?.prev()}
@@ -775,7 +775,7 @@
                                 <Button
                                     color="primary"
                                     size="sm"
-                                    trailingIcon="lucide:chevron-right"
+                                    trailingIcon="icon-[lucide--chevron-right]"
                                     label="Next"
                                     onclick={handleWizardNext}
                                 />
@@ -783,7 +783,7 @@
                                 <Button
                                     color="success"
                                     size="sm"
-                                    leadingIcon="lucide:check"
+                                    leadingIcon="icon-[lucide--check]"
                                     label="Submit"
                                     type="submit"
                                 />
@@ -799,7 +799,7 @@
             {#if wizardSubmitted}
                 <div class="mt-4 rounded-lg border border-success/40 bg-success/10 p-4 text-sm">
                     <div class="mb-2 flex items-center gap-2 font-semibold text-success">
-                        <Icon name="lucide:party-popper" size="18" />
+                        <Icon name="icon-[lucide--party-popper]" size="18" />
                         Submitted!
                     </div>
                     <pre
@@ -827,25 +827,25 @@
                         value: 'profile',
                         title: 'Complete your profile',
                         description: 'Add a photo and bio so teammates recognize you.',
-                        icon: 'lucide:user-circle'
+                        icon: 'icon-[lucide--user-circle]'
                     },
                     {
                         value: 'team',
                         title: 'Invite your team',
                         description: 'Bring teammates so you can collaborate from day one.',
-                        icon: 'lucide:users'
+                        icon: 'icon-[lucide--users]'
                     },
                     {
                         value: 'integrate',
                         title: 'Connect your tools',
                         description: 'GitHub, Slack, Linear — wire everything in one click.',
-                        icon: 'lucide:plug'
+                        icon: 'icon-[lucide--plug]'
                     },
                     {
                         value: 'done',
                         title: 'You are ready',
                         description: 'Explore the dashboard or start your first project.',
-                        icon: 'lucide:rocket'
+                        icon: 'icon-[lucide--rocket]'
                     }
                 ]}
                 orientation="vertical"
@@ -858,7 +858,7 @@
                         <div
                             class="mt-2 flex items-center gap-2 rounded-lg border border-outline-variant bg-surface-container p-3"
                         >
-                            <Icon name={item.icon ?? 'lucide:zap'} size="18" class="text-primary" />
+                            <Icon name={item.icon ?? 'icon-[lucide--zap]'} size="18" class="text-primary" />
                             <span class="text-sm">Continue with this step</span>
                             <Button
                                 class="ms-auto"

@@ -22,7 +22,7 @@
         loop = false,
         orientation = 'vertical',
         forceMount = false,
-        trailingIcon = 'lucide:chevron-down',
+        trailingIcon = 'icon-[lucide--chevron-down]',
         ui,
         class: className,
         leading,

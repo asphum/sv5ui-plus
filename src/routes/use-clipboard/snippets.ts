@@ -9,7 +9,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <Button
  onclick={() => clipboard.copy('Hello from Svelora!')}
- icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+ icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
  color={clipboard.copied ? 'success' : 'primary'}
 >
  {clipboard.copied ? 'Copied!' : 'Copy Text'}
@@ -28,7 +28,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <Button
  onclick={() => clipboard.copy('Copied with 5s timeout!')}
- icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+ icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
  color={clipboard.copied ? 'success' : 'secondary'}
  variant="outline"
 >
@@ -45,7 +45,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  <Input bind:value />
  <Button
   onclick={() => clipboard.copy(value)}
-  icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+  icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
   variant="outline"
   square
  />
@@ -65,12 +65,12 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 {#each snippets as snippet (snippet.label)}
  <div class="flex items-center justify-between rounded-md p-3">
   <div class="flex items-center gap-3">
-   <Icon name="lucide:terminal" size="16" />
+   <Icon name="icon-[lucide--terminal]" size="16" />
    <code>{snippet.text}</code>
   </div>
   <Button
    onclick={() => clipboard.copy(snippet.text)}
-   icon={clipboard.copied ? 'lucide:check' : 'lucide:clipboard'}
+   icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--clipboard]'}
    variant="ghost"
    size="xs"
    square
@@ -91,7 +91,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
    <div class="flex-1 truncate rounded-md px-3 py-2 font-mono text-xs">{url}</div>
    <Button
     onclick={() => clipboard.copy(url)}
-    icon={clipboard.copied ? 'lucide:check' : 'lucide:link'}
+    icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--link]'}
     variant="soft"
     size="sm"
    >

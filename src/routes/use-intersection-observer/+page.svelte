@@ -50,7 +50,7 @@
         class="flex h-[70vh] items-center justify-center gap-2 text-on-surface-variant"
         aria-hidden="true"
     >
-        <Icon name="lucide:arrow-down" size="18" />
+        <Icon name="icon-[lucide--arrow-down]" size="18" />
         Scroll down to the target
     </div>
 
@@ -71,11 +71,11 @@
         >
             {#if loaded}
                 <span class="flex items-center gap-2 text-on-success-container">
-                    <Icon name="lucide:check" size="20" /> Loaded — became visible!
+                    <Icon name="icon-[lucide--check]" size="20" /> Loaded — became visible!
                 </span>
             {:else}
                 <span class="flex items-center gap-2">
-                    <Icon name="lucide:loader" size="20" /> Waiting to enter view…
+                    <Icon name="icon-[lucide--loader]" size="20" /> Waiting to enter view…
                 </span>
             {/if}
         </div>

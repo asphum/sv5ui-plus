@@ -36,7 +36,7 @@
                 {/each}
 
                 {#snippet right()}
-                    <Button size="sm" variant="ghost" color="secondary" icon="lucide:github" />
+                    <Button size="sm" variant="ghost" color="secondary" icon="icon-[lucide--github]" />
                     <Button size="sm" label="Sign in" />
                 {/snippet}
 

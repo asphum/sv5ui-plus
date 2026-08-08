@@ -126,7 +126,7 @@
             {/if}
             <Card class="p-3">
                 <div class="flex items-center gap-2 text-sm">
-                    <Icon name="lucide:move" size="16" class="text-on-surface-variant" />
+                    <Icon name="icon-[lucide--move]" size="16" class="text-on-surface-variant" />
                     <span>x: <strong>{pos.x}</strong>, y: <strong>{pos.y}</strong></span>
                 </div>
             </Card>

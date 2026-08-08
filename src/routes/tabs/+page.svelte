@@ -23,25 +23,25 @@
     const iconItems: TabsItem[] = [
         {
             label: 'Profile',
-            icon: 'lucide:user',
+            icon: 'icon-[lucide--user]',
             content: 'Update your profile information.',
             value: 'profile'
         },
         {
             label: 'Security',
-            icon: 'lucide:shield',
+            icon: 'icon-[lucide--shield]',
             content: 'Manage security settings.',
             value: 'security'
         },
         {
             label: 'Billing',
-            icon: 'lucide:credit-card',
+            icon: 'icon-[lucide--credit-card]',
             content: 'View invoices and payments.',
             value: 'billing'
         },
         {
             label: 'Integrations',
-            icon: 'lucide:plug',
+            icon: 'icon-[lucide--plug]',
             content: 'Connect third-party services.',
             value: 'integrations'
         }
@@ -352,7 +352,7 @@
                                 ? 'bg-primary text-on-primary'
                                 : 'bg-surface-container-highest'}"
                         >
-                            <Icon name={active ? 'lucide:check' : 'lucide:circle'} size="14" />
+                            <Icon name={active ? 'icon-[lucide--check]' : 'icon-[lucide--circle]'} size="14" />
                         </div>
                     {/snippet}
                 </Tabs>
@@ -389,7 +389,7 @@
                     {#snippet body({ item })}
                         <div class="flex items-start gap-3 rounded-lg bg-surface-container p-4">
                             <Icon
-                                name="lucide:info"
+                                name="icon-[lucide--info]"
                                 size="18"
                                 class="mt-0.5 shrink-0 text-primary"
                             />
@@ -515,7 +515,7 @@
                                             class="flex size-16 items-center justify-center rounded-full bg-primary/10"
                                         >
                                             <Icon
-                                                name="lucide:user"
+                                                name="icon-[lucide--user]"
                                                 size="32"
                                                 class="text-primary"
                                             />
@@ -529,7 +529,7 @@
                                         <Button
                                             size="sm"
                                             variant="outline"
-                                            leadingIcon="lucide:pencil"
+                                            leadingIcon="icon-[lucide--pencil]"
                                             label="Edit"
                                         />
                                     </div>
@@ -540,7 +540,7 @@
                                         >
                                             <div class="flex items-center gap-3">
                                                 <Icon
-                                                    name="lucide:shield-check"
+                                                    name="icon-[lucide--shield-check]"
                                                     size="20"
                                                     class="text-success"
                                                 />
@@ -565,7 +565,7 @@
                                         >
                                             <div class="flex items-center gap-3">
                                                 <Icon
-                                                    name="lucide:key"
+                                                    name="icon-[lucide--key]"
                                                     size="20"
                                                     class="text-warning"
                                                 />
@@ -596,7 +596,7 @@
                                     </div>
                                 {:else}
                                     <div class="space-y-2">
-                                        {#each [{ name: 'GitHub', icon: 'lucide:github', connected: true }, { name: 'Slack', icon: 'lucide:slack', connected: false }] as svc (svc.name)}
+                                        {#each [{ name: 'GitHub', icon: 'icon-[lucide--github]', connected: true }, { name: 'Slack', icon: 'icon-[lucide--slack]', connected: false }] as svc (svc.name)}
                                             <div
                                                 class="flex items-center justify-between rounded-lg bg-surface-container-highest p-3"
                                             >
@@ -638,18 +638,18 @@
                         items={[
                             {
                                 label: 'Overview',
-                                icon: 'lucide:layout-dashboard',
+                                icon: 'icon-[lucide--layout-dashboard]',
                                 value: 'overview'
                             },
-                            { label: 'Analytics', icon: 'lucide:bar-chart-3', value: 'analytics' },
-                            { label: 'Reports', icon: 'lucide:file-text', value: 'reports' }
+                            { label: 'Analytics', icon: 'icon-[lucide--bar-chart-3]', value: 'analytics' },
+                            { label: 'Reports', icon: 'icon-[lucide--file-text]', value: 'reports' }
                         ]}
                         color="primary"
                     >
                         {#snippet body({ item })}
                             {#if item.value === 'overview'}
                                 <div class="grid gap-3 sm:grid-cols-3">
-                                    {#each [{ label: 'Users', value: '12,345', change: '+12.5%', icon: 'lucide:users', iconColor: 'text-primary', changeColor: 'text-success' }, { label: 'Revenue', value: '$48,290', change: '+8.2%', icon: 'lucide:dollar-sign', iconColor: 'text-success', changeColor: 'text-success' }, { label: 'Orders', value: '1,890', change: '-3.1%', icon: 'lucide:shopping-cart', iconColor: 'text-warning', changeColor: 'text-error' }] as stat (stat.label)}
+                                    {#each [{ label: 'Users', value: '12,345', change: '+12.5%', icon: 'icon-[lucide--users]', iconColor: 'text-primary', changeColor: 'text-success' }, { label: 'Revenue', value: '$48,290', change: '+8.2%', icon: 'icon-[lucide--dollar-sign]', iconColor: 'text-success', changeColor: 'text-success' }, { label: 'Orders', value: '1,890', change: '-3.1%', icon: 'icon-[lucide--shopping-cart]', iconColor: 'text-warning', changeColor: 'text-error' }] as stat (stat.label)}
                                         <div class="rounded-lg bg-surface-container p-4">
                                             <div class="flex items-center gap-2">
                                                 <Icon
@@ -673,7 +673,7 @@
                                     class="flex flex-col items-center justify-center rounded-lg bg-surface-container p-8"
                                 >
                                     <Icon
-                                        name="lucide:bar-chart-3"
+                                        name="icon-[lucide--bar-chart-3]"
                                         size="48"
                                         class="text-on-surface-variant/30"
                                     />
@@ -689,7 +689,7 @@
                                         >
                                             <div class="flex items-center gap-3">
                                                 <Icon
-                                                    name="lucide:file-text"
+                                                    name="icon-[lucide--file-text]"
                                                     size="18"
                                                     class="text-on-surface-variant"
                                                 />
@@ -698,7 +698,7 @@
                                             <Button
                                                 size="xs"
                                                 variant="ghost"
-                                                leadingIcon="lucide:download"
+                                                leadingIcon="icon-[lucide--download]"
                                                 label="Download"
                                             />
                                         </div>
@@ -718,28 +718,28 @@
                         items={[
                             {
                                 label: 'General',
-                                icon: 'lucide:settings',
+                                icon: 'icon-[lucide--settings]',
                                 value: 'general',
                                 content:
                                     'Configure general application settings like language, timezone, and display preferences.'
                             },
                             {
                                 label: 'Appearance',
-                                icon: 'lucide:palette',
+                                icon: 'icon-[lucide--palette]',
                                 value: 'appearance',
                                 content:
                                     'Customize the look and feel including themes, fonts, and layout.'
                             },
                             {
                                 label: 'Privacy',
-                                icon: 'lucide:lock',
+                                icon: 'icon-[lucide--lock]',
                                 value: 'privacy',
                                 content:
                                     'Control your privacy settings and data sharing preferences.'
                             },
                             {
                                 label: 'Notifications',
-                                icon: 'lucide:bell',
+                                icon: 'icon-[lucide--bell]',
                                 value: 'notifications',
                                 content: 'Manage email, push, and in-app notification preferences.'
                             }

@@ -10,9 +10,9 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
    id: 'suggestions',
    label: 'Suggestions',
    items: [
-    { value: 'calendar', label: 'Calendar', icon: 'lucide:calendar' },
-    { value: 'search-emoji', label: 'Search Emoji', icon: 'lucide:smile' },
-    { value: 'calculator', label: 'Calculator', icon: 'lucide:calculator' }
+    { value: 'calendar', label: 'Calendar', icon: 'icon-[lucide--calendar]' },
+    { value: 'search-emoji', label: 'Search Emoji', icon: 'icon-[lucide--smile]' },
+    { value: 'calculator', label: 'Calculator', icon: 'icon-[lucide--calculator]' }
    ]
   }
  ];
@@ -31,13 +31,13 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
     {
      value: 'appearance',
      label: 'Appearance',
-     icon: 'lucide:paintbrush',
+     icon: 'icon-[lucide--paintbrush]',
      description: 'Change theme and colors'
     },
     {
      value: 'language',
      label: 'Language',
-     icon: 'lucide:globe',
+     icon: 'icon-[lucide--globe]',
      description: 'Select preferred language'
     }
    ]
@@ -60,13 +60,13 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
     {
      value: 'apple',
      label: 'Apple',
-     icon: 'lucide:apple',
+     icon: 'icon-[lucide--apple]',
      onSelect: () => (lastSelected = 'Apple')
     },
     {
      value: 'banana',
      label: 'Banana',
-     icon: 'lucide:banana',
+     icon: 'icon-[lucide--banana]',
      onSelect: () => (lastSelected = 'Banana')
     }
    ]
@@ -84,7 +84,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
   {
    id: 'suggestions',
    label: 'Suggestions',
-   items: [{ value: 'calendar', label: 'Calendar', icon: 'lucide:calendar' }]
+   items: [{ value: 'calendar', label: 'Calendar', icon: 'icon-[lucide--calendar]' }]
   }
  ];
 </script>
@@ -107,7 +107,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
   {
    id: 'suggestions',
    label: 'Suggestions',
-   items: [{ value: 'calendar', label: 'Calendar', icon: 'lucide:calendar' }]
+   items: [{ value: 'calendar', label: 'Calendar', icon: 'icon-[lucide--calendar]' }]
   }
  ];
 </script>
@@ -163,15 +163,15 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
    id: 'general',
    label: 'General',
    items: [
-    { value: 'appearance', label: 'Appearance', icon: 'lucide:paintbrush' },
-    { value: 'language', label: 'Language', icon: 'lucide:globe' }
+    { value: 'appearance', label: 'Appearance', icon: 'icon-[lucide--paintbrush]' },
+    { value: 'language', label: 'Language', icon: 'icon-[lucide--globe]' }
    ]
   }
  ];
 </script>
 
 <Modal>
- <Button variant="outline" leadingIcon="lucide:search">
+ <Button variant="outline" leadingIcon="icon-[lucide--search]">
   Search...
   <Kbd value="meta" size="sm" />
   <Kbd value="K" size="sm" />

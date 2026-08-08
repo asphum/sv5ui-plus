@@ -473,7 +473,7 @@
                         <div
                             class="flex size-10 items-center justify-center rounded-full bg-primary text-on-primary"
                         >
-                            <Icon name="lucide:settings" size="20" />
+                            <Icon name="icon-[lucide--settings]" size="20" />
                         </div>
                         <div>
                             <h3 class="font-semibold text-on-surface">Custom Header</h3>
@@ -515,7 +515,7 @@
                         <div
                             class="flex size-16 items-center justify-center rounded-full bg-success/10"
                         >
-                            <Icon name="lucide:check-circle" size="32" class="text-success" />
+                            <Icon name="icon-[lucide--check-circle]" size="32" class="text-success" />
                         </div>
                         <h3 class="text-xl font-semibold text-on-surface">Payment Successful</h3>
                         <p class="text-center text-on-surface-variant">
@@ -674,14 +674,14 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:settings"
+                            leadingIcon="icon-[lucide--settings]"
                             label="Settings"
                             class="w-full"
                         />
                     {/snippet}
                     {#snippet body()}
                         <div class="space-y-4">
-                            {#each [{ icon: 'lucide:user', label: 'Account', desc: 'Manage your profile' }, { icon: 'lucide:bell', label: 'Notifications', desc: 'Push, email, SMS' }, { icon: 'lucide:shield', label: 'Privacy', desc: 'Data and permissions' }, { icon: 'lucide:palette', label: 'Appearance', desc: 'Theme and display' }, { icon: 'lucide:globe', label: 'Language', desc: 'English (US)' }] as item (item.label)}
+                            {#each [{ icon: 'icon-[lucide--user]', label: 'Account', desc: 'Manage your profile' }, { icon: 'icon-[lucide--bell]', label: 'Notifications', desc: 'Push, email, SMS' }, { icon: 'icon-[lucide--shield]', label: 'Privacy', desc: 'Data and permissions' }, { icon: 'icon-[lucide--palette]', label: 'Appearance', desc: 'Theme and display' }, { icon: 'icon-[lucide--globe]', label: 'Language', desc: 'English (US)' }] as item (item.label)}
                                 <button
                                     class="flex w-full items-center gap-3 rounded-lg p-2 text-left transition-colors hover:bg-surface-container"
                                 >
@@ -701,7 +701,7 @@
                                         <p class="text-xs text-on-surface-variant">{item.desc}</p>
                                     </div>
                                     <Icon
-                                        name="lucide:chevron-right"
+                                        name="icon-[lucide--chevron-right]"
                                         size="16"
                                         class="text-on-surface-variant"
                                     />
@@ -714,7 +714,7 @@
                             label="Sign Out"
                             variant="soft"
                             color="error"
-                            leadingIcon="lucide:log-out"
+                            leadingIcon="icon-[lucide--log-out]"
                             class="w-full"
                             onclick={() => (settingsOpen = false)}
                         />
@@ -730,7 +730,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:bell"
+                            leadingIcon="icon-[lucide--bell]"
                             label="Notifications"
                             class="w-full"
                         />
@@ -791,7 +791,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:filter"
+                            leadingIcon="icon-[lucide--filter]"
                             label="Filters"
                             class="w-full"
                         />
@@ -855,7 +855,7 @@
                         <Button
                             {...props}
                             variant="outline"
-                            leadingIcon="lucide:trash-2"
+                            leadingIcon="icon-[lucide--trash-2]"
                             label="Delete Account"
                             color="error"
                             class="w-full"
@@ -866,7 +866,7 @@
                             <div
                                 class="flex size-14 items-center justify-center rounded-full bg-error/10"
                             >
-                                <Icon name="lucide:alert-triangle" size="28" class="text-error" />
+                                <Icon name="icon-[lucide--alert-triangle]" size="28" class="text-error" />
                             </div>
                             <h3 class="text-lg font-semibold text-on-surface">Delete Account?</h3>
                             <p class="text-sm text-on-surface-variant">

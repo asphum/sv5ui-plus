@@ -14,7 +14,7 @@ export interface BreadcrumbItem {
     href?: string
 
     /**
-     * Leading icon name (e.g. 'lucide:home').
+     * Leading icon name (e.g. 'icon-[lucide--home]').
      */
     icon?: string
 
@@ -49,7 +49,7 @@ export interface BreadcrumbProps {
 
     /**
      * Icon name for the separator between items.
-     * @default 'lucide:chevron-right'
+     * @default 'icon-[lucide--chevron-right]'
      */
     separatorIcon?: string
 

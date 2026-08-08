@@ -61,10 +61,10 @@
         <div class="flex flex-col items-center gap-4 rounded-lg bg-surface-container-high p-8">
             <Icon
                 name={isMobile.matches
-                    ? 'lucide:smartphone'
+                    ? 'icon-[lucide--smartphone]'
                     : isTablet.matches
-                      ? 'lucide:tablet'
-                      : 'lucide:monitor'}
+                      ? 'icon-[lucide--tablet]'
+                      : 'icon-[lucide--monitor]'}
                 size="48"
                 class="text-primary"
             />
@@ -91,7 +91,7 @@
         <div class="grid gap-3 rounded-lg bg-surface-container-high p-4 sm:grid-cols-2">
             <div class="flex items-center gap-3 rounded-md bg-surface-container p-3">
                 <Icon
-                    name={prefersDark.matches ? 'lucide:moon' : 'lucide:sun'}
+                    name={prefersDark.matches ? 'icon-[lucide--moon]' : 'icon-[lucide--sun]'}
                     size="20"
                     class="text-on-surface-variant"
                 />
@@ -112,7 +112,7 @@
 
             <div class="flex items-center gap-3 rounded-md bg-surface-container p-3">
                 <Icon
-                    name={prefersReducedMotion.matches ? 'lucide:pause' : 'lucide:play'}
+                    name={prefersReducedMotion.matches ? 'icon-[lucide--pause]' : 'icon-[lucide--play]'}
                     size="20"
                     class="text-on-surface-variant"
                 />
@@ -134,8 +134,8 @@
             <div class="flex items-center gap-3 rounded-md bg-surface-container p-3">
                 <Icon
                     name={isLandscape.matches
-                        ? 'lucide:rectangle-horizontal'
-                        : 'lucide:rectangle-vertical'}
+                        ? 'icon-[lucide--rectangle-horizontal]'
+                        : 'icon-[lucide--rectangle-vertical]'}
                     size="20"
                     class="text-on-surface-variant"
                 />

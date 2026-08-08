@@ -54,7 +54,7 @@
                 <Avatar src="https://i.pravatar.cc/150?img=1" alt="User" />
             </Chip>
             <Chip color="success" text="3">
-                <Button icon="lucide:bell" variant="ghost" />
+                <Button icon="icon-[lucide--bell]" variant="ghost" />
             </Chip>
         </div>
     </section>
@@ -126,13 +126,13 @@
 </h2>
         <div class="flex flex-wrap items-center gap-6 rounded-lg bg-surface-container-high p-4">
             <Chip text="5" size="lg" color="error">
-                <Button icon="lucide:bell" variant="ghost" size="lg" />
+                <Button icon="icon-[lucide--bell]" variant="ghost" size="lg" />
             </Chip>
             <Chip text="99+" size="xl" color="primary">
-                <Button icon="lucide:mail" variant="ghost" size="lg" />
+                <Button icon="icon-[lucide--mail]" variant="ghost" size="lg" />
             </Chip>
             <Chip text="NEW" size="2xl" color="success">
-                <Button icon="lucide:gift" variant="ghost" size="lg" />
+                <Button icon="icon-[lucide--gift]" variant="ghost" size="lg" />
             </Chip>
         </div>
     </section>
@@ -201,20 +201,20 @@
         <div class="flex flex-wrap items-center gap-8 rounded-lg bg-surface-container-high p-4">
             <div class="flex flex-col items-center gap-2">
                 <Chip color="error" show={true}>
-                    <Button icon="lucide:bell" variant="ghost" />
+                    <Button icon="icon-[lucide--bell]" variant="ghost" />
                 </Chip>
                 <span class="text-xs text-on-surface-variant">show=true</span>
             </div>
             <div class="flex flex-col items-center gap-2">
                 <Chip color="error" show={false}>
-                    <Button icon="lucide:bell" variant="ghost" />
+                    <Button icon="icon-[lucide--bell]" variant="ghost" />
                 </Chip>
                 <span class="text-xs text-on-surface-variant">show=false</span>
             </div>
             <div class="flex flex-col items-center gap-3">
                 <Chip color="error" text={notificationCount} size="lg" bind:show={showChip}>
                     <Button
-                        icon="lucide:bell"
+                        icon="icon-[lucide--bell]"
                         variant="ghost"
                         onclick={() => {
                             showChip = !showChip
@@ -314,13 +314,13 @@
                 <p class="mb-3 text-sm font-medium text-on-surface-variant">Notification Bell</p>
                 <div class="flex items-center gap-4">
                     <Chip text="3" size="lg" color="error">
-                        <Button icon="lucide:bell" variant="ghost" size="lg" />
+                        <Button icon="icon-[lucide--bell]" variant="ghost" size="lg" />
                     </Chip>
                     <Chip text="12" size="lg" color="primary">
-                        <Button icon="lucide:mail" variant="ghost" size="lg" />
+                        <Button icon="icon-[lucide--mail]" variant="ghost" size="lg" />
                     </Chip>
                     <Chip text="99+" size="xl" color="warning">
-                        <Button icon="lucide:message-circle" variant="ghost" size="lg" />
+                        <Button icon="icon-[lucide--message-circle]" variant="ghost" size="lg" />
                     </Chip>
                 </div>
             </div>
@@ -372,7 +372,7 @@
 </h2>
         <div class="flex flex-wrap items-center gap-6 rounded-lg bg-surface-container-high p-4">
             <Chip color="error" ui={{ base: 'animate-pulse' }}>
-                <Button icon="lucide:bell" variant="ghost" />
+                <Button icon="icon-[lucide--bell]" variant="ghost" />
             </Chip>
             <Chip color="primary" size="2xs" inset ui={{ base: 'ring-2 ring-primary' }}>
                 <Avatar src="https://i.pravatar.cc/150?img=4" alt="User" size="2xl" />

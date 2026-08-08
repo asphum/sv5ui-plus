@@ -5,23 +5,23 @@
     const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
 
     const alignItems = [
-        { value: 'left', icon: 'lucide:align-left', ariaLabel: 'Align left' },
-        { value: 'center', icon: 'lucide:align-center', ariaLabel: 'Align center' },
-        { value: 'right', icon: 'lucide:align-right', ariaLabel: 'Align right' },
-        { value: 'justify', icon: 'lucide:align-justify', ariaLabel: 'Justify' }
+        { value: 'left', icon: 'icon-[lucide--align-left]', ariaLabel: 'Align left' },
+        { value: 'center', icon: 'icon-[lucide--align-center]', ariaLabel: 'Align center' },
+        { value: 'right', icon: 'icon-[lucide--align-right]', ariaLabel: 'Align right' },
+        { value: 'justify', icon: 'icon-[lucide--align-justify]', ariaLabel: 'Justify' }
     ]
 
     const formatItems = [
-        { value: 'bold', icon: 'lucide:bold', ariaLabel: 'Bold' },
-        { value: 'italic', icon: 'lucide:italic', ariaLabel: 'Italic' },
-        { value: 'underline', icon: 'lucide:underline', ariaLabel: 'Underline' },
-        { value: 'strikethrough', icon: 'lucide:strikethrough', ariaLabel: 'Strikethrough' }
+        { value: 'bold', icon: 'icon-[lucide--bold]', ariaLabel: 'Bold' },
+        { value: 'italic', icon: 'icon-[lucide--italic]', ariaLabel: 'Italic' },
+        { value: 'underline', icon: 'icon-[lucide--underline]', ariaLabel: 'Underline' },
+        { value: 'strikethrough', icon: 'icon-[lucide--strikethrough]', ariaLabel: 'Strikethrough' }
     ]
 
     const viewItems = [
-        { value: 'list', label: 'List', leadingIcon: 'lucide:list' },
-        { value: 'grid', label: 'Grid', leadingIcon: 'lucide:layout-grid' },
-        { value: 'columns', label: 'Columns', leadingIcon: 'lucide:columns-3' }
+        { value: 'list', label: 'List', leadingIcon: 'icon-[lucide--list]' },
+        { value: 'grid', label: 'Grid', leadingIcon: 'icon-[lucide--layout-grid]' },
+        { value: 'columns', label: 'Columns', leadingIcon: 'icon-[lucide--columns-3]' }
     ]
 
     const periodItems = [

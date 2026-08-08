@@ -3,12 +3,12 @@
     import type { LightboxApi, LightboxSlide } from '$lib/index.js'
 
     const features = [
-        { icon: 'lucide:zoom-in', label: 'Zoom & pan', desc: 'Wheel, double-tap, pinch, drag.' },
-        { icon: 'lucide:hand', label: 'Touch gestures', desc: 'Swipe to navigate, pinch to zoom.' },
-        { icon: 'lucide:images', label: 'Thumbnails', desc: 'Filmstrip with active sync.' },
-        { icon: 'lucide:play', label: 'Slideshow', desc: 'Autoplay with configurable delay.' },
-        { icon: 'lucide:expand', label: 'Fullscreen', desc: 'Native Fullscreen API + rotate.' },
-        { icon: 'lucide:search', label: 'SEO ready', desc: 'Real gallery <img> in the flow.' }
+        { icon: 'icon-[lucide--zoom-in]', label: 'Zoom & pan', desc: 'Wheel, double-tap, pinch, drag.' },
+        { icon: 'icon-[lucide--hand]', label: 'Touch gestures', desc: 'Swipe to navigate, pinch to zoom.' },
+        { icon: 'icon-[lucide--images]', label: 'Thumbnails', desc: 'Filmstrip with active sync.' },
+        { icon: 'icon-[lucide--play]', label: 'Slideshow', desc: 'Autoplay with configurable delay.' },
+        { icon: 'icon-[lucide--expand]', label: 'Fullscreen', desc: 'Native Fullscreen API + rotate.' },
+        { icon: 'icon-[lucide--search]', label: 'SEO ready', desc: 'Real gallery <img> in the flow.' }
     ]
 
     const titles = [
@@ -164,16 +164,16 @@
                         <span
                             class="absolute inset-0 flex items-center justify-center bg-black/30 text-white opacity-0 transition group-hover:opacity-100"
                         >
-                            <Icon name="lucide:zoom-in" class="size-10" />
+                            <Icon name="icon-[lucide--zoom-in]" class="size-10" />
                         </span>
                     </button>
                 {/snippet}
             </Lightbox>
             <div class="flex flex-wrap items-center gap-2">
-                <Button leadingIcon="lucide:image" onclick={() => api?.open(0)}>Open viewer</Button>
+                <Button leadingIcon="icon-[lucide--image]" onclick={() => api?.open(0)}>Open viewer</Button>
                 <Button
                     variant="outline"
-                    leadingIcon="lucide:layers"
+                    leadingIcon="icon-[lucide--layers]"
                     onclick={() => api?.open(hero.length - 1)}>Open at last frame</Button
                 >
             </div>

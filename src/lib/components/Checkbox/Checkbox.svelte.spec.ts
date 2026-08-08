@@ -66,7 +66,7 @@ describe('Checkbox', () => {
             render(Checkbox, { checked: true })
             const cb = getCheckbox()!
             await vi.waitFor(() => {
-                expect(cb.querySelector('svg')).not.toBeNull()
+                expect(cb.querySelector('svg, span[class*="icon-["]')).not.toBeNull()
             })
         })
 
@@ -89,7 +89,7 @@ describe('Checkbox', () => {
             render(Checkbox, { indeterminate: true })
             const cb = getCheckbox()!
             await vi.waitFor(() => {
-                expect(cb.querySelector('svg')).not.toBeNull()
+                expect(cb.querySelector('svg, span[class*="icon-["]')).not.toBeNull()
             })
         })
     })

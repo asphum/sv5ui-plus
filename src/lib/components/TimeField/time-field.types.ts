@@ -71,7 +71,7 @@ export interface TimeFieldProps {
     /**
      * Decorative icon shown at the end of the field. Pass `false` to hide it
      * and reclaim the reserved padding.
-     * @default 'lucide:clock'
+     * @default 'icon-[lucide--clock]'
      */
     icon?: string | false
     /** @default 'primary' */

@@ -65,7 +65,7 @@
                         <Button
                             variant="ghost"
                             color="secondary"
-                            icon="lucide:more-horizontal"
+                            icon="icon-[lucide--more-horizontal]"
                             square
                             size="sm"
                         />
@@ -100,14 +100,14 @@
                         <Button
                             variant="soft"
                             color="primary"
-                            leadingIcon="lucide:mail"
+                            leadingIcon="icon-[lucide--mail]"
                             label="Contact"
                             size="sm"
                         />
                         <Button
                             variant="ghost"
                             color="secondary"
-                            leadingIcon="lucide:user-plus"
+                            leadingIcon="icon-[lucide--user-plus]"
                             label="Follow"
                             size="sm"
                         />
@@ -128,7 +128,7 @@
         <div class="grid gap-4 md:grid-cols-3">
             <Card>
                 <div class="text-center">
-                    <Icon name="lucide:folder" size="32" class="mx-auto text-primary" />
+                    <Icon name="icon-[lucide--folder]" size="32" class="mx-auto text-primary" />
                     <h4 class="mt-2 font-medium">Documents</h4>
                     <p class="text-sm text-on-surface-variant">24 files</p>
                 </div>
@@ -136,7 +136,7 @@
 
             <Card variant="soft">
                 <div class="text-center">
-                    <Icon name="lucide:image" size="32" class="mx-auto text-success" />
+                    <Icon name="icon-[lucide--image]" size="32" class="mx-auto text-success" />
                     <h4 class="mt-2 font-medium">Images</h4>
                     <p class="text-sm text-on-surface-variant">128 files</p>
                 </div>
@@ -144,7 +144,7 @@
 
             <Card variant="subtle">
                 <div class="text-center">
-                    <Icon name="lucide:music" size="32" class="mx-auto text-tertiary" />
+                    <Icon name="icon-[lucide--music]" size="32" class="mx-auto text-tertiary" />
                     <h4 class="mt-2 font-medium">Music</h4>
                     <p class="text-sm text-on-surface-variant">56 files</p>
                 </div>

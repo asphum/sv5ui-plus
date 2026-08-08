@@ -3,9 +3,9 @@ export const quickExample = `<script lang="ts">
 
  const data = [
    {
-     id: '1', label: 'src', icon: 'lucide:folder',
+     id: '1', label: 'src', icon: 'icon-[lucide--folder]',
      children: [
-       { id: '1-1', label: 'app.html', icon: 'lucide:file' }
+       { id: '1-1', label: 'app.html', icon: 'icon-[lucide--file]' }
      ]
    }
  ];

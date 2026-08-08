@@ -8,9 +8,9 @@
             id: 'suggestions',
             label: 'Suggestions',
             items: [
-                { value: 'calendar', label: 'Calendar', icon: 'lucide:calendar' },
-                { value: 'search-emoji', label: 'Search Emoji', icon: 'lucide:smile' },
-                { value: 'calculator', label: 'Calculator', icon: 'lucide:calculator' }
+                { value: 'calendar', label: 'Calendar', icon: 'icon-[lucide--calendar]' },
+                { value: 'search-emoji', label: 'Search Emoji', icon: 'icon-[lucide--smile]' },
+                { value: 'calculator', label: 'Calculator', icon: 'icon-[lucide--calculator]' }
             ]
         },
         {
@@ -20,19 +20,19 @@
                 {
                     value: 'profile',
                     label: 'Profile',
-                    icon: 'lucide:user',
+                    icon: 'icon-[lucide--user]',
                     description: 'Manage your profile settings'
                 },
                 {
                     value: 'billing',
                     label: 'Billing',
-                    icon: 'lucide:credit-card',
+                    icon: 'icon-[lucide--credit-card]',
                     description: 'View billing information'
                 },
                 {
                     value: 'preferences',
                     label: 'Preferences',
-                    icon: 'lucide:settings',
+                    icon: 'icon-[lucide--settings]',
                     description: 'Configure app preferences'
                 }
             ]
@@ -45,18 +45,18 @@
             id: 'actions',
             label: 'Actions',
             items: [
-                { value: 'new-file', label: 'New File', icon: 'lucide:file-plus' },
-                { value: 'new-folder', label: 'New Folder', icon: 'lucide:folder-plus' },
+                { value: 'new-file', label: 'New File', icon: 'icon-[lucide--file-plus]' },
+                { value: 'new-folder', label: 'New Folder', icon: 'icon-[lucide--folder-plus]' },
                 {
                     value: 'delete',
                     label: 'Delete (disabled)',
-                    icon: 'lucide:trash-2',
+                    icon: 'icon-[lucide--trash-2]',
                     disabled: true
                 },
                 {
                     value: 'archive',
                     label: 'Archive (disabled)',
-                    icon: 'lucide:archive',
+                    icon: 'icon-[lucide--archive]',
                     disabled: true
                 }
             ]
@@ -72,19 +72,19 @@
                 {
                     value: 'home',
                     label: 'Home',
-                    icon: 'lucide:home',
+                    icon: 'icon-[lucide--home]',
                     keywords: ['dashboard', 'main', 'start']
                 },
                 {
                     value: 'docs',
                     label: 'Documentation',
-                    icon: 'lucide:book-open',
+                    icon: 'icon-[lucide--book-open]',
                     keywords: ['help', 'guide', 'manual']
                 },
                 {
                     value: 'components',
                     label: 'Components',
-                    icon: 'lucide:blocks',
+                    icon: 'icon-[lucide--blocks]',
                     keywords: ['ui', 'elements', 'widgets']
                 }
             ]
@@ -132,19 +132,19 @@
                 {
                     value: 'apple',
                     label: 'Apple',
-                    icon: 'lucide:apple',
+                    icon: 'icon-[lucide--apple]',
                     onSelect: () => (lastSelected = 'Apple')
                 },
                 {
                     value: 'banana',
                     label: 'Banana',
-                    icon: 'lucide:banana',
+                    icon: 'icon-[lucide--banana]',
                     onSelect: () => (lastSelected = 'Banana')
                 },
                 {
                     value: 'grape',
                     label: 'Grape',
-                    icon: 'lucide:grape',
+                    icon: 'icon-[lucide--grape]',
                     onSelect: () => (lastSelected = 'Grape')
                 }
             ]
@@ -160,13 +160,13 @@
                 {
                     value: 'appearance',
                     label: 'Appearance',
-                    icon: 'lucide:paintbrush',
+                    icon: 'icon-[lucide--paintbrush]',
                     description: 'Change theme and colors'
                 },
                 {
                     value: 'language',
                     label: 'Language',
-                    icon: 'lucide:globe',
+                    icon: 'icon-[lucide--globe]',
                     description: 'Select preferred language'
                 }
             ]
@@ -178,13 +178,13 @@
                 {
                     value: 'security',
                     label: 'Security',
-                    icon: 'lucide:shield',
+                    icon: 'icon-[lucide--shield]',
                     description: 'Password and 2FA'
                 },
                 {
                     value: 'notifications',
                     label: 'Notifications',
-                    icon: 'lucide:bell',
+                    icon: 'icon-[lucide--bell]',
                     description: 'Email and push alerts'
                 }
             ]
@@ -196,13 +196,13 @@
                 {
                     value: 'api-keys',
                     label: 'API Keys',
-                    icon: 'lucide:key',
+                    icon: 'icon-[lucide--key]',
                     description: 'Manage API credentials'
                 },
                 {
                     value: 'webhooks',
                     label: 'Webhooks',
-                    icon: 'lucide:webhook',
+                    icon: 'icon-[lucide--webhook]',
                     description: 'Configure webhook endpoints'
                 }
             ]
@@ -376,8 +376,8 @@
                                 id: 'size-demo',
                                 label: 'Actions',
                                 items: [
-                                    { value: 'copy', label: 'Copy', icon: 'lucide:copy' },
-                                    { value: 'paste', label: 'Paste', icon: 'lucide:clipboard' }
+                                    { value: 'copy', label: 'Copy', icon: 'icon-[lucide--copy]' },
+                                    { value: 'paste', label: 'Paste', icon: 'icon-[lucide--clipboard]' }
                                 ]
                             }
                         ]}
@@ -519,7 +519,7 @@
                     </a>
 </h2>
         <Popover>
-            <Button variant="outline" leadingIcon="lucide:search">Open Command...</Button>
+            <Button variant="outline" leadingIcon="icon-[lucide--search]">Open Command...</Button>
             {#snippet content()}
                 <Command
                     groups={basicGroups}
@@ -542,7 +542,7 @@
                     </a>
 </h2>
         <Modal>
-            <Button variant="outline" leadingIcon="lucide:search">
+            <Button variant="outline" leadingIcon="icon-[lucide--search]">
                 Search...
                 <Kbd value="meta" size="sm" />
                 <Kbd value="K" size="sm" />
@@ -564,7 +564,7 @@
                     </a>
 </h2>
         <Drawer handle={false}>
-            <Button variant="outline" leadingIcon="lucide:terminal">Open Command Drawer</Button>
+            <Button variant="outline" leadingIcon="icon-[lucide--terminal]">Open Command Drawer</Button>
             {#snippet content()}
                 <Command groups={multiGroups} placeholder="Search settings..." />
             {/snippet}

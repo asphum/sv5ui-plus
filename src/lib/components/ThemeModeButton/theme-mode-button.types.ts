@@ -26,14 +26,14 @@ export type ThemeModeButtonProps = Omit<HTMLAttributes<HTMLElement>, 'class' | '
     /**
      * Icon displayed when light mode is active.
      * Supports any valid Iconify icon name.
-     * @default 'lucide:sun'
+     * @default 'icon-[lucide--sun]'
      */
     lightIcon?: string
 
     /**
      * Icon displayed when dark mode is active.
      * Supports any valid Iconify icon name.
-     * @default 'lucide:moon'
+     * @default 'icon-[lucide--moon]'
      */
     darkIcon?: string
 

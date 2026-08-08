@@ -273,13 +273,13 @@ export interface SelectMenuProps extends ContentProps, TriggerHTMLProps {
 
     /**
      * Icon placed after the selected value (chevron area).
-     * @default 'lucide:chevron-down'
+     * @default 'icon-[lucide--chevron-down]'
      */
     trailingIcon?: string
 
     /**
      * Icon displayed next to selected items in the dropdown.
-     * @default 'lucide:check'
+     * @default 'icon-[lucide--check]'
      */
     selectedIcon?: string
 

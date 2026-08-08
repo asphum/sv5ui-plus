@@ -84,7 +84,7 @@
                 color={pageLocked ? 'error' : 'primary'}
                 onclick={() => (pageLocked = !pageLocked)}
             >
-                <Icon name={pageLocked ? 'lucide:lock' : 'lucide:lock-open'} size="16" />
+                <Icon name={pageLocked ? 'icon-[lucide--lock]' : 'icon-[lucide--lock-open]'} size="16" />
                 {pageLocked ? 'Unlock' : 'Lock'} page
             </Button>
             <Badge

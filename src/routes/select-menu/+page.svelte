@@ -36,10 +36,10 @@
     ]
 
     const iconItems: SelectMenuItem[] = [
-        { value: 'home', label: 'Home', icon: 'lucide:home' },
-        { value: 'settings', label: 'Settings', icon: 'lucide:settings' },
-        { value: 'profile', label: 'Profile', icon: 'lucide:user' },
-        { value: 'notifications', label: 'Notifications', icon: 'lucide:bell' }
+        { value: 'home', label: 'Home', icon: 'icon-[lucide--home]' },
+        { value: 'settings', label: 'Settings', icon: 'icon-[lucide--settings]' },
+        { value: 'profile', label: 'Profile', icon: 'icon-[lucide--user]' },
+        { value: 'notifications', label: 'Notifications', icon: 'icon-[lucide--bell]' }
     ]
 
     const avatarItems: SelectMenuItem[] = [
@@ -182,7 +182,7 @@
                 bind:value={bindValue}
                 items={fruits}
                 placeholder="Select a fruit..."
-                leadingIcon="lucide:apple"
+                leadingIcon="icon-[lucide--apple]"
             />
             <p class="text-sm text-on-surface-variant">
                 Value: <span class="font-mono text-on-surface">{bindValue || '(empty)'}</span>
@@ -280,10 +280,10 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <SelectMenu leadingIcon="lucide:search" items={fruits} placeholder="Search..." />
+                <SelectMenu leadingIcon="icon-[lucide--search]" items={fruits} placeholder="Search..." />
             </div>
             <div class="w-64">
-                <SelectMenu leadingIcon="lucide:globe" items={fruits} placeholder="Language" />
+                <SelectMenu leadingIcon="icon-[lucide--globe]" items={fruits} placeholder="Language" />
             </div>
         </div>
     </section>
@@ -475,7 +475,7 @@
         <div class="max-w-sm space-y-4">
             <FormField label="Country" description="Select your country of residence." required>
                 <SelectMenu
-                    leadingIcon="lucide:globe"
+                    leadingIcon="icon-[lucide--globe]"
                     items={[
                         { value: 'us', label: 'United States' },
                         { value: 'uk', label: 'United Kingdom' },
@@ -613,7 +613,7 @@
                 >
                     {#snippet itemTrailing({ item, selected })}
                         {#if selected}
-                            <Icon name="lucide:check" class="size-4 text-primary" />
+                            <Icon name="icon-[lucide--check]" class="size-4 text-primary" />
                         {:else}
                             <span class="text-xs text-on-surface-variant/60">
                                 {#if item.value === 'cut'}⌘X
@@ -699,7 +699,7 @@
                     {#snippet empty({ searchTerm })}
                         <div class="flex flex-col items-center gap-1 py-6 text-center">
                             <Icon
-                                name="lucide:search-x"
+                                name="icon-[lucide--search-x]"
                                 class="size-8 text-on-surface-variant/40"
                             />
                             <p class="text-sm font-medium text-on-surface">No match</p>
@@ -733,7 +733,7 @@
                     {/snippet}
                     {#snippet trailingSlot()}
                         <Icon
-                            name="lucide:chevrons-up-down"
+                            name="icon-[lucide--chevrons-up-down]"
                             class="size-4 text-on-surface-variant/60"
                         />
                     {/snippet}
@@ -766,10 +766,10 @@
                     <FormField label="Priority">
                         <SelectMenu
                             items={[
-                                { value: 'low', label: 'Low', icon: 'lucide:arrow-down' },
-                                { value: 'medium', label: 'Medium', icon: 'lucide:minus' },
-                                { value: 'high', label: 'High', icon: 'lucide:arrow-up' },
-                                { value: 'urgent', label: 'Urgent', icon: 'lucide:alert-triangle' }
+                                { value: 'low', label: 'Low', icon: 'icon-[lucide--arrow-down]' },
+                                { value: 'medium', label: 'Medium', icon: 'icon-[lucide--minus]' },
+                                { value: 'high', label: 'High', icon: 'icon-[lucide--arrow-up]' },
+                                { value: 'urgent', label: 'Urgent', icon: 'icon-[lucide--alert-triangle]' }
                             ]}
                             placeholder="Set priority..."
                         />
@@ -790,7 +790,7 @@
                     <SelectMenu
                         items={manyItems}
                         placeholder="Search from 50 items..."
-                        leadingIcon="lucide:search"
+                        leadingIcon="icon-[lucide--search]"
                     />
                 </div>
             </div>
@@ -839,7 +839,7 @@
                         bind:value={chipValue}
                         items={avatarItems}
                         placeholder="Add members..."
-                        leadingIcon="lucide:users"
+                        leadingIcon="icon-[lucide--users]"
                     >
                         {#snippet selected({ items, remove })}
                             <span class="flex flex-wrap items-center gap-1">
@@ -857,7 +857,7 @@
                                                 remove(item.value)
                                             }}
                                         >
-                                            <Icon name="lucide:x" class="size-2.5" />
+                                            <Icon name="icon-[lucide--x]" class="size-2.5" />
                                         </button>
                                     </span>
                                 {/each}
@@ -900,7 +900,7 @@
                         items={fruits}
                         createItem
                         placeholder="Pick or create a fruit..."
-                        leadingIcon="lucide:apple"
+                        leadingIcon="icon-[lucide--apple]"
                         onCreate={(v) => (createLastEvent = v)}
                     />
                 </div>
@@ -926,7 +926,7 @@
                         items={createTagItems}
                         createItem="always"
                         placeholder="Add tags..."
-                        leadingIcon="lucide:tag"
+                        leadingIcon="icon-[lucide--tag]"
                         createItemLabel={(v) => `Add tag "${v}"`}
                         onCreate={(v) =>
                             (createTagItems = [...createTagItems, { value: v, label: v }])}

@@ -34,7 +34,7 @@
         placeholder = 'Select language',
         ariaLabel = 'Change language',
         menuLabel = 'Language',
-        icon = 'lucide:languages',
+        icon = 'icon-[lucide--languages]',
         chevronIcon = icons.chevronDown,
         showIcon = true,
         showChevron = true,

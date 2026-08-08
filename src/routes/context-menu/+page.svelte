@@ -12,20 +12,20 @@
     let selectedTheme = $state('system')
 
     const basicItems: ContextMenuItem[] = [
-        { label: 'Back', icon: 'lucide:arrow-left', kbds: ['alt', 'left'] },
-        { label: 'Forward', icon: 'lucide:arrow-right', kbds: ['alt', 'right'], disabled: true },
-        { label: 'Reload', icon: 'lucide:refresh-cw', kbds: ['meta', 'r'] },
+        { label: 'Back', icon: 'icon-[lucide--arrow-left]', kbds: ['alt', 'left'] },
+        { label: 'Forward', icon: 'icon-[lucide--arrow-right]', kbds: ['alt', 'right'], disabled: true },
+        { label: 'Reload', icon: 'icon-[lucide--refresh-cw]', kbds: ['meta', 'r'] },
         { type: 'separator' },
-        { label: 'Save As...', icon: 'lucide:save', kbds: ['meta', 's'] },
-        { label: 'Print...', icon: 'lucide:printer', kbds: ['meta', 'p'] }
+        { label: 'Save As...', icon: 'icon-[lucide--save]', kbds: ['meta', 's'] },
+        { label: 'Print...', icon: 'icon-[lucide--printer]', kbds: ['meta', 'p'] }
     ]
 
     const coloredItems: ContextMenuItem[] = [
-        { label: 'Edit', icon: 'lucide:pencil' },
-        { label: 'Duplicate', icon: 'lucide:copy' },
+        { label: 'Edit', icon: 'icon-[lucide--pencil]' },
+        { label: 'Duplicate', icon: 'icon-[lucide--copy]' },
         { type: 'separator' },
-        { label: 'Archive', icon: 'lucide:archive', color: 'warning' },
-        { label: 'Delete', icon: 'lucide:trash-2', color: 'error' }
+        { label: 'Archive', icon: 'icon-[lucide--archive]', color: 'warning' },
+        { label: 'Delete', icon: 'icon-[lucide--trash-2]', color: 'error' }
     ]
 
     const checkboxItems: ContextMenuItem[] = $derived([
@@ -69,14 +69,14 @@
     ])
 
     const submenuItems: ContextMenuItem[] = [
-        { label: 'Cut', icon: 'lucide:scissors', kbds: ['meta', 'x'] },
-        { label: 'Copy', icon: 'lucide:copy', kbds: ['meta', 'c'] },
-        { label: 'Paste', icon: 'lucide:clipboard', kbds: ['meta', 'v'] },
+        { label: 'Cut', icon: 'icon-[lucide--scissors]', kbds: ['meta', 'x'] },
+        { label: 'Copy', icon: 'icon-[lucide--copy]', kbds: ['meta', 'c'] },
+        { label: 'Paste', icon: 'icon-[lucide--clipboard]', kbds: ['meta', 'v'] },
         { type: 'separator' },
         {
             type: 'sub',
             label: 'More Tools',
-            icon: 'lucide:wrench',
+            icon: 'icon-[lucide--wrench]',
             items: [
                 { label: 'Save Page As...', kbds: ['meta', 's'] },
                 { label: 'Create Shortcut...' },
@@ -88,20 +88,20 @@
         {
             type: 'sub',
             label: 'Share',
-            icon: 'lucide:share-2',
+            icon: 'icon-[lucide--share-2]',
             items: [
-                { label: 'Email', icon: 'lucide:mail' },
-                { label: 'Message', icon: 'lucide:message-square' },
+                { label: 'Email', icon: 'icon-[lucide--mail]' },
+                { label: 'Message', icon: 'icon-[lucide--message-square]' },
                 { type: 'separator' },
-                { label: 'Copy Link', icon: 'lucide:link' }
+                { label: 'Copy Link', icon: 'icon-[lucide--link]' }
             ]
         }
     ]
 
     const fullItems: ContextMenuItem[] = $derived([
-        { label: 'Cut', icon: 'lucide:scissors', kbds: ['meta', 'x'] },
-        { label: 'Copy', icon: 'lucide:copy', kbds: ['meta', 'c'] },
-        { label: 'Paste', icon: 'lucide:clipboard', kbds: ['meta', 'v'] },
+        { label: 'Cut', icon: 'icon-[lucide--scissors]', kbds: ['meta', 'x'] },
+        { label: 'Copy', icon: 'icon-[lucide--copy]', kbds: ['meta', 'c'] },
+        { label: 'Paste', icon: 'icon-[lucide--clipboard]', kbds: ['meta', 'v'] },
         { type: 'separator' },
         { type: 'label', label: 'View' },
         {
@@ -120,7 +120,7 @@
         {
             type: 'sub',
             label: 'More Tools',
-            icon: 'lucide:wrench',
+            icon: 'icon-[lucide--wrench]',
             items: [
                 { label: 'Save Page As...', kbds: ['meta', 's'] },
                 { label: 'Create Shortcut...' },
@@ -129,7 +129,7 @@
             ]
         },
         { type: 'separator' },
-        { label: 'Delete', icon: 'lucide:trash-2', color: 'error', kbds: ['delete'] }
+        { label: 'Delete', icon: 'icon-[lucide--trash-2]', color: 'error', kbds: ['delete'] }
     ])
 
     const triggerClass =

@@ -47,7 +47,7 @@
         type="search"
         {placeholder}
         bind:value
-        leadingIcon="lucide:search"
+        leadingIcon="icon-[lucide--search]"
         class={className}
         {...(rest as any)}
     >
@@ -87,7 +87,7 @@
     <Button
         variant="ghost"
         color="surface"
-        leadingIcon="lucide:search"
+        leadingIcon="icon-[lucide--search]"
         class={className}
         onclick={() => (open = true)}
         {...(rest as any)}

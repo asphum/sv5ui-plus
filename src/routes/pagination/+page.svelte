@@ -334,9 +334,9 @@
             itemsPerPage={10}
             page={5}
             showEdges
-            prevIcon="lucide:arrow-left"
-            nextIcon="lucide:arrow-right"
-            ellipsisIcon="lucide:more-horizontal"
+            prevIcon="icon-[lucide--arrow-left]"
+            nextIcon="icon-[lucide--arrow-right]"
+            ellipsisIcon="icon-[lucide--more-horizontal]"
         />
     </section>
 

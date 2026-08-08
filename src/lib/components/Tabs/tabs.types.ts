@@ -14,7 +14,7 @@ import type { TabsSlots, TabsVariantProps } from './tabs.variants.js'
  * ```ts
  * const item: TabsItem = {
  *   label: 'Account',
- *   icon: 'lucide:user',
+ *   icon: 'icon-[lucide--user]',
  *   value: 'account',
  *   content: 'Manage your account settings here.'
  * }
@@ -28,7 +28,7 @@ export interface TabsItem {
 
     /**
      * Icon displayed before the label (leading position).
-     * Supports any Iconify icon name (e.g., 'lucide:home', 'mdi:account').
+     * Supports any Iconify icon name (e.g., 'icon-[lucide--home]', 'mdi:account').
      */
     icon?: string
 

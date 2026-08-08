@@ -893,7 +893,7 @@
                                     type="button"
                                     variant="ghost"
                                     color="error"
-                                    icon="lucide:trash-2"
+                                    icon="icon-[lucide--trash-2]"
                                     square
                                     disabled={guestsState.guests.length === 1}
                                     onclick={() => removeGuest(index)}
@@ -904,7 +904,7 @@
                 {/each}
 
                 <div class="flex items-center gap-3">
-                    <Button type="button" variant="outline" icon="lucide:plus" onclick={addGuest}>
+                    <Button type="button" variant="outline" icon="icon-[lucide--plus]" onclick={addGuest}>
                         Add guest
                     </Button>
                     <Button type="submit">Submit ({guestsState.guests.length})</Button>

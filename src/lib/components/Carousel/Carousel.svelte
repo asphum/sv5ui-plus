@@ -59,10 +59,10 @@
     let canScrollNext = $state(false)
 
     const resolvedPrevIcon = $derived(
-        prevIcon ?? (orientation === 'vertical' ? 'lucide:chevron-up' : 'lucide:chevron-left')
+        prevIcon ?? (orientation === 'vertical' ? 'icon-[lucide--chevron-up]' : 'icon-[lucide--chevron-left]')
     )
     const resolvedNextIcon = $derived(
-        nextIcon ?? (orientation === 'vertical' ? 'lucide:chevron-down' : 'lucide:chevron-right')
+        nextIcon ?? (orientation === 'vertical' ? 'icon-[lucide--chevron-down]' : 'icon-[lucide--chevron-right]')
     )
 
     function buildAutoplay(opts: CarouselAutoplayOptions) {

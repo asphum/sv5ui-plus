@@ -24,15 +24,15 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  let value = $state('');
 </script>
 
-<Select bind:value {items} placeholder="Select a fruit..." leadingIcon="lucide:apple" />
+<Select bind:value {items} placeholder="Select a fruit..." leadingIcon="icon-[lucide--apple]" />
 <p>Value: {value || '(empty)'}</p>`,
     'Items with Icons': `<script lang="ts">
  import { Select } from 'svelora';
 
  const items = [
-  { value: 'home', label: 'Home', icon: 'lucide:home' },
-  { value: 'settings', label: 'Settings', icon: 'lucide:settings' },
-  { value: 'profile', label: 'Profile', icon: 'lucide:user' }
+  { value: 'home', label: 'Home', icon: 'icon-[lucide--home]' },
+  { value: 'settings', label: 'Settings', icon: 'icon-[lucide--settings]' },
+  { value: 'profile', label: 'Profile', icon: 'icon-[lucide--user]' }
  ];
 </script>
 
@@ -58,7 +58,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <FormField label="Country" description="Select your country of residence." required>
  <Select
-  leadingIcon="lucide:globe"
+  leadingIcon="icon-[lucide--globe]"
   items={[
    { value: 'us', label: 'United States' },
    { value: 'uk', label: 'United Kingdom' },
@@ -89,9 +89,9 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  ];
 
  const sections = [
-  { value: 'home', label: 'Home', icon: 'lucide:home' },
-  { value: 'settings', label: 'Settings', icon: 'lucide:settings' },
-  { value: 'profile', label: 'Profile', icon: 'lucide:user' }
+  { value: 'home', label: 'Home', icon: 'icon-[lucide--home]' },
+  { value: 'settings', label: 'Settings', icon: 'icon-[lucide--settings]' },
+  { value: 'profile', label: 'Profile', icon: 'icon-[lucide--user]' }
  ];
 
  let value = $state<string[]>(['apple', 'banana']);
@@ -104,7 +104,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  multiple
  items={sections}
  separator=" • "
- leadingIcon="lucide:list-checks"
+ leadingIcon="icon-[lucide--list-checks]"
  placeholder="Pick sections..."
 />`
 }

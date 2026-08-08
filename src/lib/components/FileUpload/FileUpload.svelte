@@ -39,7 +39,7 @@
         sortable = true,
         onReorder,
         sortableHandle = true,
-        dragHandleIcon = icons.dragHandle ?? 'lucide:grip-vertical',
+        dragHandleIcon = icons.dragHandle ?? 'icon-[lucide--grip-vertical]',
         disabled = false,
         loading = false,
         loadingIcon = icons.loading,

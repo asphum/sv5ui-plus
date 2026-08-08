@@ -29,9 +29,9 @@ export type TreeValue = string | string[]
  * ```ts
  * const item: TreeItem = {
  *   label: 'src',
- *   icon: 'lucide:folder',
+ *   icon: 'icon-[lucide--folder]',
  *   defaultExpanded: true,
- *   children: [{ label: 'index.ts', icon: 'lucide:file' }]
+ *   children: [{ label: 'index.ts', icon: 'icon-[lucide--file]' }]
  * }
  * ```
  */
@@ -371,21 +371,21 @@ export interface TreeProps<T extends TreeItem = TreeItem>
 
     /**
      * Iconify icon name for the expand/collapse chevron on parent nodes.
-     * @default icons.chevronDown ('lucide:chevron-down')
+     * @default icons.chevronDown ('icon-[lucide--chevron-down]')
      */
     trailingIcon?: string
 
     /**
      * Iconify icon name shown before the label of expanded parent nodes
      * without an explicit `item.icon`.
-     * @default icons.folderOpen ('lucide:folder-open')
+     * @default icons.folderOpen ('icon-[lucide--folder-open]')
      */
     expandedIcon?: string
 
     /**
      * Iconify icon name shown before the label of collapsed parent nodes
      * without an explicit `item.icon`.
-     * @default icons.folder ('lucide:folder')
+     * @default icons.folder ('icon-[lucide--folder]')
      */
     collapsedIcon?: string
 

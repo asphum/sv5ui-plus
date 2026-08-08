@@ -143,7 +143,7 @@
                         <div class="flex items-center justify-between">
                             <p class="font-medium">Confirm Action</p>
                             <Button
-                                icon="lucide:x"
+                                icon="icon-[lucide--x]"
                                 square
                                 variant="ghost"
                                 size="xs"
@@ -302,7 +302,7 @@
                     class="flex items-center justify-center rounded-lg bg-surface-container-high p-6"
                 >
                     <Popover>
-                        <Button variant="soft" icon="lucide:user">Profile</Button>
+                        <Button variant="soft" icon="icon-[lucide--user]">Profile</Button>
                         {#snippet content()}
                             <div class="w-72">
                                 <div class="p-4">
@@ -310,7 +310,7 @@
                                         <div
                                             class="flex size-10 items-center justify-center rounded-full bg-primary text-on-primary"
                                         >
-                                            <Icon name="lucide:user" size="20" />
+                                            <Icon name="icon-[lucide--user]" size="20" />
                                         </div>
                                         <div>
                                             <p class="font-medium">John Doe</p>
@@ -335,13 +335,13 @@
                                         variant="ghost"
                                         size="sm"
                                         class="w-full justify-start"
-                                        icon="lucide:settings">Settings</Button
+                                        icon="icon-[lucide--settings]">Settings</Button
                                     >
                                     <Button
                                         variant="ghost"
                                         size="sm"
                                         class="w-full justify-start"
-                                        icon="lucide:log-out"
+                                        icon="icon-[lucide--log-out]"
                                         color="error">Sign out</Button
                                     >
                                 </div>
@@ -358,35 +358,35 @@
                     class="flex items-center justify-center rounded-lg bg-surface-container-high p-6"
                 >
                     <Popover>
-                        <Button variant="outline" icon="lucide:share-2">Share</Button>
+                        <Button variant="outline" icon="icon-[lucide--share-2]">Share</Button>
                         {#snippet content({ close })}
                             <div class="w-56 p-2">
                                 <Button
                                     variant="ghost"
                                     size="sm"
                                     class="w-full justify-start"
-                                    icon="lucide:link"
+                                    icon="icon-[lucide--link]"
                                     onclick={close}>Copy link</Button
                                 >
                                 <Button
                                     variant="ghost"
                                     size="sm"
                                     class="w-full justify-start"
-                                    icon="lucide:twitter"
+                                    icon="icon-[lucide--twitter]"
                                     onclick={close}>Twitter</Button
                                 >
                                 <Button
                                     variant="ghost"
                                     size="sm"
                                     class="w-full justify-start"
-                                    icon="lucide:facebook"
+                                    icon="icon-[lucide--facebook]"
                                     onclick={close}>Facebook</Button
                                 >
                                 <Button
                                     variant="ghost"
                                     size="sm"
                                     class="w-full justify-start"
-                                    icon="lucide:mail"
+                                    icon="icon-[lucide--mail]"
                                     onclick={close}>Email</Button
                                 >
                             </div>
@@ -402,7 +402,7 @@
                     class="flex items-center justify-center rounded-lg bg-surface-container-high p-6"
                 >
                     <Popover>
-                        <Button variant="outline" icon="lucide:bell">Notifications</Button>
+                        <Button variant="outline" icon="icon-[lucide--bell]">Notifications</Button>
                         {#snippet content()}
                             <div class="w-80">
                                 <div class="flex items-center justify-between p-4 pb-2">
@@ -414,7 +414,7 @@
                                         <div
                                             class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
                                         >
-                                            <Icon name="lucide:message-circle" size="16" />
+                                            <Icon name="icon-[lucide--message-circle]" size="16" />
                                         </div>
                                         <div>
                                             <p class="text-sm">New comment on your post</p>
@@ -427,7 +427,7 @@
                                         <div
                                             class="flex size-8 shrink-0 items-center justify-center rounded-full bg-success/10 text-success"
                                         >
-                                            <Icon name="lucide:user-plus" size="16" />
+                                            <Icon name="icon-[lucide--user-plus]" size="16" />
                                         </div>
                                         <div>
                                             <p class="text-sm">New follower: Jane Smith</p>
@@ -450,7 +450,7 @@
                     class="flex items-center justify-center rounded-lg bg-surface-container-high p-6"
                 >
                     <Popover>
-                        <Button variant="outline" icon="lucide:filter">Filters</Button>
+                        <Button variant="outline" icon="icon-[lucide--filter]">Filters</Button>
                         {#snippet content({ close })}
                             <div class="w-72">
                                 <div class="p-4">

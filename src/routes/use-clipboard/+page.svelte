@@ -9,9 +9,9 @@
     let textareaValue = $state('const greeting = "Hello World";\nconsole.log(greeting);')
 
     const snippets = [
-        { label: 'npm', text: 'npm install svelora', icon: 'lucide:terminal' },
-        { label: 'pnpm', text: 'pnpm add svelora', icon: 'lucide:terminal' },
-        { label: 'yarn', text: 'yarn add svelora', icon: 'lucide:terminal' }
+        { label: 'npm', text: 'npm install svelora', icon: 'icon-[lucide--terminal]' },
+        { label: 'pnpm', text: 'pnpm add svelora', icon: 'icon-[lucide--terminal]' },
+        { label: 'yarn', text: 'yarn add svelora', icon: 'icon-[lucide--terminal]' }
     ]
 </script>
 
@@ -34,7 +34,7 @@
         <div class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4">
             <Button
                 onclick={() => clipboard.copy('Hello from Svelora!')}
-                icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+                icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
                 color={clipboard.copied ? 'success' : 'primary'}
             >
                 {clipboard.copied ? 'Copied!' : 'Copy Text'}
@@ -62,7 +62,7 @@
         <div class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4">
             <Button
                 onclick={() => clipboardLong.copy('Copied with 5s timeout!')}
-                icon={clipboardLong.copied ? 'lucide:check' : 'lucide:copy'}
+                icon={clipboardLong.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
                 color={clipboardLong.copied ? 'success' : 'secondary'}
                 variant="outline"
             >
@@ -86,7 +86,7 @@
                 </div>
                 <Button
                     onclick={() => clipboard.copy(inputValue)}
-                    icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+                    icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
                     color={clipboard.copied ? 'success' : 'primary'}
                     variant="outline"
                     square
@@ -107,7 +107,7 @@
             <Textarea bind:value={textareaValue} rows={3} />
             <Button
                 onclick={() => clipboard.copy(textareaValue)}
-                icon={clipboard.copied ? 'lucide:check' : 'lucide:copy'}
+                icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--copy]'}
                 color={clipboard.copied ? 'success' : 'primary'}
                 size="sm"
             >
@@ -133,7 +133,7 @@
                     </div>
                     <Button
                         onclick={() => clipboard.copy(snippet.text)}
-                        icon={clipboard.copied ? 'lucide:check' : 'lucide:clipboard'}
+                        icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--clipboard]'}
                         color={clipboard.copied ? 'success' : 'surface'}
                         variant="ghost"
                         size="xs"
@@ -164,7 +164,7 @@
                         </div>
                         <Button
                             onclick={() => clipboard.copy('https://svelora.vercel.app/use-clipboard')}
-                            icon={clipboard.copied ? 'lucide:check' : 'lucide:link'}
+                            icon={clipboard.copied ? 'icon-[lucide--check]' : 'icon-[lucide--link]'}
                             color={clipboard.copied ? 'success' : 'primary'}
                             variant="soft"
                             size="sm"

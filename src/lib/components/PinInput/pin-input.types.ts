@@ -101,7 +101,7 @@ export type PinInputProps = Pick<
 
         /**
          * Icon displayed as the loading indicator. Defaults to `icons.loading`
-         * from the global app config (`lucide:loader-circle`).
+         * from the global app config (`icon-[lucide--loader-circle]`).
          */
         loadingIcon?: string
 

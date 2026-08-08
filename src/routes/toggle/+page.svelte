@@ -44,7 +44,7 @@
             > for reactive two-way data binding.
         </p>
         <div class="flex flex-wrap items-center gap-6">
-            <Toggle bind:pressed={bindPressed} label="Notifications" icon="lucide:bell" />
+            <Toggle bind:pressed={bindPressed} label="Notifications" icon="icon-[lucide--bell]" />
             <p class="text-sm text-on-surface-variant">
                 Pressed: <span class="font-mono text-on-surface">{bindPressed}</span>
             </p>
@@ -118,10 +118,10 @@
             >.
         </p>
         <div class="flex flex-wrap items-center gap-4">
-            <Toggle icon="lucide:pin" aria-label="Pin" />
-            <Toggle icon="lucide:star" variant="outline" color="warning" aria-label="Favorite" />
-            <Toggle leadingIcon="lucide:wifi" label="Wi-Fi" variant="soft" />
-            <Toggle trailingIcon="lucide:chevron-down" label="Details" variant="subtle" />
+            <Toggle icon="icon-[lucide--pin]" aria-label="Pin" />
+            <Toggle icon="icon-[lucide--star]" variant="outline" color="warning" aria-label="Favorite" />
+            <Toggle leadingIcon="icon-[lucide--wifi]" label="Wi-Fi" variant="soft" />
+            <Toggle trailingIcon="icon-[lucide--chevron-down]" label="Details" variant="subtle" />
         </div>
     </section>
 
@@ -136,16 +136,16 @@
             role="group"
             aria-label="Text formatting"
         >
-            <Toggle bind:pressed={bold} icon="lucide:bold" color="surface" aria-label="Bold" />
+            <Toggle bind:pressed={bold} icon="icon-[lucide--bold]" color="surface" aria-label="Bold" />
             <Toggle
                 bind:pressed={italic}
-                icon="lucide:italic"
+                icon="icon-[lucide--italic]"
                 color="surface"
                 aria-label="Italic"
             />
             <Toggle
                 bind:pressed={underline}
-                icon="lucide:underline"
+                icon="icon-[lucide--underline]"
                 color="surface"
                 aria-label="Underline"
             />
@@ -164,7 +164,7 @@
             Use <code class="rounded bg-surface-container-highest px-1.5 py-0.5 text-xs">block</code
             > to stretch the toggle to the full container width.
         </p>
-        <Toggle block variant="outline" leadingIcon="lucide:panel-left" label="Show sidebar" />
+        <Toggle block variant="outline" leadingIcon="icon-[lucide--panel-left]" label="Show sidebar" />
     </section>
 
     <!-- Disabled -->

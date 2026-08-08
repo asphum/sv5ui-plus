@@ -122,7 +122,7 @@
                 </div>
                 <div class="space-y-1">
                     <p class="text-sm font-medium text-on-surface-variant">Leading icon</p>
-                    <InputTags leadingIcon="lucide:tag" placeholder="With icon" />
+                    <InputTags leadingIcon="icon-[lucide--tag]" placeholder="With icon" />
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
                     <p class="text-sm font-medium text-on-surface-variant">
                         Shared leading icon (<code>tag.leadingIcon</code>)
                     </p>
-                    <InputTags value={['bug', 'feature']} tag={{ leadingIcon: 'lucide:tag' }} />
+                    <InputTags value={['bug', 'feature']} tag={{ leadingIcon: 'icon-[lucide--tag]' }} />
                 </div>
                 <div class="space-y-1">
                     <p class="text-sm font-medium text-on-surface-variant">
@@ -217,7 +217,7 @@
                     <InputTags value={['svelte', 'vue', 'react', 'angular']}>
                         {#snippet tagSlot({ tag })}
                             <span class="inline-flex items-center gap-1">
-                                <Icon name={tagIcons[tag] ?? 'lucide:tag'} class="size-3" />
+                                <Icon name={tagIcons[tag] ?? 'icon-[lucide--tag]'} class="size-3" />
                                 {tag}
                             </span>
                         {/snippet}

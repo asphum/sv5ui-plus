@@ -33,7 +33,7 @@
         loading = false,
         loadingIcon = icons.loading,
         icon = icons.check,
-        indeterminateIcon = 'lucide:minus',
+        indeterminateIcon = 'icon-[lucide--minus]',
         label,
         description,
         labelSlot,

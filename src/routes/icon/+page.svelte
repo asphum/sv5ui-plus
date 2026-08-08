@@ -38,16 +38,23 @@
                 >bun add -D @iconify-json/solar</code
             >.
         </p>
+        <p class="text-sm text-on-surface-variant">
+            Tailwind-format names render as a CSS-only <code
+                class="rounded bg-surface-container-highest px-1">&lt;span&gt;</code
+            >, so they do not wait for the Iconify API and avoid icon flicker. You can also use the
+            generated class directly on a span.
+        </p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Icon name="icon-[solar--clock-circle-line-duotone]" />
-            <Icon name="lucide:home" />
-            <Icon name="lucide:settings" />
-            <Icon name="lucide:user" />
-            <Icon name="lucide:mail" />
-            <Icon name="lucide:bell" />
-            <Icon name="lucide:search" />
-            <Icon name="lucide:heart" />
-            <Icon name="lucide:star" />
+            <Icon name="icon-[lucide--armchair]" class="size-6" />
+            <span class="icon-[lucide--armchair] size-6" aria-hidden="true"></span>
+            <Icon name="icon-[lucide--home]" />
+            <Icon name="icon-[lucide--settings]" />
+            <Icon name="icon-[lucide--user]" />
+            <Icon name="icon-[lucide--mail]" />
+            <Icon name="icon-[lucide--bell]" />
+            <Icon name="icon-[lucide--search]" />
+            <Icon name="icon-[lucide--heart]" />
+            <Icon name="icon-[lucide--star]" />
         </div>
         <p class="text-sm text-on-surface-variant">
             To resize one icon by viewport, use
@@ -75,12 +82,12 @@
         <div class="flex flex-wrap items-end gap-6 rounded-lg bg-surface-container-high p-4">
             {#each [16, 20, 24, 32, 48] as size (size)}
                 <div class="flex flex-col items-center gap-2">
-                    <Icon name="lucide:rocket" {size} />
+                    <Icon name="icon-[lucide--rocket]" {size} />
                     <span class="text-xs text-on-surface-variant">{size}px</span>
                 </div>
             {/each}
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:rocket" size="2rem" />
+                <Icon name="icon-[lucide--rocket]" size="2rem" />
                 <span class="text-xs text-on-surface-variant">2rem</span>
             </div>
         </div>
@@ -107,35 +114,35 @@
 
         <p class="text-xs font-medium text-on-surface-variant uppercase">With Tailwind classes</p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Icon name="lucide:circle" class="text-primary" />
-            <Icon name="lucide:circle" class="text-secondary" />
-            <Icon name="lucide:circle" class="text-tertiary" />
-            <Icon name="lucide:circle" class="text-success" />
-            <Icon name="lucide:circle" class="text-warning" />
-            <Icon name="lucide:circle" class="text-error" />
-            <Icon name="lucide:circle" class="text-info" />
+            <Icon name="icon-[lucide--circle]" class="text-primary" />
+            <Icon name="icon-[lucide--circle]" class="text-secondary" />
+            <Icon name="icon-[lucide--circle]" class="text-tertiary" />
+            <Icon name="icon-[lucide--circle]" class="text-success" />
+            <Icon name="icon-[lucide--circle]" class="text-warning" />
+            <Icon name="icon-[lucide--circle]" class="text-error" />
+            <Icon name="icon-[lucide--circle]" class="text-info" />
         </div>
 
         <p class="text-xs font-medium text-on-surface-variant uppercase">With color prop</p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Icon name="lucide:circle" color="red" />
-            <Icon name="lucide:circle" color="#22c55e" />
-            <Icon name="lucide:circle" color="rgb(59, 130, 246)" />
-            <Icon name="lucide:circle" color="orange" />
+            <Icon name="icon-[lucide--circle]" color="red" />
+            <Icon name="icon-[lucide--circle]" color="#22c55e" />
+            <Icon name="icon-[lucide--circle]" color="rgb(59, 130, 246)" />
+            <Icon name="icon-[lucide--circle]" color="orange" />
         </div>
 
         <p class="text-xs font-medium text-on-surface-variant uppercase">Inheriting parent color</p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
             <span class="flex items-center gap-1 text-primary">
-                <Icon name="lucide:info" size={16} />
+                <Icon name="icon-[lucide--info]" size={16} />
                 Inherits primary
             </span>
             <span class="flex items-center gap-1 text-error">
-                <Icon name="lucide:alert-triangle" size={16} />
+                <Icon name="icon-[lucide--alert-triangle]" size={16} />
                 Inherits error
             </span>
             <span class="flex items-center gap-1 text-success">
-                <Icon name="lucide:check-circle" size={16} />
+                <Icon name="icon-[lucide--check-circle]" size={16} />
                 Inherits success
             </span>
         </div>
@@ -156,19 +163,19 @@
         </p>
         <div class="flex flex-wrap items-center gap-8 rounded-lg bg-surface-container-high p-4">
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:arrow-right" />
+                <Icon name="icon-[lucide--arrow-right]" />
                 <span class="text-xs text-on-surface-variant">Normal</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:arrow-right" flipH />
+                <Icon name="icon-[lucide--arrow-right]" flipH />
                 <span class="text-xs text-on-surface-variant">flipH</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:arrow-right" flipV />
+                <Icon name="icon-[lucide--arrow-right]" flipV />
                 <span class="text-xs text-on-surface-variant">flipV</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:arrow-right" flipH flipV />
+                <Icon name="icon-[lucide--arrow-right]" flipH flipV />
                 <span class="text-xs text-on-surface-variant">flipH + flipV</span>
             </div>
         </div>
@@ -194,13 +201,13 @@
         <div class="flex flex-wrap items-center gap-8 rounded-lg bg-surface-container-high p-4">
             {#each [0, 90, 180, 270] as deg (deg)}
                 <div class="flex flex-col items-center gap-2">
-                    <Icon name="lucide:arrow-up" rotate={deg as 0 | 90 | 180 | 270} />
+                    <Icon name="icon-[lucide--arrow-up]" rotate={deg as 0 | 90 | 180 | 270} />
                     <span class="text-xs text-on-surface-variant">{deg}&deg;</span>
                 </div>
             {/each}
             <span class="mx-2 text-on-surface-variant">|</span>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:arrow-up" class="rotate-45" />
+                <Icon name="icon-[lucide--arrow-up]" class="rotate-45" />
                 <span class="text-xs text-on-surface-variant">CSS 45&deg;</span>
             </div>
         </div>
@@ -225,19 +232,19 @@
         </p>
         <div class="flex flex-wrap items-center gap-6 rounded-lg bg-surface-container-high p-4">
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:star" class="text-warning" />
+                <Icon name="icon-[lucide--star]" class="text-warning" />
                 <span class="text-xs text-on-surface-variant">text-warning</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:heart" class="animate-pulse text-error" />
+                <Icon name="icon-[lucide--heart]" class="animate-pulse text-error" />
                 <span class="text-xs text-on-surface-variant">animate-pulse</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:loader" class="animate-spin text-primary" />
+                <Icon name="icon-[lucide--loader]" class="animate-spin text-primary" />
                 <span class="text-xs text-on-surface-variant">animate-spin</span>
             </div>
             <div class="flex flex-col items-center gap-2">
-                <Icon name="lucide:zap" class="text-warning drop-shadow-lg" />
+                <Icon name="icon-[lucide--zap]" class="text-warning drop-shadow-lg" />
                 <span class="text-xs text-on-surface-variant">drop-shadow</span>
             </div>
         </div>
@@ -269,7 +276,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {#each [{ name: 'lucide:github', label: 'Lucide' }, { name: 'mdi:github', label: 'Material Design Icons' }, { name: 'ph:github-logo', label: 'Phosphor' }, { name: 'tabler:brand-github', label: 'Tabler' }, { name: 'heroicons:code-bracket', label: 'Heroicons' }, { name: 'ri:github-fill', label: 'Remix Icon' }, { name: 'solar:star-bold', label: 'Solar' }] as icon (icon.name)}
+                    {#each [{ name: 'icon-[lucide--github]', label: 'Lucide' }, { name: 'mdi:github', label: 'Material Design Icons' }, { name: 'ph:github-logo', label: 'Phosphor' }, { name: 'tabler:brand-github', label: 'Tabler' }, { name: 'heroicons:code-bracket', label: 'Heroicons' }, { name: 'ri:github-fill', label: 'Remix Icon' }, { name: 'solar:star-bold', label: 'Solar' }] as icon (icon.name)}
                         <tr class="border-b border-outline-variant/50">
                             <td class="px-3 py-2 text-on-surface-variant">{icon.label}</td>
                             <td class="px-3 py-2">
@@ -297,15 +304,15 @@
             <p class="text-xs font-medium text-on-surface-variant uppercase">Inline with text</p>
             <div class="flex flex-col gap-2">
                 <p class="flex items-center gap-1.5 text-sm">
-                    <Icon name="lucide:check-circle" size={16} class="text-success" />
+                    <Icon name="icon-[lucide--check-circle]" size={16} class="text-success" />
                     Payment successful
                 </p>
                 <p class="flex items-center gap-1.5 text-sm">
-                    <Icon name="lucide:alert-triangle" size={16} class="text-warning" />
+                    <Icon name="icon-[lucide--alert-triangle]" size={16} class="text-warning" />
                     Storage almost full
                 </p>
                 <p class="flex items-center gap-1.5 text-sm">
-                    <Icon name="lucide:x-circle" size={16} class="text-error" />
+                    <Icon name="icon-[lucide--x-circle]" size={16} class="text-error" />
                     Connection failed
                 </p>
             </div>
@@ -315,7 +322,7 @@
         <div class="space-y-2 rounded-lg bg-surface-container-high p-4">
             <p class="text-xs font-medium text-on-surface-variant uppercase">Feature grid</p>
             <div class="grid grid-cols-4 gap-4">
-                {#each [{ name: 'lucide:shield-check', label: 'Secure', color: 'text-success' }, { name: 'lucide:zap', label: 'Fast', color: 'text-warning' }, { name: 'lucide:globe', label: 'Global', color: 'text-info' }, { name: 'lucide:heart', label: 'Loved', color: 'text-error' }] as item (item.name)}
+                {#each [{ name: 'icon-[lucide--shield-check]', label: 'Secure', color: 'text-success' }, { name: 'icon-[lucide--zap]', label: 'Fast', color: 'text-warning' }, { name: 'icon-[lucide--globe]', label: 'Global', color: 'text-info' }, { name: 'icon-[lucide--heart]', label: 'Loved', color: 'text-error' }] as item (item.name)}
                     <div
                         class="flex flex-col items-center gap-2 rounded-lg bg-surface-container p-3"
                     >
@@ -331,7 +338,7 @@
             <p class="text-xs font-medium text-on-surface-variant uppercase">Loading states</p>
             <div class="flex items-center gap-6">
                 <div class="flex flex-col items-center gap-2">
-                    <Icon name="lucide:loader-circle" class="animate-spin text-primary" />
+                    <Icon name="icon-[lucide--loader-circle]" class="animate-spin text-primary" />
                     <span class="text-xs text-on-surface-variant">Spinner</span>
                 </div>
                 <div class="flex flex-col items-center gap-2">

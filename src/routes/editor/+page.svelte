@@ -298,35 +298,35 @@
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:bold"
+                leadingIcon="icon-[lucide--bold]"
                 label="Bold"
                 onclick={() => api?.run('bold')}
             />
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:italic"
+                leadingIcon="icon-[lucide--italic]"
                 label="Italic"
                 onclick={() => api?.run('italic')}
             />
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:heading-1"
+                leadingIcon="icon-[lucide--heading-1]"
                 label="H1"
                 onclick={() => api?.run('h1')}
             />
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:link"
+                leadingIcon="icon-[lucide--link]"
                 label="Link"
                 onclick={() => api?.run('link')}
             />
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:undo-2"
+                leadingIcon="icon-[lucide--undo-2]"
                 label="Undo"
                 disabled={!api?.state.can.undo}
                 onclick={() => api?.run('undo')}
@@ -334,7 +334,7 @@
             <Button
                 size="xs"
                 variant="outline"
-                leadingIcon="lucide:redo-2"
+                leadingIcon="icon-[lucide--redo-2]"
                 label="Redo"
                 disabled={!api?.state.can.redo}
                 onclick={() => api?.run('redo')}
@@ -343,7 +343,7 @@
                 size="xs"
                 color="error"
                 variant="outline"
-                leadingIcon="lucide:trash-2"
+                leadingIcon="icon-[lucide--trash-2]"
                 label="Clear"
                 onclick={() => api?.clear()}
             />
@@ -351,7 +351,7 @@
                 size="xs"
                 color="primary"
                 variant="solid"
-                leadingIcon="lucide:plus"
+                leadingIcon="icon-[lucide--plus]"
                 label="Insert sample"
                 onclick={() => api?.insert(' — <em>inserted</em>')}
             />
@@ -635,7 +635,7 @@
             />
             <div class="flex items-center justify-end gap-2">
                 <Button variant="ghost" size="sm" label="Cancel" />
-                <Button color="primary" size="sm" leadingIcon="lucide:send" label="Post comment" />
+                <Button color="primary" size="sm" leadingIcon="icon-[lucide--send]" label="Post comment" />
             </div>
         </Card>
     </section>
@@ -650,7 +650,7 @@
 </h2>
         <div class="rounded-lg border border-outline-variant bg-surface-container p-4 text-sm">
             <p class="mb-2 flex items-center gap-2 font-medium">
-                <Icon name="lucide:package" size="18" class="text-primary" />
+                <Icon name="icon-[lucide--package]" size="18" class="text-primary" />
                 Editor is opt-in via a separate entry point
             </p>
             <pre class="mt-2 overflow-x-auto rounded bg-surface-container-highest p-3 text-xs"><code

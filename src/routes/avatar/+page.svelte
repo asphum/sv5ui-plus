@@ -36,7 +36,7 @@
             <Avatar src="https://i.pravatar.cc/150?img=3" alt="Bob Wilson" />
             <Avatar alt="No Image" />
             <Avatar text="AB" />
-            <Avatar icon="lucide:user" />
+            <Avatar icon="icon-[lucide--user]" />
         </div>
     </section>
 
@@ -132,11 +132,11 @@
             an Iconify icon as fallback when no image or text is available.
         </p>
         <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Avatar icon="lucide:user" size="lg" />
-            <Avatar icon="lucide:users" size="lg" />
-            <Avatar icon="lucide:building-2" size="lg" rounded="lg" />
+            <Avatar icon="icon-[lucide--user]" size="lg" />
+            <Avatar icon="icon-[lucide--users]" size="lg" />
+            <Avatar icon="icon-[lucide--building-2]" size="lg" rounded="lg" />
             <Avatar
-                icon="lucide:bot"
+                icon="icon-[lucide--bot]"
                 size="lg"
                 class="bg-primary"
                 ui={{ icon: 'text-on-primary' }}
@@ -423,21 +423,21 @@
             <p class="text-xs font-medium text-on-surface-variant uppercase">Organization logos</p>
             <div class="flex flex-wrap items-center gap-4">
                 <Avatar
-                    icon="lucide:building-2"
+                    icon="icon-[lucide--building-2]"
                     size="xl"
                     rounded="lg"
                     class="bg-primary"
                     ui={{ icon: 'text-on-primary' }}
                 />
                 <Avatar
-                    icon="lucide:code-2"
+                    icon="icon-[lucide--code-2]"
                     size="xl"
                     rounded="md"
                     class="bg-secondary"
                     ui={{ icon: 'text-on-secondary' }}
                 />
                 <Avatar
-                    icon="lucide:globe"
+                    icon="icon-[lucide--globe]"
                     size="xl"
                     rounded="lg"
                     class="bg-tertiary"

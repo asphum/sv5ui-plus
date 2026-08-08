@@ -159,7 +159,7 @@ export type LocaleButtonProps = Omit<HTMLAttributes<HTMLElement>, 'children' | '
 
         /**
          * Leading icon displayed in the trigger.
-         * @default 'lucide:languages'
+         * @default 'icon-[lucide--languages]'
          */
         icon?: string
 

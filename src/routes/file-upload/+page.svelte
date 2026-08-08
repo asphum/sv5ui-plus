@@ -280,7 +280,7 @@
                         size="sm"
                         variant="outline"
                         color="primary"
-                        leadingIcon="lucide:folder-open"
+                        leadingIcon="icon-[lucide--folder-open]"
                         label="Browse files"
                         onclick={open}
                     />
@@ -411,7 +411,7 @@
                     multiple
                     accept="image/*"
                     color="tertiary"
-                    icon="lucide:image"
+                    icon="icon-[lucide--image]"
                     label="Drop images here"
                     description="Only image files accepted"
                 />
@@ -421,7 +421,7 @@
                 <FileUpload
                     accept=".pdf"
                     color="error"
-                    icon="lucide:file-text"
+                    icon="icon-[lucide--file-text]"
                     label="Drop PDF here"
                     description="Only .pdf files accepted"
                 />
@@ -444,7 +444,7 @@
                     bind:value={imageFiles}
                     multiple
                     accept="image/*"
-                    icon="lucide:image"
+                    icon="icon-[lucide--image]"
                     label="Drop images here"
                     description="Click the zoom icon to preview"
                 />
@@ -454,7 +454,7 @@
                 <FileUpload
                     multiple
                     accept="image/*"
-                    icon="lucide:image"
+                    icon="icon-[lucide--image]"
                     label="Drop images here"
                     description="No preview button shown"
                     imagePreview={false}
@@ -523,7 +523,7 @@
                     <FileUpload
                         layout="grid"
                         accept="image/*"
-                        icon="lucide:user-round"
+                        icon="icon-[lucide--user-round]"
                         label="Upload photo"
                         description="PNG or JPG up to 2MB"
                         color="primary"
@@ -542,7 +542,7 @@
                         <p class="mb-1 text-sm font-medium text-on-surface">Resume *</p>
                         <FileUpload
                             accept=".pdf,.doc,.docx"
-                            icon="lucide:file-text"
+                            icon="icon-[lucide--file-text]"
                             label="Upload your resume"
                             description="PDF, DOC, DOCX up to 5MB"
                             size="sm"
@@ -554,7 +554,7 @@
                         <FileUpload
                             multiple
                             accept="image/*,.pdf"
-                            icon="lucide:briefcase"
+                            icon="icon-[lucide--briefcase]"
                             label="Upload portfolio files"
                             description="Images or PDFs"
                             size="sm"
@@ -571,7 +571,7 @@
                     multiple
                     layout="grid"
                     accept="image/*"
-                    icon="lucide:images"
+                    icon="icon-[lucide--images]"
                     label="Upload gallery images"
                     description="Drop multiple images to create a gallery"
                     color="tertiary"

@@ -27,10 +27,10 @@
     ]
 
     const iconItems: SelectItem[] = [
-        { value: 'home', label: 'Home', icon: 'lucide:home' },
-        { value: 'settings', label: 'Settings', icon: 'lucide:settings' },
-        { value: 'profile', label: 'Profile', icon: 'lucide:user' },
-        { value: 'notifications', label: 'Notifications', icon: 'lucide:bell' }
+        { value: 'home', label: 'Home', icon: 'icon-[lucide--home]' },
+        { value: 'settings', label: 'Settings', icon: 'icon-[lucide--settings]' },
+        { value: 'profile', label: 'Profile', icon: 'icon-[lucide--user]' },
+        { value: 'notifications', label: 'Notifications', icon: 'icon-[lucide--bell]' }
     ]
 
     const avatarItems: SelectItem[] = [
@@ -121,7 +121,7 @@
                 bind:value={bindValue}
                 items={fruits}
                 placeholder="Select a fruit..."
-                leadingIcon="lucide:apple"
+                leadingIcon="icon-[lucide--apple]"
             />
             <p class="text-sm text-on-surface-variant">
                 Value: <span class="font-mono text-on-surface">{bindValue || '(empty)'}</span>
@@ -214,10 +214,10 @@
         </p>
         <div class="flex flex-wrap gap-4">
             <div class="w-64">
-                <Select leadingIcon="lucide:search" items={fruits} placeholder="Search..." />
+                <Select leadingIcon="icon-[lucide--search]" items={fruits} placeholder="Search..." />
             </div>
             <div class="w-64">
-                <Select leadingIcon="lucide:globe" items={fruits} placeholder="Language" />
+                <Select leadingIcon="icon-[lucide--globe]" items={fruits} placeholder="Language" />
             </div>
         </div>
     </section>
@@ -405,7 +405,7 @@
         <div class="max-w-sm space-y-4">
             <FormField label="Country" description="Select your country of residence." required>
                 <Select
-                    leadingIcon="lucide:globe"
+                    leadingIcon="icon-[lucide--globe]"
                     items={[
                         { value: 'us', label: 'United States' },
                         { value: 'uk', label: 'United Kingdom' },
@@ -480,10 +480,10 @@
                     <FormField label="Priority">
                         <Select
                             items={[
-                                { value: 'low', label: 'Low', icon: 'lucide:arrow-down' },
-                                { value: 'medium', label: 'Medium', icon: 'lucide:minus' },
-                                { value: 'high', label: 'High', icon: 'lucide:arrow-up' },
-                                { value: 'urgent', label: 'Urgent', icon: 'lucide:alert-triangle' }
+                                { value: 'low', label: 'Low', icon: 'icon-[lucide--arrow-down]' },
+                                { value: 'medium', label: 'Medium', icon: 'icon-[lucide--minus]' },
+                                { value: 'high', label: 'High', icon: 'icon-[lucide--arrow-up]' },
+                                { value: 'urgent', label: 'Urgent', icon: 'icon-[lucide--alert-triangle]' }
                             ]}
                             placeholder="Set priority..."
                         />
@@ -504,7 +504,7 @@
                     <Select
                         items={groupedItems}
                         placeholder="Select category..."
-                        leadingIcon="lucide:tag"
+                        leadingIcon="icon-[lucide--tag]"
                     />
                 </div>
             </div>
@@ -549,7 +549,7 @@
                         multiple
                         items={iconItems}
                         separator=" • "
-                        leadingIcon="lucide:list-checks"
+                        leadingIcon="icon-[lucide--list-checks]"
                         placeholder="Pick sections..."
                     />
                 </div>

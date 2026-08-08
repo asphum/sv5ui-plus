@@ -189,7 +189,7 @@
         <h2 class="text-lg font-semibold">Basic tour</h2>
         <div class="flex flex-wrap items-center gap-3 rounded-lg bg-surface-container-high p-4">
             <div id="tour-logo" class="flex items-center gap-2 font-semibold">
-                <Icon name="lucide:hexagon" />
+                <Icon name="icon-[lucide--hexagon]" />
                 Acme
             </div>
             <input
@@ -197,12 +197,12 @@
                 class="min-w-40 flex-1 rounded-md bg-surface-container-lowest px-3 py-2 text-sm ring ring-surface-container-highest focus:outline-none"
                 placeholder="Search…"
             />
-            <Button id="tour-create" color="primary" leadingIcon="lucide:plus">Create</Button>
+            <Button id="tour-create" color="primary" leadingIcon="icon-[lucide--plus]">Create</Button>
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
             <Button variant="outline" onclick={() => basicApi?.start()}>Start tour</Button>
-            <Button variant="soft" href="/tour/multi" trailingIcon="lucide:arrow-right">
+            <Button variant="soft" href="/tour/multi" trailingIcon="icon-[lucide--arrow-right]">
                 Multi-page demo
             </Button>
             <label class="flex items-center gap-2 text-sm">
@@ -247,7 +247,7 @@
                 id="tour-like"
                 variant="soft"
                 color="error"
-                leadingIcon="lucide:heart"
+                leadingIcon="icon-[lucide--heart]"
                 onclick={() => clicks++}
             >
                 Like
@@ -280,7 +280,7 @@
                 id="place-target"
                 class="flex size-24 items-center justify-center rounded-lg bg-primary text-on-primary"
             >
-                <Icon name="lucide:crosshair" size="28" />
+                <Icon name="icon-[lucide--crosshair]" size="28" />
             </div>
         </div>
         <Tour steps={placeSteps} bind:api={placeApi} dismissible />
@@ -303,7 +303,7 @@
                 id="size-target"
                 class="ml-auto flex size-12 items-center justify-center rounded-lg bg-primary text-on-primary"
             >
-                <Icon name="lucide:scaling" />
+                <Icon name="icon-[lucide--scaling]" />
             </div>
         </div>
         <Tour steps={sizeSteps} bind:api={sizeApi} size={tourSize} />
@@ -338,7 +338,7 @@
                 <Button
                     id="spot-target"
                     color="primary"
-                    leadingIcon="lucide:image"
+                    leadingIcon="icon-[lucide--image]"
                     onclick={() => spotApi?.start()}
                 >
                     Highlight me
@@ -442,7 +442,7 @@
             step is skipped, a far target is scrolled into view, and lifecycle callbacks fire.
         </p>
         <div class="flex items-center gap-3">
-            <Button color="primary" leadingIcon="lucide:play" onclick={runAdv}>Run</Button>
+            <Button color="primary" leadingIcon="icon-[lucide--play]" onclick={runAdv}>Run</Button>
             {#if log.length}
                 <code class="rounded bg-surface-container-highest px-2 py-1 text-xs">
                     {log.join(' · ')}

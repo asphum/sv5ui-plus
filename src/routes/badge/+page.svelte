@@ -86,13 +86,13 @@
             Add leading or trailing icons alongside the label.
         </p>
         <div class="flex flex-wrap gap-2 rounded-lg bg-surface-container-high p-4">
-            <Badge label="Star" leadingIcon="lucide:star" color="warning" />
-            <Badge label="Check" leadingIcon="lucide:check" color="success" />
-            <Badge label="Close" trailingIcon="lucide:x" color="error" />
+            <Badge label="Star" leadingIcon="icon-[lucide--star]" color="warning" />
+            <Badge label="Check" leadingIcon="icon-[lucide--check]" color="success" />
+            <Badge label="Close" trailingIcon="icon-[lucide--x]" color="error" />
             <Badge
                 label="Info"
-                leadingIcon="lucide:info"
-                trailingIcon="lucide:chevron-right"
+                leadingIcon="icon-[lucide--info]"
+                trailingIcon="icon-[lucide--chevron-right]"
                 color="info"
             />
         </div>
@@ -111,15 +111,15 @@
         </p>
         <div class="flex flex-wrap items-center gap-2 rounded-lg bg-surface-container-high p-4">
             {#each sizes as size (size)}
-                <Badge icon="lucide:star" color="warning" {size} />
+                <Badge icon="icon-[lucide--star]" color="warning" {size} />
             {/each}
         </div>
         <div class="flex flex-wrap gap-2 rounded-lg bg-surface-container-high p-4">
-            <Badge icon="lucide:check" color="success" />
-            <Badge icon="lucide:x" color="error" />
-            <Badge icon="lucide:heart" color="error" variant="soft" />
-            <Badge icon="lucide:bell" color="info" variant="outline" />
-            <Badge icon="lucide:lock" color="surface" variant="subtle" />
+            <Badge icon="icon-[lucide--check]" color="success" />
+            <Badge icon="icon-[lucide--x]" color="error" />
+            <Badge icon="icon-[lucide--heart]" color="error" variant="soft" />
+            <Badge icon="icon-[lucide--bell]" color="info" variant="outline" />
+            <Badge icon="icon-[lucide--lock]" color="surface" variant="subtle" />
         </div>
     </section>
 
@@ -248,10 +248,10 @@
             <div class="space-y-2">
                 <p class="text-sm font-medium text-on-surface-variant">Status Labels</p>
                 <div class="flex flex-wrap gap-2">
-                    <Badge label="Active" color="success" leadingIcon="lucide:circle-check" />
-                    <Badge label="Pending" color="warning" leadingIcon="lucide:clock" />
-                    <Badge label="Inactive" color="error" leadingIcon="lucide:circle-x" />
-                    <Badge label="Draft" color="surface" leadingIcon="lucide:file-edit" />
+                    <Badge label="Active" color="success" leadingIcon="icon-[lucide--circle-check]" />
+                    <Badge label="Pending" color="warning" leadingIcon="icon-[lucide--clock]" />
+                    <Badge label="Inactive" color="error" leadingIcon="icon-[lucide--circle-x]" />
+                    <Badge label="Draft" color="surface" leadingIcon="icon-[lucide--file-edit]" />
                 </div>
             </div>
 

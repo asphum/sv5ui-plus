@@ -5,10 +5,10 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  import { ContextMenu } from 'svelora';
 
  const items = [
-  { label: 'Back', icon: 'lucide:arrow-left' },
-  { label: 'Reload', icon: 'lucide:refresh-cw' },
+  { label: 'Back', icon: 'icon-[lucide--arrow-left]' },
+  { label: 'Reload', icon: 'icon-[lucide--refresh-cw]' },
   { type: 'separator' as const },
-  { label: 'Save As...', icon: 'lucide:save' }
+  { label: 'Save As...', icon: 'icon-[lucide--save]' }
  ];
 </script>
 

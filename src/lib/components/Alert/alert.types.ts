@@ -77,7 +77,7 @@ export type AlertProps = Omit<HTMLAttributes<HTMLDivElement>, 'class' | 'title'>
 
     /**
      * Close button icon name.
-     * @default 'lucide:x'
+     * @default 'icon-[lucide--x]'
      */
     closeIcon?: string
 

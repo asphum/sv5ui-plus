@@ -5,10 +5,10 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  import { DropdownMenu, Button } from 'svelora';
 
  const items = [
-  { label: 'New File', icon: 'lucide:file-plus' },
-  { label: 'Open File...', icon: 'lucide:folder-open' },
+  { label: 'New File', icon: 'icon-[lucide--file-plus]' },
+  { label: 'Open File...', icon: 'icon-[lucide--folder-open]' },
   { type: 'separator' as const },
-  { label: 'Save', icon: 'lucide:save' }
+  { label: 'Save', icon: 'icon-[lucide--save]' }
  ];
 </script>
 

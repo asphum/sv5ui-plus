@@ -26,42 +26,42 @@ export const docsIntroItems: DocsItem[] = [
         title: 'Introduction',
         href: '/docs',
         legacyHref: '/getting-started',
-        icon: 'lucide:book-open',
+        icon: 'icon-[lucide--book-open]',
         description: 'Overview, quick start, and ecosystem highlights.'
     },
     {
         title: 'Installation',
         href: '/docs/installation',
         legacyHref: '/getting-started/installation',
-        icon: 'lucide:download',
+        icon: 'icon-[lucide--download]',
         description: 'Install the package and set up the required styles.'
     },
     {
         title: 'Theming',
         href: '/docs/theming',
         legacyHref: '/getting-started/theming',
-        icon: 'lucide:palette',
+        icon: 'icon-[lucide--palette]',
         description: 'Customize OKLCH tokens and component appearance.'
     },
     {
         title: 'Dark Mode',
         href: '/docs/dark-mode',
         legacyHref: '/getting-started/dark-mode',
-        icon: 'lucide:moon-star',
+        icon: 'icon-[lucide--moon-star]',
         description: 'Enable light, dark, and system theme support.'
     },
     {
         title: 'MCP',
         href: '/docs/mcp',
         legacyHref: '/mcp',
-        icon: 'lucide:plug',
+        icon: 'icon-[lucide--plug]',
         description: 'Connect Svelora docs helpers to Cursor IDE via MCP.'
     },
     {
         title: 'Drag & Drop',
         href: '/docs/drag-and-drop',
         legacyHref: '/drag-and-drop',
-        icon: 'lucide:layers',
+        icon: 'icon-[lucide--layers]',
         description: 'Interactive playground — sortable lists, kanban, and cross-container drag.'
     }
 ]
@@ -71,14 +71,14 @@ export const docsThemeItems: DocsItem[] = [
         title: 'Customization',
         href: '/docs/customization',
         legacyHref: '/customization',
-        icon: 'lucide:sliders-horizontal',
+        icon: 'icon-[lucide--sliders-horizontal]',
         description: 'Configure global defaults, icons, and component slots.'
     },
     {
         title: 'Colors',
         href: '/docs/colors',
         legacyHref: '/colors',
-        icon: 'lucide:swatch-book',
+        icon: 'icon-[lucide--swatch-book]',
         description: 'Explore semantic color tokens and the surface system.'
     }
 ]
@@ -86,250 +86,250 @@ export const docsThemeItems: DocsItem[] = [
 export const docsComponentGroups: DocsGroup[] = [
     {
         title: 'General',
-        icon: 'lucide:box',
+        icon: 'icon-[lucide--box]',
         items: [
             {
                 title: 'Button',
                 href: '/docs/components/button',
                 legacyHref: '/button',
-                icon: 'lucide:mouse-pointer-click'
+                icon: 'icon-[lucide--mouse-pointer-click]'
             },
             {
                 title: 'CodeBlock',
                 href: '/docs/components/code-block',
                 legacyHref: '/code-block',
-                icon: 'lucide:code'
+                icon: 'icon-[lucide--code]'
             },
             {
                 title: 'FieldGroup',
                 href: '/docs/components/field-group',
                 legacyHref: '/field-group',
-                icon: 'lucide:group'
+                icon: 'icon-[lucide--group]'
             },
             {
                 title: 'Fonts',
                 href: '/docs/components/fonts',
                 legacyHref: '/google-fonts',
-                icon: 'lucide:type'
+                icon: 'icon-[lucide--type]'
             },
             {
                 title: 'Icon',
                 href: '/docs/components/icon',
                 legacyHref: '/icon',
-                icon: 'lucide:shapes'
+                icon: 'icon-[lucide--shapes]'
             },
             {
                 title: 'Link',
                 href: '/docs/components/link',
                 legacyHref: '/link',
-                icon: 'lucide:link'
+                icon: 'icon-[lucide--link]'
             },
             {
                 title: 'LocaleButton',
                 href: '/docs/components/locale-button',
                 legacyHref: '/locale-button',
-                icon: 'lucide:languages'
+                icon: 'icon-[lucide--languages]'
             },
             {
                 title: 'Kbd',
                 href: '/docs/components/kbd',
                 legacyHref: '/kbd',
-                icon: 'lucide:keyboard'
+                icon: 'icon-[lucide--keyboard]'
             },
             {
                 title: 'ThemeModeButton',
                 href: '/docs/components/theme-mode-button',
                 legacyHref: '/theme-mode-button',
-                icon: 'lucide:sun-moon'
+                icon: 'icon-[lucide--sun-moon]'
             }
         ]
     },
     {
         title: 'Layout',
-        icon: 'lucide:layout-panel-top',
+        icon: 'icon-[lucide--layout-panel-top]',
         items: [
             {
                 title: 'BentoGrid',
                 href: '/docs/components/bento-grid',
                 legacyHref: '/bento-grid',
-                icon: 'lucide:layout-dashboard'
+                icon: 'icon-[lucide--layout-dashboard]'
             },
             {
                 title: 'Card',
                 href: '/docs/components/card',
                 legacyHref: '/card',
-                icon: 'lucide:square'
+                icon: 'icon-[lucide--square]'
             },
             {
                 title: 'Container',
                 href: '/docs/components/container',
                 legacyHref: '/container',
-                icon: 'lucide:box'
+                icon: 'icon-[lucide--box]'
             },
             {
                 title: 'Error',
                 href: '/docs/components/error',
                 legacyHref: '/error',
-                icon: 'lucide:triangle-alert',
+                icon: 'icon-[lucide--triangle-alert]',
                 description: 'Pre-built error page with status display and clear action.'
             },
             {
                 title: 'Footer',
                 href: '/docs/components/footer',
                 legacyHref: '/footer',
-                icon: 'lucide:panel-bottom-dashed',
+                icon: 'icon-[lucide--panel-bottom-dashed]',
                 description: 'App footer with aligned areas and link columns.'
             },
             {
                 title: 'Header',
                 href: '/docs/components/header',
                 legacyHref: '/header',
-                icon: 'lucide:panel-top-dashed',
+                icon: 'icon-[lucide--panel-top-dashed]',
                 description: 'Sticky app header with mobile menu modes.'
             },
             {
                 title: 'Main',
                 href: '/docs/components/main',
                 legacyHref: '/main',
-                icon: 'lucide:layout-template',
+                icon: 'icon-[lucide--layout-template]',
                 description: 'Content container sized below the app header.'
             },
             {
                 title: 'Resizable',
                 href: '/docs/components/resizable',
                 legacyHref: '/resizable',
-                icon: 'lucide:stretch-horizontal'
+                icon: 'icon-[lucide--stretch-horizontal]'
             },
             {
                 title: 'Modal',
                 href: '/docs/components/modal',
-                icon: 'lucide:app-window'
+                icon: 'icon-[lucide--app-window]'
             },
             {
                 title: 'Navigation Menu',
                 href: '/docs/components/navigation-menu',
-                icon: 'lucide:compass',
+                icon: 'icon-[lucide--compass]',
                 description: 'A horizontal list of links with optional nested dropdowns.'
             },
             {
                 title: 'Scroll Area',
                 href: '/docs/components/scroll-area',
-                icon: 'lucide:scroll-text',
+                icon: 'icon-[lucide--scroll-text]',
                 description: 'A customizable scrollable area with custom scrollbars.'
             },
             {
                 title: 'Search',
                 href: '/docs/components/search',
-                icon: 'lucide:search',
+                icon: 'icon-[lucide--search]',
                 description: 'A flexible search input or command palette modal.'
             },
             {
                 title: 'Separator',
                 href: '/docs/components/separator',
                 legacyHref: '/separator',
-                icon: 'lucide:minus'
+                icon: 'icon-[lucide--minus]'
             }
         ]
     },
     {
         title: 'Data Display',
-        icon: 'lucide:table-properties',
+        icon: 'icon-[lucide--table-properties]',
         items: [
             {
                 title: 'Accordion',
                 href: '/docs/components/accordion',
                 legacyHref: '/accordion',
-                icon: 'lucide:chevrons-down-up'
+                icon: 'icon-[lucide--chevrons-down-up]'
             },
             {
                 title: 'Chart',
                 href: '/docs/components/chart',
                 legacyHref: '/chart',
-                icon: 'lucide:bar-chart-2'
+                icon: 'icon-[lucide--bar-chart-2]'
             },
             {
                 title: 'Avatar',
                 href: '/docs/components/avatar',
                 legacyHref: '/avatar',
-                icon: 'lucide:circle-user'
+                icon: 'icon-[lucide--circle-user]'
             },
             {
                 title: 'AvatarGroup',
                 href: '/docs/components/avatar-group',
                 legacyHref: '/avatar-group',
-                icon: 'lucide:users'
+                icon: 'icon-[lucide--users]'
             },
             {
                 title: 'Badge',
                 href: '/docs/components/badge',
                 legacyHref: '/badge',
-                icon: 'lucide:tag'
+                icon: 'icon-[lucide--tag]'
             },
             {
                 title: 'Carousel',
                 href: '/docs/components/carousel',
                 legacyHref: '/carousel',
-                icon: 'lucide:gallery-horizontal'
+                icon: 'icon-[lucide--gallery-horizontal]'
             },
             {
                 title: 'Chip',
                 href: '/docs/components/chip',
                 legacyHref: '/chip',
-                icon: 'lucide:circle-dot'
+                icon: 'icon-[lucide--circle-dot]'
             },
             {
                 title: 'List',
                 href: '/docs/components/list',
                 legacyHref: '/list',
-                icon: 'lucide:list'
+                icon: 'icon-[lucide--list]'
             },
             {
                 title: 'NumberTicker',
                 href: '/docs/components/number-ticker',
                 legacyHref: '/number-ticker',
-                icon: 'lucide:clock-10'
+                icon: 'icon-[lucide--clock-10]'
             },
             {
                 title: 'Prose',
                 href: '/docs/components/prose',
                 legacyHref: '/prose',
-                icon: 'lucide:type'
+                icon: 'icon-[lucide--type]'
             },
             {
                 title: 'Empty',
                 href: '/docs/components/empty',
                 legacyHref: '/empty',
-                icon: 'lucide:inbox'
+                icon: 'icon-[lucide--inbox]'
             },
             {
                 title: 'Skeleton',
                 href: '/docs/components/skeleton',
                 legacyHref: '/skeleton',
-                icon: 'lucide:loader-circle'
+                icon: 'icon-[lucide--loader-circle]'
             },
             {
                 title: 'Timeline',
                 href: '/docs/components/timeline',
                 legacyHref: '/timeline',
-                icon: 'lucide:git-commit-horizontal'
+                icon: 'icon-[lucide--git-commit-horizontal]'
             },
             {
                 title: 'User',
                 href: '/docs/components/user',
                 legacyHref: '/user',
-                icon: 'lucide:user'
+                icon: 'icon-[lucide--user]'
             },
             {
                 title: 'Table',
                 href: '/docs/components/table',
                 legacyHref: '/table',
-                icon: 'lucide:table'
+                icon: 'icon-[lucide--table]'
             },
             {
                 title: 'Tree',
                 href: '/docs/components/tree',
                 legacyHref: '/tree',
-                icon: 'lucide:folder-tree',
+                icon: 'icon-[lucide--folder-tree]',
                 description:
                     'Hierarchical tree with multi-select, checkbox propagation, and keyboard navigation.'
             },
@@ -337,266 +337,266 @@ export const docsComponentGroups: DocsGroup[] = [
                 title: 'TreeView',
                 href: '/docs/components/tree-view',
                 legacyHref: '/tree-view',
-                icon: 'lucide:folder-tree'
+                icon: 'icon-[lucide--folder-tree]'
             }
         ]
     },
     {
         title: 'Forms',
-        icon: 'lucide:type',
+        icon: 'icon-[lucide--type]',
         items: [
             {
                 title: 'Checkbox',
                 href: '/docs/components/checkbox',
                 legacyHref: '/checkbox',
-                icon: 'lucide:square-check'
+                icon: 'icon-[lucide--square-check]'
             },
             {
                 title: 'ColorPicker',
                 href: '/docs/components/color-picker',
                 legacyHref: '/color-picker',
-                icon: 'lucide:pipette'
+                icon: 'icon-[lucide--pipette]'
             },
             {
                 title: 'CheckboxGroup',
                 href: '/docs/components/checkbox-group',
                 legacyHref: '/checkbox-group',
-                icon: 'lucide:list-checks'
+                icon: 'icon-[lucide--list-checks]'
             },
             {
                 title: 'Editor',
                 href: '/docs/components/editor',
                 legacyHref: '/editor',
-                icon: 'lucide:pen-line'
+                icon: 'icon-[lucide--pen-line]'
             },
             {
                 title: 'Input',
                 href: '/docs/components/input',
                 legacyHref: '/input',
-                icon: 'lucide:text-cursor-input'
+                icon: 'icon-[lucide--text-cursor-input]'
             },
             {
                 title: 'InputNumber',
                 href: '/docs/components/input-number',
                 legacyHref: '/input-number',
-                icon: 'lucide:hash'
+                icon: 'icon-[lucide--hash]'
             },
             {
                 title: 'InputTags',
                 href: '/docs/components/input-tags',
                 legacyHref: '/input-tags',
-                icon: 'lucide:tags'
+                icon: 'icon-[lucide--tags]'
             },
             {
                 title: 'RadioGroup',
                 href: '/docs/components/radio-group',
                 legacyHref: '/radio-group',
-                icon: 'lucide:circle-dot'
+                icon: 'icon-[lucide--circle-dot]'
             },
             {
                 title: 'Select',
                 href: '/docs/components/select',
                 legacyHref: '/select',
-                icon: 'lucide:chevrons-up-down'
+                icon: 'icon-[lucide--chevrons-up-down]'
             },
             {
                 title: 'SelectMenu',
                 href: '/docs/components/select-menu',
                 legacyHref: '/select-menu',
-                icon: 'lucide:list-filter'
+                icon: 'icon-[lucide--list-filter]'
             },
             {
                 title: 'Slider',
                 href: '/docs/components/slider',
                 legacyHref: '/slider',
-                icon: 'lucide:sliders-horizontal'
+                icon: 'icon-[lucide--sliders-horizontal]'
             },
             {
                 title: 'SortableList',
                 href: '/docs/components/sortable-list',
                 legacyHref: '/sortable-list',
-                icon: 'lucide:list-ordered',
+                icon: 'icon-[lucide--list-ordered]',
                 description: 'Styled sortable list built on useSortable.'
             },
             {
                 title: 'Switch',
                 href: '/docs/components/switch',
                 legacyHref: '/switch',
-                icon: 'lucide:toggle-left'
+                icon: 'icon-[lucide--toggle-left]'
             },
             {
                 title: 'Toggle',
                 href: '/docs/components/toggle',
                 legacyHref: '/toggle',
-                icon: 'lucide:toggle-right'
+                icon: 'icon-[lucide--toggle-right]'
             },
             {
                 title: 'ToggleGroup',
                 href: '/docs/components/toggle-group',
                 legacyHref: '/toggle-group',
-                icon: 'lucide:layout-grid'
+                icon: 'icon-[lucide--layout-grid]'
             },
             {
                 title: 'Textarea',
                 href: '/docs/components/textarea',
                 legacyHref: '/textarea',
-                icon: 'lucide:text'
+                icon: 'icon-[lucide--text]'
             },
             {
                 title: 'PasswordInput',
                 href: '/docs/components/password-input',
                 legacyHref: '/password-input',
-                icon: 'lucide:key'
+                icon: 'icon-[lucide--key]'
             },
             {
                 title: 'FileUpload',
                 href: '/docs/components/file-upload',
                 legacyHref: '/file-upload',
-                icon: 'lucide:upload'
+                icon: 'icon-[lucide--upload]'
             },
             {
                 title: 'PinInput',
                 href: '/docs/components/pin-input',
                 legacyHref: '/pin-input',
-                icon: 'lucide:square-asterisk'
+                icon: 'icon-[lucide--square-asterisk]'
             },
             {
                 title: 'Rating',
                 href: '/docs/components/rating',
                 legacyHref: '/rating',
-                icon: 'lucide:star'
+                icon: 'icon-[lucide--star]'
             },
             {
                 title: 'FormField',
                 href: '/docs/components/form-field',
                 legacyHref: '/form-field',
-                icon: 'lucide:text-cursor-input'
+                icon: 'icon-[lucide--text-cursor-input]'
             },
             {
                 title: 'Form',
                 href: '/docs/components/form',
                 legacyHref: '/form',
-                icon: 'lucide:clipboard-list'
+                icon: 'icon-[lucide--clipboard-list]'
             }
         ]
     },
     {
         title: 'Feedback',
-        icon: 'lucide:message-square',
+        icon: 'icon-[lucide--message-square]',
         items: [
             {
                 title: 'Alert',
                 href: '/docs/components/alert',
                 legacyHref: '/alert',
-                icon: 'lucide:bell'
+                icon: 'icon-[lucide--bell]'
             },
             {
                 title: 'Banner',
                 href: '/docs/components/banner',
                 legacyHref: '/banner',
-                icon: 'lucide:megaphone'
+                icon: 'icon-[lucide--megaphone]'
             },
             {
                 title: 'Chat',
                 href: '/docs/components/chat',
                 legacyHref: '/chat',
-                icon: 'lucide:message-circle'
+                icon: 'icon-[lucide--message-circle]'
             },
             {
                 title: 'Marquee',
                 href: '/docs/components/marquee',
                 legacyHref: '/marquee',
-                icon: 'lucide:move-right'
+                icon: 'icon-[lucide--move-right]'
             },
             {
                 title: 'Progress',
                 href: '/docs/components/progress',
                 legacyHref: '/progress',
-                icon: 'lucide:loader'
+                icon: 'icon-[lucide--loader]'
             },
             {
                 title: 'Toast',
                 href: '/docs/components/toast',
                 legacyHref: '/toast',
-                icon: 'lucide:message-square-warning'
+                icon: 'icon-[lucide--message-square-warning]'
             },
             {
                 title: 'Spotlight',
                 href: '/docs/components/spotlight',
                 legacyHref: '/spotlight',
-                icon: 'lucide:flashlight'
+                icon: 'icon-[lucide--flashlight]'
             }
         ]
     },
     {
         title: 'Navigation',
-        icon: 'lucide:compass',
+        icon: 'icon-[lucide--compass]',
         items: [
             {
                 title: 'Breadcrumb',
                 href: '/docs/components/breadcrumb',
                 legacyHref: '/breadcrumb',
-                icon: 'lucide:chevron-right'
+                icon: 'icon-[lucide--chevron-right]'
             },
             {
                 title: 'Pagination',
                 href: '/docs/components/pagination',
                 legacyHref: '/pagination',
-                icon: 'lucide:ellipsis'
+                icon: 'icon-[lucide--ellipsis]'
             },
             {
                 title: 'Sidebar',
                 href: '/docs/components/sidebar',
                 legacyHref: '/sidebar',
-                icon: 'lucide:panel-left'
+                icon: 'icon-[lucide--panel-left]'
             },
             {
                 title: 'Stepper',
                 href: '/docs/components/stepper',
                 legacyHref: '/stepper',
-                icon: 'lucide:list-ordered'
+                icon: 'icon-[lucide--list-ordered]'
             },
             {
                 title: 'Tabs',
                 href: '/docs/components/tabs',
                 legacyHref: '/tabs',
-                icon: 'lucide:panel-top'
+                icon: 'icon-[lucide--panel-top]'
             }
         ]
     },
     {
         title: 'Overlay',
-        icon: 'lucide:layers',
+        icon: 'icon-[lucide--layers]',
         items: [
             {
                 title: 'Collapsible',
                 href: '/docs/components/collapsible',
                 legacyHref: '/collapsible',
-                icon: 'lucide:chevrons-up-down'
+                icon: 'icon-[lucide--chevrons-up-down]'
             },
             {
                 title: 'Command',
                 href: '/docs/components/command',
                 legacyHref: '/command',
-                icon: 'lucide:square-terminal'
+                icon: 'icon-[lucide--square-terminal]'
             },
             {
                 title: 'ContextMenu',
                 href: '/docs/components/context-menu',
                 legacyHref: '/context-menu',
-                icon: 'lucide:mouse-pointer-square'
+                icon: 'icon-[lucide--mouse-pointer-square]'
             },
             {
                 title: 'Modal',
                 href: '/docs/components/modal',
                 legacyHref: '/modal',
-                icon: 'lucide:square-stack'
+                icon: 'icon-[lucide--square-stack]'
             },
             {
                 title: 'Lightbox',
                 href: '/docs/components/lightbox',
                 legacyHref: '/lightbox',
-                icon: 'lucide:image-upscale',
+                icon: 'icon-[lucide--image-upscale]',
                 description:
                     'Full-screen image viewer popover with gallery navigation, zoom, rotation, and download.'
             },
@@ -604,7 +604,7 @@ export const docsComponentGroups: DocsGroup[] = [
                 title: 'Confirm Dialog',
                 href: '/docs/components/confirm-dialog',
                 legacyHref: '/confirm-dialog',
-                icon: 'lucide:circle-help',
+                icon: 'icon-[lucide--circle-help]',
                 description:
                     'Imperative confirmation dialogs with animated icons and notify integration.'
             },
@@ -612,74 +612,74 @@ export const docsComponentGroups: DocsGroup[] = [
                 title: 'Drawer',
                 href: '/docs/components/drawer',
                 legacyHref: '/drawer',
-                icon: 'lucide:panel-bottom'
+                icon: 'icon-[lucide--panel-bottom]'
             },
             {
                 title: 'DropdownMenu',
                 href: '/docs/components/dropdown-menu',
                 legacyHref: '/dropdown-menu',
-                icon: 'lucide:menu'
+                icon: 'icon-[lucide--menu]'
             },
             {
                 title: 'Popover',
                 href: '/docs/components/popover',
                 legacyHref: '/popover',
-                icon: 'lucide:messages-square'
+                icon: 'icon-[lucide--messages-square]'
             },
             {
                 title: 'Slideover',
                 href: '/docs/components/slideover',
                 legacyHref: '/slideover',
-                icon: 'lucide:panel-right'
+                icon: 'icon-[lucide--panel-right]'
             },
             {
                 title: 'Tooltip',
                 href: '/docs/components/tooltip',
                 legacyHref: '/tooltip',
-                icon: 'lucide:message-square'
+                icon: 'icon-[lucide--message-square]'
             },
             {
                 title: 'Tour',
                 href: '/docs/components/tour',
                 legacyHref: '/tour',
-                icon: 'lucide:route',
+                icon: 'icon-[lucide--route]',
                 description: 'Spotlight product tour with floating step panel.'
             }
         ]
     },
     {
         title: 'Date & Time',
-        icon: 'lucide:calendar',
+        icon: 'icon-[lucide--calendar]',
         items: [
             {
                 title: 'Calendar',
                 href: '/docs/components/calendar',
                 legacyHref: '/calendar',
-                icon: 'lucide:calendar'
+                icon: 'icon-[lucide--calendar]'
             },
             {
                 title: 'RangeCalendar',
                 href: '/docs/components/range-calendar',
                 legacyHref: '/range-calendar',
-                icon: 'lucide:calendar-range'
+                icon: 'icon-[lucide--calendar-range]'
             },
             {
                 title: 'DatePicker',
                 href: '/docs/components/date-picker',
                 legacyHref: '/date-picker',
-                icon: 'lucide:calendar-check'
+                icon: 'icon-[lucide--calendar-check]'
             },
             {
                 title: 'DateRangePicker',
                 href: '/docs/components/date-range-picker',
                 legacyHref: '/date-range-picker',
-                icon: 'lucide:calendar-days'
+                icon: 'icon-[lucide--calendar-days]'
             },
             {
                 title: 'TimeField',
                 href: '/docs/components/time-field',
                 legacyHref: '/time-field',
-                icon: 'lucide:clock'
+                icon: 'icon-[lucide--clock]'
             }
         ]
     }
@@ -690,125 +690,125 @@ export const docsHookItems: DocsItem[] = [
         title: 'useMediaQuery',
         href: '/docs/hooks/use-media-query',
         legacyHref: '/use-media-query',
-        icon: 'lucide:monitor-smartphone'
+        icon: 'icon-[lucide--monitor-smartphone]'
     },
     {
         title: 'useClipboard',
         href: '/docs/hooks/use-clipboard',
         legacyHref: '/use-clipboard',
-        icon: 'lucide:clipboard'
+        icon: 'icon-[lucide--clipboard]'
     },
     {
         title: 'useFormField',
         href: '/docs/hooks/use-form-field',
         legacyHref: '/use-form-field',
-        icon: 'lucide:text-cursor-input'
+        icon: 'icon-[lucide--text-cursor-input]'
     },
     {
         title: 'useClickOutside',
         href: '/docs/hooks/use-click-outside',
         legacyHref: '/use-click-outside',
-        icon: 'lucide:pointer'
+        icon: 'icon-[lucide--pointer]'
     },
     {
         title: 'useSortable',
         href: '/docs/hooks/use-sortable',
         legacyHref: '/use-sortable',
-        icon: 'lucide:grip-vertical',
+        icon: 'icon-[lucide--grip-vertical]',
         description: 'Pointer-based reordering for sortable lists.'
     },
     {
         title: 'useDragDrop',
         href: '/docs/hooks/use-drag-drop',
         legacyHref: '/use-drag-drop',
-        icon: 'lucide:move',
+        icon: 'icon-[lucide--move]',
         description: 'HTML5 drag-and-drop between containers.'
     },
     {
         title: 'useInfiniteScroll',
         href: '/docs/hooks/use-infinite-scroll',
         legacyHref: '/use-infinite-scroll',
-        icon: 'lucide:arrow-down-to-line'
+        icon: 'icon-[lucide--arrow-down-to-line]'
     },
     {
         title: 'useEscapeKeydown',
         href: '/docs/hooks/use-escape-keydown',
         legacyHref: '/use-escape-keydown',
-        icon: 'lucide:keyboard'
+        icon: 'icon-[lucide--keyboard]'
     },
     {
         title: 'useDebounce',
         href: '/docs/hooks/use-debounce',
         legacyHref: '/use-debounce',
-        icon: 'lucide:timer'
+        icon: 'icon-[lucide--timer]'
     },
     {
         title: 'useDebouncedState',
         href: '/docs/hooks/use-debounced-state',
         legacyHref: '/use-debounced-state',
-        icon: 'lucide:clock-3'
+        icon: 'icon-[lucide--clock-3]'
     },
     {
         title: 'useEventListener',
         href: '/docs/hooks/use-event-listener',
         legacyHref: '/use-event-listener',
-        icon: 'lucide:radio'
+        icon: 'icon-[lucide--radio]'
     },
     {
         title: 'useResizeObserver / useElementSize',
         href: '/docs/hooks/use-resize-observer',
         legacyHref: '/use-resize-observer',
-        icon: 'lucide:scaling'
+        icon: 'icon-[lucide--scaling]'
     },
     {
         title: 'useIntersectionObserver',
         href: '/docs/hooks/use-intersection-observer',
         legacyHref: '/use-intersection-observer',
-        icon: 'lucide:scan-search'
+        icon: 'icon-[lucide--scan-search]'
     },
     {
         title: 'useScrollLock',
         href: '/docs/hooks/use-scroll-lock',
         legacyHref: '/use-scroll-lock',
-        icon: 'lucide:lock'
+        icon: 'icon-[lucide--lock]'
     },
     {
         title: 'useFocusTrap',
         href: '/docs/hooks/use-focus-trap',
         legacyHref: '/use-focus-trap',
-        icon: 'lucide:focus'
+        icon: 'icon-[lucide--focus]'
     },
     {
         title: 'useLocalStorage',
         href: '/docs/hooks/use-local-storage',
         legacyHref: '/use-local-storage',
-        icon: 'lucide:hard-drive'
+        icon: 'icon-[lucide--hard-drive]'
     },
     {
         title: 'useThrottle',
         href: '/docs/hooks/use-throttle',
         legacyHref: '/use-throttle',
-        icon: 'lucide:gauge'
+        icon: 'icon-[lucide--gauge]'
     },
     {
         title: 'useTour',
         href: '/docs/hooks/use-tour',
         legacyHref: '/use-tour',
-        icon: 'lucide:route',
+        icon: 'icon-[lucide--route]',
         description: 'Headless Tour controller for multi-page tours with optional persist.'
     },
     {
         title: 'useTimeout / useInterval',
         href: '/docs/hooks/use-timers',
         legacyHref: '/use-timers',
-        icon: 'lucide:timer-reset'
+        icon: 'icon-[lucide--timer-reset]'
     }
 ]
 
 export const docsTopNav: DocsItem[] = [
-    { title: 'Docs', href: '/docs', icon: 'lucide:book-open' },
-    { title: 'Components', href: '/docs/components/button', icon: 'lucide:blocks' },
-    { title: 'Hooks', href: '/docs/hooks/use-debounce', icon: 'lucide:webhook' }
+    { title: 'Docs', href: '/docs', icon: 'icon-[lucide--book-open]' },
+    { title: 'Components', href: '/docs/components/button', icon: 'icon-[lucide--blocks]' },
+    { title: 'Hooks', href: '/docs/hooks/use-debounce', icon: 'icon-[lucide--webhook]' }
 ]
 
 export const allComponentItems = docsComponentGroups.flatMap((group) => group.items)

@@ -31,22 +31,22 @@
                 {
                     label: 'composables',
                     children: [
-                        { label: 'useAuth.ts', icon: 'lucide:file-code' },
-                        { label: 'useUser.ts', icon: 'lucide:file-code' }
+                        { label: 'useAuth.ts', icon: 'icon-[lucide--file-code]' },
+                        { label: 'useUser.ts', icon: 'icon-[lucide--file-code]' }
                     ]
                 },
                 {
                     label: 'components',
                     defaultExpanded: true,
                     children: [
-                        { label: 'Card.svelte', icon: 'lucide:file-code' },
-                        { label: 'Button.svelte', icon: 'lucide:file-code' }
+                        { label: 'Card.svelte', icon: 'icon-[lucide--file-code]' },
+                        { label: 'Button.svelte', icon: 'icon-[lucide--file-code]' }
                     ]
                 }
             ]
         },
-        { label: 'app.config.ts', icon: 'lucide:file-cog' },
-        { label: 'package.json', icon: 'lucide:file-json' }
+        { label: 'app.config.ts', icon: 'icon-[lucide--file-cog]' },
+        { label: 'package.json', icon: 'icon-[lucide--file-json]' }
     ]
 
     const plainFiles: TreeItem[] = [
@@ -56,15 +56,15 @@
                 {
                     label: 'lib',
                     children: [
-                        { label: 'index.ts', icon: 'lucide:file-code' },
-                        { label: 'utils.ts', icon: 'lucide:file-code' }
+                        { label: 'index.ts', icon: 'icon-[lucide--file-code]' },
+                        { label: 'utils.ts', icon: 'icon-[lucide--file-code]' }
                     ]
                 },
-                { label: 'routes', children: [{ label: '+page.svelte', icon: 'lucide:file-code' }] }
+                { label: 'routes', children: [{ label: '+page.svelte', icon: 'icon-[lucide--file-code]' }] }
             ]
         },
-        { label: 'static', children: [{ label: 'favicon.png', icon: 'lucide:image' }] },
-        { label: 'README.md', icon: 'lucide:file-text' }
+        { label: 'static', children: [{ label: 'favicon.png', icon: 'icon-[lucide--image]' }] },
+        { label: 'README.md', icon: 'icon-[lucide--file-text]' }
     ]
 
     const permissionItems: TreeItem[] = [
@@ -92,15 +92,15 @@
     const disabledItems: TreeItem[] = [
         {
             label: 'public',
-            children: [{ label: 'index.html', icon: 'lucide:file-code' }]
+            children: [{ label: 'index.html', icon: 'icon-[lucide--file-code]' }]
         },
         {
             label: 'node_modules',
             disabled: true,
             children: [{ label: 'lots-of-packages' }]
         },
-        { label: '.env', icon: 'lucide:file-lock', disabled: true },
-        { label: 'vite.config.ts', icon: 'lucide:file-cog' }
+        { label: '.env', icon: 'icon-[lucide--file-lock]', disabled: true },
+        { label: 'vite.config.ts', icon: 'icon-[lucide--file-cog]' }
     ]
 
     interface FileItem extends TreeItem {
@@ -112,11 +112,11 @@
             label: 'assets',
             defaultExpanded: true,
             children: [
-                { label: 'logo.svg', icon: 'lucide:image', size: '4.2 KB' },
-                { label: 'hero.png', icon: 'lucide:image', size: '1.8 MB' }
+                { label: 'logo.svg', icon: 'icon-[lucide--image]', size: '4.2 KB' },
+                { label: 'hero.png', icon: 'icon-[lucide--image]', size: '1.8 MB' }
             ]
         },
-        { label: 'index.html', icon: 'lucide:file-code', size: '2.1 KB' }
+        { label: 'index.html', icon: 'icon-[lucide--file-code]', size: '2.1 KB' }
     ]
 
     let api = $state<TreeApi>()
@@ -133,29 +133,29 @@
                 {
                     label: 'components',
                     children: [
-                        { label: 'Tree.svelte', icon: 'lucide:file-code' },
-                        { label: 'Button.svelte', icon: 'lucide:file-code' },
-                        { label: 'Modal.svelte', icon: 'lucide:file-code' }
+                        { label: 'Tree.svelte', icon: 'icon-[lucide--file-code]' },
+                        { label: 'Button.svelte', icon: 'icon-[lucide--file-code]' },
+                        { label: 'Modal.svelte', icon: 'icon-[lucide--file-code]' }
                     ]
                 },
                 {
                     label: 'hooks',
                     children: [
-                        { label: 'useMediaQuery.ts', icon: 'lucide:file-code' },
-                        { label: 'useClipboard.ts', icon: 'lucide:file-code' }
+                        { label: 'useMediaQuery.ts', icon: 'icon-[lucide--file-code]' },
+                        { label: 'useClipboard.ts', icon: 'icon-[lucide--file-code]' }
                     ]
                 },
-                { label: 'index.ts', icon: 'lucide:file-code' }
+                { label: 'index.ts', icon: 'icon-[lucide--file-code]' }
             ]
         },
         {
             label: 'tests',
             children: [
-                { label: 'tree.spec.ts', icon: 'lucide:flask-conical' },
-                { label: 'button.spec.ts', icon: 'lucide:flask-conical' }
+                { label: 'tree.spec.ts', icon: 'icon-[lucide--flask-conical]' },
+                { label: 'button.spec.ts', icon: 'icon-[lucide--flask-conical]' }
             ]
         },
-        { label: 'package.json', icon: 'lucide:file-json' }
+        { label: 'package.json', icon: 'icon-[lucide--file-json]' }
     ]
 
     function filterTree(nodes: TreeItem[], query: string): TreeItem[] {
@@ -209,16 +209,16 @@
             value: 'app',
             defaultExpanded: true,
             children: [
-                { label: 'layout.svelte', value: 'app/layout', icon: 'lucide:file-code' },
-                { label: 'page.svelte', value: 'app/page', icon: 'lucide:file-code' }
+                { label: 'layout.svelte', value: 'app/layout', icon: 'icon-[lucide--file-code]' },
+                { label: 'page.svelte', value: 'app/page', icon: 'icon-[lucide--file-code]' }
             ]
         },
         {
             label: 'lib',
             value: 'lib',
-            children: [{ label: 'utils.ts', value: 'lib/utils', icon: 'lucide:file-code' }]
+            children: [{ label: 'utils.ts', value: 'lib/utils', icon: 'icon-[lucide--file-code]' }]
         },
-        { label: 'README.md', value: 'readme', icon: 'lucide:file-text' }
+        { label: 'README.md', value: 'readme', icon: 'icon-[lucide--file-text]' }
     ]
 
     let explorerItems = $state<ExplorerItem[]>(structuredClone(initialExplorer))
@@ -242,7 +242,7 @@
             {
                 label: `untitled-${newFileCount}.ts`,
                 value: `untitled-${newFileCount}`,
-                icon: 'lucide:file-plus'
+                icon: 'icon-[lucide--file-plus]'
             }
         ]
         newFileCount += 1
@@ -419,8 +419,8 @@
                                 label: 'components',
                                 defaultExpanded: true,
                                 children: [
-                                    { label: 'Tree.svelte', icon: 'lucide:file-code' },
-                                    { label: 'index.ts', icon: 'lucide:file-code' }
+                                    { label: 'Tree.svelte', icon: 'icon-[lucide--file-code]' },
+                                    { label: 'index.ts', icon: 'icon-[lucide--file-code]' }
                                 ]
                             }
                         ]}
@@ -448,7 +448,7 @@
                             {
                                 label: 'src',
                                 defaultExpanded: true,
-                                children: [{ label: 'main.ts', icon: 'lucide:file-code' }]
+                                children: [{ label: 'main.ts', icon: 'icon-[lucide--file-code]' }]
                             }
                         ]}
                     />
@@ -496,9 +496,9 @@
         </p>
         <Tree
             items={plainFiles}
-            trailingIcon="lucide:chevron-right"
-            expandedIcon="lucide:folder-minus"
-            collapsedIcon="lucide:folder-plus"
+            trailingIcon="icon-[lucide--chevron-right]"
+            expandedIcon="icon-[lucide--folder-minus]"
+            collapsedIcon="icon-[lucide--folder-plus]"
             ui={{ linkTrailingIcon: 'group-data-[expanded=true]/link:rotate-90' }}
             class="max-w-xs"
         />
@@ -544,7 +544,7 @@
             so results auto-expand.
         </p>
         <div class="max-w-xs space-y-3">
-            <Input bind:value={query} leadingIcon="lucide:search" placeholder="Filter files..." />
+            <Input bind:value={query} leadingIcon="icon-[lucide--search]" placeholder="Filter files..." />
             {#if filteredTree.length > 0}
                 <Tree items={filteredTree} expanded={searchExpanded} size="sm" />
             {:else}
@@ -620,7 +620,7 @@
             so edits render immediately.
         </p>
         <div class="flex flex-wrap items-center gap-2">
-            <Button size="sm" variant="soft" leadingIcon="lucide:plus" onclick={addFile}>
+            <Button size="sm" variant="soft" leadingIcon="icon-[lucide--plus]" onclick={addFile}>
                 Add file
             </Button>
             <Button size="sm" variant="outline" onclick={resetExplorer}>Reset</Button>
@@ -629,7 +629,7 @@
             {#snippet itemTrailing({ item, hasChildren, expanded })}
                 <span class="ms-auto flex items-center gap-1">
                     <Button
-                        icon="lucide:trash-2"
+                        icon="icon-[lucide--trash-2]"
                         size="xs"
                         variant="ghost"
                         color="error"
@@ -638,7 +638,7 @@
                     />
                     {#if hasChildren}
                         <Icon
-                            name="lucide:chevron-down"
+                            name="icon-[lucide--chevron-down]"
                             class="size-4 text-on-surface-variant transition-transform duration-200 {expanded
                                 ? 'rotate-180'
                                 : ''}"
@@ -672,7 +672,7 @@
                     </Badge>
                     {#if hasChildren}
                         <Icon
-                            name="lucide:chevron-down"
+                            name="icon-[lucide--chevron-down]"
                             class="size-5 text-on-surface-variant transition-transform duration-200 {expanded
                                 ? 'rotate-180'
                                 : ''}"

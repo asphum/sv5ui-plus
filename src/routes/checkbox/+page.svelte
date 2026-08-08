@@ -285,9 +285,9 @@
             > to customize the icons.
         </p>
         <div class="flex flex-col gap-4">
-            <Checkbox icon="lucide:heart" checked={true} label="Favorite" color="error" />
-            <Checkbox icon="lucide:star" checked={true} label="Starred" color="warning" />
-            <Checkbox icon="lucide:thumbs-up" checked={true} label="Liked" color="success" />
+            <Checkbox icon="icon-[lucide--heart]" checked={true} label="Favorite" color="error" />
+            <Checkbox icon="icon-[lucide--star]" checked={true} label="Starred" color="warning" />
+            <Checkbox icon="icon-[lucide--thumbs-up]" checked={true} label="Liked" color="success" />
         </div>
     </section>
 

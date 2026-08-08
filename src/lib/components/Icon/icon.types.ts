@@ -2,10 +2,35 @@ import type { IconProps as IconifyProps } from '@iconify/svelte'
 import type { SVGAttributes } from 'svelte/elements'
 import type { ClassNameValue } from 'tailwind-merge'
 
-/** Per-breakpoint icon sizes using Tailwind's default viewport breakpoints. */
-export type ResponsiveIconSize = Partial<
-    Record<'base' | 'sm' | 'md' | 'lg' | 'xl' | '2xl', number | string>
->
+/**
+ * A single icon inside a bundled collection.
+ * Mirrors Iconify's `IconifyIcon`, narrowed to the fields the generator emits.
+ * `width`/`height` are omitted when they match the collection defaults.
+ */
+export interface BundledIcon {
+    body: string
+    width?: number
+    height?: number
+    left?: number
+    top?: number
+    rotate?: number
+    hFlip?: boolean
+    vFlip?: boolean
+}
+
+/**
+ * An icon collection pre-registered with Iconify at module load, so the icons in
+ * `iconsDefaults` render synchronously during SSR instead of being fetched from
+ * the Iconify API after hydration.
+ *
+ * Generated into `bundled.ts` by `npm run generate:icons`.
+ */
+export interface BundledIconCollection {
+    prefix: string
+    width: number
+    height: number
+    icons: Record<string, BundledIcon>
+}
 
 export interface IconProps
     extends Omit<IconifyProps, 'icon' | 'width' | 'height' | 'rotate' | 'flip' | 'class'>,
@@ -27,9 +52,8 @@ export interface IconProps
     /** Custom data attributes are forwarded to the rendered `<svg>`. */
     [key: `data-${string}`]: string | number | boolean | null | undefined
     /**
-     * Icon name in Iconify format (`collection:icon-name`) or Iconify Tailwind 4 class syntax.
-     * Class-style names automatically use the Tailwind renderer.
-     * @example "lucide:home", "mdi:account", "icon-[solar--clock-circle-line-duotone]"
+     * Icon name in Iconify format: "collection:icon-name"
+     * @example "lucide:home", "mdi:account", "heroicons:star"
      * @see https://icon-sets.iconify.design/
      */
     name: string
@@ -41,13 +65,6 @@ export interface IconProps
      * @example 24, "1.5rem", "20px"
      */
     size?: number | string
-
-    /**
-     * Icon size per viewport breakpoint. Values can be pixels (numbers) or CSS sizes (strings).
-     * Missing breakpoints inherit the next-smallest specified size.
-     * @example { base: 16, sm: 20, md: 24 }
-     */
-    responsiveSize?: ResponsiveIconSize
 
     /**
      * Icon color (CSS color value).
@@ -80,7 +97,6 @@ export interface IconProps
     /**
      * Additional CSS classes for the icon.
      * Merged with `shrink-0` via tailwind-merge, so conflicting utilities are resolved correctly.
-     * In Tailwind mode, use utilities such as `size-20` to override the default 24px size.
      */
     class?: ClassNameValue
 }

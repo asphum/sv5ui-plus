@@ -1,180 +1,225 @@
 <script lang="ts">
-    import { Lightbox, Button } from '$lib/index.js'
+    import { Lightbox, Button, Icon, Badge, Link } from '$lib/index.js'
+    import type { LightboxApi, LightboxSlide } from '$lib/index.js'
 
-    let singleOpen = $state(false)
-    let galleryOpen = $state(false)
-    let galleryIndex = $state(0)
+    const features = [
+        { icon: 'lucide:zoom-in', label: 'Zoom & pan', desc: 'Wheel, double-tap, pinch, drag.' },
+        { icon: 'lucide:hand', label: 'Touch gestures', desc: 'Swipe to navigate, pinch to zoom.' },
+        { icon: 'lucide:images', label: 'Thumbnails', desc: 'Filmstrip with active sync.' },
+        { icon: 'lucide:play', label: 'Slideshow', desc: 'Autoplay with configurable delay.' },
+        { icon: 'lucide:expand', label: 'Fullscreen', desc: 'Native Fullscreen API + rotate.' },
+        { icon: 'lucide:search', label: 'SEO ready', desc: 'Real gallery <img> in the flow.' }
+    ]
 
-    const galleryImages = [
+    const titles = [
+        'Sunset Ridge',
+        'Quiet Harbor',
+        'Open Road',
+        'City Lights',
+        'Misty Pines',
+        'Coastal Drift',
+        'Golden Fields',
+        'Riverside Bend'
+    ]
+
+    const photos: LightboxSlide[] = titles.map((title, i) => ({
+        src: `https://picsum.photos/seed/sv5ui-lb-${i}/1600/1000`,
+        thumb: `https://picsum.photos/seed/sv5ui-lb-${i}/400/250`,
+        alt: title,
+        title,
+        description: `Photo ${i + 1} of ${titles.length} — captured on assignment.`,
+        width: 1600,
+        height: 1000
+    }))
+
+    const mixed: LightboxSlide[] = [
         {
-            src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200',
-            title: 'Yosemite Valley',
-            description: 'Stunning view of El Capitan and Half Dome at sunset.'
+            src: 'https://picsum.photos/seed/sv5ui-lb-mix1/1600/1000',
+            thumb: 'https://picsum.photos/seed/sv5ui-lb-mix1/400/250',
+            alt: 'Landscape photo',
+            title: 'A still image',
+            width: 1600,
+            height: 1000
         },
         {
-            src: 'https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=1200',
-            title: 'Mountain Lake Reflection',
-            description: 'Serene crystal clear lake reflecting snow-capped peaks.'
+            type: 'video',
+            src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+            poster: 'https://picsum.photos/seed/sv5ui-lb-poster/1600/1000',
+            alt: 'Sample video',
+            title: 'A native <video> slide'
         },
         {
-            src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200',
-            title: 'Foggy Forest Landscape',
-            description: 'Misty pine forest shrouded in early morning fog.'
+            type: 'iframe',
+            src: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
+            alt: 'Embedded YouTube video',
+            title: 'An <iframe> embed',
+            attrs: { allow: 'accelerometer; autoplay; encrypted-media; picture-in-picture' }
         }
     ]
+
+    const hero: LightboxSlide[] = [
+        {
+            src: 'https://picsum.photos/seed/sv5ui-lb-hero/2000/1200',
+            alt: 'Hero landscape',
+            title: 'Programmatic control',
+            description: 'Opened via the imperative API.',
+            width: 2000,
+            height: 1200
+        },
+        {
+            src: 'https://picsum.photos/seed/sv5ui-lb-hero2/2000/1200',
+            alt: 'Second hero landscape',
+            title: 'Second frame',
+            width: 2000,
+            height: 1200
+        }
+    ]
+
+    let api = $state<LightboxApi>()
+    let controlledOpen = $state(false)
+    let controlledIndex = $state(0)
 </script>
 
-<div class="space-y-8">
-    <div class="space-y-2">
-        <h1 class="text-2xl font-bold">Lightbox</h1>
-        <p class="text-on-surface-variant">
-            Full-screen image viewer popover with gallery navigation, zoom, rotation, download, fullscreen, and keyboard shortcuts.
+<div class="space-y-10">
+    <header class="space-y-3">
+        <div class="flex flex-wrap items-center gap-3">
+            <h1 class="text-2xl font-bold">Lightbox</h1>
+            <Badge color="primary" variant="soft">Zoom · Pan · Slideshow</Badge>
+        </div>
+        <p class="max-w-3xl text-on-surface-variant">
+            A full-screen media viewer built on top of the accessible
+            <Link href="/modal">Dialog</Link> primitive. Zoom and pan images, swipe between slides, play
+            a slideshow, go fullscreen, and mix images with video or iframe embeds — all driven by a single
+            <code class="rounded bg-surface-container px-1">slides</code> array. The in-page gallery
+            renders real
+            <code class="rounded bg-surface-container px-1">&lt;img&gt;</code> elements so it stays crawlable
+            and SEO-friendly.
         </p>
-    </div>
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {#each features as f (f.label)}
+                <div
+                    class="flex items-start gap-3 rounded-lg border border-outline-variant/60 bg-surface-container p-3"
+                >
+                    <Icon name={f.icon} class="mt-0.5 size-5 shrink-0 text-primary" />
+                    <div class="min-w-0">
+                        <p class="text-sm font-medium text-on-surface">{f.label}</p>
+                        <p class="text-xs text-on-surface-variant">{f.desc}</p>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </header>
 
-    <!-- Basic Single Image -->
     <section class="space-y-3">
-        <h2 id="Single-Image" class="text-lg font-semibold">
-            <a href="#Single-Image" class="group relative inline-flex items-center hover:underline focus:outline-none focus-visible:underline w-fit">
-                <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                Single Image Preview
-            </a>
-        </h2>
-        <p class="text-sm text-on-surface-variant">
-            Pass a single image URL via <code class="rounded bg-surface-container-highest px-1">src</code> to open a standalone Lightbox viewer.
-        </p>
-        <div class="flex items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Button leadingIcon="lucide:image" onclick={() => (singleOpen = true)}>
-                Open Single Image Lightbox
-            </Button>
-            <Lightbox
-                bind:open={singleOpen}
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200"
-                title="Yosemite Valley"
-                description="Stunning view of El Capitan and Half Dome."
-            />
+        <div class="flex items-baseline justify-between gap-2">
+            <h2 class="text-lg font-semibold">Basic gallery</h2>
+            <p class="text-xs text-on-surface-variant">slides + default grid</p>
+        </div>
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container p-4">
+            <Lightbox slides={photos} />
         </div>
     </section>
 
-    <!-- Gallery Mode -->
     <section class="space-y-3">
-        <h2 id="Gallery-Mode" class="text-lg font-semibold">
-            <a href="#Gallery-Mode" class="group relative inline-flex items-center hover:underline focus:outline-none focus-visible:underline w-fit">
-                <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                Gallery Mode & Thumbnails
-            </a>
-        </h2>
-        <p class="text-sm text-on-surface-variant">
-            Pass an array of images to <code class="rounded bg-surface-container-highest px-1">images</code> to enable next/previous navigation, thumbnail strip, and image counter.
-        </p>
-        <div class="space-y-4 rounded-lg bg-surface-container-high p-4">
-            <div class="flex flex-wrap items-center gap-3">
-                {#each galleryImages as img, i (img.src)}
+        <div class="flex items-baseline justify-between gap-2">
+            <h2 class="text-lg font-semibold">Slideshow + no loop</h2>
+            <p class="text-xs text-on-surface-variant">slideshow, loop=false</p>
+        </div>
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container p-4">
+            <Lightbox slides={photos} loop={false} slideshow={{ delay: 2500, playOnOpen: true }} />
+        </div>
+    </section>
+
+    <section class="space-y-3">
+        <div class="flex items-baseline justify-between gap-2">
+            <h2 class="text-lg font-semibold">Mixed media</h2>
+            <p class="text-xs text-on-surface-variant">image · video · iframe</p>
+        </div>
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container p-4">
+            <Lightbox slides={mixed} />
+        </div>
+    </section>
+
+    <section class="space-y-3">
+        <div class="flex items-baseline justify-between gap-2">
+            <h2 class="text-lg font-semibold">Custom trigger + imperative API</h2>
+            <p class="text-xs text-on-surface-variant">trigger snippet, bind:api</p>
+        </div>
+        <div class="space-y-4 rounded-xl border border-outline-variant/60 bg-surface-container p-4">
+            <Lightbox slides={hero} bind:api>
+                {#snippet trigger({ slides, open })}
                     <button
                         type="button"
-                        class="group relative size-24 overflow-hidden rounded-lg border border-outline-variant transition-transform hover:scale-105"
-                        onclick={() => {
-                            galleryIndex = i
-                            galleryOpen = true
-                        }}
+                        class="group relative block w-full overflow-hidden rounded-xl ring-1 ring-outline-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        onclick={() => open(0)}
                     >
-                        <img src={img.src} alt={img.title} class="size-full object-cover" />
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
-                            <span class="text-xs font-medium text-white">View #{i + 1}</span>
-                        </div>
+                        <img
+                            src={slides[0].src}
+                            alt={slides[0].alt}
+                            width={slides[0].width}
+                            height={slides[0].height}
+                            loading="lazy"
+                            class="aspect-[16/9] w-full object-cover transition duration-300 group-hover:scale-105"
+                        />
+                        <span
+                            class="absolute inset-0 flex items-center justify-center bg-black/30 text-white opacity-0 transition group-hover:opacity-100"
+                        >
+                            <Icon name="lucide:zoom-in" class="size-10" />
+                        </span>
                     </button>
-                {/each}
+                {/snippet}
+            </Lightbox>
+            <div class="flex flex-wrap items-center gap-2">
+                <Button leadingIcon="lucide:image" onclick={() => api?.open(0)}>Open viewer</Button>
+                <Button
+                    variant="outline"
+                    leadingIcon="lucide:layers"
+                    onclick={() => api?.open(hero.length - 1)}>Open at last frame</Button
+                >
             </div>
+            <p class="text-xs text-on-surface-variant">
+                <code class="rounded bg-surface-container-high px-1">api.open(i)</code> launches the
+                viewer programmatically. Methods like
+                <code class="rounded bg-surface-container-high px-1">next()</code>,
+                <code class="rounded bg-surface-container-high px-1">rotate()</code>
+                and
+                <code class="rounded bg-surface-container-high px-1">zoomIn()</code> act on the viewer
+                while it is open, so use the on-screen controls once it appears.
+            </p>
+        </div>
+    </section>
 
+    <section class="space-y-3">
+        <div class="flex items-baseline justify-between gap-2">
+            <h2 class="text-lg font-semibold">Controlled state</h2>
+            <p class="text-xs text-on-surface-variant">bind:open, bind:index</p>
+        </div>
+        <div class="space-y-4 rounded-xl border border-outline-variant/60 bg-surface-container p-4">
+            <div class="flex flex-wrap items-center gap-2">
+                <Button onclick={() => (controlledOpen = true)}
+                    >Open at slide {controlledIndex + 1}</Button
+                >
+                <Button
+                    variant="soft"
+                    onclick={() => (controlledIndex = (controlledIndex + 1) % photos.length)}
+                    >Cycle start index</Button
+                >
+                <span class="text-sm text-on-surface-variant">
+                    open: <code class="rounded bg-surface-container-high px-1"
+                        >{String(controlledOpen)}</code
+                    >
+                    · index:
+                    <code class="rounded bg-surface-container-high px-1">{controlledIndex}</code>
+                </span>
+            </div>
             <Lightbox
-                bind:open={galleryOpen}
-                bind:index={galleryIndex}
-                images={galleryImages}
-            />
-        </div>
-    </section>
-    <!-- Controls Customization -->
-    <section class="space-y-3">
-        <h2 id="Controls-Customization" class="text-lg font-semibold">
-            <a href="#Controls-Customization" class="group relative inline-flex items-center hover:underline focus:outline-none focus-visible:underline w-fit">
-                <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                Controls Customization
-            </a>
-        </h2>
-        <p class="text-sm text-on-surface-variant">
-            Toggle toolbar controls such as <code class="rounded bg-surface-container-highest px-1">zoom</code>, <code class="rounded bg-surface-container-highest px-1">rotate</code>, <code class="rounded bg-surface-container-highest px-1">download</code>, <code class="rounded bg-surface-container-highest px-1">fullscreen</code>, and <code class="rounded bg-surface-container-highest px-1">thumbnails</code>.
-        </p>
-        <div class="flex flex-wrap items-center gap-4 rounded-lg bg-surface-container-high p-4">
-            <Button leadingIcon="lucide:settings-2" onclick={() => (singleOpen = true)}>
-                Open Minimal Lightbox (No Rotate/Download)
-            </Button>
-            <Lightbox
-                bind:open={singleOpen}
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200"
-                title="Minimal Lightbox"
-                rotate={false}
-                download={false}
-            />
-        </div>
-    </section>
-
-    <!-- Keyboard Shortcuts -->
-    <section class="space-y-3">
-        <h2 id="Keyboard-Shortcuts" class="text-lg font-semibold">
-            <a href="#Keyboard-Shortcuts" class="group relative inline-flex items-center hover:underline focus:outline-none focus-visible:underline w-fit">
-                <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                Keyboard Shortcuts
-            </a>
-        </h2>
-        <div class="overflow-x-auto rounded-lg border border-outline-variant bg-surface-container">
-            <table class="w-full text-left text-sm">
-                <thead class="border-b border-outline-variant bg-surface-container-high text-xs text-on-surface-variant uppercase">
-                    <tr>
-                        <th class="px-4 py-2.5">Key</th>
-                        <th class="px-4 py-2.5">Action</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-outline-variant/60 text-on-surface">
-                    <tr><td class="px-4 py-2 font-mono text-xs"><kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">←</kbd> / <kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">→</kbd></td><td class="px-4 py-2">Navigate to previous / next image</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs"><kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">+</kbd> / <kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">-</kbd></td><td class="px-4 py-2">Zoom in / Zoom out</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs"><kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">R</kbd></td><td class="px-4 py-2">Reset zoom and rotation back to default</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs"><kbd class="rounded bg-surface-container-highest px-1.5 py-0.5">ESC</kbd></td><td class="px-4 py-2">Close lightbox popover</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- API Reference -->
-    <section class="space-y-3">
-        <h2 id="API-Reference" class="text-lg font-semibold">
-            <a href="#API-Reference" class="group relative inline-flex items-center hover:underline focus:outline-none focus-visible:underline w-fit">
-                <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                API Reference
-            </a>
-        </h2>
-        <div class="overflow-x-auto rounded-lg border border-outline-variant bg-surface-container">
-            <table class="w-full text-left text-sm">
-                <thead class="border-b border-outline-variant bg-surface-container-high text-xs text-on-surface-variant uppercase">
-                    <tr>
-                        <th class="px-4 py-2.5">Prop</th>
-                        <th class="px-4 py-2.5">Type</th>
-                        <th class="px-4 py-2.5">Default</th>
-                        <th class="px-4 py-2.5">Description</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-outline-variant/60 text-on-surface">
-                    <tr><td class="px-4 py-2 font-mono text-xs">open</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">false</td><td class="px-4 py-2">Open state (supports two-way binding)</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">images</td><td class="px-4 py-2 font-mono text-xs text-primary">LightboxSource[]</td><td class="px-4 py-2 text-xs">[]</td><td class="px-4 py-2">Array of image URLs or LightboxImage objects</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">src</td><td class="px-4 py-2 font-mono text-xs text-primary">string</td><td class="px-4 py-2 text-xs">undefined</td><td class="px-4 py-2">Shorthand URL for single image mode</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">index</td><td class="px-4 py-2 font-mono text-xs text-primary">number</td><td class="px-4 py-2 text-xs">0</td><td class="px-4 py-2">Active gallery image index (supports bind:index)</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">zoom</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show zoom in/out controls and panning</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">rotate</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show 90deg image rotation button</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">download</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show image download button</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">fullscreen</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show fullscreen mode toggle button</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">thumbnails</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show thumbnail strip at bottom for galleries</td></tr>
-                    <tr><td class="px-4 py-2 font-mono text-xs">counter</td><td class="px-4 py-2 font-mono text-xs text-primary">boolean</td><td class="px-4 py-2 text-xs">true</td><td class="px-4 py-2">Show active image counter badge</td></tr>
-                </tbody>
-            </table>
+                slides={photos}
+                bind:open={controlledOpen}
+                bind:index={controlledIndex}
+                thumbnails={false}
+            >
+                {#snippet trigger()}{/snippet}
+            </Lightbox>
         </div>
     </section>
 </div>

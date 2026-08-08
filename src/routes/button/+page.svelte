@@ -512,7 +512,7 @@
                 variant="soft"
                 color="success"
                 loading
-                icon="lucide:loader-2"
+                icon="lucide:loader-circle"
                 square
             />
             <Button

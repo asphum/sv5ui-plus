@@ -13,7 +13,7 @@
         LocaleButton,
         Main,
         NavigationMenu,
-        type NavigationMenuItemType,
+        type NavigationMenuItem,
         registerConfirmDialog,
         Search,
         type ConfirmOptions
@@ -83,14 +83,13 @@
             .filter((section): section is DocsGroup => section !== null)
     })
 
-    const sidebarNavItems = $derived.by<NavigationMenuItemType[]>(() => {
+    const sidebarNavItems = $derived.by<NavigationMenuItem[]>(() => {
         return filteredSidebarSections.map(section => ({
             label: section.title,
             icon: section.icon,
             defaultOpen: true,
             badge: section.items.length,
-            items: section.items.map(item => ({
-                type: 'item',
+            children: section.items.map(item => ({
                 label: item.title,
                 href: item.href,
                 icon: item.icon,
@@ -99,7 +98,7 @@
         }))
     })
 
-    const topNavItems = $derived.by<NavigationMenuItemType[]>(() => {
+    const topNavItems = $derived.by<NavigationMenuItem[]>(() => {
         return docsTopNav.map(item => {
             let label = item.title
             let matchPattern = item.href
@@ -117,10 +116,9 @@
             }
 
             return {
-                type: 'item',
                 label,
                 href: item.href,
-                matchPattern,
+                active: page.url.pathname.startsWith(matchPattern),
                 exact: false
             }
         })
@@ -188,7 +186,7 @@
                 </div>
 
                 <nav class="hidden lg:block">
-                    <NavigationMenu items={topNavItems} orientation="horizontal" variant="ghost" />
+                    <NavigationMenu items={topNavItems} orientation="horizontal" variant="link" />
                 </nav>
 
                 <div class="flex items-center gap-2">
@@ -314,9 +312,7 @@
                             <NavigationMenu 
                                 items={sidebarNavItems} 
                                 orientation="vertical" 
-                                accordion 
-                                tree
-                                variant="ghost"
+                                variant="link"
                             />
                         </div>
                     {/if}

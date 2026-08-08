@@ -374,7 +374,7 @@
                         <Button
                             variant="outline"
                             size="sm"
-                            leadingIcon="lucide:loader-2"
+                            leadingIcon="lucide:loader-circle"
                             label="Promise"
                             onclick={testNotifyPromise}
                         />

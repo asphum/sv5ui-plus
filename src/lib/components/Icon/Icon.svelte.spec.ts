@@ -1,7 +1,8 @@
-import { describe, expect, it } from 'vitest'
 import { page } from 'vitest/browser'
+import { describe, expect, it } from 'vitest'
 import { render } from 'vitest-browser-svelte'
 import Icon from './Icon.svelte'
+import { iconsDefaults } from '../../config.js'
 
 /** Helper: wait for SVG to render (iconify loads async) then return a locator */
 async function getSvg(container: HTMLElement) {
@@ -9,10 +10,10 @@ async function getSvg(container: HTMLElement) {
     return page.elementLocator(container.querySelector('svg')!)
 }
 
-describe('Icon', () => {
+describe('Icon', async () => {
     // ==================== RENDERING ====================
 
-    describe('rendering', () => {
+    describe('rendering', async () => {
         it('should render an SVG element', async () => {
             const { container } = await render(Icon, { name: 'lucide:home' })
             const svg = await getSvg(container)
@@ -24,23 +25,11 @@ describe('Icon', () => {
             const svg = await getSvg(container)
             await expect.element(svg).toHaveClass(/shrink-0/)
         })
-
-        it('should render an Iconify Tailwind 4 name without changing the global provider', async () => {
-            const { container } = await render(Icon, {
-                name: 'icon-[solar--clock-circle-line-duotone]'
-            })
-            const icon = page.elementLocator(container.querySelector('span')!)
-
-            await expect.element(icon).toHaveClass(/icon-\[solar--clock-circle-line-duotone\]/)
-            await expect.element(icon).toHaveClass(/shrink-0/)
-            await expect.element(icon).toHaveAttribute('aria-hidden', 'true')
-            expect(container.querySelector('svg')).toBeNull()
-        })
     })
 
     // ==================== SIZE ====================
 
-    describe('size', () => {
+    describe('size', async () => {
         it('should default to size 24', async () => {
             const { container } = await render(Icon, { name: 'lucide:home' })
             const svg = await getSvg(container)
@@ -68,38 +57,11 @@ describe('Icon', () => {
             await expect.element(svg).toHaveAttribute('width', '2rem')
             await expect.element(svg).toHaveAttribute('height', '2rem')
         })
-
-        it('should allow Tailwind size utilities to override the default in Tailwind mode', async () => {
-            const { container } = await render(Icon, {
-                name: 'icon-[solar--clock-circle-line-duotone]',
-                class: 'size-20'
-            })
-            const icon = page.elementLocator(container.querySelector('span')!)
-
-            await expect.element(icon).toHaveClass(/size-20/)
-            await expect.element(icon).not.toHaveClass(/size-6/)
-            expect(container.querySelector('span')!.style.width).toBe('')
-            expect(container.querySelector('span')!.style.height).toBe('')
-        })
-
-        it('should apply per-breakpoint sizes in Tailwind mode', async () => {
-            const { container } = await render(Icon, {
-                name: 'icon-[solar--clock-circle-line-duotone]',
-                responsiveSize: { base: 16, sm: 20, md: '2rem' }
-            })
-            const icon = page.elementLocator(container.querySelector('span')!)
-            const style = container.querySelector('span')!.getAttribute('style') ?? ''
-
-            await expect.element(icon).toHaveClass(/responsive-size/)
-            expect(style).toContain('--svelora-icon-size-base: 16px')
-            expect(style).toContain('--svelora-icon-size-sm: 20px')
-            expect(style).toContain('--svelora-icon-size-md: 2rem')
-        })
     })
 
     // ==================== CUSTOM CLASS ====================
 
-    describe('custom class', () => {
+    describe('custom class', async () => {
         it('should apply custom class alongside shrink-0', async () => {
             const { container } = await render(Icon, { name: 'lucide:home', class: 'my-icon' })
             const svg = await getSvg(container)
@@ -129,7 +91,7 @@ describe('Icon', () => {
 
     // ==================== ACCESSIBILITY ====================
 
-    describe('accessibility', () => {
+    describe('accessibility', async () => {
         it('should have aria-hidden by default (from iconify)', async () => {
             const { container } = await render(Icon, { name: 'lucide:home' })
             const svg = await getSvg(container)
@@ -140,7 +102,7 @@ describe('Icon', () => {
     // ==================== FLIP ====================
     // Iconify applies flip via <g transform="scale(...)"> inside the SVG
 
-    describe('flip', () => {
+    describe('flip', async () => {
         it('should not apply scale transform by default', async () => {
             const { container } = await render(Icon, { name: 'lucide:home' })
             await getSvg(container)
@@ -178,7 +140,7 @@ describe('Icon', () => {
     // ==================== ROTATE ====================
     // Iconify applies rotate via <g transform="rotate(...)"> inside the SVG
 
-    describe('rotate', () => {
+    describe('rotate', async () => {
         it('should not apply rotate transform by default', async () => {
             const { container } = await render(Icon, { name: 'lucide:home' })
             await getSvg(container)
@@ -208,9 +170,22 @@ describe('Icon', () => {
         })
     })
 
+    describe('bundled defaults', async () => {
+        it.each(Object.entries(iconsDefaults))(
+            'renders %s synchronously without polling',
+            async (_key, name) => {
+                const { container } = await render(Icon, { name })
+                const svg = container.querySelector('svg')
+
+                expect(svg).toBeTruthy()
+                expect(svg!.innerHTML).not.toBe('')
+            }
+        )
+    })
+
     // ==================== DIFFERENT ICONS ====================
 
-    describe('different icons', () => {
+    describe('different icons', async () => {
         it('should render lucide icon', async () => {
             const { container } = await render(Icon, { name: 'lucide:star' })
             const svg = await getSvg(container)
@@ -226,7 +201,7 @@ describe('Icon', () => {
 
     // ==================== FORWARDED ATTRIBUTES ====================
 
-    describe('forwarded attributes', () => {
+    describe('forwarded attributes', async () => {
         it('forwards aria-label, role, and data-* to the svg', async () => {
             const { container } = await render(Icon, {
                 name: 'lucide:search',

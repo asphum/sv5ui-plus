@@ -721,8 +721,9 @@
         onOpenChange={(v) => {
             if (!v) previewFile = null
         }}
-        images={imageFilesList.map((f) => ({
+        slides={imageFilesList.map((f) => ({
             src: getObjectUrl(f),
+            alt: f.name,
             title: f.name,
             description: formatFileSize(f.size)
         }))}

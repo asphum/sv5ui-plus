@@ -1,8 +1,8 @@
 <script lang="ts">
     import { TreeView } from '$lib/index.js'
-    import type { TreeItem } from '$lib/index.js'
+    import type { TreeViewItem } from '$lib/index.js'
     
-    const treeData: TreeItem[] = [
+    const treeData: TreeViewItem[] = [
         {
             id: '1',
             label: 'src',

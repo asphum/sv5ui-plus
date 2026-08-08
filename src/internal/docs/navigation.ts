@@ -326,6 +326,14 @@ export const docsComponentGroups: DocsGroup[] = [
                 icon: 'lucide:table'
             },
             {
+                title: 'Tree',
+                href: '/docs/components/tree',
+                legacyHref: '/tree',
+                icon: 'lucide:folder-tree',
+                description:
+                    'Hierarchical tree with multi-select, checkbox propagation, and keyboard navigation.'
+            },
+            {
                 title: 'TreeView',
                 href: '/docs/components/tree-view',
                 legacyHref: '/tree-view',

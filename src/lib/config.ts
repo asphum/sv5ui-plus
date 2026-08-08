@@ -36,8 +36,7 @@ import type { FontsConfig } from './components/Fonts/fonts.types.js'
  * Default icons used across components
  */
 export const iconsDefaults = {
-    provider: 'iconify' as 'iconify' | 'tailwind',
-    loading: 'lucide:loader-2',
+    loading: 'lucide:loader-circle',
     chevronDown: 'lucide:chevron-down',
     chevronLeft: 'lucide:chevron-left',
     chevronRight: 'lucide:chevron-right',
@@ -56,9 +55,12 @@ export const iconsDefaults = {
     trash: 'lucide:trash-2',
     search: 'lucide:search',
     star: 'lucide:star',
+    folder: 'lucide:folder',
+    folderOpen: 'lucide:folder-open',
     sortAsc: 'lucide:chevron-up',
     sortDesc: 'lucide:chevron-down',
     sortDefault: 'lucide:chevrons-up-down',
+    panelLeft: 'lucide:panel-left',
     dragHandle: 'lucide:grip-vertical'
 }
 

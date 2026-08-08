@@ -79,10 +79,10 @@ describe('Container', () => {
             expect(getRoot(container).className).toContain('mx-auto')
         })
 
-        it('should have responsive padding', async () => {
+        it('should have default horizontal padding', async () => {
             const { container } = await render(Container)
             const root = getRoot(container)
-            expect(root.className).toContain('px-4')
+            expect(root.className).toContain('px-3')
         })
     })
 

@@ -30,6 +30,7 @@
         class: className,
         ui,
         name,
+        oninput,
         ...restProps
     }: Props = $props()
 
@@ -113,6 +114,8 @@
         } else {
             value = e.currentTarget.value
         }
+
+        oninput?.(e)
     }
 
     // Built-in strength heuristic: returns -1 when empty, 0–4 otherwise.
@@ -225,4 +228,3 @@
         </div>
     {/if}
 </div>
-

@@ -57,12 +57,12 @@
             <Icon name="icon-[lucide--star]" />
         </div>
         <p class="text-sm text-on-surface-variant">
-            To resize one icon by viewport, use
-            <code class="rounded bg-surface-container-highest px-1">responsiveSize</code>, for
-            example
+            To resize one icon by viewport, use Tailwind responsive size utilities through the
+            <code class="rounded bg-surface-container-highest px-1">class</code> prop, for example
             <code class="rounded bg-surface-container-highest px-1"
-                >&#123; base: 16, sm: 20, md: 24 &#125;</code
-            >.
+                >class=&quot;size-4 sm:size-5 md:size-6&quot;</code
+            >. The same utilities work when the generated icon class is used directly on a
+            <code class="rounded bg-surface-container-highest px-1">&lt;span&gt;</code>.
         </p>
     </section>
 

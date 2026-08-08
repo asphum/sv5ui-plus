@@ -191,30 +191,33 @@ describe('Card', () => {
         it('should apply slot classes to header', async () => {
             const { container } = await render(Card, {
                 header: snippet('<h3>Header</h3>'),
-                children: snippet('<p>Body</p>')
+                children: snippet('<p>Body</p>'),
+                ui: { header: 'custom-header' }
             })
             const root = container.firstElementChild!
             const headerDiv = page.elementLocator(root.children[0])
-            await expect.element(headerDiv).toHaveClass(/p-4/)
+            await expect.element(headerDiv).toHaveClass(/custom-header/)
         })
 
         it('should apply slot classes to body', async () => {
             const { container } = await render(Card, {
-                children: snippet('<p>Body</p>')
+                children: snippet('<p>Body</p>'),
+                ui: { body: 'custom-body' }
             })
             const root = container.firstElementChild!
             const bodyDiv = page.elementLocator(root.children[0])
-            await expect.element(bodyDiv).toHaveClass(/p-4/)
+            await expect.element(bodyDiv).toHaveClass(/custom-body/)
         })
 
         it('should apply slot classes to footer', async () => {
             const { container } = await render(Card, {
                 children: snippet('<p>Body</p>'),
-                footer: snippet('<p>Footer</p>')
+                footer: snippet('<p>Footer</p>'),
+                ui: { footer: 'custom-footer' }
             })
             const root = container.firstElementChild!
             const footerDiv = page.elementLocator(root.children[1])
-            await expect.element(footerDiv).toHaveClass(/p-4/)
+            await expect.element(footerDiv).toHaveClass(/custom-footer/)
         })
     })
 

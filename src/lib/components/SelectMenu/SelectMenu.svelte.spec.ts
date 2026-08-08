@@ -609,9 +609,9 @@ describe('SelectMenu', () => {
             ) as HTMLElement | undefined
 
         const typeSearch = (value: string) => {
-            const input = Array.from(document.querySelectorAll('input')).find(
-                (i) => i.getAttribute('aria-hidden') !== 'true'
-            ) as HTMLInputElement | undefined
+            const input = document.querySelector(
+                'input[placeholder="Search..."]'
+            ) as HTMLInputElement | null
             if (!input) throw new Error('Search input not found')
             input.focus()
             input.value = value
@@ -770,8 +770,8 @@ describe('SelectMenu', () => {
                 open: true,
                 portal: false
             })
-            const input = Array.from(document.querySelectorAll('input')).find(
-                (i) => i.getAttribute('aria-hidden') !== 'true'
+            const input = document.querySelector(
+                'input[placeholder="Search..."]'
             ) as HTMLInputElement
             input.focus()
             input.value = 'mango'
@@ -796,8 +796,8 @@ describe('SelectMenu', () => {
                 open: true,
                 portal: false
             })
-            const input = Array.from(document.querySelectorAll('input')).find(
-                (i) => i.getAttribute('aria-hidden') !== 'true'
+            const input = document.querySelector(
+                'input[placeholder="Search..."]'
             ) as HTMLInputElement
             input.focus()
             input.value = 'Apple'

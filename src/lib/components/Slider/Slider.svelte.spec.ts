@@ -289,7 +289,7 @@ describe('Slider', () => {
 
         it('should render one hidden input per thumb for range values', async () => {
             const { container } = await render(Slider, { name: 'range', value: [20, 80] })
-            const inputs = container.querySelectorAll('input[type="hidden"][name="range"]')
+            const inputs = container.querySelectorAll('input[type="hidden"][name="range[]"]')
             expect(inputs).toHaveLength(2)
             expect((inputs[0] as HTMLInputElement).value).toBe('20')
             expect((inputs[1] as HTMLInputElement).value).toBe('80')

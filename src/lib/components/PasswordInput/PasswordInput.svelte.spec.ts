@@ -6,10 +6,7 @@ import PasswordInputFormTestWrapper from './PasswordInputFormTestWrapper.svelte'
 
 const getInput = () =>
     document.querySelector('input[type="password"], input[type="text"]') as HTMLInputElement | null
-const getToggle = () =>
-    document.querySelector(
-        'button[aria-label="Show password"], button[aria-label="Hide password"]'
-    ) as HTMLButtonElement | null
+const getToggle = () => document.querySelector('button[aria-pressed]') as HTMLButtonElement | null
 const getMeterSegments = () =>
     [...document.querySelectorAll('[class*="rounded-full"]')] as HTMLElement[]
 const getStrengthText = () => document.querySelector('[class*="text-right"]') as HTMLElement | null

@@ -1,1 +1,1 @@
-export const quickExample = `<script lang="ts">\\n import { Icon } from 'svelora';\\n</script>\\n\\n<Icon name="icon-[lucide--armchair]" />\\n<Icon name="icon-[lucide--armchair]" class="size-6" />\\n<span class="icon-[lucide--armchair] size-6"></span>`
+export const quickExample = `<script lang="ts">\\n import { Icon } from 'svelora';\\n</script>\\n\\n<Icon name="icon-[lucide--armchair]" class="size-6" />\\n<Icon name="icon-[lucide--armchair]" class="size-4 sm:size-5 md:size-6" />\\n<span class="icon-[lucide--armchair] size-6" aria-hidden="true"></span>`

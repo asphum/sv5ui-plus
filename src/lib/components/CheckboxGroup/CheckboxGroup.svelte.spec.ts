@@ -44,7 +44,7 @@ describe('CheckboxGroup', () => {
                 items: defaultItems,
                 name: 'my-group'
             })
-            const hidden = container.querySelector('input[name="my-group"]')
+            const hidden = container.querySelector('input[name="my-group[]"]')
             expect(hidden).toBeTruthy()
         })
 

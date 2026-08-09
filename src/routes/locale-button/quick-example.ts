@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  import { setLocale, toLocale } from '$lib/paraglide/runtime'
  
  const locales: LocaleButtonLocale[] = [

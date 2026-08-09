@@ -1,7 +1,7 @@
 {
-    "name": "svelora",
+    "name": "sv5ui-plus",
     "version": "4.0.0",
-    "description": "Companion components and hooks for SV5UI and Svelte 5",
+    "description": "Community companion components and hooks for SV5UI and Svelte 5",
     "packageManager": "bun@1.3.14",
     "author": "asphum",
     "license": "MIT",
@@ -37,7 +37,7 @@
         "test": "bun run test:unit -- --run",
         "paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --emit-ts-declarations --strategy cookie globalVariable baseLocale",
         "package:mcp": "node ./scripts/package-mcp.mjs",
-        "mcp:svelora-docs": "node ./mcp/svelora-docs/server.mjs",
+        "mcp:sv5ui-plus-docs": "node ./mcp/sv5ui-plus-docs/server.mjs",
         "changelog:template": "node ./scripts/changelog-template.mjs",
         "release:verify": "bun run check && bun run prepack && npm pack --dry-run",
         "release:verify:full": "bun run check && bun run test && bun run prepack && npm pack --dry-run",
@@ -75,8 +75,8 @@
     "types": "./dist/index.d.ts",
     "type": "module",
     "bin": {
-        "svelora-mcp-docs": "./dist/mcp/server.mjs",
-        "svelora-mcp-install-template": "./dist/mcp/install-template.mjs"
+        "sv5ui-plus-mcp-docs": "./dist/mcp/server.mjs",
+        "sv5ui-plus-mcp-install-template": "./dist/mcp/install-template.mjs"
     },
     "exports": {
         ".": {

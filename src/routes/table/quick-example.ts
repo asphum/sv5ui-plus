@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Table } from 'svelora';
+ import { Table } from 'sv5ui';
 
  const data = [
   { name: 'Alice', email: 'alice@example.com', role: 'Admin' },

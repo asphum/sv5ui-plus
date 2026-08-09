@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { useDragDrop } from 'svelora';
+ import { useDragDrop } from 'sv5ui-plus';
 
  const dragDrop = useDragDrop();
 

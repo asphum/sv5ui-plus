@@ -1,11 +1,11 @@
 <script lang="ts">
     import { Badge, Button, Card } from 'sv5ui'
-    import { BentoCard, BentoGrid, NumberTicker } from 'svelora'
+    import { BentoCard, BentoGrid, NumberTicker } from 'sv5ui-plus'
     import { docsMeta, totalComponents, totalHooks } from '$internal/docs/navigation.js'
 </script>
 
 <svelte:head>
-    <title>Svelora — SV5UI companion</title>
+    <title>SV5UI Plus — SV5UI companion</title>
     <meta name="description" content="Additional components and hooks for SV5UI and Svelte 5." />
 </svelte:head>
 
@@ -14,7 +14,7 @@
         <Badge label={docsMeta.version} variant="soft" color="primary" />
         <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">More for SV5UI.</h1>
         <p class="mx-auto max-w-2xl text-lg text-on-surface-variant">
-            Svelora adds focused components and drag-and-drop hooks without duplicating the SV5UI core.
+            SV5UI Plus adds focused components and drag-and-drop hooks without duplicating the SV5UI core.
         </p>
         <div class="flex flex-wrap justify-center gap-3">
             <Button label="Get started" href="/docs/installation" leadingIcon="lucide:rocket" />
@@ -31,7 +31,7 @@
         </BentoCard>
         <Card class="space-y-3 p-5">
             <h2 class="font-semibold">Clear ownership</h2>
-            <p class="text-sm text-on-surface-variant">Core UI comes from <code>sv5ui</code>; additions come from <code>svelora</code>.</p>
+            <p class="text-sm text-on-surface-variant">Core UI comes from <code>sv5ui</code>; additions come from <code>sv5ui-plus</code>.</p>
         </Card>
     </BentoGrid>
 </div>

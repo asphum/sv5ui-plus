@@ -2,8 +2,8 @@
     import { Prose } from '$lib/compat.js'
     
     const sampleHtml = `
-        <h1>Introducing Svelora</h1>
-        <p>Svelora is a beautiful, highly customizable UI component library for Svelte 5. It provides a solid foundation for your next web application.</p>
+        <h1>Introducing SV5UI Plus</h1>
+        <p>SV5UI Plus is a beautiful, highly customizable UI component library for Svelte 5. It provides a solid foundation for your next web application.</p>
         <h2 id="Key-Features">
 <a href="#Key-Features" class="group relative inline-flex items-center no-underline hover:underline focus:outline-none focus-visible:underline w-fit">
                         <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
@@ -16,7 +16,7 @@
             <li>Accessible and responsive</li>
         </ul>
         <blockquote>The best UI library I have ever used! - <em>A Happy Developer</em></blockquote>
-        <pre><code>npm install svelora</code></pre>
+        <pre><code>npm install sv5ui-plus</code></pre>
         <p>For more information, visit our <a href="#">documentation</a>.</p>
     `
 </script>

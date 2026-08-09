@@ -1,10 +1,10 @@
 <script lang="ts">
     import { Alert } from 'sv5ui'
-    import { CodeBlock } from 'svelora'
+    import { CodeBlock } from 'sv5ui-plus'
 
-    const install = 'bun add sv5ui svelora'
-    const css = `@import 'sv5ui/theme.css';\n@source '../../node_modules/svelora/dist';`
-    const usage = `<script lang="ts">\n  import { Button } from 'sv5ui'\n  import { ColorPicker } from 'svelora'\n</${'script'}>`
+    const install = 'bun add sv5ui sv5ui-plus'
+    const css = `@import 'sv5ui/theme.css';\n@source '../../node_modules/sv5ui-plus/dist';`
+    const usage = `<script lang="ts">\n  import { Button } from 'sv5ui'\n  import { ColorPicker } from 'sv5ui-plus'\n</${'script'}>`
 </script>
 
 <div class="space-y-8">
@@ -28,5 +28,5 @@
         <CodeBlock code={usage} copyText={usage} />
     </section>
 
-    <Alert title="Migrating from v3" description="Use svelora/compat temporarily. New code should import core UI from sv5ui and addons from svelora." color="info" />
+    <Alert title="Migrating from Svelora" description="Use sv5ui-plus/compat temporarily. New code should import core UI from sv5ui and addons from sv5ui-plus." color="info" />
 </div>

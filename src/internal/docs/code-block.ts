@@ -239,7 +239,7 @@ export function buildDefaultComponentExample(slug: string): string {
 
     return (
         `<script lang="ts">
- import { ${componentName} } from 'svelora';
+ import { ${componentName} } from 'sv5ui-plus';
 <` +
         `/script>
 
@@ -252,7 +252,7 @@ export function buildDefaultHookExample(slug: string): string {
 
     return (
         `<script lang="ts">
- import { ${hookName} } from 'svelora';
+ import { ${hookName} } from 'sv5ui-plus';
 <` +
         `/script>
 

@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { SortableList } from 'svelora';
+ import { SortableList } from 'sv5ui-plus';
 
  let tasks = $state([
    { id: 'a', title: 'Review PR' },

@@ -7,7 +7,7 @@ export const scrollAreaVariants = tv({
         // Note: For actual custom scrollbars without a JS library, we can use
         // global CSS webkit scrollbar styles or a plugin.
         // Here we just define standard utility classes to hide or style them if Tailwind scrollbar plugin is used.
-        // We'll add a custom class `svelora-scrollbar` to be styled in global css if needed.
+        // We'll add a custom class `sv5ui-plus-scrollbar` to be styled in global css if needed.
     },
     variants: {
         orientation: {

@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Chart } from 'svelora';
+ import { Chart } from 'sv5ui-plus';
 
  const data = {
    labels: ['Jan', 'Feb', 'Mar'],

@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Prose } from 'svelora';
+ import { Prose } from 'sv5ui-plus';
 </script>
 
 <Prose>

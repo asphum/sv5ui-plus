@@ -47,24 +47,24 @@ describe('slugToHookName', () => {
 
 describe('buildDefaultComponentExample', () => {
     it('produces a valid Svelte snippet', () => {
-        const result = buildDefaultComponentExample('button')
+        const result = buildDefaultComponentExample('color-picker')
         expect(result).toContain('<script lang="ts">')
-        expect(result).toContain("import { Button } from 'svelora'")
-        expect(result).toContain('<Button />')
+        expect(result).toContain("import { ColorPicker } from 'sv5ui-plus'")
+        expect(result).toContain('<ColorPicker />')
     })
 
     it('handles kebab-case slugs', () => {
-        const result = buildDefaultComponentExample('select-menu')
-        expect(result).toContain("import { SelectMenu } from 'svelora'")
-        expect(result).toContain('<SelectMenu />')
+        const result = buildDefaultComponentExample('password-input')
+        expect(result).toContain("import { PasswordInput } from 'sv5ui-plus'")
+        expect(result).toContain('<PasswordInput />')
     })
 })
 
 describe('buildDefaultHookExample', () => {
     it('produces a valid Svelte snippet', () => {
-        const result = buildDefaultHookExample('use-clipboard')
-        expect(result).toContain("import { useClipboard } from 'svelora'")
-        expect(result).toContain('const value = useClipboard()')
+        const result = buildDefaultHookExample('use-sortable')
+        expect(result).toContain("import { useSortable } from 'sv5ui-plus'")
+        expect(result).toContain('const value = useSortable()')
     })
 })
 

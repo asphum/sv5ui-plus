@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { useSortable } from 'svelora';
+ import { useSortable } from 'sv5ui-plus';
 
  let items = $state([
    { id: 1, label: 'Design' },

@@ -161,7 +161,7 @@
 
     const setupExample = `<!-- +layout.svelte -->
 <script lang="ts">
-  import { ConfirmDialog, registerConfirmDialog } from 'svelora'
+  import { ConfirmDialog, registerConfirmDialog } from 'sv5ui-plus'
   import { onMount } from 'svelte'
 
   let confirmDialogRef

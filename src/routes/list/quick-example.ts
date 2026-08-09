@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { List, ListItem } from 'svelora';
+ import { List, ListItem } from 'sv5ui-plus';
 </script>
 
 <List>

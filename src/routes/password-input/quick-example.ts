@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { PasswordInput } from 'svelora';
+ import { PasswordInput } from 'sv5ui-plus';
  let pwd = $state('');
 </script>
 

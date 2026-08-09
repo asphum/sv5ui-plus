@@ -12,13 +12,13 @@
 {@render children()}`
 
     const layoutCssCode = `@import 'tailwindcss';
-@import 'svelora/theme.css';
+@import 'sv5ui-plus/theme.css';
 
 /* Required for Tailwind CSS 4 dark mode classes */
 @custom-variant dark (&:where(.dark, .dark *));`
 
     const toggleCode = `<script lang="ts">
- import { ThemeModeButton } from 'svelora';
+ import { ThemeModeButton } from 'sv5ui';
 <` + `/script>
 
 <ThemeModeButton />
@@ -43,7 +43,7 @@
  </p>
 </div>
 
-<!-- Svelora semantic colors -->
+<!-- SV5UI Plus semantic colors -->
 <div class="bg-surface text-on-surface">
  <p class="text-on-surface/60">
   Semantic colors handle dark mode for you.
@@ -69,7 +69,7 @@
             </p>
             <h1 class="text-4xl font-semibold tracking-tight">Dark Mode</h1>
             <p class="max-w-3xl text-lg leading-8 text-on-surface-variant">
-                Svelora includes built-in dark mode support. All components automatically adapt to the current theme.
+                SV5UI Plus includes built-in dark mode support. All components automatically adapt to the current theme.
             </p>
         </div>
     </section>
@@ -138,7 +138,7 @@
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            You can use Tailwind's `dark:` variant, but Svelora semantic colors usually remove the need for it.
+            You can use Tailwind's `dark:` variant, but SV5UI Plus semantic colors usually remove the need for it.
         </p>
         <Card class="border border-outline-variant/70">
             <pre class="overflow-x-auto text-sm"><code>{stylingCode}</code></pre>

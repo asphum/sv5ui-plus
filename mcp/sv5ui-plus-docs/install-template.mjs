@@ -28,7 +28,7 @@ async function resolveTemplatePath() {
         }
     }
 
-    throw new Error('Could not find cursor.mcp.json template for Svelora MCP.')
+    throw new Error('Could not find cursor.mcp.json template for SV5UI Plus MCP.')
 }
 
 async function main() {
@@ -49,7 +49,7 @@ async function main() {
     await mkdir(targetDir, { recursive: true })
     await copyFile(templatePath, targetPath)
 
-    console.log(`Installed Svelora MCP template at ${targetPath}`)
+    console.log(`Installed SV5UI Plus MCP template at ${targetPath}`)
 }
 
 await main()

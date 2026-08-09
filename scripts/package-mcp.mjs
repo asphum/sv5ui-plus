@@ -4,11 +4,11 @@ import path from 'node:path'
 const projectRoot = process.cwd()
 const packageJsonPath = path.join(projectRoot, 'package.json')
 const navigationPath = path.join(projectRoot, 'src/internal/docs/navigation.ts')
-const serverSourcePath = path.join(projectRoot, 'mcp/svelora-docs/server.mjs')
-const installTemplateSourcePath = path.join(projectRoot, 'mcp/svelora-docs/install-template.mjs')
+const serverSourcePath = path.join(projectRoot, 'mcp/sv5ui-plus-docs/server.mjs')
+const installTemplateSourcePath = path.join(projectRoot, 'mcp/sv5ui-plus-docs/install-template.mjs')
 const distMcpDir = path.join(projectRoot, 'dist/mcp')
 const distServerPath = path.join(distMcpDir, 'server.mjs')
-const distDataPath = path.join(distMcpDir, 'svelora-docs.data.json')
+const distDataPath = path.join(distMcpDir, 'sv5ui-plus-docs.data.json')
 const distCursorTemplatePath = path.join(distMcpDir, 'cursor.mcp.json')
 const distInstallTemplatePath = path.join(distMcpDir, 'install-template.mjs')
 
@@ -58,10 +58,10 @@ const payload = {
 
 const cursorTemplate = {
     mcpServers: {
-        'svelora-docs': {
+        'sv5ui-plus-docs': {
             type: 'stdio',
             command: 'node',
-            args: ['./node_modules/svelora/dist/mcp/server.mjs'],
+            args: ['./node_modules/sv5ui-plus/dist/mcp/server.mjs'],
             cwd: '${workspaceFolder}'
         }
     }

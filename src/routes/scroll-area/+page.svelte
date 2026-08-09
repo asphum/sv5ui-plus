@@ -24,9 +24,9 @@
         <div class="rounded-lg bg-surface-container-high p-4 flex justify-center">
             <ScrollArea class="h-72 w-full max-w-sm rounded-lg border border-outline-variant bg-surface p-4">
                 <div class="space-y-4">
-                    <h4 class="text-sm font-semibold">Svelora Components</h4>
+                    <h4 class="text-sm font-semibold">SV5UI Plus Components</h4>
                     <Separator />
-                    {#each Array(50) as _, i}
+                    {#each Array(50) as _, i (i)}
                         <div class="text-sm text-on-surface-variant">Component {i + 1}</div>
                         {#if i !== 49}
                             <Separator />
@@ -51,7 +51,7 @@
         <div class="rounded-lg bg-surface-container-high p-4 flex justify-center">
             <ScrollArea orientation="horizontal" class="w-full max-w-lg rounded-lg border border-outline-variant bg-surface p-4 whitespace-nowrap">
                 <div class="flex gap-4">
-                    {#each Array(10) as _, i}
+                    {#each Array(10) as _, i (i)}
                         <div class="h-32 w-32 shrink-0 rounded-md bg-surface-container-highest flex items-center justify-center font-bold text-on-surface-variant">
                             Item {i + 1}
                         </div>

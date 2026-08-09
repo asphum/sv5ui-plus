@@ -1,9 +1,9 @@
 <script lang="ts">
     import { Card, Link } from '$lib/compat.js'
 
-    const configCode = `import { defineConfig } from 'svelora';
+    const configCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  button: {
   defaultVariants: { variant: 'outline', color: 'secondary', size: 'sm' }
  },
@@ -20,13 +20,13 @@ defineConfig({
  let { children } = $props();
 <` + `/script>`
 
-    const resetCode = `import { resetConfig } from 'svelora';
+    const resetCode = `import { resetSV5UIPlusConfig } from 'sv5ui-plus';
 
-resetConfig();`
+resetSV5UIPlusConfig();`
 
-    const fontsConfigCode = `import { defineConfig } from 'svelora';
+    const fontsConfigCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: {
   families: [
    { name: 'Inter', variable: '--font-sans-family', weights: [400, 500, 600, 700] },
@@ -42,9 +42,9 @@ defineConfig({
  }
 });`
 
-    const disableFontsCode = `import { defineConfig } from 'svelora';
+    const disableFontsCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: false
 });`
 

@@ -1,8 +1,8 @@
 export const quickExample = `<script lang="ts">
- import { ConfirmDialog, confirmDialog, registerConfirmDialog } from 'svelora';
+ import { ConfirmDialog, confirmDialog, registerConfirmDialog } from 'sv5ui-plus';
  import { onMount } from 'svelte';
 
- let confirmDialogRef: { show: (options?: import('svelora').ConfirmOptions) => Promise<boolean> };
+ let confirmDialogRef: { show: (options?: import('sv5ui-plus').ConfirmOptions) => Promise<boolean> };
 
  onMount(() => {
    registerConfirmDialog((options) => confirmDialogRef.show(options));

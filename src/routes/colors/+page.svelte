@@ -56,7 +56,7 @@
             </p>
             <h1 class="text-4xl font-semibold tracking-tight">Color Tokens</h1>
             <p class="max-w-3xl text-lg leading-8 text-on-surface-variant">
-                Material Design 3 inspired semantic colors used throughout the Svelora theme.
+                Material Design 3 inspired semantic colors used throughout the SV5UI Plus theme.
             </p>
         </div>
     </section>

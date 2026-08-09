@@ -1,12 +1,12 @@
 /**
- * Svelora Configuration File
+ * SV5UI Plus Configuration File
  *
  * Copy this file to your project root and customize as needed.
  * Then import it in your +layout.svelte:
  *
  * ```svelte
  * <script>
- *     import '../svelora.config'
+ *     import '../sv5ui-plus.config'
  * </script>
  * ```
  */

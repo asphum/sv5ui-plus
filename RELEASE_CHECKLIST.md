@@ -1,6 +1,6 @@
 # Release Checklist
 
-Use this checklist for every Svelora release.
+Use this checklist for every SV5UI Plus release.
 
 ## 1. Decide the release scope
 
@@ -31,7 +31,7 @@ Use this checklist for every Svelora release.
 
 - [ ] Confirm `dist/` contains the expected entrypoints and type declarations.
 - [ ] Confirm `package.json` `exports`, `svelte`, and `types` still point to valid built files.
-- [ ] Confirm the package can be installed with `bun add svelora`.
+- [ ] Confirm the package can be installed with `bun add sv5ui-plus`.
 - [ ] Smoke test imports in a fresh app if the release changes packaging or install flow.
 
 ## 5. Publish
@@ -39,7 +39,7 @@ Use this checklist for every Svelora release.
 - [ ] Confirm `npm whoami` shows the correct account.
 - [ ] Confirm npm auth is valid before publish.
 - [ ] Run `npm publish --access public`.
-- [ ] Verify `npm view svelora version` shows the new version.
+- [ ] Verify `npm view sv5ui-plus version` shows the new version.
 - [ ] Open the npm package page and confirm metadata looks correct.
 
 ## 6. Post-release
@@ -70,7 +70,7 @@ bun run prepack
 bun run release:verify
 bun run release:verify:full
 npm publish --access public
-npm view svelora version
+npm view sv5ui-plus version
 ```
 
 ```bash

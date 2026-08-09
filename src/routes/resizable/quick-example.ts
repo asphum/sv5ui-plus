@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Resizable } from 'svelora';
+ import { Resizable } from 'sv5ui-plus';
 </script>
 
 <Resizable direction="both" class="h-64 w-64 border border-outline">

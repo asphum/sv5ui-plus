@@ -1,4 +1,4 @@
-# Contributing to Svelora
+# Contributing to SV5UI Plus
 
 Thanks for your interest in contributing! This guide explains how to set up the project, the conventions every component follows, and the workflow from issue to merged PR.
 

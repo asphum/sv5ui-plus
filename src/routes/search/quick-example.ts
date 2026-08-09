@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
-    import { Search } from 'svelora'
+    import { Search } from 'sv5ui-plus'
 
     const groups = [
         {

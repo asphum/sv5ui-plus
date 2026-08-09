@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { SortableList, useDragDrop } from 'svelora';
+ import { SortableList, useDragDrop } from 'sv5ui-plus';
 
  // Reorder within one list
  let tasks = $state([

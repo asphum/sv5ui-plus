@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { TreeView } from 'svelora';
+ import { TreeView } from 'sv5ui-plus';
 
  const data = [
    {

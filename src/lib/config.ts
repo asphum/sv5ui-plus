@@ -1,13 +1,13 @@
 import type { FontsConfig } from './components/Fonts/fonts.types.js'
 
 /**
- * Svelora Global Configuration
+ * SV5UI Plus Global Configuration
  *
  * @example
  * ```ts
- * import { defineConfig } from 'svelora'
+ * import { defineSV5UIPlusConfig } from 'sv5ui-plus'
  *
- * defineConfig({
+ * defineSV5UIPlusConfig({
  *     fonts: {
  *         families: [
  *             {
@@ -86,7 +86,7 @@ let cachedConfigs: Record<string, unknown> = {}
 // ==================== PUBLIC API ====================
 
 /**
- * Define global configuration for Svelora components
+ * Define global configuration for SV5UI Plus components
  */
 export function defineConfig(config: UIConfig): void {
     globalConfig = config

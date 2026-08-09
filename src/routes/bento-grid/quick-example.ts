@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { BentoGrid, BentoCard } from 'svelora';
+ import { BentoGrid, BentoCard } from 'sv5ui-plus';
 </script>
 
 <BentoGrid class="max-w-4xl mx-auto">

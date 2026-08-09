@@ -1,4 +1,4 @@
-// Svelora-exclusive components
+// SV5UI Plus-exclusive components
 export * from './components/BentoGrid/index.js'
 export * from './components/Chart/index.js'
 export * from './components/Chat/index.js'
@@ -22,7 +22,7 @@ export * from './components/Spotlight/index.js'
 export * from './components/TableBulkActionBar/index.js'
 export * from './components/TreeView/index.js'
 
-// Svelora-exclusive hooks
+// SV5UI Plus-exclusive hooks
 export * from './hooks/useSortable/index.js'
 export * from './hooks/useDragDrop/index.js'
 
@@ -31,8 +31,8 @@ export * from './adapters/notify.js'
 
 // Addon configuration. Core SV5UI configuration remains `defineConfig` from `sv5ui`.
 export {
-    defineConfig as defineSveloraConfig,
-    getConfig as getSveloraConfig,
-    resetConfig as resetSveloraConfig
+    defineConfig as defineSV5UIPlusConfig,
+    getConfig as getSV5UIPlusConfig,
+    resetConfig as resetSV5UIPlusConfig
 } from './config.js'
-export type { UIConfig as SveloraConfig } from './config.js'
+export type { UIConfig as SV5UIPlusConfig } from './config.js'

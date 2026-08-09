@@ -119,7 +119,7 @@
 
     const paraglideSetLocaleExample =
         `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  import { setLocale, toLocale } from '$lib/paraglide/runtime'
  
  const locales: LocaleButtonLocale[] = [
@@ -145,7 +145,7 @@
 
     const paraglideCookieExample =
         `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  import { setLocale, toLocale } from '$lib/paraglide/runtime'
  
  const locales: LocaleButtonLocale[] = [
@@ -171,7 +171,7 @@
 
     const consumerAppExample =
         `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  import { setLocale, toLocale } from '$lib/paraglide/runtime'
  
  const locales: LocaleButtonLocale[] = [
@@ -197,7 +197,7 @@
 
     const hrefStrategyExample =
         `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  import { localizeHref } from '$lib/paraglide/runtime'
  
  const locales: LocaleButtonLocale[] = [
@@ -218,7 +218,7 @@
 
     const customI18nExample =
         `<script lang="ts">
- import { LocaleButton, type LocaleButtonLocale } from 'svelora'
+ import { LocaleButton, type LocaleButtonLocale } from 'sv5ui-plus'
  
  const locales: LocaleButtonLocale[] = [
    { code: 'en', label: 'English', shortLabel: 'EN' },
@@ -242,7 +242,7 @@
  }}
 />`
 
-    const localeShapeExample = `import type { LocaleButtonLocale } from 'svelora'
+    const localeShapeExample = `import type { LocaleButtonLocale } from 'sv5ui-plus'
 
 const locales: LocaleButtonLocale[] = [
   {
@@ -355,7 +355,7 @@ const locales: LocaleButtonLocale[] = [
         <p class="text-sm text-on-surface-variant">
             <code class="rounded bg-surface-container-highest px-1">LocaleButton</code> is
             exported from the
-            <code class="rounded bg-surface-container-highest px-1">svelora</code> package and can
+            <code class="rounded bg-surface-container-highest px-1">sv5ui-plus</code> package and can
             be used in any app that installs this library.
         </p>
         <p class="text-sm text-on-surface-variant">
@@ -625,7 +625,7 @@ const locales: LocaleButtonLocale[] = [
                         <div class="col-span-2 pb-2 mb-2 border-b border-outline-variant/50">
                             <p class="text-xs font-medium text-on-surface-variant">Select Region</p>
                         </div>
-                        {#each locales as item}
+                        {#each locales as item (item.code)}
                             <button
                                 class={`flex flex-col items-center gap-1 p-3 rounded-lg border transition-all ${
                                     customLocale === item.code 
@@ -757,4 +757,3 @@ const locales: LocaleButtonLocale[] = [
         </div>
     </section>
 </div>
-

@@ -52,8 +52,8 @@
     ] as const
 
     const localLayoutCode = `<script lang="ts">
- import 'svelora/theme.css';
- import { Fonts } from 'svelora';
+ import 'sv5ui-plus/theme.css';
+ import { Fonts } from 'sv5ui-plus';
 
  let { children } = $props();
 <` + `/script>
@@ -188,9 +188,9 @@
  ]}
 />`
 
-    const configCode = `import { defineConfig } from 'svelora';
+    const configCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: {
   families: [
    { name: 'Inter', variable: '--font-sans-family', weights: [400, 500, 600, 700] },
@@ -209,8 +209,8 @@ defineConfig({
 });`
 
     const layoutCode = `<script lang="ts">
- import 'svelora/theme.css';
- import { Fonts } from 'svelora';
+ import 'sv5ui-plus/theme.css';
+ import { Fonts } from 'sv5ui-plus';
  import { ModeWatcher } from 'mode-watcher';
 
  let { children } = $props();
@@ -220,9 +220,9 @@ defineConfig({
 <ModeWatcher />
 {@render children?.()}`
 
-    const disableDefaultsCode = `import { defineConfig } from 'svelora';
+    const disableDefaultsCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: false
 });`
 
@@ -293,7 +293,7 @@ defineConfig({
     <div class="space-y-2">
         <h1 class="text-2xl font-bold">Fonts</h1>
         <p class="text-on-surface-variant">
-            A unified font provider for Svelora that supports both Google Fonts and local font files
+            A unified font provider for SV5UI Plus that supports both Google Fonts and local font files
             through the same `fonts.families` API.
         </p>
     </div>
@@ -306,7 +306,7 @@ defineConfig({
                     </a>
 </h2>
         <p class="text-sm text-on-surface-variant">
-            If you render `<Fonts />` without props or custom config, Svelora uses the built-in preset
+            If you render `<Fonts />` without props or custom config, SV5UI Plus uses the built-in preset
             below. The current default display is `{fontsDefaults.display}` with preconnect set to
             `{fontsDefaults.preconnect ? 'true' : 'false'}`.
         </p>
@@ -399,7 +399,7 @@ defineConfig({
                         Using Global Config
                     </a>
 </h2>
-        <CodeBlock title="defineConfig()" code={configCode} html={configHtml} />
+        <CodeBlock title="defineSV5UIPlusConfig()" code={configCode} html={configHtml} />
         <CodeBlock title="+layout.svelte" code={layoutCode} html={layoutHtml} />
     </section>
 

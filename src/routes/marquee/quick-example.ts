@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Marquee } from 'svelora';
+ import { Marquee } from 'sv5ui-plus';
 </script>
 
 <Marquee pauseOnHover={true}>

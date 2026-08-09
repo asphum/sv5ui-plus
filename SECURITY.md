@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Svelora follows semantic versioning. Security fixes are applied to the latest minor release.
+SV5UI Plus follows semantic versioning. Security fixes are applied to the latest minor release.
 
 | Version | Supported |
 | ------- | --------- |
@@ -29,7 +29,7 @@ Please include:
 
 ## Scope
 
-Svelora is a UI component library — it renders markup and does not handle authentication, secrets, or server logic. The most relevant classes of issues are:
+SV5UI Plus is a UI component library — it renders markup and does not handle authentication, secrets, or server logic. The most relevant classes of issues are:
 
 - **XSS / unsafe rendering** — e.g. a component forwarding untrusted input into a dangerous sink (such as a `javascript:` URL in `href`, or unsanitized HTML).
 - **Prototype pollution** or unsafe merges in the config system.

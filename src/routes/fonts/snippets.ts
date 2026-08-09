@@ -3,17 +3,17 @@ import type { DocSectionSnippetOverrides } from '$internal/docs/code-block.js'
 export const sectionSnippets: DocSectionSnippetOverrides = {
     'Default Preset':
         `<script lang="ts">
- import 'svelora/theme.css';
- import { Fonts } from 'svelora';
+ import 'sv5ui-plus/theme.css';
+ import { Fonts } from 'sv5ui-plus';
 <` +
         `/script>
 
 <Fonts />`,
     'Google Provider':
         `<script lang="ts">
- import 'svelora/theme.css';
- import { Fonts } from 'svelora';
- import type { FontDefinition } from 'svelora';
+ import 'sv5ui-plus/theme.css';
+ import { Fonts } from 'sv5ui-plus';
+ import type { FontDefinition } from 'sv5ui-plus';
 
  const families: FontDefinition[] = [
   { name: 'Inter', variable: '--font-sans-family', weights: [400, 500, 600, 700] },
@@ -45,8 +45,8 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 />`,
     'Local Font Setup':
         `<script lang="ts">
- import 'svelora/theme.css';
- import { Fonts } from 'svelora';
+ import 'sv5ui-plus/theme.css';
+ import { Fonts } from 'sv5ui-plus';
 
  let { children } = $props();
 <` +
@@ -82,9 +82,9 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
   }
  ]}
 />`,
-    'Using Global Config': `import { defineConfig } from 'svelora';
+    'Using Global Config': `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: {
   families: [
    { name: 'Inter', variable: '--font-sans-family', weights: [400, 500, 600, 700] },
@@ -101,16 +101,16 @@ defineConfig({
   ]
  }
 });`,
-    'Disable Defaults': `import { defineConfig } from 'svelora';
+    'Disable Defaults': `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: false
 });`,
     'API Reference': `import type {
  FontDefinition,
  FontsOptions,
  LocalFontSource
-} from 'svelora';
+} from 'sv5ui-plus';
 
 const source: LocalFontSource = {
  src: '/fonts/Sarabun-Regular.woff2',

@@ -2,7 +2,7 @@ import type { DocSectionSnippetOverrides } from '$internal/docs/code-block.js'
 
 export const sectionSnippets: DocSectionSnippetOverrides = {
     'When to use what': `<script lang="ts">
- import { SortableList, useDragDrop, useSortable } from 'svelora';
+ import { SortableList, useDragDrop, useSortable } from 'sv5ui-plus';
 
  // SortableList / useSortable — reorder inside one list
  let items = $state([{ id: 1, label: 'Task' }]);
@@ -11,7 +11,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  const dragDrop = useDragDrop();
 </script>`,
     Basic: `<script lang="ts">
- import { useDragDrop } from 'svelora';
+ import { useDragDrop } from 'sv5ui-plus';
 
  let activeZone = $state<'A' | 'B' | 'C' | null>(null);
  const dragDrop = useDragDrop();
@@ -58,7 +58,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  // Tasks: type 'item' — handle onDragOver for live cross-container moves
 </script>`,
     'Sortable list': `<script lang="ts">
- import { SortableList } from 'svelora';
+ import { SortableList } from 'sv5ui-plus';
 
  let items = $state([
    { id: 'v1', label: 'Design review' },
@@ -103,7 +103,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  {/snippet}
 </SortableList>`,
     'Kanban (2 columns)': `<script lang="ts">
- import { useDragDrop } from 'svelora';
+ import { useDragDrop } from 'sv5ui-plus';
 
  type Item = { id: string; label: string };
 
@@ -141,7 +141,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  {/each}
 </dragDrop.Provider>`,
     'Kanban (3 columns)': `<script lang="ts">
- import { useDragDrop } from 'svelora';
+ import { useDragDrop } from 'sv5ui-plus';
 
  type Task = { id: string; label: string; lane: 'todo' | 'progress' | 'done' };
 
@@ -164,7 +164,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
  Archive
 </div>`,
     'Manual markup': `<script lang="ts">
- import { useSortable } from 'svelora';
+ import { useSortable } from 'sv5ui-plus';
 
  let items = $state([{ id: 'm1', label: 'Manual markup' }]);
 

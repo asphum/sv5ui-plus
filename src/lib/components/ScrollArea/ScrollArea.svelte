@@ -19,7 +19,7 @@
     <div 
         class={twMerge(
             styles.viewport(), 
-            !hideScrollbar && 'svelora-scrollbar',
+            !hideScrollbar && 'sv5ui-plus-scrollbar',
             viewportClass
         )}
         data-orientation={orientation}
@@ -30,23 +30,23 @@
 
 <style>
     /* Custom scrollbar styling for Webkit browsers */
-    :global(.svelora-scrollbar::-webkit-scrollbar) {
+    :global(.sv5ui-plus-scrollbar::-webkit-scrollbar) {
         width: 6px;
         height: 6px;
     }
-    :global(.svelora-scrollbar::-webkit-scrollbar-track) {
+    :global(.sv5ui-plus-scrollbar::-webkit-scrollbar-track) {
         background: transparent;
     }
-    :global(.svelora-scrollbar::-webkit-scrollbar-thumb) {
+    :global(.sv5ui-plus-scrollbar::-webkit-scrollbar-thumb) {
         background-color: var(--color-outline-variant, rgba(156, 163, 175, 0.5));
         border-radius: 9999px;
     }
-    :global(.svelora-scrollbar::-webkit-scrollbar-thumb:hover) {
+    :global(.sv5ui-plus-scrollbar::-webkit-scrollbar-thumb:hover) {
         background-color: var(--color-outline, rgba(107, 114, 128, 0.8));
     }
     
     /* Firefox support */
-    :global(.svelora-scrollbar) {
+    :global(.sv5ui-plus-scrollbar) {
         scrollbar-width: thin;
         scrollbar-color: var(--color-outline-variant, rgba(156, 163, 175, 0.5)) transparent;
     }

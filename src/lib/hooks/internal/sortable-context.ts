@@ -1,8 +1,8 @@
 import type { UseSortableOptions } from '../useSortable/useSortable.svelte.js'
 import type { Snippet } from 'svelte'
 
-export const SORTABLE_CONTEXT_KEY = Symbol('svelora-sortable')
-export const SORTABLE_GROUP_CONTEXT_KEY = Symbol('svelora-sortable-group')
+export const SORTABLE_CONTEXT_KEY = Symbol('sv5ui-plus-sortable')
+export const SORTABLE_GROUP_CONTEXT_KEY = Symbol('sv5ui-plus-sortable-group')
 
 export interface SortableGroupContextValue {
     draggingId: string | number | null

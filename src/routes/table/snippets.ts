@@ -2,7 +2,7 @@ import type { DocSectionSnippetOverrides } from '$internal/docs/code-block.js'
 
 export const sectionSnippets: DocSectionSnippetOverrides = {
     Basic: `<script lang="ts">
- import { Table } from 'svelora';
+ import { Table } from 'sv5ui';
 
  const data = [
   { name: 'Alice', email: 'alice@example.com', role: 'Admin' },
@@ -13,7 +13,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <Table {data} />`,
     Sorting: `<script lang="ts">
- import { Table } from 'svelora';
+ import { Table } from 'sv5ui';
 
  const data = [
   { id: 1, name: 'Alice', role: 'Admin' },
@@ -30,7 +30,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <Table data={data} {columns} bind:sorting rowKey="id" />`,
     Pagination: `<script lang="ts">
- import { Table } from 'svelora';
+ import { Table } from 'sv5ui';
 
  const data = Array.from({ length: 50 }, (_, index) => ({
   id: index + 1,
@@ -44,7 +44,7 @@ export const sectionSnippets: DocSectionSnippetOverrides = {
 
 <Table {data} bind:page {pageSize} rowKey="id" />`,
     'Row Selection': `<script lang="ts">
- import { Table } from 'svelora';
+ import { Table } from 'sv5ui';
 
  const data = [
   { id: 1, name: 'Alice', role: 'Admin' },

@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { ColorPicker } from 'svelora';
+ import { ColorPicker } from 'sv5ui-plus';
  let color = $state('#3b82f6');
 </script>
 

@@ -31,7 +31,7 @@
         docsTopNav
     } from '$internal/docs/navigation.js'
 
-    import '../svelora.config.js'
+    import '../sv5ui-plus.config.js'
 
     const { children, data } = $props<{
         children: () => unknown
@@ -135,14 +135,14 @@
     }
 
     const pageTitle = $derived.by(() => {
-        if (isLanding) return 'Svelora - Premium Svelte 5 UI Components'
+        if (isLanding) return 'SV5UI Plus - Premium Svelte 5 UI Components'
         for (const section of sidebarSections) {
             for (const item of section.items) {
-                if (item.href === activePath) return `${item.title} - Svelora`
+                if (item.href === activePath) return `${item.title} - SV5UI Plus`
             }
         }
-        if (activePath === '/editor') return 'Editor - Svelora'
-        return 'Svelora'
+        if (activePath === '/editor') return 'Editor - SV5UI Plus'
+        return 'SV5UI Plus'
     })
 </script>
 

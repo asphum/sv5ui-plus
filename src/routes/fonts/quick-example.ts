@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { Fonts } from 'svelora';
+ import { Fonts } from 'sv5ui-plus';
 </script>
 
 <Fonts

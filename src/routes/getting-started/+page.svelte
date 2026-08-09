@@ -5,10 +5,10 @@
 
 <div class="space-y-10">
     <header class="space-y-3">
-        <p class="text-sm font-medium text-primary">Svelora 4</p>
+        <p class="text-sm font-medium text-primary">SV5UI Plus 4</p>
         <h1 class="text-4xl font-semibold tracking-tight">SV5UI companion library</h1>
         <p class="max-w-3xl text-on-surface-variant">
-            Use SV5UI for the design-system core. Add Svelora only for components and hooks that SV5UI does not provide.
+            Use SV5UI for the design-system core. Add SV5UI Plus only for components and hooks that SV5UI does not provide.
         </p>
         <Button label="Installation" href="/docs/installation" leadingIcon="lucide:download" />
     </header>

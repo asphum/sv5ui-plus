@@ -15,9 +15,9 @@ export type DocsGroup = {
 }
 
 export const docsMeta = {
-    name: 'Svelora',
+    name: 'SV5UI Plus',
     version: `v${packageJson.version}`,
-    npmCommand: 'npm install sv5ui svelora',
+    npmCommand: 'npm install sv5ui sv5ui-plus',
     githubHref: 'https://github.com/asphum/svelora'
 } as const
 
@@ -27,21 +27,21 @@ export const docsIntroItems: DocsItem[] = [
         href: '/docs',
         legacyHref: '/getting-started',
         icon: 'lucide:book-open',
-        description: 'Svelora as an SV5UI companion.'
+        description: 'SV5UI Plus as an SV5UI companion.'
     },
     {
         title: 'Installation',
         href: '/docs/installation',
         legacyHref: '/getting-started/installation',
         icon: 'lucide:download',
-        description: 'Install SV5UI and Svelora together.'
+        description: 'Install SV5UI and SV5UI Plus together.'
     },
     {
         title: 'MCP',
         href: '/docs/mcp',
         legacyHref: '/mcp',
         icon: 'lucide:plug',
-        description: 'Use the Svelora docs helper.'
+        description: 'Use the SV5UI Plus docs helper.'
     },
     {
         title: 'Drag & Drop',
@@ -58,7 +58,7 @@ export const docsThemeItems: DocsItem[] = [
         href: '/docs/theming',
         legacyHref: '/getting-started/theming',
         icon: 'lucide:palette',
-        description: 'Svelora extends the SV5UI theme.'
+        description: 'SV5UI Plus extends the SV5UI theme.'
     },
     {
         title: 'Dark Mode',
@@ -97,7 +97,7 @@ const component = (
 
 export const docsComponentGroups: DocsGroup[] = [
     {
-        title: 'Svelora Addons',
+        title: 'SV5UI Plus Addons',
         icon: 'lucide:blocks',
         items: [
             component('BentoGrid', 'bento-grid', 'lucide:layout-dashboard'),

@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { CodeBlock } from 'svelora';
+ import { CodeBlock } from 'sv5ui-plus';
 </script>
 
 <CodeBlock

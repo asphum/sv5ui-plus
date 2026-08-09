@@ -85,7 +85,7 @@ export function useSortable<T>(options: UseSortableOptions<T>): UseSortableRetur
         const group = options.group
         return (
             (typeof group === 'function' ? group() : group) ??
-            `svelora-sortable-${++sortableGroupCounter}`
+            `sv5ui-plus-sortable-${++sortableGroupCounter}`
         )
     }
 

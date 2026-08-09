@@ -2,14 +2,14 @@
     import { CodeBlock, Link } from '$lib/compat.js'
     import { renderHighlightedCode } from '$internal/docs/code-block.js'
 
-    const packageInstallCode = `bun add svelora`
+    const packageInstallCode = `bun add sv5ui-plus`
 
     const packageCursorConfigCode = `{
   "mcpServers": {
-    "svelora-docs": {
+    "sv5ui-plus-docs": {
       "type": "stdio",
       "command": "node",
-      "args": ["./node_modules/svelora/dist/mcp/server.mjs"],
+      "args": ["./node_modules/sv5ui-plus/dist/mcp/server.mjs"],
       "cwd": "\${workspaceFolder}"
     }
   }
@@ -17,9 +17,9 @@
 
     const packageCursorConfigBinCode = `{
   "mcpServers": {
-    "svelora-docs": {
+    "sv5ui-plus-docs": {
       "type": "stdio",
-      "command": "svelora-mcp-docs",
+      "command": "sv5ui-plus-mcp-docs",
       "cwd": "\${workspaceFolder}"
     }
   }
@@ -27,43 +27,43 @@
 
     const packageScriptCode = `{
   "scripts": {
-    "mcp:svelora-docs": "node ./node_modules/svelora/dist/mcp/server.mjs"
+    "mcp:sv5ui-plus-docs": "node ./node_modules/sv5ui-plus/dist/mcp/server.mjs"
   }
 }`
 
     const packageScriptExportCode = `{
   "scripts": {
-    "mcp:svelora-docs": "node --eval \\"import('svelora/mcp/server')\\""
+    "mcp:sv5ui-plus-docs": "node --eval \\"import('sv5ui-plus/mcp/server')\\""
   }
 }`
 
-    const packageTemplatePathCode = `./node_modules/svelora/dist/mcp/cursor.mcp.json`
-    const packageInstallTemplateCommandCode = `svelora-mcp-install-template`
-    const packageInstallTemplateForceCommandCode = `svelora-mcp-install-template --force`
+    const packageTemplatePathCode = `./node_modules/sv5ui-plus/dist/mcp/cursor.mcp.json`
+    const packageInstallTemplateCommandCode = `sv5ui-plus-mcp-install-template`
+    const packageInstallTemplateForceCommandCode = `sv5ui-plus-mcp-install-template --force`
     const packageInstallTemplateScriptCode = `{
   "scripts": {
-    "mcp:install-template": "node ./node_modules/svelora/dist/mcp/install-template.mjs"
+    "mcp:install-template": "node ./node_modules/sv5ui-plus/dist/mcp/install-template.mjs"
   }
 }`
 
     const localCursorConfigCode = `{
   "mcpServers": {
-    "svelora-docs": {
+    "sv5ui-plus-docs": {
       "type": "stdio",
       "command": "bun",
-      "args": ["run", "mcp:svelora-docs"],
+      "args": ["run", "mcp:sv5ui-plus-docs"],
       "cwd": "\${workspaceFolder}"
     }
   }
 }`
 
-    const packageRunCode = `node ./node_modules/svelora/dist/mcp/server.mjs`
-    const localRunCode = `bun run mcp:svelora-docs`
+    const packageRunCode = `node ./node_modules/sv5ui-plus/dist/mcp/server.mjs`
+    const localRunCode = `bun run mcp:sv5ui-plus-docs`
 
-    const toolsCode = `- svelora_docs_list_slugs
-- svelora_docs_get_page_source { slug }
-- svelora_docs_get_section_snippets { slug }
-- svelora_docs_render_shiki { code, isDarkMode? }`
+    const toolsCode = `- sv5ui_plus_docs_list_slugs
+- sv5ui_plus_docs_get_page_source { slug }
+- sv5ui_plus_docs_get_section_snippets { slug }
+- sv5ui_plus_docs_render_shiki { code, isDarkMode? }`
 
     const promptExamplesCode = `- "List docs slugs and summarize the available components and hooks"
 - "Get section snippets for select-menu and summarize all sections"
@@ -174,21 +174,21 @@
             <p class="text-sm font-semibold tracking-[0.16em] text-primary uppercase">Automation</p>
             <h1 class="text-4xl font-semibold tracking-tight">MCP for Cursor IDE</h1>
             <p class="max-w-3xl text-lg leading-8 text-on-surface-variant">
-                เชื่อมเครื่องมือช่วยงาน docs ของ Svelora เข้ากับ Cursor IDE ผ่าน MCP เพื่อให้ Agent เรียก tool ได้ตรง ๆ
+                เชื่อมเครื่องมือช่วยงาน docs ของ SV5UI Plus เข้ากับ Cursor IDE ผ่าน MCP เพื่อให้ Agent เรียก tool ได้ตรง ๆ
                 เช่น list slugs, ดึง section snippets, และ render shiki
             </p>
         </div>
     </section>
 
     <section class="space-y-4">
-        <h2 id="After-bun-add-svelora" class="text-xl font-semibold">
-<a href="#After-bun-add-svelora" class="group relative inline-flex items-center no-underline hover:underline focus:outline-none focus-visible:underline w-fit">
+        <h2 id="After-bun-add-sv5ui-plus" class="text-xl font-semibold">
+<a href="#After-bun-add-sv5ui-plus" class="group relative inline-flex items-center no-underline hover:underline focus:outline-none focus-visible:underline w-fit">
                         <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                        After `bun add svelora`
+                        After `bun add sv5ui-plus`
                     </a>
 </h2>
         <ol class="list-decimal space-y-2 pl-5 text-on-surface-variant">
-            <li>ติดตั้งแพ็กเกจในโปรเจกต์ของคุณก่อนด้วย <span class="font-medium text-on-surface">bun add svelora</span></li>
+            <li>ติดตั้งแพ็กเกจในโปรเจกต์ของคุณก่อนด้วย <span class="font-medium text-on-surface">bun add sv5ui-plus</span></li>
             <li>เพิ่ม config MCP ใน <span class="font-medium text-on-surface">.cursor/mcp.json</span> ของโปรเจกต์นั้น</li>
             <li>Restart Cursor 1 ครั้ง เพื่อให้โหลด MCP servers ใหม่</li>
             <li>เข้า Agent Mode แล้วลองเรียก tools ได้ทันที</li>
@@ -204,7 +204,7 @@
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            ถ้าคุณติดตั้งผ่าน npm package ให้ชี้ไปที่ไฟล์ server ใน <span class="font-medium text-on-surface">node_modules/svelora/dist/mcp/server.mjs</span>
+            ถ้าคุณติดตั้งผ่าน npm package ให้ชี้ไปที่ไฟล์ server ใน <span class="font-medium text-on-surface">node_modules/sv5ui-plus/dist/mcp/server.mjs</span>
         </p>
         <CodeBlock title="mcp.json" code={packageCursorConfigCode} html={packageCursorConfigHtml} />
         <CodeBlock title="mcp.json via bin" code={packageCursorConfigBinCode} html={packageCursorConfigBinHtml} />
@@ -257,14 +257,14 @@
     </section>
 
     <section class="space-y-4">
-        <h2 id="Use-From-The-Svelora-Repo" class="text-xl font-semibold">
-<a href="#Use-From-The-Svelora-Repo" class="group relative inline-flex items-center no-underline hover:underline focus:outline-none focus-visible:underline w-fit">
+        <h2 id="Use-From-The-SV5UI Plus-Repo" class="text-xl font-semibold">
+<a href="#Use-From-The-SV5UI Plus-Repo" class="group relative inline-flex items-center no-underline hover:underline focus:outline-none focus-visible:underline w-fit">
                         <span class="absolute -left-5 top-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100 text-primary/60 font-normal text-base leading-none" aria-hidden="true">#</span>
-                        Use From The Svelora Repo
+                        Use From The SV5UI Plus Repo
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            ถ้าคุณเปิด repo นี้โดยตรง ยังใช้ workflow เดิมได้ผ่าน <span class="font-medium text-on-surface">bun run mcp:svelora-docs</span>
+            ถ้าคุณเปิด repo นี้โดยตรง ยังใช้ workflow เดิมได้ผ่าน <span class="font-medium text-on-surface">bun run mcp:sv5ui-plus-docs</span>
         </p>
         <CodeBlock title="repo .cursor/mcp.json" code={localCursorConfigCode} html={localCursorConfigHtml} />
         <CodeBlock title="repo command" code={localRunCode} html={localRunHtml} />
@@ -301,8 +301,8 @@
         <ul class="list-disc space-y-2 pl-5 text-on-surface-variant">
             <li>consumer app ไม่จำเป็นต้องมี source docs ของ repo เพราะ MCP จะอ่าน data ที่ pack มากับแพ็กเกจ</li>
             <li>config แบบ package แนะนำให้ใช้ <span class="font-medium text-on-surface">node</span> เพื่อไม่ต้องพึ่ง bun ตอนรัน MCP server</li>
-            <li>ตอนนี้แพ็กเกจมีทั้ง <span class="font-medium text-on-surface">bin: svelora-mcp-docs</span>, <span class="font-medium text-on-surface">bin: svelora-mcp-install-template</span>, export path <span class="font-medium text-on-surface">svelora/mcp/server</span>, และ template <span class="font-medium text-on-surface">svelora/mcp/cursor-template</span></li>
-            <li>ถ้าเปิด repo นี้โดยตรงยังใช้คำสั่ง <span class="font-medium text-on-surface">bun run mcp:svelora-docs</span> ได้เหมือนเดิม</li>
+            <li>ตอนนี้แพ็กเกจมีทั้ง <span class="font-medium text-on-surface">bin: sv5ui-plus-mcp-docs</span>, <span class="font-medium text-on-surface">bin: sv5ui-plus-mcp-install-template</span>, export path <span class="font-medium text-on-surface">sv5ui-plus/mcp/server</span>, และ template <span class="font-medium text-on-surface">sv5ui-plus/mcp/cursor-template</span></li>
+            <li>ถ้าเปิด repo นี้โดยตรงยังใช้คำสั่ง <span class="font-medium text-on-surface">bun run mcp:sv5ui-plus-docs</span> ได้เหมือนเดิม</li>
             <li>helper install จะไม่เขียนทับไฟล์เดิม ยกเว้นคุณส่ง <span class="font-medium text-on-surface">--force</span></li>
             <li>อย่าใส่ secrets ลงใน <span class="font-medium text-on-surface">mcp.json</span> ตรง ๆ ให้ใช้ env vars แทน</li>
         </ul>

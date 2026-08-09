@@ -2,7 +2,7 @@
     import { Badge, Button, Card, Fonts, Link } from '$lib/compat.js'
 
     const importThemeCode = `@import 'tailwindcss';
-@import 'svelora/theme.css';
+@import 'sv5ui-plus/theme.css';
 
 @custom-variant dark (&:where(.dark, .dark *));`
 
@@ -32,7 +32,7 @@
 </div>`
 
     const customColorsCode = `@import 'tailwindcss';
-@import 'svelora/theme.css';
+@import 'sv5ui-plus/theme.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -62,9 +62,9 @@
 }`
 
     const fontsLayoutCode = `<` + `script lang="ts">
- import { Fonts } from 'svelora';
+ import { Fonts } from 'sv5ui-plus';
  import { ModeWatcher } from 'mode-watcher';
- import 'svelora/theme.css';
+ import 'sv5ui-plus/theme.css';
 
  let { children } = $props();
 <` + `/script>
@@ -90,7 +90,7 @@
 <ModeWatcher track={false} />`
 
     const sarabunCode = `<` + `script lang="ts">
- import { Fonts } from 'svelora';
+ import { Fonts } from 'sv5ui-plus';
 <` + `/script>
 
 <Fonts
@@ -106,9 +106,9 @@
 
 <p class="font-sarabun">Hello Sarabun</p>`
 
-    const fontsConfigCode = `import { defineConfig } from 'svelora';
+    const fontsConfigCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  fonts: {
   families: [
    { name: 'Inter', variable: '--font-sans-family', weights: [400, 500, 600, 700] },
@@ -124,9 +124,9 @@ defineConfig({
  }
 });`
 
-    const configCode = `import { defineConfig } from 'svelora';
+    const configCode = `import { defineSV5UIPlusConfig } from 'sv5ui-plus';
 
-defineConfig({
+defineSV5UIPlusConfig({
  button: {
   defaultVariants: { variant: 'outline', size: 'md' },
   slots: { base: 'rounded-full' }
@@ -228,7 +228,7 @@ defineConfig({
             </p>
             <h1 class="text-4xl font-semibold tracking-tight">Theming</h1>
             <p class="max-w-3xl text-lg leading-8 text-on-surface-variant">
-                Svelora uses an <strong>OKLCH color system</strong> with CSS custom properties.
+                SV5UI Plus uses an <strong>OKLCH color system</strong> with CSS custom properties.
                 Every color automatically adapts to light and dark mode.
             </p>
         </div>
@@ -242,7 +242,7 @@ defineConfig({
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            Import `svelora/theme.css` in your layout CSS to load all color tokens.
+            Import `sv5ui-plus/theme.css` in your layout CSS to load all color tokens.
         </p>
         <Card class="border border-outline-variant/70">
             <p class="mb-3 text-sm text-on-surface-variant">`src/routes/layout.css`</p>
@@ -258,7 +258,7 @@ defineConfig({
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            Svelora uses OKLCH, a perceptually uniform color space. Colors stay more consistent across lightness levels.
+            SV5UI Plus uses OKLCH, a perceptually uniform color space. Colors stay more consistent across lightness levels.
         </p>
         <Card class="border border-outline-variant/70">
             <pre class="overflow-x-auto text-sm"><code>{oklchCode}</code></pre>
@@ -370,7 +370,7 @@ defineConfig({
 </h2>
         <p class="text-on-surface-variant">
             Use the `Fonts` provider to load either Google Fonts or local font files and map them to
-            Svelora variables such as `--font-sans-family`, `--font-heading-family`, and
+            SV5UI Plus variables such as `--font-sans-family`, `--font-heading-family`, and
             `--font-mono-family`.
         </p>
         <div class="grid gap-4 md:grid-cols-2">
@@ -387,7 +387,7 @@ defineConfig({
             </Card>
         </div>
         <Card class="border border-outline-variant/70">
-            <p class="mb-3 text-sm text-on-surface-variant">`src/svelora.config.ts`</p>
+            <p class="mb-3 text-sm text-on-surface-variant">`src/sv5ui-plus.config.ts`</p>
             <pre class="overflow-x-auto text-sm"><code>{fontsConfigCode}</code></pre>
         </Card>
         <p class="text-sm text-on-surface-variant">
@@ -400,7 +400,7 @@ defineConfig({
             <pre class="overflow-x-auto text-sm"><code>{sarabunCode}</code></pre>
         </Card>
         <p class="text-sm text-on-surface-variant">
-            Svelora now exposes `font-sarabun` through theme tokens, so you can use it directly in
+            SV5UI Plus now exposes `font-sarabun` through theme tokens, so you can use it directly in
             classes across the project after mapping `--font-sarabun-family`.
         </p>
     </section>
@@ -413,7 +413,7 @@ defineConfig({
                     </a>
 </h2>
         <p class="text-on-surface-variant">
-            Svelora uses <a href="https://github.com/svecosystem/mode-watcher" target="_blank" class="text-primary hover:underline">mode-watcher</a> to handle dark mode seamlessly without a flash of unstyled content (FOUC).
+            SV5UI Plus uses <a href="https://github.com/svecosystem/mode-watcher" target="_blank" class="text-primary hover:underline">mode-watcher</a> to handle dark mode seamlessly without a flash of unstyled content (FOUC).
             You must install it as a peer dependency: <code class="rounded bg-surface-container-highest px-1.5 py-0.5 text-sm">npm install mode-watcher</code>
         </p>
         <p class="text-on-surface-variant">

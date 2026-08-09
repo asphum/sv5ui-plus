@@ -3,7 +3,7 @@
     import { renderHighlightedCode } from '$internal/docs/code-block.js'
 
     const sampleCode = `<script lang="ts">
- import { Button } from 'svelora';
+ import { Button } from 'sv5ui';
 <` + `/script>
 
 <Button label="Hello" />`
@@ -150,4 +150,3 @@ console.log(user)`
         </div>
     </section>
 </div>
-

@@ -12,7 +12,7 @@ import { z } from 'zod'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const repoRoot = path.resolve(__dirname, '../../')
-const packagedDataPath = path.resolve(__dirname, './svelora-docs.data.json')
+const packagedDataPath = path.resolve(__dirname, './sv5ui-plus-docs.data.json')
 
 let packagedDataPromise
 
@@ -274,12 +274,12 @@ function extractDocSlugs(navigationSource) {
 }
 
 const server = new McpServer({
-    name: 'svelora-docs',
+    name: 'sv5ui-plus-docs',
     version: '0.1.0'
 })
 
 server.tool(
-    'svelora_docs_list_slugs',
+    'sv5ui_plus_docs_list_slugs',
     'List docs slugs from src/internal/docs/navigation.ts (components + hooks)',
     {},
     async () => {
@@ -297,7 +297,7 @@ server.tool(
 )
 
 server.tool(
-    'svelora_docs_get_page_source',
+    'sv5ui_plus_docs_get_page_source',
     'Read src/routes/[slug]/+page.svelte and return as text',
     {
         slug: z.string().min(1).describe('Route slug, e.g. button, select-menu, use-form-field')
@@ -309,7 +309,7 @@ server.tool(
 )
 
 server.tool(
-    'svelora_docs_get_section_snippets',
+    'sv5ui_plus_docs_get_section_snippets',
     'Extract all <section> headings and code snippets from a route page source',
     {
         slug: z.string().min(1).describe('Route slug, e.g. button, select-menu, use-form-field')
@@ -322,7 +322,7 @@ server.tool(
 )
 
 server.tool(
-    'svelora_docs_render_shiki',
+    'sv5ui_plus_docs_render_shiki',
     'Render highlighted HTML (Shiki) for a code snippet. Returns <pre class="shiki">...</pre> HTML',
     {
         code: z.string().min(1).describe('Code string'),

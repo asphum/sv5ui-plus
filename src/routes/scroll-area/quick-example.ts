@@ -1,5 +1,5 @@
 export const quickExample = `<script lang="ts">
- import { ScrollArea } from 'svelora';
+ import { ScrollArea } from 'sv5ui-plus';
 </script>
 
 <ScrollArea class="h-48 w-64 rounded-lg border border-outline p-4">

@@ -1,6 +1,6 @@
 import type { DragPayload, UseDroppableOptions } from '../useDragDrop/useDragDrop.svelte.js'
 
-export const DRAG_DROP_CONTEXT_KEY = Symbol('svelora-drag-drop')
+export const DRAG_DROP_CONTEXT_KEY = Symbol('sv5ui-plus-drag-drop')
 
 export interface DragDropContextValue {
     registerDroppable: <T>(id: string, options: UseDroppableOptions<T>) => void

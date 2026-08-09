@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Badge, Button, Card } from 'sv5ui'
-    import { BentoCard, BentoGrid, NumberTicker } from 'sv5ui-plus'
+    import { BentoCard, BentoGrid, NumberTicker } from '$lib/index.js'
     import { docsMeta, totalComponents, totalHooks } from '$internal/docs/navigation.js'
 </script>
 

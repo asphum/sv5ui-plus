@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Alert } from 'sv5ui'
-    import { CodeBlock } from 'sv5ui-plus'
+    import { CodeBlock } from '$lib/index.js'
 
     const install = 'bun add sv5ui sv5ui-plus'
     const css = `@import 'sv5ui/theme.css';\n@source '../../node_modules/sv5ui-plus/dist';`

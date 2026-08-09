@@ -19,6 +19,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - _None yet._
 
+## [4.0.0] - 2026-08-09
+
+### Added
+
+- release v4.0.0 with major updates, including removal of redundant components, new compatibility layer for SV5UI, and updated dependencies
+
+### Changed
+
+- downgrade version to 3.3.0, update package.json to exclude TestWrapper files, and refactor Svelte components for improved structure and clarity
+
 ## [3.3.0] - 2026-08-08
 
 ### Added
@@ -691,7 +701,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tailwind CSS 4 + Tailwind Variants integration
 - bits-ui and Vaul Svelte headless primitives
 
-[Unreleased]: https://github.com/asphum/svelora/compare/v3.3.0...HEAD
+[Unreleased]: https://github.com/asphum/svelora/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/asphum/svelora/compare/v3.3.0...v4.0.0
 [3.3.0]: https://github.com/asphum/svelora/compare/v3.2.9...v3.3.0
 [3.2.9]: https://github.com/asphum/svelora/compare/v3.2.8...v3.2.9
 [3.2.8]: https://github.com/asphum/svelora/compare/v3.2.7...v3.2.8

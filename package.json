@@ -1,6 +1,6 @@
 {
     "name": "svelora",
-    "version": "3.3.0",
+    "version": "4.0.0",
     "description": "Companion components and hooks for SV5UI and Svelte 5",
     "packageManager": "bun@1.3.14",
     "author": "asphum",

@@ -7,14 +7,14 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/asphum/svelora.git"
+        "url": "git+https://github.com/asphum/sv5ui-plus.git"
     },
-    "homepage": "https://svelora-ui.vercel.app/",
+    "homepage": "https://sv5ui-plus.vercel.app/",
     "publishConfig": {
         "access": "public"
     },
     "bugs": {
-        "url": "https://github.com/asphum/svelora/issues"
+        "url": "https://github.com/asphum/sv5ui-plus/issues"
     },
     "scripts": {
         "dev": "vite dev --port 3000",

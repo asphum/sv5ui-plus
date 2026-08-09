@@ -6,9 +6,9 @@ export const quickExample = `<script lang="ts">
             id: 'suggestions',
             label: 'Suggestions',
             items: [
-                { value: 'calendar', label: 'Calendar', icon: 'icon-[lucide--calendar]' },
-                { value: 'search-emoji', label: 'Search Emoji', icon: 'icon-[lucide--smile]' },
-                { value: 'calculator', label: 'Calculator', icon: 'icon-[lucide--calculator]' }
+                { value: 'calendar', label: 'Calendar', icon: 'lucide:calendar' },
+                { value: 'search-emoji', label: 'Search Emoji', icon: 'lucide:smile' },
+                { value: 'calculator', label: 'Calculator', icon: 'lucide:calculator' }
             ]
         }
     ]

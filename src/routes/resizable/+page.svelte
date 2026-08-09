@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Resizable } from '$lib/index.js'
+    import { Resizable } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

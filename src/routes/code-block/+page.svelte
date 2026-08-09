@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { CodeBlock } from '$lib/index.js'
+    import { CodeBlock } from '$lib/compat.js'
     import { renderHighlightedCode } from '$internal/docs/code-block.js'
 
     const sampleCode = `<script lang="ts">

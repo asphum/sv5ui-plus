@@ -1,5 +1,5 @@
 import { tv, type VariantProps } from 'tailwind-variants'
-import type { ButtonVariantProps } from '../Button/button.variants.js'
+import type { ButtonProps } from 'sv5ui'
 
 export const localeButtonVariants = tv({
     slots: {
@@ -97,9 +97,9 @@ export type LocaleButtonSlots = keyof ReturnType<typeof localeButtonVariants>
 export const localeButtonDefaults = {
     defaultVariants: {
         ...localeButtonVariants.defaultVariants,
-        color: 'surface' as NonNullable<ButtonVariantProps['color']>,
-        variant: 'outline' as NonNullable<ButtonVariantProps['variant']>,
-        size: 'md' as NonNullable<ButtonVariantProps['size']>
+        color: 'surface' as NonNullable<ButtonProps['color']>,
+        variant: 'outline' as NonNullable<ButtonProps['variant']>,
+        size: 'md' as NonNullable<ButtonProps['size']>
     },
     slots: {} as Partial<Record<LocaleButtonSlots, string>>
 }

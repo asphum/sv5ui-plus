@@ -9,7 +9,7 @@
         Switch,
         useDragDrop,
         useSortable
-    } from '$lib/index.js'
+    } from '$lib/compat.js'
     import BasicThreeZonesDemo from './demos/BasicThreeZonesDemo.svelte'
     import NestedContainersDemo from './demos/NestedContainersDemo.svelte'
     import TaskListColumnsDemo from './demos/TaskListColumnsDemo.svelte'

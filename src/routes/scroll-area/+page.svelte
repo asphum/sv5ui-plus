@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ScrollArea, Separator } from '$lib/index.js'
+    import { ScrollArea, Separator } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

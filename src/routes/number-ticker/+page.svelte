@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { NumberTicker } from '$lib/index.js'
+    import { NumberTicker } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

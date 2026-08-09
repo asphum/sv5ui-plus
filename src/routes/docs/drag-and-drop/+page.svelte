@@ -1,6 +1,6 @@
 <script lang="ts">
     import { mount, tick, unmount } from 'svelte'
-    import { CodeBlock, Link } from '$lib/index.js'
+    import { CodeBlock, Link } from '$lib/compat.js'
     import { getSectionSnippets, renderHighlightedCode } from '$internal/docs/code-block.js'
     import type { DocSectionSnippetOverrides } from '$internal/docs/code-block.js'
     import Page from '../../drag-and-drop/+page.svelte'

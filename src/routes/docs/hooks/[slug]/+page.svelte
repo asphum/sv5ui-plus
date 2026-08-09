@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Component } from 'svelte'
     import { mount, tick, unmount } from 'svelte'
-    import { CodeBlock, Link } from '$lib/index.js'
+    import { CodeBlock, Link } from '$lib/compat.js'
     import { docsHookItems } from '$internal/docs/navigation.js'
     import { buildDefaultHookExample, getSectionSnippets, renderHighlightedCode } from '$internal/docs/code-block.js'
     import type { DocSectionSnippetOverrides } from '$internal/docs/code-block.js'

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { twMerge } from 'tailwind-merge'
-    import Icon from '../Icon/Icon.svelte'
+    import { Icon } from 'sv5ui'
     import type { TreeViewProps, TreeItem } from './tree-view.types.js'
     import { treeViewVariants } from './tree-view.variants.js'
 
@@ -79,7 +79,7 @@
                                 disabled={item.disabled}
                             >
                                 <Icon 
-                                    name="icon-[lucide--chevron-right]" 
+                                    name="lucide:chevron-right" 
                                     class={twMerge(styles.chevron(), isExpanded && 'rotate-90')} 
                                 />
                             </button>

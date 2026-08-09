@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { List, ListItem, Avatar } from '$lib/index.js'
+    import { List, ListItem, Avatar } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

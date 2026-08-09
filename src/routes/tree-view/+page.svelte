@@ -1,29 +1,29 @@
 <script lang="ts">
-    import { TreeView } from '$lib/index.js'
-    import type { TreeViewItem } from '$lib/index.js'
+    import { TreeView } from '$lib/compat.js'
+    import type { TreeViewItem } from '$lib/compat.js'
     
     const treeData: TreeViewItem[] = [
         {
             id: '1',
             label: 'src',
-            icon: 'icon-[lucide--folder]',
+            icon: 'lucide:folder',
             children: [
                 {
                     id: '1-1',
                     label: 'lib',
-                    icon: 'icon-[lucide--folder]',
+                    icon: 'lucide:folder',
                     children: [
-                        { id: '1-1-1', label: 'index.ts', icon: 'icon-[lucide--file-code]' },
-                        { id: '1-1-2', label: 'utils.ts', icon: 'icon-[lucide--file-code]' }
+                        { id: '1-1-1', label: 'index.ts', icon: 'lucide:file-code' },
+                        { id: '1-1-2', label: 'utils.ts', icon: 'lucide:file-code' }
                     ]
                 },
                 {
                     id: '1-2',
                     label: 'routes',
-                    icon: 'icon-[lucide--folder]',
+                    icon: 'lucide:folder',
                     children: [
-                        { id: '1-2-1', label: '+page.svelte', icon: 'icon-[lucide--file]' },
-                        { id: '1-2-2', label: '+layout.svelte', icon: 'icon-[lucide--file]' }
+                        { id: '1-2-1', label: '+page.svelte', icon: 'lucide:file' },
+                        { id: '1-2-2', label: '+layout.svelte', icon: 'lucide:file' }
                     ]
                 }
             ]
@@ -31,7 +31,7 @@
         {
             id: '2',
             label: 'package.json',
-            icon: 'icon-[lucide--file-json]'
+            icon: 'lucide:file-json'
         }
     ]
 </script>

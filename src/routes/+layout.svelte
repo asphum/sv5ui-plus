@@ -7,9 +7,7 @@
         Button,
         ConfirmDialog,
         Icon,
-        LINK_LOCATION_CONTEXT_KEY,
         Link,
-        type LinkLocationContext,
         LocaleButton,
         Main,
         NavigationMenu,
@@ -17,11 +15,11 @@
         registerConfirmDialog,
         Search,
         type ConfirmOptions
-    } from '$lib/index.js'
+    } from '$lib/compat.js'
     import { ModeWatcher, mode, toggleMode } from 'mode-watcher'
     import { m } from '$lib/paraglide/messages.js'
     import { getLocale, setLocale, toLocale } from '$lib/paraglide/runtime.js'
-    import { onMount, setContext } from 'svelte'
+    import { onMount } from 'svelte'
 
     import {
         docsComponentGroups,
@@ -43,10 +41,10 @@
     }>()
 
     const sidebarSections = [
-        { title: 'Getting Started', icon: 'icon-[lucide--rocket]', items: docsIntroItems },
-        { title: 'Theme & Config', icon: 'icon-[lucide--palette]', items: docsThemeItems },
+        { title: 'Getting Started', icon: 'lucide:rocket', items: docsIntroItems },
+        { title: 'Theme & Config', icon: 'lucide:palette', items: docsThemeItems },
         ...docsComponentGroups.map((group) => ({ title: group.title, icon: group.icon, items: group.items })),
-        { title: 'Hooks', icon: 'icon-[lucide--webhook]', items: docsHookItems }
+        { title: 'Hooks', icon: 'lucide:webhook', items: docsHookItems }
     ] satisfies DocsGroup[]
 
     let sidebarOpen = $state(false)
@@ -124,9 +122,6 @@
         })
     })
 
-    setContext<LinkLocationContext>(LINK_LOCATION_CONTEXT_KEY, {
-        currentUrl: () => page.url
-    })
 
     function isNavActive(href: string): boolean {
         return activePath === href
@@ -169,7 +164,7 @@
                         onclick={() => (sidebarOpen = !sidebarOpen)}
                         aria-label={m.layout_toggle_sidebar()}
                     >
-                        <Icon name="icon-[lucide--menu]" size="18" />
+                        <Icon name="lucide:menu" size="18" />
                     </button>
 
                     <Link href="/" raw class="flex items-center gap-2 text-base font-semibold text-on-surface">
@@ -215,7 +210,7 @@
                             {:else if currentLocale?.code === 'en'}
                                 <Icon name="circle-flags:uk" size="24" />
                             {:else}
-                                <Icon name="icon-[lucide--globe]" size="20" />
+                                <Icon name="lucide:globe" size="20" />
                             {/if}
                         {/snippet}
 
@@ -239,7 +234,7 @@
                                 {:else if item.code === 'en'}
                                     <Icon name="circle-flags:uk" size="20" />
                                 {:else}
-                                    <Icon name="icon-[lucide--globe]" size="20" />
+                                    <Icon name="lucide:globe" size="20" />
                                 {/if}
                                 
                                 <span class="font-medium text-[14px] uppercase">{item.shortLabel ?? item.code}</span>
@@ -258,7 +253,7 @@
                     <Button
                         variant="ghost"
                         color="secondary"
-                        icon={mode.current === 'dark' ? 'icon-[lucide--sun]' : 'icon-[lucide--moon]'}
+                        icon={mode.current === 'dark' ? 'lucide:sun' : 'lucide:moon'}
                         onclick={toggleMode}
                         square
                         size="sm"

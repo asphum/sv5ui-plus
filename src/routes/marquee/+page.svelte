@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Marquee, Card } from '$lib/index.js'
+    import { Marquee, Card } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

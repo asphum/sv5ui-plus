@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ColorPicker } from '$lib/index.js'
+    import { ColorPicker } from '$lib/compat.js'
     
     let color1 = $state('#3b82f6')
     let color2 = $state('#f43f5e')

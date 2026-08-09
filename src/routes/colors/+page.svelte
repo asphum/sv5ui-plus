@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Card, Link } from '$lib/index.js'
+    import { Card, Link } from '$lib/compat.js'
 
     const colors = [
         {

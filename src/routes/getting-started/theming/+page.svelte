@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Badge, Button, Card, Fonts, Link } from '$lib/index.js'
+    import { Badge, Button, Card, Fonts, Link } from '$lib/compat.js'
 
     const importThemeCode = `@import 'tailwindcss';
 @import 'svelora/theme.css';

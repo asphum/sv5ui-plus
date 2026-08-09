@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Link, Card, Button, SortableList, SortableGroup } from '$lib/index.js'
+    import { Link, Card, Button, SortableList, SortableGroup } from '$lib/compat.js'
     import { move } from '@dnd-kit/helpers'
     import type { DragOverEvent } from '@dnd-kit/dom'
 

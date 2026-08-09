@@ -6,8 +6,8 @@
 
 <script lang="ts">
     import { getComponentConfig } from '../../config.js'
-    import Icon from '../Icon/Icon.svelte'
-    import Input from '../Input/Input.svelte'
+    import { Icon } from 'sv5ui'
+    import { Input } from 'sv5ui'
     import { passwordInputVariants, passwordInputDefaults } from './password-input.variants.js'
 
     const config = getComponentConfig('passwordInput', passwordInputDefaults)
@@ -20,8 +20,8 @@
         strengthLabels = ['Very Weak', 'Weak', 'Fair', 'Good', 'Strong'],
         segmentIcon,
         maskChar,
-        hideIcon = 'icon-[lucide--eye-off]',
-        showIcon = 'icon-[lucide--eye]',
+        hideIcon = 'lucide:eye-off',
+        showIcon = 'lucide:eye',
         hideLabel = 'Hide password',
         showLabel = 'Show password',
         size = config.defaultVariants.size ?? 'md',
@@ -42,16 +42,9 @@
 
     const useMaskChar = $derived(!!maskChar && maskChar !== '•' && !isVisible)
 
-    let displayValue = $state('')
-
-    $effect(() => {
-        const val = String(value ?? '')
-        if (useMaskChar) {
-            displayValue = (maskChar ?? '✦').repeat(val.length)
-        } else {
-            displayValue = val
-        }
-    })
+    const displayValue = $derived(
+        useMaskChar ? (maskChar ?? '✦').repeat(String(value ?? '').length) : String(value ?? '')
+    )
 
     function handleInput(e: Event & { currentTarget: HTMLInputElement }) {
         if (useMaskChar) {
@@ -102,8 +95,7 @@
             value = head + inserted + tail
 
             const updatedVal = String(value ?? '')
-            displayValue = char.repeat(updatedVal.length)
-            input.value = displayValue
+            input.value = char.repeat(updatedVal.length)
 
             const newCursorPos = prefixCount + inserted.length
             try {
@@ -211,7 +203,7 @@
     {#if showStrength && String(value ?? '').length > 0}
         <div>
             <div class={classes.meterWrapper}>
-                {#each { length: 4 } as _, i}
+                {#each { length: 4 } as _, i (i)}
                     {#if segmentIcon}
                         <Icon
                             name={segmentIcon}

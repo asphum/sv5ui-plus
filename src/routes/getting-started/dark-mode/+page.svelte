@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Card, Link, ThemeModeButton } from '$lib/index.js'
+    import { Card, Link, ThemeModeButton } from '$lib/compat.js'
 
     const layoutCode = `<script lang="ts">
  import './layout.css';
@@ -24,7 +24,7 @@
 <ThemeModeButton />
 <ThemeModeButton size="sm" variant="outline" />
 <ThemeModeButton size="lg" variant="soft" color="primary" />
-<ThemeModeButton lightIcon="icon-[lucide--sun-medium]" darkIcon="icon-[lucide--moon-star]" />`
+<ThemeModeButton lightIcon="lucide:sun-medium" darkIcon="lucide:moon-star" />`
 
     const programmaticCode = `<script lang="ts">
  import { mode, setMode, toggleMode } from 'mode-watcher';
@@ -108,7 +108,7 @@
             <ThemeModeButton />
             <ThemeModeButton size="sm" variant="outline" />
             <ThemeModeButton size="lg" variant="soft" color="primary" />
-            <ThemeModeButton lightIcon="icon-[lucide--sun-medium]" darkIcon="icon-[lucide--moon-star]" />
+            <ThemeModeButton lightIcon="lucide:sun-medium" darkIcon="lucide:moon-star" />
         </div>
         <Card class="border border-outline-variant/70">
             <pre class="overflow-x-auto text-sm"><code>{toggleCode}</code></pre>

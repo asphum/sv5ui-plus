@@ -1,8 +1,8 @@
 <script lang="ts">
     import { twMerge } from 'tailwind-merge'
-    import { Popover } from '../Popover/index.js'
-    import { Input } from '../Input/index.js'
-    import Icon from '../Icon/Icon.svelte'
+    import { Popover } from 'sv5ui'
+    import { Input } from 'sv5ui'
+    import { Icon } from 'sv5ui'
     import type { ColorPickerProps } from './color-picker.types.js'
     import { colorPickerVariants } from './color-picker.variants.js'
 
@@ -65,7 +65,7 @@
                 <span class="truncate flex-1 text-left text-on-surface">
                     {value || placeholder}
                 </span>
-                <Icon name="icon-[lucide--chevron-down]" class="text-on-surface-variant w-4 h-4" />
+                <Icon name="lucide:chevron-down" class="text-on-surface-variant w-4 h-4" />
             </div>
         {/snippet}
 

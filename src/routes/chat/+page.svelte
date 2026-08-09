@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ChatBubble, ChatMessage, ChatInput, Avatar, Button } from '$lib/index.js'
+    import { ChatBubble, ChatMessage, ChatInput, Avatar, Button } from '$lib/compat.js'
     
     let messageText = $state('')
 </script>
@@ -45,7 +45,7 @@
                 <div class="p-3 border-t border-outline-variant bg-surface-50 dark:bg-surface-900">
                     <ChatInput bind:value={messageText} placeholder="Type a message...">
                         {#snippet trailing()}
-                            <Button icon="icon-[lucide--send]" size="sm" color="primary" square disabled={!messageText} />
+                            <Button icon="lucide:send" size="sm" color="primary" square disabled={!messageText} />
                         {/snippet}
                     </ChatInput>
                 </div>

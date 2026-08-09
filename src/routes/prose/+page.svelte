@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Prose } from '$lib/index.js'
+    import { Prose } from '$lib/compat.js'
     
     const sampleHtml = `
         <h1>Introducing Svelora</h1>

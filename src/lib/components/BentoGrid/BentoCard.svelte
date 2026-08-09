@@ -1,7 +1,7 @@
 <script lang="ts">
     import { twMerge } from 'tailwind-merge'
-    import Icon from '../Icon/Icon.svelte'
-    import Button from '../Button/Button.svelte'
+    import { Icon } from 'sv5ui'
+    import { Button } from 'sv5ui'
     import type { BentoCardProps } from './bento-grid.types.js'
     import { bentoGridVariants } from './bento-grid.variants.js'
 
@@ -50,7 +50,7 @@
                 <Button {href} variant="ghost" size="sm" class="pl-0 hover:bg-transparent">
                     {cta}
                     {#snippet trailingSlot()}
-                        <Icon name="icon-[lucide--arrow-right]" class="w-4 h-4 ml-1" />
+                        <Icon name="lucide:arrow-right" class="w-4 h-4 ml-1" />
                     {/snippet}
                 </Button>
             {/if}

@@ -2,7 +2,7 @@ import type { DropdownMenuContentPropsWithoutHTML, DropdownMenuRootPropsWithoutH
 import type { Snippet } from 'svelte'
 import type { HTMLAttributes } from 'svelte/elements'
 import type { ClassNameValue } from 'tailwind-merge'
-import type { ButtonVariantProps } from '../Button/button.variants.js'
+import type { ButtonProps } from 'sv5ui'
 import type { LocaleButtonSlots } from './locale-button.variants.js'
 
 export type LocaleButtonLocale = {
@@ -95,19 +95,19 @@ export type LocaleButtonProps = Omit<HTMLAttributes<HTMLElement>, 'children' | '
          * Controls the visual style of the trigger button.
          * @default 'outline'
          */
-        variant?: NonNullable<ButtonVariantProps['variant']>
+        variant?: NonNullable<ButtonProps['variant']>
 
         /**
          * Sets the color scheme of the trigger button.
          * @default 'surface'
          */
-        color?: NonNullable<ButtonVariantProps['color']>
+        color?: NonNullable<ButtonProps['color']>
 
         /**
          * Controls the trigger button size.
          * @default 'md'
          */
-        size?: NonNullable<ButtonVariantProps['size']>
+        size?: NonNullable<ButtonProps['size']>
 
         /**
          * Shrinks the dropdown menu width to fit its content (`w-fit min-w-0`).
@@ -159,7 +159,7 @@ export type LocaleButtonProps = Omit<HTMLAttributes<HTMLElement>, 'children' | '
 
         /**
          * Leading icon displayed in the trigger.
-         * @default 'icon-[lucide--languages]'
+         * @default 'lucide:languages'
          */
         icon?: string
 

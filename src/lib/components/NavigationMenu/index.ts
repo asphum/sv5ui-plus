@@ -1,7 +1,7 @@
-export { default as NavigationMenu } from './NavigationMenu.svelte'
+export { default as SvelteKitNavigationMenu } from './NavigationMenu.svelte'
 export type {
-    NavigationMenuProps,
-    NavigationMenuItem,
-    NavigationMenuChildItem,
-    NavigationMenuValue
+    NavigationMenuProps as SvelteKitNavigationMenuProps,
+    NavigationMenuItem as SvelteKitNavigationMenuItem,
+    NavigationMenuChildItem as SvelteKitNavigationMenuChildItem,
+    NavigationMenuValue as SvelteKitNavigationMenuValue
 } from './navigation-menu.types.js'

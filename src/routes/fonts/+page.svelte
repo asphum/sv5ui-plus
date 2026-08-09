@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { Card, CodeBlock, Fonts, defaultFontFamilies, fontsDefaults } from '$lib/index.js'
+    import { Card, CodeBlock, Fonts, defaultFontFamilies, fontsDefaults } from '$lib/compat.js'
     import { renderHighlightedCode } from '$internal/docs/code-block.js'
-    import type { FontDefinition } from '$lib/index.js'
+    import type { FontDefinition } from '$lib/compat.js'
 
     const googleFamilies: FontDefinition[] = [
         {

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Button, Card, Link, Toaster, confirmDialog, notify } from '$lib/index.js'
+    import { Button, Card, Link, Toaster, confirmDialog, notify } from '$lib/compat.js'
 
     const confirmMethodsReference = [
         {
@@ -272,7 +272,7 @@ if (ok) notify.success('Deleted')`
                 color="error"
                 variant="soft"
                 label="Delete"
-                leadingIcon="icon-[lucide--trash-2]"
+                leadingIcon="lucide:trash-2"
                 onclick={testDelete}
             />
         </div>
@@ -307,14 +307,14 @@ if (ok) notify.success('Deleted')`
                 color="success"
                 variant="soft"
                 label="Success alert"
-                leadingIcon="icon-[lucide--check]"
+                leadingIcon="lucide:check"
                 onclick={testSuccessAlert}
             />
             <Button
                 color="warning"
                 variant="soft"
                 label="Warning choice"
-                leadingIcon="icon-[lucide--shield-alert]"
+                leadingIcon="lucide:shield-alert"
                 onclick={testWarningChoice}
             />
         </div>

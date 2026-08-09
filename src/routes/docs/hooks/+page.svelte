@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Icon, Link } from '$lib/index.js'
+    import { Icon, Link } from '$lib/compat.js'
     import { docsHookItems, totalHooks } from '$internal/docs/navigation.js'
 </script>
 

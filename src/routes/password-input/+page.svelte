@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { PasswordInput, Separator } from '$lib/index.js'
+    import { PasswordInput, Separator } from '$lib/compat.js'
 
     const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
     const colors = ['primary', 'secondary', 'tertiary', 'success', 'warning', 'error', 'info', 'surface'] as const
@@ -93,27 +93,27 @@
         </p>
         <div class="flex flex-wrap gap-6">
             <div class="space-y-1">
-                <p class="text-xs text-on-surface-variant">icon-[lucide--star]</p>
+                <p class="text-xs text-on-surface-variant">lucide:star</p>
                 <div class="rounded-lg border border-outline-variant bg-surface-container-high p-4 w-64">
-                    <PasswordInput bind:value={pwdIconStar} showStrength segmentIcon="icon-[lucide--star]" placeholder="Password" />
+                    <PasswordInput bind:value={pwdIconStar} showStrength segmentIcon="lucide:star" placeholder="Password" />
                 </div>
             </div>
             <div class="space-y-1">
-                <p class="text-xs text-on-surface-variant">icon-[lucide--shield]</p>
+                <p class="text-xs text-on-surface-variant">lucide:shield</p>
                 <div class="rounded-lg border border-outline-variant bg-surface-container-high p-4 w-64">
-                    <PasswordInput bind:value={pwdIconShield} showStrength segmentIcon="icon-[lucide--shield]" placeholder="Password" />
+                    <PasswordInput bind:value={pwdIconShield} showStrength segmentIcon="lucide:shield" placeholder="Password" />
                 </div>
             </div>
             <div class="space-y-1">
-                <p class="text-xs text-on-surface-variant">icon-[lucide--lock]</p>
+                <p class="text-xs text-on-surface-variant">lucide:lock</p>
                 <div class="rounded-lg border border-outline-variant bg-surface-container-high p-4 w-64">
-                    <PasswordInput bind:value={pwdIconLock} showStrength segmentIcon="icon-[lucide--lock]" placeholder="Password" />
+                    <PasswordInput bind:value={pwdIconLock} showStrength segmentIcon="lucide:lock" placeholder="Password" />
                 </div>
             </div>
             <div class="space-y-1">
-                <p class="text-xs text-on-surface-variant">icon-[lucide--circle]</p>
+                <p class="text-xs text-on-surface-variant">lucide:circle</p>
                 <div class="rounded-lg border border-outline-variant bg-surface-container-high p-4 w-64">
-                    <PasswordInput bind:value={pwdIconCircle} showStrength segmentIcon="icon-[lucide--circle]" placeholder="Password" />
+                    <PasswordInput bind:value={pwdIconCircle} showStrength segmentIcon="lucide:circle" placeholder="Password" />
                 </div>
             </div>
         </div>
@@ -317,7 +317,7 @@
                     <PasswordInput
                         bind:value={pwdBind}
                         showStrength
-                        segmentIcon="icon-[lucide--shield]"
+                        segmentIcon="lucide:shield"
                         placeholder="Create password"
                         strengthLabels={['Very Weak', 'Weak', 'Fair', 'Good', 'Strong']}
                     />
@@ -330,8 +330,8 @@
                 <p class="mb-2 text-xs text-on-surface-variant">Custom toggle icons</p>
                 <div class="max-w-xs">
                     <PasswordInput
-                        showIcon="icon-[lucide--eye-off]"
-                        hideIcon="icon-[lucide--eye]"
+                        showIcon="lucide:eye-off"
+                        hideIcon="lucide:eye"
                         showLabel="Reveal password"
                         hideLabel="Conceal password"
                         placeholder="Custom eye icons"

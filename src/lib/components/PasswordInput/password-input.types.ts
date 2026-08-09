@@ -1,6 +1,5 @@
 import type { ClassNameValue } from 'tailwind-merge'
-import type { InputProps } from '../Input/input.types.js'
-import type { InputSlots, InputVariantProps } from '../Input/input.variants.js'
+import type { InputProps } from 'sv5ui'
 import type { PasswordInputSlots, PasswordInputVariantProps } from './password-input.variants.js'
 
 /**
@@ -13,7 +12,11 @@ export type PasswordInputUISlots =
     /** Root wrapper of the inner `<Input>` component. */
     | 'inputRoot'
     /** The `<input>` element base class inside the inner `<Input>`. */
-    | Extract<InputSlots, 'base' | 'leading' | 'leadingIcon' | 'trailing' | 'trailingIcon'>
+    | 'base'
+    | 'leading'
+    | 'leadingIcon'
+    | 'trailing'
+    | 'trailingIcon'
 
 export type PasswordInputProps = Omit<InputProps, 'type'> & {
     /**
@@ -45,10 +48,10 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
      * default filled bar. When set, four icons are rendered side-by-side and
      * coloured by strength level.
      *
-     * @example 'icon-[lucide--star]'    // ★ ★ ☆ ☆
-     * @example 'icon-[lucide--shield]'  // shields
+     * @example 'lucide:star'    // ★ ★ ☆ ☆
+     * @example 'lucide:shield'  // shields
      * @example 'ph:lock-fill'   // locks
-     * @example 'icon-[lucide--circle]'  // circles
+     * @example 'lucide:circle'  // circles
      */
     segmentIcon?: string
 
@@ -66,14 +69,14 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
     /**
      * Icon to display when the password is hidden (eye-off state).
      * Supports any valid Iconify icon name.
-     * @default 'icon-[lucide--eye-off]'
+     * @default 'lucide:eye-off'
      */
     hideIcon?: string
 
     /**
      * Icon to display when the password is visible (eye state).
      * Supports any valid Iconify icon name.
-     * @default 'icon-[lucide--eye]'
+     * @default 'lucide:eye'
      */
     showIcon?: string
 
@@ -101,7 +104,7 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
      * Mirrors `<Input>` variants — the value is forwarded directly to the inner Input.
      * @default 'outline'
      */
-    variant?: NonNullable<InputVariantProps['variant']>
+    variant?: NonNullable<InputProps['variant']>
 
     /**
      * Sets the color scheme for focus ring and highlight.
@@ -109,7 +112,7 @@ export type PasswordInputProps = Omit<InputProps, 'type'> & {
      * Automatically overridden with `'error'` when inside a FormField with an error.
      * @default 'primary'
      */
-    color?: NonNullable<InputVariantProps['color']>
+    color?: NonNullable<InputProps['color']>
 
     /**
      * Additional CSS classes for the root element.

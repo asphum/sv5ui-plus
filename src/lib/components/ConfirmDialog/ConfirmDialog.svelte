@@ -7,11 +7,10 @@
 
 <script lang="ts">
     import { Dialog } from 'bits-ui'
-    import Button from '../Button/Button.svelte'
-    import Input from '../Input/Input.svelte'
-    import Textarea from '../Textarea/Textarea.svelte'
-    import AnimatedIcon from '../Toast/internal/AnimatedIcon.svelte'
-    import { modalVariants } from '../Modal/modal.variants.js'
+    import { Button } from 'sv5ui'
+    import { Input } from 'sv5ui'
+    import { Textarea } from 'sv5ui'
+    import { Icon } from 'sv5ui'
     import type { ConfirmOptions } from './confirm.types.js'
 
     interface PendingDialog {
@@ -28,14 +27,21 @@
     let pending = $state<PendingDialog | null>(null)
     let currentInputValue = $state('')
 
-    const classes = $derived(
-        modalVariants({
-            transition: 'scale',
-            size: 'sm',
-            overlay: true,
-            scrollable: false
-        })
-    )
+    const iconNames = {
+        warning: 'lucide:triangle-alert',
+        error: 'lucide:circle-x',
+        question: 'lucide:circle-help',
+        info: 'lucide:info',
+        success: 'lucide:circle-check'
+    } as const
+
+    const iconColors = {
+        warning: 'text-warning',
+        error: 'text-error',
+        question: 'text-primary',
+        info: 'text-info',
+        success: 'text-success'
+    } as const
 
     const dismissible = $derived(pending?.options.dismissible !== false)
     const showCancel = $derived(pending?.options.showCancel !== false)
@@ -86,11 +92,13 @@
 
 <Dialog.Root bind:open onOpenChange={handleOpenChange}>
     <Dialog.Portal>
-        <Dialog.Overlay class={classes.overlay()} />
+        <Dialog.Overlay
+            class="fixed inset-0 z-50 bg-[var(--scrim-bg,rgba(0,0,0,0.3))] backdrop-blur-sm"
+        />
         {#if pending}
             <Dialog.Content
                 {...contentProps}
-                class={[classes.content(), 'p-6 text-center']}
+                class="fixed top-1/2 left-1/2 z-50 w-[min(24rem,calc(100vw-2rem))] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-outline-variant bg-surface p-6 text-center text-on-surface shadow-2xl focus:outline-none"
             >
                 {#if pending.options.title}
                     <Dialog.Title class="sr-only">{pending.options.title}</Dialog.Title>
@@ -104,11 +112,10 @@
                 {#if pending.options.icon}
                     {#key pending.options.icon}
                         <div class="mb-4 flex min-h-20 justify-center">
-                            <AnimatedIcon
-                                type={pending.options.icon}
+                            <Icon
+                                name={iconNames[pending.options.icon]}
                                 size={80}
-                                forceMotion
-                                idle={false}
+                                class={iconColors[pending.options.icon]}
                             />
                         </div>
                     {/key}

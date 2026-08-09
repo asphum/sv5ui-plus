@@ -1,10 +1,10 @@
 <script lang="ts">
     import { twMerge } from 'tailwind-merge'
-    import Input from '../Input/Input.svelte'
-    import Button from '../Button/Button.svelte'
-    import Modal from '../Modal/Modal.svelte'
-    import Command from '../Command/Command.svelte'
-    import Kbd from '../Kbd/Kbd.svelte'
+    import { Input } from 'sv5ui'
+    import { Button } from 'sv5ui'
+    import { Modal } from 'sv5ui'
+    import { Command } from 'sv5ui'
+    import { Kbd } from 'sv5ui'
     import type { SearchProps } from './search.types.js'
     import { onMount } from 'svelte'
 
@@ -47,7 +47,7 @@
         type="search"
         {placeholder}
         bind:value
-        leadingIcon="icon-[lucide--search]"
+        leadingIcon="lucide:search"
         class={className}
         {...(rest as any)}
     >
@@ -87,7 +87,7 @@
     <Button
         variant="ghost"
         color="surface"
-        leadingIcon="icon-[lucide--search]"
+        leadingIcon="lucide:search"
         class={className}
         onclick={() => (open = true)}
         {...(rest as any)}

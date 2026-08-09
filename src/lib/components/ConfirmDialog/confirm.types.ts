@@ -1,12 +1,8 @@
-import type { ButtonVariantProps } from '../Button/button.variants.js'
-import type { AnimatedIconType } from '../Toast/internal/animated-icon.types.js'
+import type { ButtonProps } from 'sv5ui'
 
-export type ConfirmIcon = Extract<
-    AnimatedIconType,
-    'warning' | 'error' | 'question' | 'info' | 'success'
->
+export type ConfirmIcon = 'warning' | 'error' | 'question' | 'info' | 'success'
 
-export type ConfirmColor = NonNullable<ButtonVariantProps['color']>
+export type ConfirmColor = NonNullable<ButtonProps['color']>
 
 export interface ConfirmOptions {
     title?: string

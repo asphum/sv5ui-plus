@@ -4,7 +4,7 @@
 
 <script lang="ts" generics="T">
     import { twMerge } from 'tailwind-merge'
-    import Icon from '../Icon/Icon.svelte'
+    import { Icon } from 'sv5ui'
     import { useSortable } from '../../hooks/useSortable/index.js'
     import type { SortableListProps } from './sortable-list.types.js'
 
@@ -76,7 +76,7 @@
                             class="inline-flex shrink-0 cursor-grab rounded-md p-1 text-on-surface-variant hover:bg-surface-container-high active:cursor-grabbing"
                             aria-label="Drag to reorder"
                         >
-                            <Icon name="icon-[lucide--grip-vertical]" size="16" />
+                            <Icon name="lucide:grip-vertical" size="16" />
                         </button>
                     {/if}
                     {@render children({ item, index, dragging })}

@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'svelte/elements'
 import type { ClassNameValue } from 'tailwind-merge'
-import type { CommandGroup } from '../Command/command.types.js'
+import type { CommandGroup } from 'sv5ui'
 
 export type SearchVariant = 'input' | 'modal' | 'button'
 

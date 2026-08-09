@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Badge, Button, Card, Link, SortableList, useSortable } from '$lib/index.js'
+    import { Badge, Button, Card, Link, SortableList, useSortable } from '$lib/compat.js'
 
     type Task = { id: string; title: string; color: 'primary' | 'success' | 'warning' }
 

@@ -8,7 +8,7 @@
         Link,
         type NavigationMenuItem,
         type DropdownMenuItem
-    } from '$lib/index.js'
+    } from '$lib/compat.js'
 
     const colors = [
         'primary',
@@ -22,217 +22,217 @@
     ] as const
 
     const simpleItems: NavigationMenuItem[] = [
-        { label: 'Home', icon: 'icon-[lucide--house]', href: '/navigation-menu', active: true },
-        { label: 'Docs', icon: 'icon-[lucide--book-open]', href: '/getting-started' },
-        { label: 'Components', icon: 'icon-[lucide--shapes]', href: '/button' },
-        { label: 'GitHub', icon: 'icon-[lucide--github]', href: 'https://github.com', target: '_blank' }
+        { label: 'Home', icon: 'lucide:house', href: '/navigation-menu', active: true },
+        { label: 'Docs', icon: 'lucide:book-open', href: '/getting-started' },
+        { label: 'Components', icon: 'lucide:shapes', href: '/button' },
+        { label: 'GitHub', icon: 'lucide:github', href: 'https://github.com', target: '_blank' }
     ]
 
     const megaItems: NavigationMenuItem[] = [
         {
             label: 'Product',
-            icon: 'icon-[lucide--box]',
+            icon: 'lucide:box',
             children: [
                 {
                     label: 'Analytics',
                     description: 'Track engagement and conversions in real time.',
-                    icon: 'icon-[lucide--chart-line]',
+                    icon: 'lucide:chart-line',
                     href: '/analytics'
                 },
                 {
                     label: 'Automation',
                     description: 'Build no-code workflows across your stack.',
-                    icon: 'icon-[lucide--workflow]',
+                    icon: 'lucide:workflow',
                     href: '/automation'
                 },
                 {
                     label: 'Reports',
                     description: 'Schedule and export shareable dashboards.',
-                    icon: 'icon-[lucide--file-chart-column]',
+                    icon: 'lucide:file-chart-column',
                     href: '/reports'
                 }
             ]
         },
         {
             label: 'Resources',
-            icon: 'icon-[lucide--library]',
+            icon: 'lucide:library',
             children: [
                 {
                     label: 'Guides',
                     description: 'Step-by-step tutorials.',
-                    icon: 'icon-[lucide--compass]',
+                    icon: 'lucide:compass',
                     href: '/guides'
                 },
                 {
                     label: 'Blog',
                     description: 'Product news and deep dives.',
-                    icon: 'icon-[lucide--rss]',
+                    icon: 'lucide:rss',
                     href: '/blog'
                 },
                 {
                     label: 'Changelog',
                     description: 'What shipped, and when.',
-                    icon: 'icon-[lucide--git-commit-horizontal]',
+                    icon: 'lucide:git-commit-horizontal',
                     href: '/changelog'
                 }
             ]
         },
-        { label: 'Pricing', icon: 'icon-[lucide--credit-card]', href: '/pricing' }
+        { label: 'Pricing', icon: 'lucide:credit-card', href: '/pricing' }
     ]
 
     const groupedMega: NavigationMenuItem[] = [
         {
             label: 'Product',
-            icon: 'icon-[lucide--box]',
+            icon: 'lucide:box',
             children: [
                 {
                     label: 'Platform',
                     children: [
-                        { label: 'Analytics', icon: 'icon-[lucide--chart-line]', href: '/analytics' },
-                        { label: 'Automation', icon: 'icon-[lucide--workflow]', href: '/automation' },
-                        { label: 'Reports', icon: 'icon-[lucide--file-chart-column]', href: '/reports' }
+                        { label: 'Analytics', icon: 'lucide:chart-line', href: '/analytics' },
+                        { label: 'Automation', icon: 'lucide:workflow', href: '/automation' },
+                        { label: 'Reports', icon: 'lucide:file-chart-column', href: '/reports' }
                     ]
                 },
                 {
                     label: 'Developers',
                     children: [
-                        { label: 'API', icon: 'icon-[lucide--code]', href: '/api' },
-                        { label: 'CLI', icon: 'icon-[lucide--terminal]', href: '/cli' },
-                        { label: 'Webhooks', icon: 'icon-[lucide--webhook]', href: '/webhooks' }
+                        { label: 'API', icon: 'lucide:code', href: '/api' },
+                        { label: 'CLI', icon: 'lucide:terminal', href: '/cli' },
+                        { label: 'Webhooks', icon: 'lucide:webhook', href: '/webhooks' }
                     ]
                 }
             ]
         },
-        { label: 'Pricing', icon: 'icon-[lucide--credit-card]', href: '/pricing' }
+        { label: 'Pricing', icon: 'lucide:credit-card', href: '/pricing' }
     ]
 
     const drawerItems: NavigationMenuItem[] = [
         { label: 'Platform', type: 'label' },
-        { label: 'Home', icon: 'icon-[lucide--house]', href: '/home' },
+        { label: 'Home', icon: 'lucide:house', href: '/home' },
         {
             label: 'Products',
-            icon: 'icon-[lucide--box]',
+            icon: 'lucide:box',
             children: [
                 {
                     label: 'Analytics',
                     description: 'Track engagement and conversions in real time.',
-                    icon: 'icon-[lucide--chart-line]',
+                    icon: 'lucide:chart-line',
                     href: '/analytics'
                 },
                 {
                     label: 'Automation',
                     description: 'Build no-code workflows across your stack.',
-                    icon: 'icon-[lucide--workflow]',
+                    icon: 'lucide:workflow',
                     href: '/automation'
                 },
                 {
                     label: 'Reports',
                     description: 'Schedule and export shareable dashboards.',
-                    icon: 'icon-[lucide--file-chart-column]',
+                    icon: 'lucide:file-chart-column',
                     href: '/reports'
                 },
                 {
                     label: 'Integrations',
                     description: 'Connect 100+ third-party tools.',
-                    icon: 'icon-[lucide--plug]',
+                    icon: 'lucide:plug',
                     href: '/integrations'
                 }
             ]
         },
         {
             label: 'Solutions',
-            icon: 'icon-[lucide--puzzle]',
+            icon: 'lucide:puzzle',
             children: [
                 {
                     label: 'By industry',
                     children: [
-                        { label: 'E-commerce', icon: 'icon-[lucide--shopping-cart]', href: '/x/ecommerce' },
-                        { label: 'Healthcare', icon: 'icon-[lucide--heart-pulse]', href: '/x/healthcare' },
-                        { label: 'Finance', icon: 'icon-[lucide--landmark]', href: '/x/finance' }
+                        { label: 'E-commerce', icon: 'lucide:shopping-cart', href: '/x/ecommerce' },
+                        { label: 'Healthcare', icon: 'lucide:heart-pulse', href: '/x/healthcare' },
+                        { label: 'Finance', icon: 'lucide:landmark', href: '/x/finance' }
                     ]
                 },
                 {
                     label: 'By team',
                     children: [
-                        { label: 'Engineering', icon: 'icon-[lucide--code]', href: '/x/engineering' },
-                        { label: 'Marketing', icon: 'icon-[lucide--megaphone]', href: '/x/marketing' },
-                        { label: 'Sales', icon: 'icon-[lucide--trending-up]', href: '/x/sales' }
+                        { label: 'Engineering', icon: 'lucide:code', href: '/x/engineering' },
+                        { label: 'Marketing', icon: 'lucide:megaphone', href: '/x/marketing' },
+                        { label: 'Sales', icon: 'lucide:trending-up', href: '/x/sales' }
                     ]
                 }
             ]
         },
         {
             label: 'Resources',
-            icon: 'icon-[lucide--library]',
+            icon: 'lucide:library',
             children: [
                 {
                     label: 'Guides',
                     description: 'Step-by-step tutorials.',
-                    icon: 'icon-[lucide--compass]',
+                    icon: 'lucide:compass',
                     href: '/guides'
                 },
                 {
                     label: 'Blog',
                     description: 'Product news and deep dives.',
-                    icon: 'icon-[lucide--rss]',
+                    icon: 'lucide:rss',
                     href: '/blog'
                 },
                 {
                     label: 'Webinars',
                     description: 'Live and on-demand sessions.',
-                    icon: 'icon-[lucide--video]',
+                    icon: 'lucide:video',
                     href: '/webinars'
                 },
                 {
                     label: 'Community',
                     description: 'Join the discussion.',
-                    icon: 'icon-[lucide--users]',
+                    icon: 'lucide:users',
                     href: '/community'
                 },
                 {
                     label: 'Changelog',
                     description: 'What shipped, and when.',
-                    icon: 'icon-[lucide--git-commit-horizontal]',
+                    icon: 'lucide:git-commit-horizontal',
                     href: '/changelog'
                 }
             ]
         },
         { label: 'Company', type: 'label' },
-        { label: 'Inbox', icon: 'icon-[lucide--inbox]', href: '/inbox', badge: 24 },
-        { label: 'Pricing', icon: 'icon-[lucide--credit-card]', href: '/pricing' },
-        { label: 'Docs', icon: 'icon-[lucide--book-open]', href: '/docs' },
-        { label: 'Support', icon: 'icon-[lucide--life-buoy]', href: '/support' },
-        { label: 'Status', icon: 'icon-[lucide--activity]', href: '/status' },
-        { label: 'Careers', icon: 'icon-[lucide--briefcase]', href: '/careers', badge: 'New' },
-        { label: 'Settings', icon: 'icon-[lucide--settings]', href: '/settings' },
-        { label: 'GitHub', icon: 'icon-[lucide--github]', href: 'https://github.com', target: '_blank' },
-        { label: 'Archived', icon: 'icon-[lucide--archive]', href: '/archived', disabled: true }
+        { label: 'Inbox', icon: 'lucide:inbox', href: '/inbox', badge: 24 },
+        { label: 'Pricing', icon: 'lucide:credit-card', href: '/pricing' },
+        { label: 'Docs', icon: 'lucide:book-open', href: '/docs' },
+        { label: 'Support', icon: 'lucide:life-buoy', href: '/support' },
+        { label: 'Status', icon: 'lucide:activity', href: '/status' },
+        { label: 'Careers', icon: 'lucide:briefcase', href: '/careers', badge: 'New' },
+        { label: 'Settings', icon: 'lucide:settings', href: '/settings' },
+        { label: 'GitHub', icon: 'lucide:github', href: 'https://github.com', target: '_blank' },
+        { label: 'Archived', icon: 'lucide:archive', href: '/archived', disabled: true }
     ]
 
     const badgedItems: NavigationMenuItem[] = [
-        { label: 'Inbox', icon: 'icon-[lucide--inbox]', href: '/inbox', badge: 12 },
-        { label: 'Drafts', icon: 'icon-[lucide--file-pen]', href: '/drafts', badge: 3 },
-        { label: 'Archive', icon: 'icon-[lucide--archive]', href: '/archive' },
-        { label: 'Spam', icon: 'icon-[lucide--shield-alert]', href: '/spam', disabled: true }
+        { label: 'Inbox', icon: 'lucide:inbox', href: '/inbox', badge: 12 },
+        { label: 'Drafts', icon: 'lucide:file-pen', href: '/drafts', badge: 3 },
+        { label: 'Archive', icon: 'lucide:archive', href: '/archive' },
+        { label: 'Spam', icon: 'lucide:shield-alert', href: '/spam', disabled: true }
     ]
 
     const groupedItems: NavigationMenuItem[][] = [
         [
-            { label: 'Dashboard', icon: 'icon-[lucide--layout-dashboard]', href: '/dashboard' },
-            { label: 'Projects', icon: 'icon-[lucide--folder-kanban]', href: '/projects' }
+            { label: 'Dashboard', icon: 'lucide:layout-dashboard', href: '/dashboard' },
+            { label: 'Projects', icon: 'lucide:folder-kanban', href: '/projects' }
         ],
         [
-            { label: 'Settings', icon: 'icon-[lucide--settings]', href: '/settings' },
-            { label: 'Members', icon: 'icon-[lucide--users]', href: '/members' }
+            { label: 'Settings', icon: 'lucide:settings', href: '/settings' },
+            { label: 'Members', icon: 'lucide:users', href: '/members' }
         ]
     ]
 
     const verticalItems: NavigationMenuItem[] = [
-        { label: 'Getting Started', icon: 'icon-[lucide--rocket]', href: '/getting-started' },
+        { label: 'Getting Started', icon: 'lucide:rocket', href: '/getting-started' },
         {
             label: 'Components',
             value: 'components',
-            icon: 'icon-[lucide--shapes]',
+            icon: 'lucide:shapes',
             defaultOpen: true,
             children: [
                 { label: 'Button', href: '/button' },
@@ -243,20 +243,20 @@
         {
             label: 'Composables',
             value: 'composables',
-            icon: 'icon-[lucide--function-square]',
+            icon: 'lucide:function-square',
             children: [
                 { label: 'useMediaQuery', href: '/use-media-query' },
                 { label: 'useClipboard', href: '/use-clipboard' }
             ]
         },
-        { label: 'Customization', icon: 'icon-[lucide--palette]', href: '/customization' }
+        { label: 'Customization', icon: 'lucide:palette', href: '/customization' }
     ]
 
     const collapsedItems: NavigationMenuItem[] = [
-        { label: 'Home', icon: 'icon-[lucide--house]', href: '/home' },
-        { label: 'Search', icon: 'icon-[lucide--search]', href: '/search' },
-        { label: 'Notifications', icon: 'icon-[lucide--bell]', href: '/notifications', badge: 5 },
-        { label: 'Profile', icon: 'icon-[lucide--user]', href: '/profile' }
+        { label: 'Home', icon: 'lucide:house', href: '/home' },
+        { label: 'Search', icon: 'lucide:search', href: '/search' },
+        { label: 'Notifications', icon: 'lucide:bell', href: '/notifications', badge: 5 },
+        { label: 'Profile', icon: 'lucide:user', href: '/profile' }
     ]
 
     const teamItems: NavigationMenuItem[] = [
@@ -269,19 +269,19 @@
                 {
                     label: 'Profile',
                     description: 'View and edit your profile',
-                    icon: 'icon-[lucide--user]',
+                    icon: 'lucide:user',
                     href: '/profile'
                 },
                 {
                     label: 'Billing',
                     description: 'Plans and invoices',
-                    icon: 'icon-[lucide--credit-card]',
+                    icon: 'lucide:credit-card',
                     href: '/billing'
                 },
                 {
                     label: 'Sign out',
                     description: 'End your session',
-                    icon: 'icon-[lucide--log-out]',
+                    icon: 'lucide:log-out',
                     href: '/logout'
                 }
             ]
@@ -307,33 +307,33 @@
     ]
 
     const tabBarItems: NavigationMenuItem[] = [
-        { label: 'Home', icon: 'icon-[lucide--house]', href: '/home', active: true },
-        { label: 'Samples', icon: 'icon-[lucide--play-circle]', href: '/samples' },
-        { label: 'Explore', icon: 'icon-[lucide--compass]', href: '/explore' },
-        { label: 'Library', icon: 'icon-[lucide--bookmark]', href: '/library', badge: 3 }
+        { label: 'Home', icon: 'lucide:house', href: '/home', active: true },
+        { label: 'Samples', icon: 'lucide:play-circle', href: '/samples' },
+        { label: 'Explore', icon: 'lucide:compass', href: '/explore' },
+        { label: 'Library', icon: 'lucide:bookmark', href: '/library', badge: 3 }
     ]
 
     const railLabelItems: NavigationMenuItem[] = [
-        { label: 'Home', icon: 'icon-[lucide--house]', href: '/home' },
-        { label: 'Search', icon: 'icon-[lucide--search]', href: '/search' },
-        { label: 'Users', icon: 'icon-[lucide--users]', href: '/users', active: true },
-        { label: 'Settings', icon: 'icon-[lucide--settings]', href: '/settings' }
+        { label: 'Home', icon: 'lucide:house', href: '/home' },
+        { label: 'Search', icon: 'lucide:search', href: '/search' },
+        { label: 'Users', icon: 'lucide:users', href: '/users', active: true },
+        { label: 'Settings', icon: 'lucide:settings', href: '/settings' }
     ]
 
     const sidebarItems: NavigationMenuItem[] = [
         { label: 'Personal', type: 'label' },
-        { label: 'Design System', icon: 'icon-[lucide--folder]', href: '/ds', active: true },
-        { label: 'Travel', icon: 'icon-[lucide--folder]', href: '/travel' },
+        { label: 'Design System', icon: 'lucide:folder', href: '/ds', active: true },
+        { label: 'Travel', icon: 'lucide:folder', href: '/travel' },
         { label: 'Teams', type: 'label' },
-        { label: 'Engineering', icon: 'icon-[lucide--folder]', href: '/eng' },
-        { label: 'Marketing', icon: 'icon-[lucide--folder]', href: '/mkt' }
+        { label: 'Engineering', icon: 'lucide:folder', href: '/eng' },
+        { label: 'Marketing', icon: 'lucide:folder', href: '/mkt' }
     ]
 
     const rowMenuItems: DropdownMenuItem[] = [
-        { label: 'Rename', icon: 'icon-[lucide--pencil]' },
-        { label: 'Duplicate', icon: 'icon-[lucide--copy]' },
+        { label: 'Rename', icon: 'lucide:pencil' },
+        { label: 'Duplicate', icon: 'lucide:copy' },
         { type: 'separator' },
-        { label: 'Delete', icon: 'icon-[lucide--trash-2]', color: 'error' }
+        { label: 'Delete', icon: 'lucide:trash-2', color: 'error' }
     ]
 
     let verticalValue = $state<string | string[]>(['components'])
@@ -342,10 +342,10 @@
     let hlActive = $state('overview')
     const hlItems = $derived<NavigationMenuItem[]>(
         [
-            { label: 'Overview', value: 'overview', icon: 'icon-[lucide--layout-dashboard]' },
-            { label: 'Analytics', value: 'analytics', icon: 'icon-[lucide--chart-line]' },
-            { label: 'Reports', value: 'reports', icon: 'icon-[lucide--file-chart-column]' },
-            { label: 'Settings', value: 'settings', icon: 'icon-[lucide--settings]' }
+            { label: 'Overview', value: 'overview', icon: 'lucide:layout-dashboard' },
+            { label: 'Analytics', value: 'analytics', icon: 'lucide:chart-line' },
+            { label: 'Reports', value: 'reports', icon: 'lucide:file-chart-column' },
+            { label: 'Settings', value: 'settings', icon: 'lucide:settings' }
         ].map((it) => ({
             ...it,
             active: hlActive === it.value,
@@ -359,10 +359,10 @@
     let hlVerticalActive = $state('inbox')
     const hlVerticalItems = $derived<NavigationMenuItem[]>(
         [
-            { label: 'Inbox', value: 'inbox', icon: 'icon-[lucide--inbox]' },
-            { label: 'Drafts', value: 'drafts', icon: 'icon-[lucide--file-pen]' },
-            { label: 'Sent', value: 'sent', icon: 'icon-[lucide--send]' },
-            { label: 'Archive', value: 'archive', icon: 'icon-[lucide--archive]' }
+            { label: 'Inbox', value: 'inbox', icon: 'lucide:inbox' },
+            { label: 'Drafts', value: 'drafts', icon: 'lucide:file-pen' },
+            { label: 'Sent', value: 'sent', icon: 'lucide:send' },
+            { label: 'Archive', value: 'archive', icon: 'lucide:archive' }
         ].map((it) => ({
             ...it,
             active: hlVerticalActive === it.value,
@@ -381,25 +381,25 @@
                 {
                     label: 'Overview',
                     description: 'The all-in-one platform',
-                    icon: 'icon-[lucide--layout-dashboard]',
+                    icon: 'lucide:layout-dashboard',
                     href: '/product'
                 },
                 {
                     label: 'Analytics',
                     description: 'Real-time insights',
-                    icon: 'icon-[lucide--chart-line]',
+                    icon: 'lucide:chart-line',
                     href: '/analytics'
                 },
                 {
                     label: 'Automations',
                     description: 'Workflows without code',
-                    icon: 'icon-[lucide--workflow]',
+                    icon: 'lucide:workflow',
                     href: '/automations'
                 },
                 {
                     label: 'Integrations',
                     description: '120+ connected apps',
-                    icon: 'icon-[lucide--blocks]',
+                    icon: 'lucide:blocks',
                     href: '/integrations'
                 }
             ]
@@ -410,19 +410,19 @@
                 {
                     label: 'Startups',
                     description: 'Ship fast on a budget',
-                    icon: 'icon-[lucide--rocket]',
+                    icon: 'lucide:rocket',
                     href: '/startups'
                 },
                 {
                     label: 'Enterprise',
                     description: 'Security and scale',
-                    icon: 'icon-[lucide--building-2]',
+                    icon: 'lucide:building-2',
                     href: '/enterprise'
                 },
                 {
                     label: 'Agencies',
                     description: 'Manage many clients',
-                    icon: 'icon-[lucide--users]',
+                    icon: 'lucide:users',
                     href: '/agencies'
                 }
             ]
@@ -435,13 +435,13 @@
     // ---- Real-world: documentation sidebar ----
     const docsNavItems: NavigationMenuItem[] = [
         { label: 'Get Started', type: 'label' },
-        { label: 'Introduction', icon: 'icon-[lucide--book-open]', href: '/docs/introduction' },
-        { label: 'Installation', icon: 'icon-[lucide--download]', href: '/docs/installation' },
+        { label: 'Introduction', icon: 'lucide:book-open', href: '/docs/introduction' },
+        { label: 'Installation', icon: 'lucide:download', href: '/docs/installation' },
         { label: 'Reference', type: 'label' },
         {
             label: 'Components',
             value: 'docs-components',
-            icon: 'icon-[lucide--shapes]',
+            icon: 'lucide:shapes',
             defaultOpen: true,
             children: [
                 { label: 'Button', href: '/docs/button' },
@@ -453,7 +453,7 @@
         {
             label: 'Composables',
             value: 'docs-composables',
-            icon: 'icon-[lucide--function-square]',
+            icon: 'lucide:function-square',
             children: [
                 { label: 'useMediaQuery', href: '/docs/use-media-query' },
                 { label: 'useClipboard', href: '/docs/use-clipboard' },
@@ -463,50 +463,50 @@
         {
             label: 'Theming',
             value: 'docs-theming',
-            icon: 'icon-[lucide--palette]',
+            icon: 'lucide:palette',
             children: [
                 { label: 'Colors', href: '/docs/colors' },
                 { label: 'Dark mode', href: '/docs/dark-mode' }
             ]
         },
-        { label: 'Changelog', icon: 'icon-[lucide--history]', href: '/docs/changelog' }
+        { label: 'Changelog', icon: 'lucide:history', href: '/docs/changelog' }
     ]
 
     // ---- Real-world: dashboard rail ----
     const dashboardItems: NavigationMenuItem[][] = [
         [
-            { label: 'Dashboard', icon: 'icon-[lucide--layout-dashboard]', href: '/app', active: true },
-            { label: 'Inbox', icon: 'icon-[lucide--inbox]', href: '/app/inbox', badge: 8 },
+            { label: 'Dashboard', icon: 'lucide:layout-dashboard', href: '/app', active: true },
+            { label: 'Inbox', icon: 'lucide:inbox', href: '/app/inbox', badge: 8 },
             {
                 label: 'Projects',
                 value: 'projects',
-                icon: 'icon-[lucide--folder-kanban]',
+                icon: 'lucide:folder-kanban',
                 children: [
                     {
                         label: 'Active',
                         description: '12 in progress',
-                        icon: 'icon-[lucide--circle-play]',
+                        icon: 'lucide:circle-play',
                         href: '/app/projects/active'
                     },
                     {
                         label: 'Archived',
                         description: 'Read-only history',
-                        icon: 'icon-[lucide--archive]',
+                        icon: 'lucide:archive',
                         href: '/app/projects/archived'
                     },
                     {
                         label: 'Templates',
                         description: 'Reusable blueprints',
-                        icon: 'icon-[lucide--copy]',
+                        icon: 'lucide:copy',
                         href: '/app/projects/templates'
                     }
                 ]
             },
-            { label: 'Calendar', icon: 'icon-[lucide--calendar]', href: '/app/calendar' }
+            { label: 'Calendar', icon: 'lucide:calendar', href: '/app/calendar' }
         ],
         [
-            { label: 'Team', icon: 'icon-[lucide--users]', href: '/app/team' },
-            { label: 'Settings', icon: 'icon-[lucide--settings]', href: '/app/settings' }
+            { label: 'Team', icon: 'lucide:users', href: '/app/team' },
+            { label: 'Settings', icon: 'lucide:settings', href: '/app/settings' }
         ]
     ]
 
@@ -940,13 +940,13 @@
     <!-- Trailing actions on hover (Notion / Linear) -->
     {#snippet sidebarActions({ item }: { item: NavigationMenuItem })}
         {#if item.type === 'label'}
-            <Button icon="icon-[lucide--plus]" size="xs" variant="ghost" color="surface" aria-label="Add" />
+            <Button icon="lucide:plus" size="xs" variant="ghost" color="surface" aria-label="Add" />
         {:else}
             <DropdownMenu items={rowMenuItems}>
                 {#snippet children({ props })}
                     <Button
                         {...props}
-                        icon="icon-[lucide--ellipsis]"
+                        icon="lucide:ellipsis"
                         size="xs"
                         variant="ghost"
                         color="surface"
@@ -1008,8 +1008,8 @@
                         class="w-full shrink-0"
                         label={railCollapsed ? undefined : 'Collapse'}
                         leadingIcon={railCollapsed
-                            ? 'icon-[lucide--panel-left-open]'
-                            : 'icon-[lucide--panel-left-close]'}
+                            ? 'lucide:panel-left-open'
+                            : 'lucide:panel-left-close'}
                         onclick={() => (railCollapsed = !railCollapsed)}
                     >
                         <!-- {#if !railCollapsed}Collapse{/if} -->

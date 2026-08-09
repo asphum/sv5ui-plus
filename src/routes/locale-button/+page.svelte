@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { CodeBlock, LocaleButton, Icon, Separator } from '$lib/index.js'
-    import type { LocaleButtonLocale } from '$lib/index.js'
+    import { CodeBlock, LocaleButton, Icon, Separator } from '$lib/compat.js'
+    import type { LocaleButtonLocale } from '$lib/compat.js'
 
     const locales: LocaleButtonLocale[] = [
         {
@@ -683,7 +683,7 @@ const locales: LocaleButtonLocale[] = [
                     {:else if currentLocale?.code === 'en'}
                         <Icon name="circle-flags:uk" size="32" />
                     {:else}
-                        <Icon name="icon-[lucide--globe]" size="24" />
+                        <Icon name="lucide:globe" size="24" />
                     {/if}
                 {/snippet}
 

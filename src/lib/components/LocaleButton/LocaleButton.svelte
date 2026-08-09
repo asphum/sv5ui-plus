@@ -5,11 +5,11 @@
 </script>
 
 <script lang="ts">
-    import Button from '../Button/Button.svelte'
+    import { Button } from 'sv5ui'
     import { getComponentConfig, iconsDefaults } from '../../config.js'
-    import DropdownMenu from '../DropdownMenu/DropdownMenu.svelte'
-    import Icon from '../Icon/Icon.svelte'
-    import Link from '../Link/Link.svelte'
+    import { DropdownMenu } from 'sv5ui'
+    import { Icon } from 'sv5ui'
+    import { Link } from 'sv5ui'
     import {
         localeButtonDefaults,
         localeButtonVariants
@@ -34,7 +34,7 @@
         placeholder = 'Select language',
         ariaLabel = 'Change language',
         menuLabel = 'Language',
-        icon = 'icon-[lucide--languages]',
+        icon = 'lucide:languages',
         chevronIcon = icons.chevronDown,
         showIcon = true,
         showChevron = true,

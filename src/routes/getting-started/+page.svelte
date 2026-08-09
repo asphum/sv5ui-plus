@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Button, Card, Icon, Link } from '$lib/index.js'
+    import { Button, Card, Icon, Link } from '$lib/compat.js'
     import {
         docsComponentGroups,
         docsHookItems,
@@ -26,10 +26,10 @@
     const mcpInstallCode = `svelora-mcp-install-template`
 
     const builtWith = [
-        { title: 'Svelte 5', description: 'Runes & snippets', icon: 'icon-[lucide--zap]' },
-        { title: 'Tailwind 4', description: 'Utility-first CSS', icon: 'icon-[lucide--palette]' },
-        { title: 'bits-ui', description: 'Headless primitives', icon: 'icon-[lucide--layers]' },
-        { title: 'TypeScript', description: 'Full type safety', icon: 'icon-[lucide--code-xml]' }
+        { title: 'Svelte 5', description: 'Runes & snippets', icon: 'lucide:zap' },
+        { title: 'Tailwind 4', description: 'Utility-first CSS', icon: 'lucide:palette' },
+        { title: 'bits-ui', description: 'Headless primitives', icon: 'lucide:layers' },
+        { title: 'TypeScript', description: 'Full type safety', icon: 'lucide:code-xml' }
     ] as const
 </script>
 
@@ -56,13 +56,13 @@
                 Ship faster with {totalComponents}+ production-ready components.
             </p>
             <div class="flex flex-wrap gap-3">
-                <Button label="Installation" href="/docs/installation" leadingIcon="icon-[lucide--download]" />
+                <Button label="Installation" href="/docs/installation" leadingIcon="lucide:download" />
                 <Button
                     label="Browse Components"
                     href="/docs/components/button"
                     variant="outline"
                     color="secondary"
-                    leadingIcon="icon-[lucide--layout-grid]"
+                    leadingIcon="lucide:layout-grid"
                 />
             </div>
         </div>
@@ -83,7 +83,7 @@
             <Card class="border border-outline-variant/70">
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-on-surface-variant">
-                        <Icon name="icon-[lucide--package]" size="18" />
+                        <Icon name="lucide:package" size="18" />
                         <span class="text-sm font-medium">1. Install the package</span>
                     </div>
                     <div class="rounded-2xl bg-surface-container p-4 font-mono text-sm">
@@ -95,7 +95,7 @@
             <Card class="border border-outline-variant/70">
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-on-surface-variant">
-                        <Icon name="icon-[lucide--code]" size="18" />
+                        <Icon name="lucide:code" size="18" />
                         <span class="text-sm font-medium">2. Use components</span>
                     </div>
                     <div class="rounded-2xl bg-surface-container p-4 font-mono text-xs">
@@ -107,7 +107,7 @@
             <Card class="border border-outline-variant/70">
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-on-surface-variant">
-                        <Icon name="icon-[lucide--plug]" size="18" />
+                        <Icon name="lucide:plug" size="18" />
                         <span class="text-sm font-medium">3. Enable MCP for Cursor</span>
                     </div>
                     <div class="rounded-2xl bg-surface-container p-4 font-mono text-sm">
@@ -124,7 +124,7 @@
                             variant="outline"
                             color="secondary"
                             size="sm"
-                            trailingIcon="icon-[lucide--arrow-right]"
+                            trailingIcon="lucide:arrow-right"
                         />
                     </div>
                 </div>
@@ -240,7 +240,7 @@
                     href={item.href}
                     variant="outline"
                     color="secondary"
-                    trailingIcon="icon-[lucide--arrow-right]"
+                    trailingIcon="lucide:arrow-right"
                 />
             {/each}
         </div>

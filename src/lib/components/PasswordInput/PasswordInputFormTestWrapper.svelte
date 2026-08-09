@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Form from '../Form/Form.svelte'
-    import FormField from '../FormField/FormField.svelte'
+    import { Form } from 'sv5ui'
+    import { FormField } from 'sv5ui'
     import PasswordInput from './PasswordInput.svelte'
     import { z } from 'zod'
 

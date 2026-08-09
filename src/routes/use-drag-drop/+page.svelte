@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Badge, Button, Card, Link, useDragDrop } from '$lib/index.js'
+    import { Badge, Button, Card, Link, useDragDrop } from '$lib/compat.js'
 
     type Task = { id: string; label: string; lane: 'todo' | 'done' }
 

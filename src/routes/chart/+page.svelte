@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Chart } from '$lib/index.js'
+    import { Chart } from '$lib/compat.js'
     import type { ApexOptions } from 'apexcharts'
     
     // 1. Bar Chart (Basic)

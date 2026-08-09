@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { Search, Separator, CodeBlock, Badge } from '$lib/index.js'
-    import type { CommandGroup } from '$lib/index.js'
+    import { Search, Separator, CodeBlock, Badge } from '$lib/compat.js'
+    import type { CommandGroup } from '$lib/compat.js'
     import { quickExample } from './quick-example.js'
 
     const searchGroups: CommandGroup[] = [
@@ -8,17 +8,17 @@
             id: 'pages',
             label: 'Pages',
             items: [
-                { value: 'home', label: 'Home', icon: 'icon-[lucide--home]', keywords: ['start', 'main'] },
-                { value: 'dashboard', label: 'Dashboard', icon: 'icon-[lucide--layout-dashboard]' },
-                { value: 'settings', label: 'Settings', icon: 'icon-[lucide--settings]', keywords: ['preferences', 'options'] }
+                { value: 'home', label: 'Home', icon: 'lucide:home', keywords: ['start', 'main'] },
+                { value: 'dashboard', label: 'Dashboard', icon: 'lucide:layout-dashboard' },
+                { value: 'settings', label: 'Settings', icon: 'lucide:settings', keywords: ['preferences', 'options'] }
             ]
         },
         {
             id: 'actions',
             label: 'Actions',
             items: [
-                { value: 'new-file', label: 'New File', icon: 'icon-[lucide--file-plus]' },
-                { value: 'invite', label: 'Invite Users', icon: 'icon-[lucide--user-plus]' }
+                { value: 'new-file', label: 'New File', icon: 'lucide:file-plus' },
+                { value: 'invite', label: 'Invite Users', icon: 'lucide:user-plus' }
             ]
         }
     ]

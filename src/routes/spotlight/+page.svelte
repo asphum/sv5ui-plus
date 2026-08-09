@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Spotlight } from '$lib/index.js'
+    import { Spotlight } from '$lib/compat.js'
 </script>
 
 <div class="space-y-8">

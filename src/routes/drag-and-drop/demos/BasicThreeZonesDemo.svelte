@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { useDragDrop } from '$lib/index.js'
+    import { useDragDrop } from '$lib/compat.js'
 
     const zones = ['A', 'B', 'C'] as const
     let activeZone = $state<(typeof zones)[number] | null>(null)

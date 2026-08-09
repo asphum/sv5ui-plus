@@ -2,12 +2,12 @@ import type { Snippet } from 'svelte'
 import type { ClassNameValue } from 'tailwind-merge'
 import type { HTMLAttributes } from 'svelte/elements'
 import type { NavigationMenuSlots, NavigationMenuVariantProps } from './navigation-menu.variants.js'
-import type { AvatarProps } from '../Avatar/avatar.types.js'
-import type { BadgeProps } from '../Badge/badge.types.js'
-import type { ChipProps } from '../Chip/chip.types.js'
-import type { TooltipProps } from '../Tooltip/tooltip.types.js'
-import type { PopoverProps } from '../Popover/popover.types.js'
-import type { DrawerProps } from '../Drawer/drawer.types.js'
+import type { AvatarProps } from 'sv5ui'
+import type { BadgeProps } from 'sv5ui'
+import type { ChipProps } from 'sv5ui'
+import type { TooltipProps } from 'sv5ui'
+import type { PopoverProps } from 'sv5ui'
+import type { DrawerProps } from 'sv5ui'
 
 // ============================================================================
 // Value / behavior types

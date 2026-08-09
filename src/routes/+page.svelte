@@ -1,6 +1,6 @@
 <script lang="ts">
     import { buildLocaleOptions } from '$internal/i18n.js'
-    import { Badge, Button, Card, Icon, Link, LocaleButton } from '$lib/index.js'
+    import { Badge, Button, Card, Icon, Link, LocaleButton } from '$lib/compat.js'
     import { allComponentItems, docsIntroItems, docsMeta, totalComponents } from '$internal/docs/navigation.js'
     import { m } from '$lib/paraglide/messages.js'
     import { getLocale, setLocale, toLocale } from '$lib/paraglide/runtime.js'
@@ -30,32 +30,32 @@
         {
             title: 'Svelte 5 Runes',
             description: 'Built from the ground up with runes, snippets, and the latest reactivity model.',
-            icon: 'icon-[lucide--zap]'
+            icon: 'lucide:zap'
         },
         {
             title: 'OKLCH Colors',
             description: '8 semantic color scales that stay balanced across light and dark themes.',
-            icon: 'icon-[lucide--palette]'
+            icon: 'lucide:palette'
         },
         {
             title: 'Fully Accessible',
             description: 'Powered by bits-ui primitives with keyboard navigation and ARIA patterns.',
-            icon: 'icon-[lucide--accessibility]'
+            icon: 'lucide:accessibility'
         },
         {
             title: 'Tailwind CSS 4',
             description: 'Utility-first styling with easy overrides through classes and tokens.',
-            icon: 'icon-[lucide--wand-sparkles]'
+            icon: 'lucide:wand-sparkles'
         },
         {
             title: `${totalComponents}+ Components`,
             description: 'From buttons to calendars, overlays to tables, ready for production apps.',
-            icon: 'icon-[lucide--blocks]'
+            icon: 'lucide:blocks'
         },
         {
             title: 'Fully Typed',
             description: 'Exported TypeScript types help keep every component safe and discoverable.',
-            icon: 'icon-[lucide--code-xml]'
+            icon: 'lucide:code-xml'
         }
     ] as const
 
@@ -159,14 +159,14 @@
                     <Button
                         label={m.landing_get_started()}
                         href="/docs"
-                        leadingIcon="icon-[lucide--rocket]"
+                        leadingIcon="lucide:rocket"
                     />
                     <Button
                         label={m.landing_browse_components()}
                         href="#components"
                         variant="outline"
                         color="secondary"
-                        leadingIcon="icon-[lucide--layout-grid]"
+                        leadingIcon="lucide:layout-grid"
                     />
                 </div>
 
@@ -508,14 +508,14 @@
                     </div>
 
                     <div class="flex flex-wrap items-center gap-3">
-                        <Button label="Get Started Free" href="/docs" leadingIcon="icon-[lucide--rocket]" />
+                        <Button label="Get Started Free" href="/docs" leadingIcon="lucide:rocket" />
                         <Button
                             label="Star on GitHub"
                             href={docsMeta.githubHref}
                             external
                             variant="outline"
                             color="secondary"
-                            leadingIcon="icon-[lucide--star]"
+                            leadingIcon="lucide:star"
                         />
                     </div>
                 </div>

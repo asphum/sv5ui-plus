@@ -38,6 +38,7 @@ New code should use the explicit `sv5ui` and `sv5ui-plus` imports.
 - Content and display: `BentoGrid`, `Chart`, `Chat`, `CodeBlock`, `Fonts`, `List`, `Marquee`, `NumberTicker`, `Prose`, `Spotlight`
 - Forms and overlays: `ColorPicker`, `ConfirmDialog`, `LocaleButton`, `PasswordInput`, `Search`
 - Layout and data: `Resizable`, `ScrollArea`, `SafeTable`, `TableBulkActionBar`, `TreeView`
+- Forms: `FormSelect`, `DatePickerField`, `DateRangePickerField`, `PasswordInput`
 - Drag and drop: `SortableGroup`, `SortableList`, `useDragDrop`, `useSortable`
 - SvelteKit adapter: `SvelteKitNavigationMenu`
 - Feedback adapter: `notify`

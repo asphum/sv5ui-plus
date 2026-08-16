@@ -118,6 +118,7 @@ export const docsComponentGroups: DocsGroup[] = [
             component('Search', 'search', 'lucide:search'),
             component('SortableList', 'sortable-list', 'lucide:list-restart'),
             component('Spotlight', 'spotlight', 'lucide:sparkles'),
+            component('SafeTable', 'safe-table', 'lucide:shield'),
             component('TableBulkActionBar', 'table', 'lucide:table'),
             component('TreeView', 'tree-view', 'lucide:network'),
             component('SvelteKitNavigationMenu', 'navigation-menu', 'lucide:compass')

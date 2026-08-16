@@ -19,6 +19,7 @@ export * from './components/Search/index.js'
 export * from './components/SortableGroup/index.js'
 export * from './components/SortableList/index.js'
 export * from './components/Spotlight/index.js'
+export * from './components/SafeTable/index.js'
 export * from './components/TableBulkActionBar/index.js'
 export * from './components/TreeView/index.js'
 

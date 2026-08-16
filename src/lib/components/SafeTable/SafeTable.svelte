@@ -20,10 +20,8 @@
     let localGlobalFilter = $state('')
     let localPage = $state(0)
     let localRef = $state<HTMLElement | null>(null)
-    let localColumnVisibility = $state<Record<string, boolean> | undefined>(undefined)
-    let localColumnPinning = $state<{ left?: string[]; right?: string[] } | undefined>(
-        undefined
-    )
+    let localColumnVisibility = $state<Record<string, boolean>>({})
+    let localColumnPinning = $state<{ left?: string[]; right?: string[] }>({})
 
     let {
         ref = $bindable(localRef),
@@ -39,6 +37,10 @@
         columnPinning = $bindable(localColumnPinning),
         ...rest
     }: SafeTableProps<T> = $props()
+
+    function isPlainObject(value: unknown): value is Record<string, unknown> {
+        return typeof value === 'object' && value !== null && !Array.isArray(value)
+    }
 </script>
 
 <Table
@@ -72,34 +74,48 @@
         }
     }
     bind:columnFilters={
-        () =>
-            columnFilters && typeof columnFilters === 'object' && !Array.isArray(columnFilters)
-                ? columnFilters
-                : localColumnFilters,
+        () => (isPlainObject(columnFilters) ? columnFilters : localColumnFilters),
         (value) => {
-            const next =
-                value && typeof value === 'object' && !Array.isArray(value)
-                    ? value
-                    : ({} as Record<string, string>)
-            columnFilters = next
+            columnFilters = isPlainObject(value)
+                ? (value as Record<string, string>)
+                : ({} as Record<string, string>)
         }
     }
     bind:columnSizing={
-        () =>
-            columnSizing && typeof columnSizing === 'object' && !Array.isArray(columnSizing)
-                ? columnSizing
-                : localColumnSizing,
+        () => (isPlainObject(columnSizing) ? columnSizing : localColumnSizing),
         (value) => {
-            const next =
-                value && typeof value === 'object' && !Array.isArray(value)
-                    ? value
-                    : ({} as Record<string, number>)
-            columnSizing = next
+            columnSizing = isPlainObject(value)
+                ? (value as Record<string, number>)
+                : ({} as Record<string, number>)
         }
     }
-    bind:globalFilter
-    bind:page
-    bind:columnVisibility
-    bind:columnPinning
+    bind:globalFilter={
+        () => (typeof globalFilter === 'string' ? globalFilter : localGlobalFilter),
+        (value) => {
+            globalFilter = typeof value === 'string' ? value : ''
+        }
+    }
+    bind:page={
+        () => (typeof page === 'number' && Number.isFinite(page) ? page : localPage),
+        (value) => {
+            page = typeof value === 'number' && Number.isFinite(value) ? value : 0
+        }
+    }
+    bind:columnVisibility={
+        () => (isPlainObject(columnVisibility) ? columnVisibility : localColumnVisibility),
+        (value) => {
+            columnVisibility = isPlainObject(value)
+                ? (value as Record<string, boolean>)
+                : ({} as Record<string, boolean>)
+        }
+    }
+    bind:columnPinning={
+        () => (isPlainObject(columnPinning) ? columnPinning : localColumnPinning),
+        (value) => {
+            columnPinning = isPlainObject(value)
+                ? (value as { left?: string[]; right?: string[] })
+                : ({} as { left?: string[]; right?: string[] })
+        }
+    }
     {...rest}
 />

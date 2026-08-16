@@ -6,7 +6,8 @@
     import { Select } from 'sv5ui'
     import type { FormSelectProps } from './form-select.types.js'
 
-    let { name, value = $bindable(), disabled = false, ...selectProps }: FormSelectProps = $props()
+    // default เป็น string ว่าง — อย่าใช้ $bindable() เปล่า (UNINITIALIZED ตอน async)
+    let { name, value = $bindable(''), disabled = false, ...selectProps }: FormSelectProps = $props()
 </script>
 
 <Select {...selectProps} bind:value {disabled} />

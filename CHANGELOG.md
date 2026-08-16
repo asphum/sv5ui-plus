@@ -19,6 +19,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - _None yet._
 
+## [5.0.1] - 2026-08-16
+
+### Added
+
+- add SafeTable component to prevent initialization issues with Svelte experimental async bindings
+- add DatePickerField, DateRangePickerField, and form-integrated FormSelect components with documentation and dependencies.
+
+### Fixed
+
+- update imports in Svelte components to use the new $lib/index.js path
+
 ## [5.0.0] - 2026-08-09
 
 ### Added
@@ -711,7 +722,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tailwind CSS 4 + Tailwind Variants integration
 - bits-ui and Vaul Svelte headless primitives
 
-[Unreleased]: https://github.com/asphum/sv5ui-plus/compare/v5.0.0...HEAD
+[Unreleased]: https://github.com/asphum/sv5ui-plus/compare/v5.0.1...HEAD
+[5.0.1]: https://github.com/asphum/sv5ui-plus/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/asphum/sv5ui-plus/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/asphum/svelora/compare/v3.3.0...v4.0.0
 [3.3.0]: https://github.com/asphum/svelora/compare/v3.2.9...v3.3.0

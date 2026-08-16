@@ -20,6 +20,10 @@
     let localGlobalFilter = $state('')
     let localPage = $state(0)
     let localRef = $state<HTMLElement | null>(null)
+    let localColumnVisibility = $state<Record<string, boolean> | undefined>(undefined)
+    let localColumnPinning = $state<{ left?: string[]; right?: string[] } | undefined>(
+        undefined
+    )
 
     let {
         ref = $bindable(localRef),
@@ -31,8 +35,8 @@
         columnSizing = $bindable(localColumnSizing),
         globalFilter = $bindable(localGlobalFilter),
         page = $bindable(localPage),
-        columnVisibility = $bindable(),
-        columnPinning = $bindable(),
+        columnVisibility = $bindable(localColumnVisibility),
+        columnPinning = $bindable(localColumnPinning),
         ...rest
     }: SafeTableProps<T> = $props()
 </script>

@@ -16,6 +16,7 @@
     interface PendingDialog {
         options: ConfirmOptions
         resolve: (value: boolean) => void
+        settled: boolean
     }
 
     let {
@@ -49,16 +50,22 @@
     export function show(options: ConfirmOptions = {}): Promise<boolean> {
         return new Promise((resolve) => {
             currentInputValue = options.inputValue ?? ''
-            pending = { options, resolve }
+            pending = { options, resolve, settled: false }
             open = true
         })
     }
 
     function settle(result: boolean) {
         const current = pending
-        pending = null
-        open = false
-        current?.resolve(result)
+        if (!current || current.settled) return
+        current.settled = true
+        current.resolve(result)
+        // ถอด dialog หลัง pointer/click จบ — กัน derived_inert จาก bits-ui ที่ยังอ่าน derived
+        queueMicrotask(() => {
+            if (pending !== current) return
+            pending = null
+            open = false
+        })
     }
 
     function handleConfirm() {
@@ -72,7 +79,7 @@
     }
 
     function handleOpenChange(value: boolean) {
-        if (!value && pending) {
+        if (!value && pending && !pending.settled) {
             handleCancel()
             return
         }
@@ -93,7 +100,7 @@
 <Dialog.Root bind:open onOpenChange={handleOpenChange}>
     <Dialog.Portal>
         <Dialog.Overlay
-            class="fixed inset-0 z-50 bg-[var(--scrim-bg,rgba(0,0,0,0.3))] backdrop-blur-sm"
+            class="fixed inset-0 z-50 bg-(--scrim-bg,rgba(0,0,0,0.3)) backdrop-blur-sm"
         />
         {#if pending}
             <Dialog.Content

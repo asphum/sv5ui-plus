@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- _None yet._
+- delay ConfirmDialog unmount until after the current pointer/click event to avoid Svelte `derived_inert` warnings from bits-ui
 
 ## [5.0.3] - 2026-08-16
 

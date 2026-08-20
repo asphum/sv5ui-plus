@@ -17,7 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- delay ConfirmDialog unmount until after the current pointer/click event to avoid Svelte `derived_inert` warnings from bits-ui
+- _None yet._
+
+## [5.0.4] - 2026-08-20
+
+### Changed
+
+- prepare public release
 
 ## [5.0.3] - 2026-08-16
 
@@ -734,7 +740,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tailwind CSS 4 + Tailwind Variants integration
 - bits-ui and Vaul Svelte headless primitives
 
-[Unreleased]: https://github.com/asphum/sv5ui-plus/compare/v5.0.3...HEAD
+[Unreleased]: https://github.com/asphum/sv5ui-plus/compare/v5.0.4...HEAD
+[5.0.4]: https://github.com/asphum/sv5ui-plus/compare/v5.0.3...v5.0.4
 [5.0.3]: https://github.com/asphum/sv5ui-plus/compare/v5.0.2...v5.0.3
 [5.0.2]: https://github.com/asphum/sv5ui-plus/compare/v5.0.1...v5.0.2
 [5.0.1]: https://github.com/asphum/sv5ui-plus/compare/v5.0.0...v5.0.1
